@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -27,6 +27,10 @@ const PhoneOutlined = dynamic(() => import("@ant-design/icons/PhoneOutlined"), {
 const LoginOutlined = dynamic(() => import("@ant-design/icons/LoginOutlined"), {
   ssr: false,
 });
+const CaretDownOutlined = dynamic(
+  () => import("@ant-design/icons/CaretDownOutlined"),
+  { ssr: false }
+);
 import { Button, Dropdown, Input, Menu, Modal, Select } from "antd";
 
 import "@flaticon/flaticon-uicons/css/all/all.css";
@@ -117,6 +121,30 @@ const Header = () => {
       <Menu.Item>
         <Link href="#" passHref>
           <span>Logout</span>
+        </Link>
+      </Menu.Item>
+    </Menu>
+  );
+  const aboutMenu = (
+    <Menu>
+      <Menu.Item>
+        <Link href={routerNames.ABOUT} passHref>
+          <span>About Us</span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link href={routerNames.INTRODUCTION} passHref>
+          <span>Introduction</span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link href={routerNames.HISTORY} passHref>
+          <span>History</span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link href={routerNames.ORGANIZATION} passHref>
+          <span>Organization</span>
         </Link>
       </Menu.Item>
     </Menu>
@@ -222,18 +250,15 @@ const Header = () => {
         </div>
 
         <div className="hidden items-center justify-between space-x-4 lg:flex">
-          <Select defaultValue="USD" className="text-sm" style={{ width: 100 }}>
-            <Option value="USD">$USD</Option>
-            <Option value="EUR">€EUR</Option>
-            <Option value="GBP">£GBP</Option>
-          </Select>
-
-          <Select defaultValue="EN" className="text-sm" style={{ width: 100 }}>
-            <Option value="EN">English</Option>
-            <Option value="ES">Español</Option>
-            <Option value="FR">Français</Option>
-          </Select>
-
+          <div className="relative pl-10 flex items-center">
+            <button className="group text-xl text-white" onClick={addToCart}>
+              <ShoppingCartOutlined />
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-500 text-xs font-bold text-black">
+                {cartItems}
+              </span>
+            </button>
+          </div>
+          <span className="ml-2 text-lg font-medium">Shopping Cart</span>
           <div className="relative">
             <Dropdown
               overlay={userMenu}
@@ -406,6 +431,12 @@ const Header = () => {
                       routerName: routerNames.ABOUT,
                       icon: UserOutlined,
                     },
+                    {
+                      name: "Career",
+                      tab: "career",
+                      routerName: routerNames.CAREER,
+                      icon: CaretDownOutlined,
+                    },
                   ].map((item) => (
                     <Link
                       href={item.routerName}
@@ -444,19 +475,17 @@ const Header = () => {
             <Link href={routerNames.CONTACT} className="hover:underline">
               Contact
             </Link>
-            <Link href={routerNames.ABOUT} className="hover:underline">
-              About
+            <div className="relative">
+              <Dropdown overlay={aboutMenu} trigger={["hover"]}>
+                <Link href="#" className="text-white hover:underline">
+                  About
+                </Link>
+              </Dropdown>
+            </div>
+            <Link href={routerNames.CAREER} className="hover:underline">
+              Career
             </Link>
           </div>
-          <div className="relative pl-10 flex items-center">
-            <button className="group text-xl text-white" onClick={addToCart}>
-              <ShoppingCartOutlined />
-              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-500 text-xs font-bold text-black">
-                {cartItems}
-              </span>
-            </button>
-          </div>
-          <span className="ml-2 text-lg font-medium">Shopping Cart</span>
         </div>
       </nav>
     </header>

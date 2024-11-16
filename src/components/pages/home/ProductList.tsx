@@ -5,7 +5,10 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 
 // Dynamic import for the FolderFilled icon
-const FolderFilled = dynamic(() => import("@ant-design/icons").then((icon) => icon.FolderFilled), { ssr: false });
+const FolderFilled = dynamic(
+  () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
+  { ssr: false },
+);
 
 // Define a Product interface for type safety
 interface Product {
@@ -30,7 +33,9 @@ const shuffleArray = (array: Product[]): Product[] => {
 };
 
 const ProductList = ({ limit = 10 }) => {
-  const products = useSelector((state: { products: Product[] }) => state.products); // Use Product type
+  const products = useSelector(
+    (state: { products: Product[] }) => state.products,
+  ); // Use Product type
   const [currentPage, setCurrentPage] = useState(0);
   const [isClient, setIsClient] = useState(false); // Track if it's client-side
 
@@ -72,12 +77,22 @@ const ProductList = ({ limit = 10 }) => {
   return (
     <div className="py-4 w-full">
       <div className="flex justify-between items-center mb-6 px-4 lg:px-6">
-        <h2 className="text-lg md:text-2xl font-bold text-center">Featured Products</h2>
+        <h2 className="text-lg md:text-2xl font-bold text-center">
+          Featured Products
+        </h2>
         <div className="flex">
-          <Button onClick={prevPage} disabled={currentPage === 0} className="mx-2">
+          <Button
+            onClick={prevPage}
+            disabled={currentPage === 0}
+            className="mx-2"
+          >
             &lt; Prev
           </Button>
-          <Button onClick={nextPage} disabled={currentPage === chunkedProducts.length - 1} className="mx-2">
+          <Button
+            onClick={nextPage}
+            disabled={currentPage === chunkedProducts.length - 1}
+            className="mx-2"
+          >
             Next &gt;
           </Button>
         </div>
@@ -101,16 +116,22 @@ const ProductList = ({ limit = 10 }) => {
           >
             <div className="mb-2">
               <FolderFilled className="text-gray-500" />
-              <span className="font-medium text-gray-900 ml-4">{product.pet}</span>
+              <span className="font-medium text-gray-900 ml-4">
+                {product.pet}
+              </span>
             </div>
             <Card.Meta title={product.name} description={product.description} />
             <div className="mt-4">
-              <p className="text-lg font-bold text-orange-500">${product.price}</p>
+              <p className="text-lg font-bold text-orange-500">
+                ${product.price}
+              </p>
               <div className="flex items-center mt-2">
                 <Rate disabled defaultValue={product.rating} />
                 <span className="ml-2 text-gray-500">({product.rating}/5)</span>
               </div>
-              <p className="text-sm text-gray-600 mt-2">Stock: {product.stock} units left</p>
+              <p className="text-sm text-gray-600 mt-2">
+                Stock: {product.stock} units left
+              </p>
 
               <Button type="primary" className="mt-4 w-full">
                 Buy Now

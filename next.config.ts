@@ -14,12 +14,12 @@ module.exports = withTM({
     esmExternals: false, // Ensure ESM modules are handled properly
   },
   images: {
-    domains: ['via.placeholder.com'], // Allow external image domains
+    domains: ["via.placeholder.com"], // Allow external image domains
   },
-  webpack(config: { externals: any[]; }, { isServer }: any) {
+  webpack(config: { externals: any[] }, { isServer }: any) {
     if (isServer) {
       // Fix for SSR issue with certain modules
-      config.externals = ['@ant-design/icons-svg', ...config.externals];
+      config.externals = ["@ant-design/icons-svg", ...config.externals];
     }
 
     return config;

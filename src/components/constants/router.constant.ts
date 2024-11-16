@@ -10,4 +10,8 @@ export const routerNames = {
   RABBIT: "/rabbit",
   TURTLE: "/turtle",
   OTHER: "/other",
+  CAREER: "/career",
+  HISTORY: "/history",
+  ORGANIZATION: "/organization",
+  INTRODUCTION: "/introduction", 
 };
