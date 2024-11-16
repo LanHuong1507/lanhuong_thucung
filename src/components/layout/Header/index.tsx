@@ -27,9 +27,23 @@ const PhoneOutlined = dynamic(() => import("@ant-design/icons/PhoneOutlined"), {
 const LoginOutlined = dynamic(() => import("@ant-design/icons/LoginOutlined"), {
   ssr: false,
 });
-const CaretDownOutlined = dynamic(
-  () => import("@ant-design/icons/CaretDownOutlined"),
-  { ssr: false },
+const HistoryOutlined = dynamic(
+  () => import("@ant-design/icons/HistoryOutlined"),
+  {
+    ssr: false,
+  },
+);
+const OrderedListOutlined = dynamic(
+  () => import("@ant-design/icons/OrderedListOutlined"),
+  {
+    ssr: false,
+  },
+);
+const CarryOutFilled = dynamic(
+  () => import("@ant-design/icons/CarryOutFilled"),
+  {
+    ssr: false,
+  },
 );
 import { Button, Dropdown, Input, Menu, Modal } from "antd";
 
@@ -430,10 +444,28 @@ const Header = () => {
                       icon: UserOutlined,
                     },
                     {
+                      name: "History",
+                      tab: "history",
+                      routerName: routerNames.HISTORY,
+                      icon: HistoryOutlined,
+                    },
+                    {
+                      name: "Organization",
+                      tab: "organization",
+                      routerName: routerNames.ORGANIZATION,
+                      icon: OrderedListOutlined,
+                    },
+                    {
+                      name: "Introduction",
+                      tab: "introduction",
+                      routerName: routerNames.INTRODUCTION,
+                      icon: HomeOutlined,
+                    },
+                    {
                       name: "Career",
                       tab: "career",
                       routerName: routerNames.CAREER,
-                      icon: CaretDownOutlined,
+                      icon: CarryOutFilled,
                     },
                   ].map((item) => (
                     <Link
