@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -29,16 +29,14 @@ const LoginOutlined = dynamic(() => import("@ant-design/icons/LoginOutlined"), {
 });
 const CaretDownOutlined = dynamic(
   () => import("@ant-design/icons/CaretDownOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
-import { Button, Dropdown, Input, Menu, Modal, Select } from "antd";
+import { Button, Dropdown, Input, Menu, Modal } from "antd";
 
 import "@flaticon/flaticon-uicons/css/all/all.css";
 import Logo from "../../../assets/images/logo.jpg";
 import { routerNames } from "@/components/constants/router.constant";
 import dynamic from "next/dynamic";
-
-const { Option } = Select;
 
 const Header = () => {
   const [showPromo, setShowPromo] = useState(true);

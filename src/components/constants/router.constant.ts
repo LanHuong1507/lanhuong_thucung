@@ -13,5 +13,5 @@ export const routerNames = {
   CAREER: "/career",
   HISTORY: "/history",
   ORGANIZATION: "/organization",
-  INTRODUCTION: "/introduction", 
+  INTRODUCTION: "/introduction",
 };
