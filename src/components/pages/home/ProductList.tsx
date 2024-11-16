@@ -3,14 +3,10 @@ import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-
-// Dynamic import for the FolderFilled icon
 const FolderFilled = dynamic(
   () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
   { ssr: false },
 );
-
-// Define a Product interface for type safety
 interface Product {
   id: number;
   name: string;
@@ -21,10 +17,8 @@ interface Product {
   rating: number;
   stock: number;
 }
-
-// Shuffle function for products
 const shuffleArray = (array: Product[]): Product[] => {
-  const shuffledArray = [...array]; // Declare as const since it's not reassigned
+  const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
@@ -35,24 +29,19 @@ const shuffleArray = (array: Product[]): Product[] => {
 const ProductList = ({ limit = 10 }) => {
   const products = useSelector(
     (state: { products: Product[] }) => state.products,
-  ); // Use Product type
+  );
   const [currentPage, setCurrentPage] = useState(0);
-  const [isClient, setIsClient] = useState(false); // Track if it's client-side
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // Ensure we only shuffle and handle client-specific logic on the client-side
     setIsClient(true);
   }, []);
-
-  // Shuffle the products and take only the first 'limit' number
   const shuffledProducts = useMemo(() => {
     if (isClient) {
       return shuffleArray(products).slice(0, limit);
     }
-    return products.slice(0, limit); // On server, just use the first 'limit' products
+    return products.slice(0, limit);
   }, [products, limit, isClient]);
-
-  // Chunk products for pagination
   const chunkedProducts = useMemo(() => {
     const result: Product[][] = [];
     for (let i = 0; i < shuffledProducts.length; i += 5) {
@@ -60,8 +49,6 @@ const ProductList = ({ limit = 10 }) => {
     }
     return result;
   }, [shuffledProducts]);
-
-  // Pagination functions
   const nextPage = () => {
     if (currentPage < chunkedProducts.length - 1) {
       setCurrentPage(currentPage + 1);
@@ -78,7 +65,7 @@ const ProductList = ({ limit = 10 }) => {
     <div className="py-4 w-full">
       <div className="flex justify-between items-center mb-6 px-4 lg:px-6">
         <h2 className="text-lg md:text-2xl font-bold text-center">
-          Featured Products
+          Các sản phẩm của chúng tôi
         </h2>
         <div className="flex">
           <Button
@@ -105,7 +92,7 @@ const ProductList = ({ limit = 10 }) => {
             hoverable
             cover={
               <Image
-                alt={product.name} // Ensure consistent alt prop
+                alt={product.name}
                 src={product.image}
                 layout="responsive"
                 width={500}

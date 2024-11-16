@@ -19,10 +19,6 @@ const TwitterCircleFilled = dynamic(
   () => import("@ant-design/icons/TwitterCircleFilled"),
   { ssr: false },
 );
-const PinterestFilled = dynamic(
-  () => import("@ant-design/icons/PinterestFilled"),
-  { ssr: false },
-);
 const YoutubeFilled = dynamic(() => import("@ant-design/icons/YoutubeFilled"), {
   ssr: false,
 });
@@ -42,6 +38,8 @@ import MasterCard from "../../../assets/images/mastercard.png";
 import Visa from "../../../assets/images/visa.jpg";
 import Logo from "../../../assets/images/logo.jpg";
 import dynamic from "next/dynamic";
+import { routerNames } from "@/components/constants/router.constant";
+import { LinkedinFilled } from "@ant-design/icons";
 
 const Footer = () => {
   return (
@@ -86,36 +84,66 @@ const Footer = () => {
               <div className="text-left">
                 <p className="text-sm font-semibold">Follow us</p>
                 <div className="mt-1 flex space-x-2">
-                  <button
-                    type="button"
-                    className="text-lg text-gray-300 hover:text-white"
+                  <a
+                    href="https://www.facebook.com/PetCommunityCenter"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <FacebookFilled />
-                  </button>
-                  <button
-                    type="button"
-                    className="text-lg text-gray-300 hover:text-white"
+                    <button
+                      type="button"
+                      className="text-lg text-gray-300 hover:text-white"
+                    >
+                      <FacebookFilled />
+                    </button>
+                  </a>
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <TwitterCircleFilled />
-                  </button>
-                  <button
-                    type="button"
-                    className="text-lg text-gray-300 hover:text-white"
+                    <button
+                      type="button"
+                      className="text-lg text-gray-300 hover:text-white"
+                    >
+                      <TwitterCircleFilled />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/petcommunitycenter/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <InstagramFilled />
-                  </button>
-                  <button
-                    type="button"
-                    className="text-lg text-gray-300 hover:text-white"
+                    <button
+                      type="button"
+                      className="text-lg text-gray-300 hover:text-white"
+                    >
+                      <InstagramFilled />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F18656628%2Fadmin%2Ffeed%2Fposts%2F"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <PinterestFilled />
-                  </button>
-                  <button
-                    type="button"
-                    className="text-lg text-gray-300 hover:text-white"
+                    <button
+                      type="button"
+                      className="text-lg text-gray-300 hover:text-white"
+                    >
+                      <LinkedinFilled />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@petcommunitycenter1098"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <YoutubeFilled />
-                  </button>
+                    <button
+                      type="button"
+                      className="text-lg text-gray-300 hover:text-white"
+                    >
+                      <YoutubeFilled />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -261,7 +289,7 @@ const Footer = () => {
             </h5>
             <ul className="text-start lg:text-center">
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href={routerNames.ABOUT} className="hover:text-white">
                   About Us
                 </Link>
               </li>
