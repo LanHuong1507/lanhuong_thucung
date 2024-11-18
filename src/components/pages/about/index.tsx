@@ -17,7 +17,7 @@ const { Title, Paragraph } = Typography;
 const About = () => {
   return (
     <Content className="bg-gray-50 py-2">
-      <div className="relative w-full h-80 bg-blue-100 overflow-hidden">
+      <header className="relative w-full h-80 bg-blue-100 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700 opacity-70"></div>{" "}
         <div className="absolute inset-0 flex items-center justify-center transition-transform duration-700 ease-out hover:scale-105 hover:opacity-90">
           <Title
@@ -27,8 +27,8 @@ const About = () => {
             Về Chúng Tôi
           </Title>
         </div>
-      </div>
-      <div className="container mx-auto px-6 py-16">
+      </header>
+      <main className="container mx-auto px-6 py-16">
         <Row gutter={[16, 16]}>
           <Col xs={24} md={12}>
             <Title level={3} className="text-3xl text-gray-800">
@@ -71,8 +71,8 @@ const About = () => {
             />
           </Col>
         </Row>
-      </div>
-      <div className="bg-gray-100 py-16 relative">
+      </main>
+      <section className="bg-gray-100 py-16 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-200 to-white opacity-30 z-0"></div>
         <div className="absolute inset-0 bg-[url('/path/to/your-pattern.png')] bg-cover opacity-20 z-0"></div>{" "}
         <div className="container mx-auto px-6 relative z-10">
@@ -116,8 +116,8 @@ const About = () => {
             </Col>
           </Row>
         </div>
-      </div>
-      <div className="bg-white py-16">
+      </section>
+      <section className="bg-white py-16">
         <div className="container mx-auto px-6">
           <Title level={3} className="text-3xl text-center mb-12">
             Giá Trị Cốt Lõi
@@ -197,11 +197,11 @@ const About = () => {
             </Col>
           </Row>
         </div>
-      </div>
+      </section>
       <section>
         <ProductList />
       </section>
-      <div className="bg-white py-16">
+      <footer className="bg-white py-16">
         <div className="container mx-auto px-6 py-16">
           <Row gutter={[16, 16]}>
             <Col xs={24} md={12}>
@@ -254,7 +254,7 @@ const About = () => {
             </Col>
           </Row>
         </div>
-      </div>
+      </footer>
     </Content>
   );
 };

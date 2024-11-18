@@ -41,9 +41,9 @@ import { LinkedinFilled } from "@ant-design/icons";
 const Footer = () => {
   return (
     <footer className="bg-blue-900 pb-5 pt-10 text-gray-300 w-full">
-      <div className="container px-4">
-        <div className="mb-10 flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
-          <div className="flex items-center space-x-4">
+      <main className="container px-4">
+        <section className="mb-10 flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+          <article className="flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-2xl font-bold">
               <Image
                 src={Logo}
@@ -54,32 +54,32 @@ const Footer = () => {
               />
               <span className="ml-4">Lan Huong</span>
             </div>
-          </div>
-          <div className="flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:space-x-8 lg:space-y-0">
-            <div className="flex items-start space-x-2">
+          </article>
+          <main className="flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:space-x-8 lg:space-y-0">
+            <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
                 <PhoneOutlined className="text-2xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Hotline Order</p>
+                <p className="text-sm font-semibold">Hotline đặt hàng</p>
                 <p className="text-lg font-bold">070 393 5114</p>
               </div>
-            </div>
-            <div className="flex items-start space-x-2">
+            </article>
+            <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
                 <MailOutlined className="text-2xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Email us</p>
+                <p className="text-sm font-semibold">Nhắn tin cho chúng tôi</p>
                 <p className="text-md font-bold">phuonghuong150702@gmail.com</p>
               </div>
-            </div>
-            <div className="flex items-start space-x-2">
+            </article>
+            <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
                 <LinkOutlined className="text-2xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Follow us</p>
+                <p className="text-sm font-semibold">Theo dõi chúng tôi</p>
                 <div className="mt-1 flex space-x-2">
                   <a
                     href="https://www.facebook.com/PetCommunityCenter"
@@ -143,11 +143,11 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          <div>
+            </article>
+          </main>
+        </section>
+        <main className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               CHÓ
             </h5>
@@ -178,9 +178,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </section>
 
-          <div>
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               MÈO
             </h5>
@@ -211,8 +211,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </section>
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               CÁC THÚ CƯNG KHÁC
             </h5>
@@ -243,8 +243,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </section>
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               CÁC LIÊN KẾT HỮU ÍCH
             </h5>
@@ -265,8 +265,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </section>
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               CÔNG TY CHÚNG TÔI
             </h5>
@@ -277,8 +277,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
-                  Dịch Vụ Của Chúng Tôi
+                <Link
+                  href={routerNames.INTRODUCTION}
+                  className="hover:text-white"
+                >
+                  Gioi thiệu
                 </Link>
               </li>
               <li>
@@ -292,8 +295,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </section>
+          <section>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
               CHÍNH SÁCH
             </h5>
@@ -319,9 +322,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="mb-10 rounded-lg bg-gradient-to-r from-red-600 to-yellow-600 p-5 text-center text-white lg:ml-8">
+          </section>
+        </main>
+        <main className="mb-10 rounded-lg bg-gradient-to-r from-red-600 to-yellow-600 p-5 text-center text-white lg:ml-8">
           <div className="flex items-center justify-center">
             <div className="flex-1">
               <h5 className="mb-2 text-lg font-semibold">
@@ -353,9 +356,8 @@ const Footer = () => {
               />
             </div>
           </div>
-        </div>
-
-        <div className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-sm lg:flex-row lg:justify-between">
+        </main>
+        <footer className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-sm lg:flex-row lg:justify-between">
           <p className="text-center md:text-left">
             &copy; 2024 <span className="font-semibold">Lan Hương</span>. Mọi
             quyền đã được bảo hộ.
@@ -380,8 +382,8 @@ const Footer = () => {
               Điều khoản
             </button>
           </div>
-        </div>
-      </div>
+        </footer>
+      </main>
     </footer>
   );
 };

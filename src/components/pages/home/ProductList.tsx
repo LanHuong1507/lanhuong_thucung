@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const FolderFilled = dynamic(
   () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
-  { ssr: false }
+  { ssr: false },
 );
 
 interface Product {
@@ -32,7 +32,7 @@ const shuffleArray = (array: Product[]): Product[] => {
 
 const ProductList = ({ limit = 10, showBestSeller = false }) => {
   const products = useSelector(
-    (state: { products: Product[] }) => state.products
+    (state: { products: Product[] }) => state.products,
   );
   const [currentPage, setCurrentPage] = useState(0);
   const filteredProducts = useMemo(() => {

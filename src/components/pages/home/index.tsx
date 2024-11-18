@@ -16,13 +16,15 @@ import ProductList from "./ProductList";
 const Home = () => {
   return (
     <main>
-      <div className="flex items-center justify-center">
+      <section className="flex items-center justify-center">
         <ProductCarousel />
-      </div>
+      </section>
+
       <section>
         <ProductList showBestSeller={true} />
       </section>
-      <div className="px-4 py-10">
+
+      <section className="px-4 py-10">
         <h2 className="text-xl font-semibold text-center mb-4">
           MUA SẮM THEO THÚ CƯNG CỦA BẠN
         </h2>
@@ -70,13 +72,13 @@ const Home = () => {
             <span className="mt-2 text-white text-xl">KHÁC</span>
           </Link>
         </div>
-      </div>
+      </section>
+
       <section>
         <ProductList showBestSeller={false} />
       </section>
-
-      <div className="flex flex-col md:flex-row items-center bg-gray-100 p-10">
-        <div className="flex-1 space-y-4 text-start md:text-left">
+      <section className="flex flex-col md:flex-row items-center bg-gray-100 p-10">
+        <article className="flex-1 space-y-4 text-start md:text-left">
           <h1 className="text-4xl font-bold text-gray-800">
             Chúng tôi quan tâm đến sự phát triển khỏe mạnh và chuẩn hóa của thú
             cưng của bạn.
@@ -104,15 +106,14 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-4">
-            <p className="text-gray-700 leading-relaxed">
-              Sản phẩm của chúng tôi không chỉ cung cấp dinh dưỡng tối ưu mà còn
-              giúp thú cưng của bạn luôn khỏe mạnh, vui vẻ và tràn đầy sức sống.
-              Với thành phần hoàn toàn tự nhiên, không chất bảo quản và được
-              phát triển bởi các chuyên gia hàng đầu, chúng tôi cam kết mang đến
-              chất lượng tốt nhất cho thú cưng của bạn.
-            </p>
-          </div>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            Sản phẩm của chúng tôi không chỉ cung cấp dinh dưỡng tối ưu mà còn
+            giúp thú cưng của bạn luôn khỏe mạnh, vui vẻ và tràn đầy sức sống.
+            Với thành phần hoàn toàn tự nhiên, không chất bảo quản và được phát
+            triển bởi các chuyên gia hàng đầu, chúng tôi cam kết mang đến chất
+            lượng tốt nhất cho thú cưng của bạn.
+          </p>
+
           <Link href={routerNames.ABOUT} passHref>
             <Button
               type="primary"
@@ -122,8 +123,9 @@ const Home = () => {
               <i className="fi fi-sr-arrow-right text-white text-lg pt-1"></i>
             </Button>
           </Link>
-        </div>
-        <div className="flex-1 mt-4 lg:flex justify-end">
+        </article>
+
+        <aside className="flex-1 mt-4 lg:flex justify-end">
           <Image
             src={PeoDog}
             alt="Chú chó đáng yêu"
@@ -131,8 +133,8 @@ const Home = () => {
             width={400}
             height={400}
           />
-        </div>
-      </div>
+        </aside>
+      </section>
     </main>
   );
 };
