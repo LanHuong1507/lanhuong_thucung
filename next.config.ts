@@ -14,7 +14,7 @@ module.exports = withTM({
     esmExternals: false,
   },
   images: {
-    domains: ["via.placeholder.com"],
+    domains: ["via.placeholder.com","i.imgur.com","imgur.com"],
   },
   webpack(config: { externals: any[] }, { isServer }: any) {
     if (isServer) {

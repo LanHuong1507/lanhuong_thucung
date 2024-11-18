@@ -3,10 +3,12 @@ import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+
 const FolderFilled = dynamic(
   () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
-  { ssr: false },
+  { ssr: false }
 );
+
 interface Product {
   id: number;
   name: string;
@@ -16,7 +18,9 @@ interface Product {
   price: number;
   rating: number;
   stock: number;
+  best_seller: boolean; // Added best_seller field
 }
+
 const shuffleArray = (array: Product[]): Product[] => {
   const shuffledArray = [...array];
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -26,9 +30,9 @@ const shuffleArray = (array: Product[]): Product[] => {
   return shuffledArray;
 };
 
-const ProductList = ({ limit = 10 }) => {
+const ProductList = ({ limit = 10, showBestSeller = false }) => {
   const products = useSelector(
-    (state: { products: Product[] }) => state.products,
+    (state: { products: Product[] }) => state.products
   );
   const [currentPage, setCurrentPage] = useState(0);
   const [isClient, setIsClient] = useState(false);
@@ -36,19 +40,23 @@ const ProductList = ({ limit = 10 }) => {
   useEffect(() => {
     setIsClient(true);
   }, []);
-  const shuffledProducts = useMemo(() => {
-    if (isClient) {
-      return shuffleArray(products).slice(0, limit);
+
+  // Filter best seller products or shuffle all products based on the prop showBestSeller
+  const filteredProducts = useMemo(() => {
+    if (showBestSeller) {
+      return products.filter((product) => product.best_seller); // Only best sellers
     }
-    return products.slice(0, limit);
-  }, [products, limit, isClient]);
+    return shuffleArray(products).slice(0, limit); // Shuffle for random selection
+  }, [products, showBestSeller, limit]);
+
   const chunkedProducts = useMemo(() => {
     const result: Product[][] = [];
-    for (let i = 0; i < shuffledProducts.length; i += 5) {
-      result.push(shuffledProducts.slice(i, i + 5));
+    for (let i = 0; i < filteredProducts.length; i += 5) {
+      result.push(filteredProducts.slice(i, i + 5));
     }
     return result;
-  }, [shuffledProducts]);
+  }, [filteredProducts]);
+
   const nextPage = () => {
     if (currentPage < chunkedProducts.length - 1) {
       setCurrentPage(currentPage + 1);
@@ -65,7 +73,7 @@ const ProductList = ({ limit = 10 }) => {
     <div className="py-4 w-full">
       <div className="flex justify-between items-center mb-6 px-4 lg:px-6">
         <h2 className="text-md md:text-2xl font-bold text-center">
-       CÁC SẢN PHẨM
+          {showBestSeller ? "SẢN PHẨM BÁN CHẠY" : "SẢN PHẨM NỔI BẬT"}
         </h2>
         <div className="flex">
           <Button
@@ -110,7 +118,11 @@ const ProductList = ({ limit = 10 }) => {
             <Card.Meta title={product.name} description={product.description} />
             <div className="mt-4">
               <p className="text-lg font-bold text-orange-500">
-                ${product.price}
+                {new Intl.NumberFormat("vi-VN", {
+                  minimumFractionDigits: 3,
+                  maximumFractionDigits: 3,
+                }).format(product.price)}{" "}
+                VNĐ
               </p>
               <div className="flex items-center mt-2">
                 <Rate disabled defaultValue={product.rating} />

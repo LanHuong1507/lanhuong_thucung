@@ -19,7 +19,9 @@ const Home = () => {
       <div className="flex items-center justify-center">
         <ProductCarousel />
       </div>
-
+      <section>
+        <ProductList showBestSeller={true}/>
+      </section>
       <div className="px-4 py-10">
         <h2 className="text-xl font-semibold text-center mb-4">
           MUA SẮM THEO THÚ CƯNG CỦA BẠN
@@ -70,7 +72,7 @@ const Home = () => {
         </div>
       </div>
       <section>
-        <ProductList />
+        <ProductList showBestSeller={false}/>
       </section>
 
       <div className="flex flex-col md:flex-row items-center bg-gray-100 p-10">
@@ -121,7 +123,6 @@ const Home = () => {
             </Button>
           </Link>
         </div>
-        {/* Hình ảnh bên phải */}
         <div className="flex-1 mt-4 lg:flex justify-end">
           <Image
             src={PeoDog}
