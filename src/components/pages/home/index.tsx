@@ -5,7 +5,7 @@ import PeoDog from "../../../assets/images/pd.jpg";
 import { Button } from "antd";
 import { routerNames } from "@/components/constants/router.constant";
 import {
-  CheckCircleOutlined,
+  EnvironmentOutlined,
   HeartOutlined,
   SmileOutlined,
   StarOutlined,
@@ -81,7 +81,7 @@ const Home = () => {
           </h1>
           <div className="flex flex-col justify-center lg:justify-start space-y-4 md:space-x-6 mt-6">
             <div className="lg:pl-6 flex items-center space-x-2 text-gray-600">
-              <CheckCircleOutlined className="text-red-500 text-lg" />
+              <EnvironmentOutlined className="text-red-500 text-lg" />
               <span className="text-lg">100% Tự Nhiên</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-600">

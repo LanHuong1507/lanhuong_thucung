@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Layout>
       <Head>
-        <title>About Us</title>
+        <title>Về Chúng Tôi</title>
       </Head>
       <AboutComponent />
     </Layout>
