@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -31,19 +31,19 @@ const HistoryOutlined = dynamic(
   () => import("@ant-design/icons/HistoryOutlined"),
   {
     ssr: false,
-  }
+  },
 );
 const OrderedListOutlined = dynamic(
   () => import("@ant-design/icons/OrderedListOutlined"),
   {
     ssr: false,
-  }
+  },
 );
 const CarryOutFilled = dynamic(
   () => import("@ant-design/icons/CarryOutFilled"),
   {
     ssr: false,
-  }
+  },
 );
 import { Button, Dropdown, Input, Menu, Modal } from "antd";
 

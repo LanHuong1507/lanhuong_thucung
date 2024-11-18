@@ -9,15 +9,15 @@ const LinkOutlined = dynamic(() => import("@ant-design/icons/LinkOutlined"), {
 });
 const FacebookFilled = dynamic(
   () => import("@ant-design/icons/FacebookFilled"),
-  { ssr: false }
+  { ssr: false },
 );
 const InstagramFilled = dynamic(
   () => import("@ant-design/icons/InstagramFilled"),
-  { ssr: false }
+  { ssr: false },
 );
 const TwitterCircleFilled = dynamic(
   () => import("@ant-design/icons/TwitterCircleFilled"),
-  { ssr: false }
+  { ssr: false },
 );
 const YoutubeFilled = dynamic(() => import("@ant-design/icons/YoutubeFilled"), {
   ssr: false,
@@ -214,7 +214,7 @@ const Footer = () => {
           </div>
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-             CÁC THÚ CƯNG KHÁC
+              CÁC THÚ CƯNG KHÁC
             </h5>
             <ul className="text-start lg:text-center">
               <li>
@@ -229,12 +229,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Dụng cụ chăm sóc 
+                  Dụng cụ chăm sóc
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Phụ kiện 
+                  Phụ kiện
                 </Link>
               </li>
               <li>
@@ -295,7 +295,7 @@ const Footer = () => {
           </div>
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-             CHÍNH SÁCH
+              CHÍNH SÁCH
             </h5>
             <ul className="text-start lg:text-center">
               <li>

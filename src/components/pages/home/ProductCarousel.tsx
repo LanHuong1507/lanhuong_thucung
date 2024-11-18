@@ -73,13 +73,16 @@ const ProductCarousel = () => {
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-800 text-xl" /> Dễ dàng chuẩn bị
+                <CheckCircleOutlined className="text-pink-800 text-xl" /> Dễ
+                dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
+                tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ
+                miễn dịch
               </span>
             </div>
             <motion.p
@@ -131,13 +134,16 @@ const ProductCarousel = () => {
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ dàng chuẩn bị
+                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ
+                dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
+                tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ
+                miễn dịch
               </span>
             </div>
             <motion.p
@@ -189,13 +195,16 @@ const ProductCarousel = () => {
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ dàng chuẩn bị
+                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ
+                dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
+                tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ
+                miễn dịch
               </span>
             </div>
             <motion.p

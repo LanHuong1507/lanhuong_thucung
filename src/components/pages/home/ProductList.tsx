@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import dynamic from "next/dynamic";
@@ -18,7 +18,7 @@ interface Product {
   price: number;
   rating: number;
   stock: number;
-  best_seller: boolean; // Added best_seller field
+  best_seller: boolean;
 }
 
 const shuffleArray = (array: Product[]): Product[] => {
@@ -35,18 +35,11 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
     (state: { products: Product[] }) => state.products
   );
   const [currentPage, setCurrentPage] = useState(0);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  // Filter best seller products or shuffle all products based on the prop showBestSeller
   const filteredProducts = useMemo(() => {
     if (showBestSeller) {
-      return products.filter((product) => product.best_seller); // Only best sellers
+      return products.filter((product) => product.best_seller);
     }
-    return shuffleArray(products).slice(0, limit); // Shuffle for random selection
+    return shuffleArray(products).slice(0, limit);
   }, [products, showBestSeller, limit]);
 
   const chunkedProducts = useMemo(() => {
