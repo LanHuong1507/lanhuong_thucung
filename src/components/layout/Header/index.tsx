@@ -444,8 +444,8 @@ const Header = () => {
                     },
                     {
                       name: "Sản phẩm",
-                      tab: "shop",
-                      routerName: routerNames.SHOP,
+                      tab: "product",
+                      routerName: routerNames.PRODUCT,
                       icon: ShoppingCartOutlined,
                     },
                     {
@@ -519,7 +519,7 @@ const Header = () => {
             <Link href={routerNames.HOME} className="hover:underline">
               Trang chủ
             </Link>
-            <Link href={routerNames.SHOP} className="hover:underline">
+            <Link href={routerNames.PRODUCT} className="hover:underline">
               Sản phẩm
             </Link>
             <Link href={routerNames.BLOG} className="hover:underline">

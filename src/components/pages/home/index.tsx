@@ -12,6 +12,7 @@ import {
   ThunderboltOutlined,
 } from "@ant-design/icons";
 import ProductList from "./ProductList";
+import BlogList from "./BlogList";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
         <ProductCarousel />
       </section>
 
-      <section>
+      <section className="py-4">
         <ProductList showBestSeller={true} />
       </section>
 
@@ -74,8 +75,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="py-4">
         <ProductList showBestSeller={false} />
+      </section>
+      <section className="py-4">
+        <BlogList />
       </section>
       <section className="flex flex-col md:flex-row items-center bg-gray-100 p-10">
         <article className="flex-1 space-y-4 text-start md:text-left">

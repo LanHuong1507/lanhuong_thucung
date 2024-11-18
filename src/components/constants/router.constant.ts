@@ -1,6 +1,6 @@
 export const routerNames = {
   HOME: "/",
-  SHOP: "/shop",
+  PRODUCT: "/product",
   BLOG: "/blog",
   CONTACT: "/contact",
   ABOUT: "/about",

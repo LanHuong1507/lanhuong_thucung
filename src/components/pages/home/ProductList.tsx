@@ -122,11 +122,11 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
                 <span className="ml-2 text-gray-500">({product.rating}/5)</span>
               </div>
               <p className="text-sm text-gray-600 mt-2">
-                Stock: {product.stock} units left
+                Chỉ còn {product.stock} sản phẩm
               </p>
 
               <Button type="primary" className="mt-4 w-full">
-                Buy Now
+                Mua ngay
               </Button>
             </div>
           </Card>
