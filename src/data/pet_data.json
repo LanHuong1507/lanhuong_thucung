@@ -1,0 +1,114 @@
+{
+  "dogs": [
+    {
+      "id": 1,
+      "name": "Chihuahua",
+      "origin": "Mexico",
+      "size": "Small",
+      "temperament": ["Loyal", "Energetic", "Alert"],
+      "life_span": "12-20 years",
+      "weight_range": "1-3 kg",
+      "coat": "Short or Long",
+      "image": "https://i.imgur.com/Xn2iwCR.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Labrador Retriever",
+      "origin": "Canada",
+      "size": "Large",
+      "temperament": ["Friendly", "Gentle", "Intelligent"],
+      "life_span": "10-12 years",
+      "weight_range": "25-36 kg",
+      "coat": "Short",
+      "image": "https://i.imgur.com/o9TGCsq.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "German Shepherd",
+      "origin": "Germany",
+      "size": "Large",
+      "temperament": ["Courageous", "Confident", "Smart"],
+      "life_span": "9-13 years",
+      "weight_range": "22-40 kg",
+      "coat": "Medium",
+      "image": "https://i.imgur.com/9SxGyDC.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Bulldog",
+      "origin": "England",
+      "size": "Medium",
+      "temperament": ["Docile", "Stubborn", "Friendly"],
+      "life_span": "8-12 years",
+      "weight_range": "18-25 kg",
+      "coat": "Short",
+      "image": "https://i.imgur.com/nd6HIkL.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Poodle",
+      "origin": "Germany",
+      "size": "Small to Large",
+      "temperament": ["Active", "Intelligent", "Eager to Please"],
+      "life_span": "12-15 years",
+      "weight_range": "3-25 kg",
+      "coat": "Curly",
+      "image": "https://i.imgur.com/1X3ndCB.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Golden Retriever",
+      "origin": "Scotland",
+      "size": "Large",
+      "temperament": ["Friendly", "Reliable", "Intelligent"],
+      "life_span": "10-12 years",
+      "weight_range": "25-34 kg",
+      "coat": "Long and Wavy",
+      "image": "https://i.imgur.com/m5xNFRI.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Beagle",
+      "origin": "England",
+      "size": "Small to Medium",
+      "temperament": ["Curious", "Friendly", "Active"],
+      "life_span": "12-15 years",
+      "weight_range": "9-11 kg",
+      "coat": "Short",
+      "image": "https://i.imgur.com/DmPAV1q.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Dachshund",
+      "origin": "Germany",
+      "size": "Small",
+      "temperament": ["Courageous", "Curious", "Playful"],
+      "life_span": "12-16 years",
+      "weight_range": "4-5 kg",
+      "coat": "Short or Long",
+      "image": "https://i.imgur.com/pkz79hf.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Boxer",
+      "origin": "Germany",
+      "size": "Large",
+      "temperament": ["Energetic", "Loyal", "Playful"],
+      "life_span": "10-12 years",
+      "weight_range": "25-32 kg",
+      "coat": "Short",
+      "image": "https://i.imgur.com/dy5KwfB.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Siberian Husky",
+      "origin": "Siberia (Russia)",
+      "size": "Medium",
+      "temperament": ["Friendly", "Loyal", "Energetic"],
+      "life_span": "12-14 years",
+      "weight_range": "16-27 kg",
+      "coat": "Thick and Double",
+      "image": "https://i.imgur.com/XlOcHHT.jpeg"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
-
+import BackToTopButton from "./BacktoTop";
 import { ReactNode } from "react";
 
 const Layout = ({ children }: { children: ReactNode }) => {
@@ -9,6 +9,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <BackToTopButton />
     </div>
   );
 };

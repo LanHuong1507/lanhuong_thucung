@@ -4,6 +4,9 @@ import Image from "next/image";
 import logo from "../../../assets/images/logo.jpg";
 import shop1 from "../../../assets/images/shop.jpg";
 import shop2 from "../../../assets/images/shop2.jpg";
+import thithi from "../../../assets/images/thithipet.jpg";
+import chamsockhachhang from "../../../assets/images/chamsockhachhang.jpg";
+import chamsocthucung from "../../../assets/images/thucung.jpg";
 import {
   FacebookFilled,
   InstagramFilled,
@@ -18,18 +21,18 @@ import {
 const Introduction = () => {
   return (
     <main className="bg-gray-50 py-10 px-4">
-      <section className="max-w-6xl mx-auto">
+      <section className="max-w-full mx-auto">
         <header className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <Image
               src={logo}
               alt="Lan Hương Logo"
-              width={100}
-              height={100}
+              width={150}
+              height={150}
               className="rounded-full"
             />
           </div>
-          <h1 className="text-4xl font-bold text-gray-800">
+          <h1 className="text-6xl font-bold text-gray-800">
             Lan Hương - Thương hiệu số một chuyên cung cấp sản phẩm và dịch vụ
             cho thú cưng
           </h1>
@@ -42,7 +45,7 @@ const Introduction = () => {
           bordered={false}
           bodyStyle={{ padding: "20px" }}
         >
-          <article className="text-gray-700 text-lg leading-relaxed">
+          <article className="text-gray-700 text-xl leading-relaxed">
             <section className="flex flex-col md:flex-row items-center">
               <section className="md:w-2/3">
                 <p>
@@ -85,20 +88,88 @@ const Introduction = () => {
                     cưng của bạn.
                   </li>
                 </ul>
+                <h2 className="mt-6 font-bold text-xl text-gray-800">
+                  Đội ngũ của chúng tôi
+                </h2>
+                <p className="mt-3">
+                  Đội ngũ của Lan Hương gồm những nhân viên tận tâm và chuyên
+                  nghiệp, cùng với sự hỗ trợ quan trọng từ các đối tác chiến
+                  lược. Chúng tôi tự hào khi được liên kết với{" "}
+                  <strong>Bệnh Viện Thú Y ThiThi Pet</strong>, nơi có đội ngũ
+                  bác sĩ thú y giàu kinh nghiệm và chuyên môn cao, giúp chúng
+                  tôi cung cấp dịch vụ chăm sóc sức khỏe thú cưng hoàn hảo. Bạn
+                  có thể tìm hiểu thêm về bệnh viện qua website chính thức của
+                  họ tại
+                  <a
+                    href="https://thuythithi.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-600 underline"
+                  >
+                    {" "}
+                    ThiThi Pet
+                  </a>
+                  .
+                </p>
+                <div className="mt-4">
+                  <p className="font-semibold">
+                    Chúng tôi tự hào về đội ngũ của mình, gồm:
+                  </p>
+                  <ul className="list-disc list-inside mt-2">
+                    <li>
+                      Đội ngũ bác sĩ thú y từ{" "}
+                      <strong>Bệnh Viện Thú Y ThiThi Pet</strong>, giúp cung cấp
+                      dịch vụ chăm sóc sức khỏe và khám chữa bệnh cho thú cưng.
+                    </li>
+                    <li>
+                      Nhân viên tư vấn, hỗ trợ khách hàng nhiệt tình, giúp bạn
+                      chọn lựa các sản phẩm và dịch vụ phù hợp.
+                    </li>
+                    <li>
+                      Nhân viên bán hàng và giao nhận sản phẩm chuyên nghiệp,
+                      đảm bảo sự thuận tiện cho khách hàng.
+                    </li>
+                    <li>
+                      Đội ngũ chăm sóc thú cưng tận tâm, luôn đảm bảo sự thoải
+                      mái và an toàn cho thú cưng của bạn.
+                    </li>
+                  </ul>
+                </div>
               </section>
               <section className="md:w-1/3 mt-6 md:mt-0 md:pl-6">
                 <Image
                   src={shop1}
                   alt="Pet Care Illustration"
-                  width={300}
-                  height={300}
+                  width={350}
+                  height={350}
                   className="rounded-lg shadow-md"
                 />
                 <Image
                   src={shop2}
                   alt="Pet Care Illustration"
-                  width={300}
-                  height={300}
+                  width={350}
+                  height={350}
+                  className="rounded-lg shadow-md mt-4"
+                />
+                <Image
+                  src={thithi}
+                  alt="Pet Care Illustration"
+                  width={350}
+                  height={350}
+                  className="rounded-lg shadow-md mt-4"
+                />
+                <Image
+                  src={chamsockhachhang}
+                  alt="Pet Care Illustration"
+                  width={350}
+                  height={350}
+                  className="rounded-lg shadow-md mt-4"
+                />
+                <Image
+                  src={chamsocthucung}
+                  alt="Pet Care Illustration"
+                  width={350}
+                  height={350}
                   className="rounded-lg shadow-md mt-4"
                 />
               </section>
@@ -168,8 +239,8 @@ const Introduction = () => {
                     <PhoneOutlined className="text-2xl text-teal-900" />
                   </div>
                   <div className="text-left">
-                    <p className="text-sm font-semibold">Hotline Order</p>
-                    <p className="text-lg font-bold">070 393 5114</p>
+                    <p className="text-sm font-semibold">Call us</p>
+                    <p className="text-base font-bold">+84 123 456 789</p>
                   </div>
                 </article>
                 <article className="flex items-start space-x-2 mt-6 lg:mt-0">

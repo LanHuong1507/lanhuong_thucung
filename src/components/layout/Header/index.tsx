@@ -178,7 +178,7 @@ const Header = () => {
     </Menu>
   );
   return (
-    <header className="relative bg-blue-900 text-white">
+    <header className="bg-blue-900 text-white sticky top-0 z-50">
       {showPromo && (
         <div className="relative flex items-center justify-center bg-blue-900 py-2 text-sm text-yellow-400">
           <p>
