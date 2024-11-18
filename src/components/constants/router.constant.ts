@@ -9,6 +9,7 @@ export const routerNames = {
   FISH: "/fish",
   RABBIT: "/rabbit",
   TURTLE: "/turtle",
+  BIRD: "/bird",
   OTHER: "/other",
   CAREER: "/career",
   HISTORY: "/history",

@@ -64,8 +64,8 @@ const ProductList = ({ limit = 10 }) => {
   return (
     <div className="py-4 w-full">
       <div className="flex justify-between items-center mb-6 px-4 lg:px-6">
-        <h2 className="text-lg md:text-2xl font-bold text-center">
-          Các sản phẩm của chúng tôi
+        <h2 className="text-md md:text-2xl font-bold text-center">
+       CÁC SẢN PHẨM
         </h2>
         <div className="flex">
           <Button

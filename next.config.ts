@@ -4,21 +4,20 @@ const withTM = require("next-transpile-modules")([
   "rc-picker",
   "rc-input",
   "@ant-design/icons",
-  "@ant-design/icons-svg", // Transpile the icons SVG module as well
+  "@ant-design/icons-svg",
 ]);
 
 module.exports = withTM({
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    esmExternals: false, // Ensure ESM modules are handled properly
+    esmExternals: false,
   },
   images: {
-    domains: ["via.placeholder.com"], // Allow external image domains
+    domains: ["via.placeholder.com"],
   },
   webpack(config: { externals: any[] }, { isServer }: any) {
     if (isServer) {
-      // Fix for SSR issue with certain modules
       config.externals = ["@ant-design/icons-svg", ...config.externals];
     }
 

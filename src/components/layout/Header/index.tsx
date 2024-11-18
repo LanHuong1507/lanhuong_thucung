@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -31,19 +31,19 @@ const HistoryOutlined = dynamic(
   () => import("@ant-design/icons/HistoryOutlined"),
   {
     ssr: false,
-  },
+  }
 );
 const OrderedListOutlined = dynamic(
   () => import("@ant-design/icons/OrderedListOutlined"),
   {
     ssr: false,
-  },
+  }
 );
 const CarryOutFilled = dynamic(
   () => import("@ant-design/icons/CarryOutFilled"),
   {
     ssr: false,
-  },
+  }
 );
 import { Button, Dropdown, Input, Menu, Modal } from "antd";
 
@@ -80,7 +80,7 @@ const Header = () => {
         <Link href={routerNames.DOG} passHref>
           <span className="flex w-full justify-between">
             <i className="fi fi-ss-dog" />
-            <span className="ml-2">Dog</span>
+            <span className="ml-2">CHÓ</span>
           </span>
         </Link>
       </Menu.Item>
@@ -88,7 +88,7 @@ const Header = () => {
         <Link href={routerNames.CAT} passHref>
           <span className="flex justify-between">
             <i className="fi fi-sr-cat" />
-            <span className="ml-2">Cat</span>
+            <span className="ml-2">MÈO</span>
           </span>
         </Link>
       </Menu.Item>
@@ -96,7 +96,7 @@ const Header = () => {
         <Link href={routerNames.FISH} passHref>
           <span className="flex justify-between">
             <i className="fi fi-sr-dolphin" />
-            <span className="ml-2">Fish</span>
+            <span className="ml-2">CÁ</span>
           </span>
         </Link>
       </Menu.Item>
@@ -104,7 +104,7 @@ const Header = () => {
         <Link href={routerNames.RABBIT} passHref>
           <span className="flex justify-between">
             <i className="fi fi-sr-rabbit" />
-            <span className="ml-2">Rabbit</span>
+            <span className="ml-2">THỎ</span>
           </span>
         </Link>
       </Menu.Item>
@@ -112,7 +112,23 @@ const Header = () => {
         <Link href={routerNames.TURTLE} passHref>
           <span className="flex justify-between hover:text-2xl">
             <i className="fi fi-sr-turtle" />
-            <span className="ml-2">Turtle</span>
+            <span className="ml-2">RÙA</span>
+          </span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link href={routerNames.BIRD} passHref>
+          <span className="flex justify-between">
+            <i className="fi fi-sr-bird" />
+            <span className="ml-2">CHIM</span>
+          </span>
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link href={routerNames.OTHER} passHref>
+          <span className="flex justify-between">
+            <i className="fi fi-sr-steak" />
+            <span className="ml-2">KHÁC</span>
           </span>
         </Link>
       </Menu.Item>
@@ -122,17 +138,17 @@ const Header = () => {
     <Menu>
       <Menu.Item>
         <Link href="#" passHref>
-          <span>My Profile</span>
+          <span>Tài khoản</span>
         </Link>
       </Menu.Item>
       <Menu.Item>
         <Link href="#" passHref>
-          <span>Orders</span>
+          <span>Đơn hàng</span>
         </Link>
       </Menu.Item>
       <Menu.Item>
         <Link href="#" passHref>
-          <span>Logout</span>
+          <span>Đăng suất</span>
         </Link>
       </Menu.Item>
     </Menu>
@@ -141,22 +157,22 @@ const Header = () => {
     <Menu>
       <Menu.Item>
         <Link href={routerNames.ABOUT} passHref>
-          <span>About Us</span>
+          <span>Về chúng tôi</span>
         </Link>
       </Menu.Item>
       <Menu.Item>
         <Link href={routerNames.INTRODUCTION} passHref>
-          <span>Introduction</span>
+          <span>Giới Thiệu</span>
         </Link>
       </Menu.Item>
       <Menu.Item>
         <Link href={routerNames.HISTORY} passHref>
-          <span>History</span>
+          <span>Lịch sử hình thành</span>
         </Link>
       </Menu.Item>
       <Menu.Item>
         <Link href={routerNames.ORGANIZATION} passHref>
-          <span>Organization</span>
+          <span>Cơ cấu tổ chức</span>
         </Link>
       </Menu.Item>
     </Menu>
@@ -166,14 +182,14 @@ const Header = () => {
       {showPromo && (
         <div className="relative flex items-center justify-center bg-blue-900 py-2 text-sm text-yellow-400">
           <p>
-            Save <strong>up to 20%</strong> on all Toys & Accessories with
-            &quot;
-            <strong>la-hu-15-07</strong>&quot; code
+            Tiết kiệm <strong>đến 20%</strong> cho tất cả đồ chơi & phụ kiện với
+            mã &quot;
+            <strong>la-hu-15-07</strong>&quot;
           </p>
           <button
             onClick={() => setShowPromo(false)}
             className="absolute right-4 text-lg text-white"
-            aria-label="Close Promo Banner"
+            aria-label="Đóng banner khuyến mãi"
           >
             &times;
           </button>
@@ -240,19 +256,19 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden flex-grow justify-center lg:flex">
-          <div className="relative flex w-full max-w-lg">
+          <div className="relative flex w-full max-w-xl">
             <select className="h-full rounded-l-md bg-white pl-4 pr-6 text-black">
-              <option value="all">Select category</option>
-              <option value="dog">Dog</option>
-              <option value="cat">Cat</option>
-              <option value="fish">Fish</option>
-              <option value="bird">Bird</option>
-              <option value="rabbit">Rabbit</option>
-              <option value="turtle">Turtle</option>
+              <option value="all">Danh mục sản phẩm</option>
+              <option value="dog">Chó</option>
+              <option value="cat">Mèo</option>
+              <option value="fish">Cá</option>
+              <option value="bird">Chim</option>
+              <option value="rabbit">Thỏ</option>
+              <option value="turtle">Rùa</option>
             </select>
             <input
               type="text"
-              placeholder="Enter a keyword or product SKU"
+              placeholder="Tìm theo sản phẩm hoặc từ khóa"
               className="w-full rounded-r-md bg-white px-6 py-2 text-black focus:outline-none"
             />
             <Button className="absolute right-2 top-1/2 -translate-y-1/2 transform text-black">
@@ -270,7 +286,7 @@ const Header = () => {
               </span>
             </button>
           </div>
-          <span className="ml-2 text-lg font-medium">Shopping Cart</span>
+          <span className="ml-2 text+sm">Gio Hàng</span>
           <div className="relative">
             <Dropdown
               overlay={userMenu}
@@ -279,7 +295,7 @@ const Header = () => {
             >
               <button className="ml-6 flex items-center text-xl text-white">
                 <UserOutlined className="mr-2" />
-                <span className="text-sm">My account</span>
+                <span className="text-sm">Tài Khoản</span>
               </button>
             </Dropdown>
           </div>
@@ -299,15 +315,14 @@ const Header = () => {
           menuOpen ? "translate-x-0" : "-translate-x-full"
         } z-50 shadow-lg transition-transform duration-300 ease-in-out`}
       >
-        <div className="flex flex-row justify-between space-x-2 bg-blue-900 p-4 text-white">
+        <div className="flex flex-row justify-between bg-blue-900 p-4 text-white">
           <span
             onClick={() => handleTabClick("menu")}
             className={`flex cursor-pointer flex-col items-center p-3 text-lg font-semibold ${
               activeTab === "menu" ? "rounded-lg bg-white text-black" : ""
             }`}
           >
-            <MenuOutlined className="text-2xl" />
-            Menu
+            <MenuOutlined className="text-4xl" />
           </span>
 
           <span
@@ -316,8 +331,7 @@ const Header = () => {
               activeTab === "all" ? "rounded-lg bg-white text-black" : ""
             }`}
           >
-            <ShoppingCartOutlined className="text-2xl" />
-            Shop
+            <ShoppingCartOutlined className="text-4xl" />
           </span>
 
           <span
@@ -326,48 +340,55 @@ const Header = () => {
               activeTab === "user" ? "rounded-lg bg-white text-black" : ""
             }`}
           >
-            <UserOutlined className="text-2xl" />
-            Account
+            <UserOutlined className="text-4xl" />
           </span>
         </div>
 
         {showCategories ? (
           <>
-            <h3 className="py-2 text-center text-lg font-bold">Shop By Pet</h3>
+            <h3 className="py-2 text-center text-lg font-bold">
+              Mua sắm theo thú cưng
+            </h3>
             <nav className="grid grid-cols-2 items-center gap-4 p-6">
               {[
                 {
-                  name: "Dog",
+                  name: "Chó",
                   iconClass: "fi fi-ss-dog",
                   tab: "dog",
                   router: routerNames.DOG,
                 },
                 {
-                  name: "Fish",
+                  name: "Cá",
                   iconClass: "fi fi-sr-dolphin",
                   tab: "fish",
                   router: routerNames.FISH,
                 },
                 {
-                  name: "Cat",
+                  name: "Mèo",
                   iconClass: "fi fi-sr-cat",
                   tab: "cat",
                   router: routerNames.CAT,
                 },
                 {
-                  name: "Rabbit",
+                  name: "Thỏ",
                   iconClass: "fi fi-sr-rabbit",
                   tab: "rabbit",
                   router: routerNames.RABBIT,
                 },
                 {
-                  name: "Turtle",
+                  name: "Rùa",
                   iconClass: "fi fi-sr-turtle",
                   tab: "turtle",
                   router: routerNames.TURTLE,
                 },
                 {
-                  name: "Other",
+                  name: "Chim",
+                  iconClass: "fi fi-sr-bird",
+                  tab: "bird",
+                  router: routerNames.BIRD,
+                },
+                {
+                  name: "Khác",
                   iconClass: "fi fi-sr-steak",
                   tab: "other",
                   router: routerNames.OTHER,
@@ -377,9 +398,7 @@ const Header = () => {
                   href="#"
                   key={item.tab}
                   className={`flex h-20 w-20 flex-col items-center justify-center rounded-3xl text-lg text-black transition hover:bg-blue-500 hover:text-white ${
-                    activeTab === item.tab
-                      ? "bg-gray-200 underline"
-                      : "bg-gray-100"
+                    activeTab === item.tab ? "bg-gray-200" : "bg-gray-100"
                   }`}
                   onClick={() => handleTabClick(item.tab)}
                 >
@@ -394,9 +413,13 @@ const Header = () => {
             <nav className="flex flex-col space-y-2">
               {activeTab === "user" ? (
                 [
-                  { name: "Profile", tab: "profile", icon: UserOutlined },
-                  { name: "Orders", tab: "orders", icon: ShoppingCartOutlined },
-                  { name: "Logout", tab: "logout", icon: LoginOutlined },
+                  { name: "Tài Khoản", tab: "profile", icon: UserOutlined },
+                  {
+                    name: "Đơn hàng",
+                    tab: "orders",
+                    icon: ShoppingCartOutlined,
+                  },
+                  { name: "Đăng xuất", tab: "logout", icon: LoginOutlined },
                 ].map((item) => (
                   <a
                     href="#"
@@ -414,13 +437,13 @@ const Header = () => {
                 <>
                   {[
                     {
-                      name: "Home",
+                      name: "Trang chủ",
                       tab: "home",
                       routerName: routerNames.HOME,
                       icon: HomeOutlined,
                     },
                     {
-                      name: "Shop",
+                      name: "Sản phẩm",
                       tab: "shop",
                       routerName: routerNames.SHOP,
                       icon: ShoppingCartOutlined,
@@ -432,37 +455,37 @@ const Header = () => {
                       icon: BookOutlined,
                     },
                     {
-                      name: "Contact",
+                      name: "Liên hệ",
                       tab: "contact",
                       routerName: routerNames.CONTACT,
                       icon: PhoneOutlined,
                     },
                     {
-                      name: "About",
+                      name: "Về chúng tôi",
                       tab: "about",
                       routerName: routerNames.ABOUT,
                       icon: UserOutlined,
                     },
                     {
-                      name: "History",
+                      name: "Lịch sử hình thành",
                       tab: "history",
                       routerName: routerNames.HISTORY,
                       icon: HistoryOutlined,
                     },
                     {
-                      name: "Organization",
+                      name: "Cơ cấu tổ chức",
                       tab: "organization",
                       routerName: routerNames.ORGANIZATION,
                       icon: OrderedListOutlined,
                     },
                     {
-                      name: "Introduction",
+                      name: "Giới thiệu",
                       tab: "introduction",
                       routerName: routerNames.INTRODUCTION,
                       icon: HomeOutlined,
                     },
                     {
-                      name: "Career",
+                      name: "Tuyển dụng",
                       tab: "career",
                       routerName: routerNames.CAREER,
                       icon: CarryOutFilled,
@@ -491,29 +514,29 @@ const Header = () => {
         <div className="mx-auto flex items-center justify-between px-4">
           <div className="flex items-center space-x-16 text-lg font-semibold">
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
-              <Link href="#">&#9776; All categories</Link>
+              <Link href="#">&#9776; Danh mục sản phẩm</Link>
             </Dropdown>
             <Link href={routerNames.HOME} className="hover:underline">
-              Home
+              Trang chủ
             </Link>
             <Link href={routerNames.SHOP} className="hover:underline">
-              Shop
+              Sản phẩm
             </Link>
             <Link href={routerNames.BLOG} className="hover:underline">
               Blog
             </Link>
             <Link href={routerNames.CONTACT} className="hover:underline">
-              Contact
+              Liên hệ
             </Link>
             <div className="relative">
               <Dropdown overlay={aboutMenu} trigger={["hover"]}>
                 <Link href="#" className="text-white hover:underline">
-                  About
+                  Về chúng tôi
                 </Link>
               </Dropdown>
             </div>
             <Link href={routerNames.CAREER} className="hover:underline">
-              Career
+              Tuyển dụng
             </Link>
           </div>
         </div>

@@ -9,20 +9,17 @@ const LinkOutlined = dynamic(() => import("@ant-design/icons/LinkOutlined"), {
 });
 const FacebookFilled = dynamic(
   () => import("@ant-design/icons/FacebookFilled"),
-  { ssr: false },
+  { ssr: false }
 );
 const InstagramFilled = dynamic(
   () => import("@ant-design/icons/InstagramFilled"),
-  { ssr: false },
+  { ssr: false }
 );
 const TwitterCircleFilled = dynamic(
   () => import("@ant-design/icons/TwitterCircleFilled"),
-  { ssr: false },
+  { ssr: false }
 );
 const YoutubeFilled = dynamic(() => import("@ant-design/icons/YoutubeFilled"), {
-  ssr: false,
-});
-const MessageFilled = dynamic(() => import("@ant-design/icons/MessageFilled"), {
   ssr: false,
 });
 import Image from "next/image";
@@ -149,36 +146,35 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="my-6 border-t border-gray-600"></div>
-        <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-              DOG FOOD
+              CHÓ
             </h5>
             <ul className="text-start lg:text-center">
               <li>
                 <Link href="#" className="hover:text-white">
-                  Dry Dog Food
+                  Thức ăn cho chó
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Wet Dog Food
+                  Đồ chơi cho chó
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Biscuits
+                  Dụng cụ chăm sóc chó
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Chewy Treats
+                  Phụ kiện cho chó
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Dental Treats
+                  Các dịch vụ khác
                 </Link>
               </li>
             </ul>
@@ -186,131 +182,140 @@ const Footer = () => {
 
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-              DOG SUPPLIES
+              MÈO
             </h5>
             <ul className="text-start lg:text-center">
               <li>
                 <Link href="#" className="hover:text-white">
-                  Toys
+                  Thức ăn cho mèo
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Carriers
+                  Đồ chơi cho mèo
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Harnesses & Leads
+                  Dụng cụ chăm sóc mèo
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Flea & Tick
+                  Phụ kiện cho mèo
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Grooming & Shampoo
+                  Các dịch vụ khác
                 </Link>
               </li>
             </ul>
           </div>
-
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CAT FOOD
+             CÁC THÚ CƯNG KHÁC
             </h5>
             <ul className="text-start lg:text-center">
               <li>
                 <Link href="#" className="hover:text-white">
-                  Dry Dog Food
+                  Thức ăn
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Wet Dog Food
+                  Đồ chơi
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Cat Treats
+                  Dụng cụ chăm sóc 
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Cat Food Topper
+                  Phụ kiện 
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Accessories
+                  Các dịch vụ khác
                 </Link>
               </li>
             </ul>
           </div>
-
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-              USEFUL LINKS
+              CÁC LIÊN KẾT HỮU ÍCH
             </h5>
             <ul className="text-start lg:text-center">
               <li>
                 <Link href="#" className="hover:text-white">
-                  New Products
+                  Sản phẩm mới
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Best Sellers
+                  Bán chạy nhất
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Our Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Contact Us
+                  Blog của chúng tôi
                 </Link>
               </li>
             </ul>
           </div>
-
           <div>
             <h5 className="mb-4 text-start lg:text-center font-semibold">
-              OUR COMPANY
+              CÔNG TY CHÚNG TÔI
             </h5>
             <ul className="text-start lg:text-center">
               <li>
                 <Link href={routerNames.ABOUT} className="hover:text-white">
-                  About Us
+                  Về Chúng Tôi
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Our Services
+                  Dịch Vụ Của Chúng Tôi
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Careers
+                  Tuyển dụng
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Press
+                  Điều Khoản Dịch Vụ
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 className="mb-4 text-start lg:text-center font-semibold">
+             CHÍNH SÁCH
+            </h5>
+            <ul className="text-start lg:text-center">
+              <li>
+                <Link href="#" className="hover:text-white">
+                  Chính sách hoàn trả
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-white">
-                  Terms of Service
+                  Chính sách bảo mật
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-white">
+                  Điều khoản dịch vụ
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="hover:text-white">
+                  Hỗ trợ khách hàng
                 </Link>
               </li>
             </ul>
@@ -319,18 +324,21 @@ const Footer = () => {
         <div className="mb-10 rounded-lg bg-gradient-to-r from-red-600 to-yellow-600 p-5 text-center text-white lg:ml-8">
           <div className="flex items-center justify-center">
             <div className="flex-1">
-              <h5 className="mb-2 text-lg font-semibold">Our Newsletter</h5>
+              <h5 className="mb-2 text-lg font-semibold">
+                Bản Tin Của Chúng Tôi
+              </h5>
               <p className="mb-4">
-                Be the first to know about new collections and exclusive offers.
+                Hãy là người đầu tiên biết về các sản phẩm mới và những ưu đãi
+                độc quyền.
               </p>
               <div className="flex items-center w-full">
                 <input
                   type="email"
-                  placeholder="Enter your email..."
+                  placeholder="Nhập email của bạn..."
                   className="rounded-l-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
                 />
                 <button className="rounded-r-lg bg-white p-2 text-red-600 flex items-center text-sm md:text-base">
-                  Subscribe <MessageFilled className="ml-2" />
+                  Đăng Ký <MailOutlined className="ml-2" />
                 </button>
               </div>
             </div>
@@ -338,7 +346,7 @@ const Footer = () => {
             <div className="md:flex justify-center mt-4 hidden">
               <Image
                 src={dog}
-                alt="Cute dog"
+                alt="Chó dễ thương"
                 width={96}
                 height={96}
                 className="rounded-lg w-24 h-24 object-cover"
@@ -346,10 +354,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-sm lg:flex-row lg:justify-between">
           <p className="text-center md:text-left">
-            &copy; 2024 <span className="font-semibold">Lan Huong</span>. All
-            rights reserved.
+            &copy; 2024 <span className="font-semibold">Lan Hương</span>. Mọi
+            quyền đã được bảo hộ.
           </p>
           <div className="my-4 flex space-x-2">
             <Image src={MasterCard} alt="MasterCard" width={30} height={30} />
@@ -362,13 +371,13 @@ const Footer = () => {
           </div>
           <div className="mt-4 space-x-4 md:mt-0">
             <button type="button" className="hover:text-white">
-              Privacy Policy
+              Chính sách bảo mật
             </button>
             <button type="button" className="hover:text-white">
-              Contact
+              Liên hệ
             </button>
             <button type="button" className="hover:text-white">
-              Terms & Conditions
+              Điều khoản
             </button>
           </div>
         </div>

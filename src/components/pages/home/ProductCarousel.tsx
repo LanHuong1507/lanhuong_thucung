@@ -69,20 +69,17 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGDog, dry food for your pet’s family
+              PGDog, thức ăn khô cho thú cưng của bạn
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-800 text-xl" /> Easy
-                prepare
+                <CheckCircleOutlined className="text-pink-800 text-xl" /> Dễ dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
-                Natural
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Strengthens
-                immunity
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
               </span>
             </div>
             <motion.p
@@ -91,11 +88,11 @@ const ProductCarousel = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Buy two, get 1 free
+              Mua 2 tặng 1
             </motion.p>
             <div className="mt-6">
               <Button className="p-6 text-xl text-white font-semibold bg-pink-600 rounded-lg">
-                Shop now{" "}
+                Mua ngay{" "}
                 <i className="fi fi-sr-arrow-right text-white text-lg pt-2"></i>
               </Button>
             </div>
@@ -108,7 +105,7 @@ const ProductCarousel = () => {
           >
             <Image
               src={dogFoodImage}
-              alt="Dog Food"
+              alt="Thức ăn chó"
               className="p-2 rounded-lg w-full object-contain opacity-90"
             />
           </motion.div>
@@ -130,20 +127,17 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGCat, premium food for your cat’s health
+              PGCat, thức ăn cao cấp cho mèo của bạn
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-500 text-xl" /> Easy
-                prepare
+                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
-                Natural
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Strengthens
-                immunity
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
               </span>
             </div>
             <motion.p
@@ -152,11 +146,11 @@ const ProductCarousel = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Buy two, get 1 free
+              Mua 2 tặng 1
             </motion.p>
             <div className="mt-6">
               <Button className="p-6 text-xl text-white font-semibold bg-pink-600 rounded-lg">
-                Shop now{" "}
+                Mua ngay{" "}
                 <i className="fi fi-sr-arrow-right text-white text-lg pt-2"></i>
               </Button>
             </div>
@@ -169,12 +163,13 @@ const ProductCarousel = () => {
           >
             <Image
               src={catFoodImage}
-              alt="Cat Food"
+              alt="Thức ăn mèo"
               className="rounded-lg w-full object-contain"
             />
           </motion.div>
         </div>
       </motion.div>
+
       <motion.div
         className="relative p-8 text-center flex-col md:flex-row items-center md:space-x-8 bg-gradient-to-r from-blue-300 to-blue-200"
         initial={{ opacity: 0, y: 50 }}
@@ -190,20 +185,17 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGFish, healthy food for your fish
+              PGFish, thức ăn lành mạnh cho cá
             </h1>
-            <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 lg:flex-row">
+            <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
-                <CheckCircleOutlined className="text-pink-800 text-xl" /> Easy
-                prepare
+                <CheckCircleOutlined className="text-pink-500 text-xl" /> Dễ dàng chuẩn bị
               </span>
               <span className="flex items-center gap-2">
-                <EnvironmentOutlined className="text-green-500 text-xl" /> 100%
-                Natural
+                <EnvironmentOutlined className="text-green-500 text-xl" /> 100% tự nhiên
               </span>
               <span className="flex items-center gap-2">
-                <HeartOutlined className="text-red-500 text-xl" /> Strengthens
-                immunity
+                <HeartOutlined className="text-red-500 text-xl" /> Tăng cường hệ miễn dịch
               </span>
             </div>
             <motion.p
@@ -212,11 +204,11 @@ const ProductCarousel = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              Buy two, get 1 free
+              Mua 2 tặng 1
             </motion.p>
             <div className="mt-6">
               <Button className="p-6 text-xl text-white font-semibold bg-pink-600 rounded-lg">
-                Shop now{" "}
+                Mua ngay{" "}
                 <i className="fi fi-sr-arrow-right text-white text-lg pt-2"></i>
               </Button>
             </div>
@@ -229,7 +221,7 @@ const ProductCarousel = () => {
           >
             <Image
               src={fishFoodImage}
-              alt="Fish Food"
+              alt="Thức ăn cá"
               className="rounded-lg w-full object-contain"
             />
           </motion.div>
