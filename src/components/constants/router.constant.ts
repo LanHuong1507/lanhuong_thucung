@@ -2,6 +2,8 @@ export const routerNames = {
   HOME: "/",
   PRODUCT: "/product",
   BLOG: "/blog",
+  BLOG_DETAIL: "/blog/blog-detail/[id]",
+  PRODUCT_DETAIL: "/product/product-detail/[id]",
   CONTACT: "/contact",
   ABOUT: "/about",
   DOG: "/dog",

@@ -1,12 +1,9 @@
 import React, { useMemo, useState } from "react";
 import { Card, Button } from "antd";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-const FolderFilled = dynamic(
-  () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
-  { ssr: false },
-);
+import Link from "next/link";
+import { routerNames } from "@/components/constants/router.constant";
 interface Blog {
   id: number;
   title: string;
@@ -27,7 +24,6 @@ const shuffleArray = (array: Blog[]): Blog[] => {
 };
 
 const BlogList = ({ limit = 8 }) => {
-  // Sample blog data (this can come from an API or Redux store)
   const blogs = useSelector((state: { blogs: Blog[] }) => state.blogs);
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -96,17 +92,24 @@ const BlogList = ({ limit = 8 }) => {
             className="w-full flex-shrink-0"
           >
             <div className="mb-2">
-              <FolderFilled className="text-gray-500" />
-              <span className="font-medium text-gray-900 ml-4">
-                {blog.author}
-              </span>
+              <span className="font-medium text-gray-900">{blog.author}</span>
             </div>
-            <Card.Meta title={blog.title} description={blog.summary} />
+            <div className="mt-2">
+              <h3 className="text-lg font-semibold text-gray-900">
+                {blog.title}
+              </h3>
+            </div>
+            <Card.Meta description={blog.summary} />
             <div className="mt-4">
               <p className="text-sm text-gray-600">{blog.date}</p>
-              <Button type="primary" className="mt-4 w-full">
-                Đọc thêm
-              </Button>
+              <Link
+                href={`${routerNames.BLOG_DETAIL.replace("[id]", blog.id.toString())}`}
+                passHref
+              >
+                <Button type="primary" className="mt-4 w-full">
+                  Đọc thêm
+                </Button>
+              </Link>
             </div>
           </Card>
         ))}

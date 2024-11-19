@@ -51,6 +51,7 @@ import "@flaticon/flaticon-uicons/css/all/all.css";
 import Logo from "../../../assets/images/logo.jpg";
 import { routerNames } from "@/components/constants/router.constant";
 import dynamic from "next/dynamic";
+import { CloseOutlined } from "@ant-design/icons";
 
 const Header = () => {
   const [showPromo, setShowPromo] = useState(true);
@@ -180,7 +181,7 @@ const Header = () => {
   return (
     <header className="bg-blue-900 text-white sticky top-0 z-50">
       {showPromo && (
-        <div className="relative flex items-center justify-center bg-blue-900 py-2 text-sm text-yellow-400">
+        <div className="relative flex items-center justify-center bg-blue-900 py-1 text-sm text-yellow-400">
           <p>
             Tiết kiệm <strong>đến 20%</strong> cho tất cả đồ chơi & phụ kiện với
             mã &quot;
@@ -188,10 +189,10 @@ const Header = () => {
           </p>
           <button
             onClick={() => setShowPromo(false)}
-            className="absolute right-4 text-lg text-white"
+            className="absolute right-4 py-1 text-base text-yellow-400"
             aria-label="Đóng banner khuyến mãi"
           >
-            &times;
+            <CloseOutlined />
           </button>
         </div>
       )}
@@ -510,7 +511,7 @@ const Header = () => {
         )}
       </div>
 
-      <nav className="hidden bg-blue-900 py-4 text-white lg:flex">
+      <nav className="hidden bg-blue-900 py-2 text-white lg:flex">
         <div className="mx-auto flex items-center justify-between px-4">
           <div className="flex items-center space-x-16 text-lg font-semibold">
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
