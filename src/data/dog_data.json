@@ -8,7 +8,7 @@
     "life_span": "12-20 năm",
     "weight_range": "1-3 kg",
     "coat": "Ngắn hoặc dài",
-    "price": "500.000-1.500.000",
+    "price": "2.000.000-6.000.000",
     "image": "https://i.imgur.com/Xn2iwCR.jpeg"
   },
   {
@@ -20,7 +20,7 @@
     "life_span": "10-12 năm",
     "weight_range": "25-36 kg",
     "coat": "Ngắn",
-    "price": "5.000.000-10.000.000",
+    "price": "10.000.000-20.000.000",
     "image": "https://i.imgur.com/o9TGCsq.jpeg"
   },
   {
@@ -32,7 +32,7 @@
     "life_span": "9-13 năm",
     "weight_range": "22-40 kg",
     "coat": "Trung bình",
-    "price": "20.000-40.000.000",
+    "price": "15.000.000-40.000.000",
     "image": "https://i.imgur.com/9SxGyDC.jpeg"
   },
   {
@@ -44,7 +44,7 @@
     "life_span": "8-12 năm",
     "weight_range": "18-25 kg",
     "coat": "Ngắn",
-    "price": "9.000.000-18.000.000",
+    "price": "12.000.000-25.000.000",
     "image": "https://i.imgur.com/nd6HIkL.jpeg"
   },
   {
@@ -56,7 +56,7 @@
     "life_span": "12-15 năm",
     "weight_range": "3-25 kg",
     "coat": "Xoăn",
-    "price": "6.000.000-8.000.000",
+    "price": "5.000.000-15.000.000",
     "image": "https://i.imgur.com/1X3ndCB.jpeg"
   },
   {
@@ -68,7 +68,7 @@
     "life_span": "10-12 năm",
     "weight_range": "25-34 kg",
     "coat": "Dài và sóng",
-    "price": "10.000.000-20.000.000",
+    "price": "15.000.000-25.000.000",
     "image": "https://i.imgur.com/m5xNFRI.jpeg"
   },
   {
@@ -80,7 +80,7 @@
     "life_span": "12-15 năm",
     "weight_range": "9-11 kg",
     "coat": "Ngắn",
-    "price": "8.000.000-12.000.000",
+    "price": "8.000.000-15.000.000",
     "image": "https://i.imgur.com/DmPAV1q.jpeg"
   },
   {
@@ -92,7 +92,7 @@
     "life_span": "12-16 năm",
     "weight_range": "4-5 kg",
     "coat": "Ngắn hoặc dài",
-    "price": "2.000.000-5.000.000",
+    "price": "4.000.000-8.000.000",
     "image": "https://i.imgur.com/pkz79hf.jpeg"
   },
   {
@@ -104,7 +104,7 @@
     "life_span": "10-12 năm",
     "weight_range": "25-32 kg",
     "coat": "Ngắn",
-    "price": "6.000.000-8.000.000",
+    "price": "10.000.000-20.000.000",
     "image": "https://i.imgur.com/dy5KwfB.jpeg"
   },
   {
@@ -128,7 +128,7 @@
     "life_span": "10-18 năm",
     "weight_range": "4-7 kg",
     "coat": "Dài",
-    "price": "5.000.000-10.000.000",
+    "price": "7.000.000-12.000.000",
     "image": "https://i.imgur.com/lNPUh0K.jpeg"
   },
   {
@@ -140,7 +140,7 @@
     "life_span": "12-15 năm",
     "weight_range": "12-14 kg",
     "coat": "Trung bình",
-    "price": "5.000.000-8.000.000",
+    "price": "8.000.000-15.000.000",
     "image": "https://i.imgur.com/kzqrYe7.jpeg"
   },
   {
@@ -152,7 +152,7 @@
     "life_span": "8-10 năm",
     "weight_range": "35-60 kg",
     "coat": "Ngắn",
-    "price": "13.000.000-25.000.000",
+    "price": "20.000.000-50.000.000",
     "image": "https://i.imgur.com/9VAlnzF.jpeg"
   },
   {
@@ -164,7 +164,7 @@
     "life_span": "13-16 năm",
     "weight_range": "2-3 kg",
     "coat": "Dài",
-    "price": "7.000.000-10.000.000",
+    "price": "10.000.000-18.000.000",
     "image": "https://i.imgur.com/uJ3ZMdC.jpeg"
   },
   {
@@ -176,8 +176,8 @@
     "life_span": "12-15 năm",
     "weight_range": "6-9 kg",
     "coat": "Ngắn",
-    "price": "6.000.000-20.000.000",
-    "image": "https://i.imgur.com/FQHn5wP.jpeg"
+    "price": "6.000.000-15.000.000",
+    "image": "https://i.imgur.com/ViRklci.jpeg"
   },
   {
     "id": 16,
@@ -188,8 +188,8 @@
     "life_span": "10-15 năm",
     "weight_range": "34-54 kg",
     "coat": "Lông đôi",
-    "price": "10.000.000-25.000.000",
-    "image": "https://i.imgur.com/6sBxH3I.jpeg"
+    "price": "20.000.000-50.000.000",
+    "image": "https://i.imgur.com/8rPocEx.jpeg"
   },
   {
     "id": 17,
@@ -200,7 +200,7 @@
     "life_span": "12-16 năm",
     "weight_range": "8-10 kg",
     "coat": "Lông đôi, mềm và dày",
-    "price": "20.000.000-40.000.000",
+    "price": "20.000.000-50.000.000",
     "image": "https://i.imgur.com/lUYTlct.jpeg"
   },
   {
@@ -212,8 +212,8 @@
     "life_span": "12-15 năm",
     "weight_range": "3-4 kg",
     "coat": "Dài và mềm",
-    "price": "6.000.000-50.000.000",
-    "image": "https://i.imgur.com/6tS8Z8z.jpeg"
+    "price": "8.000.000-20.000.000",
+    "image": "https://i.imgur.com/0LPcrKx.jpeg"
   },
   {
     "id": 19,
@@ -224,7 +224,7 @@
     "life_span": "10-14 năm",
     "weight_range": "8-15 kg",
     "coat": "Ngắn và dày",
-    "price": "3.000.000-5.000.000",
-    "image": "https://i.imgur.com/3IUR6ET.jpeg"
+    "price": "2.000.000-6.000.000",
+    "image": "https://i.imgur.com/9KbRwKC.jpeg"
   }
 ]

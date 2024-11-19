@@ -1,7 +1,7 @@
 import Layout from "../../../components/layout/Layout";
 import BlogDetailComponent from "../../../components/pages/blog/blog-detail";
 
-const Blog = () => {
+const BlogDetail = () => {
   return (
     <Layout>
       <BlogDetailComponent />
@@ -9,4 +9,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogDetail;

@@ -4,14 +4,14 @@
     "name": "Bánh ăn cho chó hữu cơ",
     "description": "Bánh ăn cho chó hoàn toàn tự nhiên, hữu cơ từ gà. Hoàn hảo để huấn luyện.",
     "price": 25.0,
-    "category": "Thức ăn cho chó",
+    "category": "Thức ăn",
     "image": "https://i.imgur.com/fwibv02.jpeg",
     "stock": 150,
     "rating": 4.5,
     "brand": "Pawsome Treats",
     "weight": "200g",
     "recommended_for": "Chó mọi kích cỡ",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -19,14 +19,14 @@
     "name": "Đồ chơi nhồi bông có chứa catnip",
     "description": "Đồ chơi nhồi bông mềm, bên trong có catnip hữu cơ mang đến niềm vui không ngừng.",
     "price": 55.0,
-    "category": "Đồ chơi cho mèo",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/WBqBOT5.jpeg",
     "stock": 300,
     "rating": 4.8,
     "brand": "Kitty Joy",
     "color": "Xanh lá cây",
     "recommended_for": "Mèo mọi lứa tuổi",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": true
   },
   {
@@ -34,14 +34,14 @@
     "name": "Xương bò không mùi",
     "description": "Xương bò cao cấp, không mùi, giúp chó của bạn giải trí lâu dài.",
     "price": 34.0,
-    "category": "Thức ăn cho chó",
+    "category": "Thức ăn",
     "image": "https://i.imgur.com/SmwZ7Ll.jpeg",
     "stock": 75,
     "rating": 4.7,
     "brand": "Healthy Bites",
     "weight": "500g",
     "recommended_for": "Chó cỡ vừa đến lớn",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -49,7 +49,7 @@
     "name": "Áo khoác mùa đông cho chó có thể đảo ngược",
     "description": "Áo khoác mùa đông thời trang, có thể đảo ngược giúp chó giữ ấm.",
     "price": 79.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/vYeHh9B.jpeg",
     "stock": 60,
     "rating": 4.6,
@@ -57,7 +57,7 @@
     "size": "Medium",
     "material": "Polyester",
     "recommended_for": "Chó cỡ nhỏ đến vừa",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -65,7 +65,7 @@
     "name": "Máy cho mèo ăn tự động",
     "description": "Máy cho mèo ăn tự động, có thể lập lịch thời gian và khẩu phần ăn.",
     "price": 250.0,
-    "category": "Dụng cụ chăm sóc mèo",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/k2M7std.jpeg",
     "stock": 20,
     "rating": 4.4,
@@ -73,7 +73,7 @@
     "capacity": "3L",
     "features": ["Điều khiển thời gian", "Nguồn điện dự phòng"],
     "recommended_for": "Chủ nuôi bận rộn",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -81,7 +81,7 @@
     "name": "Cát vệ sinh cho mèo thân thiện với môi trường",
     "description": "Cát vệ sinh phân hủy sinh học, vón cục, nhẹ nhàng với môi trường.",
     "price": 110.0,
-    "category": "Dụng cụ chăm sóc mèo",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/lXdeuSD.jpeg",
     "stock": 120,
     "rating": 4.3,
@@ -89,7 +89,7 @@
     "weight": "5kg",
     "material": "Giấy tái chế",
     "recommended_for": "Chủ nuôi mèo thân thiện với môi trường",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -97,7 +97,7 @@
     "name": "Shampoo cho chó chống dị ứng",
     "description": "Shampoo dịu nhẹ, chống dị ứng cho chó có làn da nhạy cảm.",
     "price": 120.0,
-    "category": "Dụng cụ chăm sóc chó",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/sHuXNKc.jpeg",
     "stock": 85,
     "rating": 4.2,
@@ -105,7 +105,7 @@
     "volume": "250ml",
     "ingredients": ["Aloe Vera", "Chiết xuất yến mạch"],
     "recommended_for": "Chó có làn da nhạy cảm",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -113,14 +113,14 @@
     "name": "Đồ chơi laser tương tác cho mèo",
     "description": "Đồ chơi laser tự động giúp mèo giải trí hàng giờ liền.",
     "price": 11.0,
-    "category": "Đồ chơi cho mèo",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/ZunINml.jpeg",
     "stock": 50,
     "rating": 4.7,
     "brand": "Playful Pets",
     "battery_required": true,
     "recommended_for": "Mèo năng động",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -128,7 +128,7 @@
     "name": "Dây xích đôi cho chó",
     "description": "Dây xích đôi không rối giúp bạn dắt hai chó cùng lúc.",
     "price": 99.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/mhanHcL.jpeg",
     "stock": 40,
     "rating": 4.5,
@@ -136,7 +136,7 @@
     "color": "Đen",
     "material": "Nylon",
     "recommended_for": "Chủ nuôi nhiều chó",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -144,7 +144,7 @@
     "name": "Thảm làm mát cho thú cưng",
     "description": "Thảm tự làm mát giúp thú cưng của bạn cảm thấy thoải mái trong thời tiết nóng.",
     "price": 109.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/qEweKhc.jpeg",
     "stock": 70,
     "rating": 4.6,
@@ -152,7 +152,7 @@
     "dimensions": "50 x 70 cm",
     "material": "Gel",
     "recommended_for": "Thú cưng ở vùng khí hậu nóng",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -160,14 +160,14 @@
     "name": "Cây cào móng cho mèo cao cấp",
     "description": "Cây cào móng cao cấp với bề mặt sisal và nhung mang đến niềm vui tuyệt vời cho mèo.",
     "price": 199.0,
-    "category": "Phụ kiện cho mèo",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/lqyrInN.jpeg",
     "stock": 40,
     "rating": 4.9,
     "brand": "CatDream",
     "color": "Xám",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": true
   },
   {
@@ -175,14 +175,14 @@
     "name": "Túi xách du lịch cho thú cưng",
     "description": "Túi xách du lịch tiện lợi và thoải mái cho thú cưng khi di chuyển.",
     "price": 99.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/axkoYf0.jpeg",
     "stock": 80,
     "rating": 4.5,
     "brand": "Happy Travels",
     "dimensions": "45 x 30 x 30 cm",
     "recommended_for": "Thú cưng cỡ nhỏ đến vừa",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -190,14 +190,14 @@
     "name": "Tấm huấn luyện chó",
     "description": "Tấm huấn luyện chống rò rỉ với khả năng kiểm soát mùi.",
     "price": 150.0,
-    "category": "Dụng cụ chăm sóc chó",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/A0bx06z.jpeg",
     "stock": 200,
     "rating": 4.3,
     "brand": "Potty Paws",
     "pack_size": "50 miếng",
     "recommended_for": "Huấn luyện chó con",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -205,7 +205,7 @@
     "name": "Giường treo cửa sổ cho mèo",
     "description": "Giường treo cửa sổ dễ lắp đặt giúp mèo tận hưởng ánh sáng mặt trời.",
     "price": 300.0,
-    "category": "Đồ chơi cho mèo",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/gTJt2Ml.jpeg",
     "stock": 45,
     "rating": 4.8,
@@ -213,7 +213,7 @@
     "dimensions": "55 x 30 cm",
     "material": "Lưới bền",
     "recommended_for": "Mèo sống trong nhà",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -221,14 +221,14 @@
     "name": "Đồ chơi nhai cao su cho chó",
     "description": "Đồ chơi nhai cao su bền bỉ giúp thỏa mãn nhu cầu nhai của chó.",
     "price": 12.0,
-    "category": "Đồ chơi cho chó",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/eCFMSOQ.jpeg",
     "stock": 100,
     "rating": 4.6,
     "brand": "Tough Paws",
     "color": "Đỏ",
     "recommended_for": "Chó nhai mạnh",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -236,14 +236,14 @@
     "name": "Chất tẩy rửa vết bẩn và mùi cho thú cưng",
     "description": "Chất tẩy rửa với công thức enzyme đặc biệt giúp loại bỏ vết bẩn và mùi của thú cưng.",
     "price": 12.99,
-    "category": "Dụng cụ chăm sóc chó",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/vyN0j15.jpeg",
     "stock": 150,
     "rating": 4.7,
     "brand": "Fresh Paws",
     "volume": "500ml",
     "recommended_for": "Nhà có thú cưng",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -251,14 +251,14 @@
     "name": "Giường nhồi bông cho mèo",
     "description": "Giường nhồi bông êm ái giúp mèo của bạn thư giãn và nghỉ ngơi.",
     "price": 319.0,
-    "category": "Dụng cụ chăm sóc mèo",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/x6Dmhky.jpeg",
     "stock": 90,
     "rating": 4.9,
     "brand": "Comfy Paws",
     "color": "Xanh dương",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": true
   },
   {
@@ -266,7 +266,7 @@
     "name": "Giày chống nước cho chó",
     "description": "Bảo vệ chân chó của bạn với giày chống nước cho mọi loại thời tiết.",
     "price": 229.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/psVeE6r.jpeg",
     "stock": 50,
     "rating": 4.5,
@@ -274,7 +274,7 @@
     "size": "Nhỏ",
     "material": "Cao su chống nước",
     "recommended_for": "Chó yêu thích phiêu lưu ngoài trời",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -282,13 +282,13 @@
     "name": "Cây cào móng sisal cho mèo",
     "description": "Cây cào móng sisal bền bỉ giúp mèo giải trí và giữ móng khỏe mạnh.",
     "price": 21.0,
-    "category": "Đồ chơi cho mèo",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/JIVY1Wh.jpeg",
     "stock": 120,
     "rating": 4.4,
     "brand": "CatChic",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -296,14 +296,14 @@
     "name": "Xương vệ sinh răng miệng cho chó",
     "description": "Xương nhai giúp vệ sinh răng miệng cho chó, giảm mảng bám và hôi miệng.",
     "price": 20.0,
-    "category": "Đồ chơi cho chó",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/KsZjo1O.jpeg",
     "stock": 130,
     "rating": 4.7,
     "brand": "Fresh Teeth",
     "quantity": "10 miếng",
     "recommended_for": "Tất cả giống chó",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -311,7 +311,7 @@
     "name": "Vòng cổ cho mèo thời trang",
     "description": "Vòng cổ thời trang, có thể điều chỉnh với chuông cho mèo của bạn.",
     "price": 7.0,
-    "category": "Phụ kiện cho mèo",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/kseHwop.jpeg",
     "stock": 200,
     "rating": 4.6,
@@ -319,7 +319,7 @@
     "color": "Hồng",
     "material": "Nylon",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": true
   },
   {
@@ -327,14 +327,14 @@
     "name": "Máy phóng bóng tự động cho chó",
     "description": "Máy phóng bóng tự động giúp chó của bạn vui chơi hàng giờ mà không cần sự trợ giúp.",
     "price": 350.0,
-    "category": "Đồ chơi cho chó",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/LdwE0gJ.jpeg",
     "stock": 35,
     "rating": 4.8,
     "brand": "FetchMaster",
     "features": ["Khoảng cách có thể điều chỉnh", "Tự động nạp lại bóng"],
     "recommended_for": "Chó năng động",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -342,14 +342,14 @@
     "name": "Áo vest làm mát cho chó",
     "description": "Giúp thú cưng của bạn luôn mát mẻ và thoải mái với áo vest làm mát.",
     "price": 139.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/C4QjtQN.jpeg",
     "stock": 40,
     "rating": 4.4,
     "brand": "Cool Paws",
     "size": "Medium",
     "recommended_for": "Chó ở khu vực khí hậu nóng",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -357,14 +357,14 @@
     "name": "Đồ chơi đũa cho mèo",
     "description": "Kích thích bản năng săn mồi của mèo với đồ chơi đũa tương tác.",
     "price": 15.0,
-    "category": "Đồ chơi cho mèo",
+    "category": "Đồ chơi",
     "image": "https://i.imgur.com/JIVY1Wh.jpeg",
     "stock": 250,
     "rating": 4.5,
     "brand": "Fun Paw",
     "material": "Lông vũ và dây",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": true
   },
   {
@@ -372,14 +372,14 @@
     "name": "Chai nước tiện lợi cho chó",
     "description": "Chai nước tiện lợi với bát uống tích hợp cho chó của bạn khi đi ra ngoài.",
     "price": 89.0,
-    "category": "Dụng cụ chăm sóc chó",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/9RnVp55.jpeg",
     "stock": 150,
     "rating": 4.6,
     "brand": "Hydrate Paws",
     "capacity": "500ml",
     "recommended_for": "Chó di chuyển thường xuyên",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": true
   },
   {
@@ -387,7 +387,7 @@
     "name": "Máng đỡ cửa sổ cho mèo",
     "description": "Máng đỡ cửa sổ thoải mái cho mèo của bạn thưởng thức không gian bên ngoài.",
     "price": 119.0,
-    "category": "Dụng cụ chăm sóc mèo",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/ttQdoAi.jpeg",
     "stock": 40,
     "rating": 4.7,
@@ -395,7 +395,7 @@
     "dimensions": "60 x 30 cm",
     "material": "Lưới và vải",
     "recommended_for": "Mèo sống trong nhà",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -403,14 +403,14 @@
     "name": "Bát nước gập cho thú cưng",
     "description": "Bát nước gập cho thú cưng khi đi du lịch.",
     "price": 39.0,
-    "category": "Dụng cụ chăm sóc chó",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/7gB1FuX.jpeg",
     "stock": 100,
     "rating": 4.5,
     "brand": "On-the-Go Pets",
     "material": "Silicone",
     "recommended_for": "Thú cưng khi đi du lịch",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -418,14 +418,14 @@
     "name": "Áo khoác chống nước cho chó",
     "description": "Áo khoác ấm, chống nước giúp chó của bạn luôn ấm áp trong mùa đông.",
     "price": 239.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/8ZEmuCV.png",
     "stock": 55,
     "rating": 4.8,
     "brand": "Paw Couture",
     "size": "Lớn",
     "recommended_for": "Chó lớn trong thời tiết lạnh",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -433,13 +433,13 @@
     "name": "Kitty Garden - Bộ trồng cỏ cho mèo",
     "description": "Trồng cỏ cho mèo ngay tại nhà để cung cấp cỏ tươi cho thú cưng của bạn.",
     "price": 129.0,
-    "category": "Dụng cụ chăm sóc mèo",
+    "category": "Dụng cụ chăm sóc",
     "image": "https://i.imgur.com/qnR7vnY.jpeg",
     "stock": 80,
     "rating": 4.7,
     "brand": "Kitty Garden",
     "recommended_for": "Mèo mọi kích cỡ",
-    "pet": "mèo",
+    "pet": "Mèo",
     "best_seller": false
   },
   {
@@ -447,14 +447,14 @@
     "name": "Tấm phủ ghế cho chó",
     "description": "Bảo vệ ghế ô tô của bạn với tấm phủ ghế cho chó chống thấm nước.",
     "price": 149.0,
-    "category": "Phụ kiện cho chó",
+    "category": "Phụ kiện",
     "image": "https://i.imgur.com/I53inYr.jpeg",
     "stock": 60,
     "rating": 4.6,
     "brand": "Pet Comfort",
     "material": "Vải Oxford",
     "recommended_for": "Chó đi xe ô tô thường xuyên",
-    "pet": "chó",
+    "pet": "Chó",
     "best_seller": false
   },
   {
@@ -469,7 +469,7 @@
     "brand": "Aquatic Solutions",
     "volume": "250ml",
     "recommended_for": "Cá nước ngọt",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -484,7 +484,7 @@
     "brand": "Aquarium Lux",
     "wattage": "12W",
     "recommended_for": "Tất cả các bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -499,7 +499,7 @@
     "brand": "Fin Feast",
     "weight": "100g",
     "recommended_for": "Cá nhiệt đới",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": true
   },
   {
@@ -514,7 +514,7 @@
     "brand": "Clear Water",
     "type": "Lọc bên trong",
     "recommended_for": "Bể cá nước ngọt",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -529,7 +529,7 @@
     "brand": "Aqua Clean",
     "length": "1.5 mét",
     "recommended_for": "Tất cả các kích cỡ bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -544,7 +544,7 @@
     "brand": "Tropical Comfort",
     "wattage": "100W",
     "recommended_for": "Cá nhiệt đới",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -559,7 +559,7 @@
     "brand": "Aquarium Decor",
     "size": "10 viên",
     "recommended_for": "Trang trí bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -574,7 +574,7 @@
     "brand": "Oxygen Pro",
     "power": "5W",
     "recommended_for": "Tất cả các bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -589,7 +589,7 @@
     "brand": "Greenwater",
     "volume": "200ml",
     "recommended_for": "Cây trong bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": false
   },
   {
@@ -603,7 +603,7 @@
     "rating": 4.8,
     "brand": "Aquarium Master",
     "recommended_for": "Trang trí bể cá",
-    "pet": "cá",
+    "pet": "Cá",
     "best_seller": true
   },
   {
@@ -618,7 +618,7 @@
     "brand": "Rabbit Essentials",
     "material": "Gỗ",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -633,7 +633,7 @@
     "brand": "RabbitCare",
     "capacity": "500ml",
     "recommended_for": "Thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -648,7 +648,7 @@
     "brand": "Bunny Bites",
     "weight": "1kg",
     "recommended_for": "Thỏ trưởng thành",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -663,7 +663,7 @@
     "brand": "Bunny Fun",
     "material": "Vải mềm",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -678,7 +678,7 @@
     "brand": "CleanBunny",
     "material": "Nhựa",
     "recommended_for": "Thỏ nuôi trong nhà",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -693,7 +693,7 @@
     "brand": "Bunny Bites",
     "material": "Gỗ tự nhiên",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": true
   },
   {
@@ -708,7 +708,7 @@
     "brand": "Bunny Rest",
     "material": "Fleece",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": true
   },
   {
@@ -723,7 +723,7 @@
     "brand": "Bunny Play",
     "material": "Nhựa",
     "recommended_for": "Thỏ năng động",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -737,7 +737,7 @@
     "rating": 4.7,
     "brand": "Bunny Groom",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -752,7 +752,7 @@
     "brand": "Bunny Playtime",
     "material": "Kim loại",
     "recommended_for": "Tất cả các loài thỏ",
-    "pet": "thỏ",
+    "pet": "Thỏ",
     "best_seller": false
   },
   {
@@ -767,7 +767,7 @@
     "brand": "Turtle Clean",
     "type": "Lọc ngoài",
     "recommended_for": "Hồ rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -782,7 +782,7 @@
     "brand": "Turtle Feast",
     "weight": "500g",
     "recommended_for": "Rùa thủy sinh",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": true
   },
   {
@@ -797,7 +797,7 @@
     "brand": "Turtle Light",
     "wattage": "50W",
     "recommended_for": "Tất cả các loài rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -812,7 +812,7 @@
     "brand": "Turtle Earth",
     "weight": "5kg",
     "recommended_for": "Tất cả các loài rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -826,7 +826,7 @@
     "rating": 4.8,
     "brand": "Turtle World",
     "recommended_for": "Trang trí hồ cá",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -841,7 +841,7 @@
     "brand": "Turtle Care",
     "material": "Nhựa",
     "recommended_for": "Rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -856,7 +856,7 @@
     "brand": "Turtle Safe",
     "volume": "250ml",
     "recommended_for": "Hồ rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -871,7 +871,7 @@
     "brand": "Turtle Rest",
     "material": "Nhựa",
     "recommended_for": "Tất cả các loài rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
@@ -885,7 +885,7 @@
     "rating": 4.8,
     "brand": "Turtle Home",
     "recommended_for": "Chủ nuôi rùa mới",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": true
   },
   {
@@ -900,14 +900,14 @@
     "brand": "Turtle Habitat",
     "material": "Gỗ",
     "recommended_for": "Tất cả các loài rùa",
-    "pet": "rùa",
+    "pet": "Rùa",
     "best_seller": false
   },
   {
     "id": 61,
     "name": "Thuốc điều trị ký sinh trùng cho chó",
     "description": "Thuốc diệt ký sinh trùng đường ruột cho chó, giúp tiêu diệt giun sán và các loại ký sinh khác.",
-    "price": "75.000 VND",
+    "price": 75.0,
     "category": "Khác",
     "image": "https://i.imgur.com/wz2SsNK.png",
     "stock": 200,
@@ -922,7 +922,7 @@
     "id": 62,
     "name": "Thuốc trị nấm cho mèo",
     "description": "Điều trị nấm da, giúp làm lành các vết thương và giảm ngứa cho mèo.",
-    "price": "80.000 VND",
+    "price": 80.0,
     "category": "Khác",
     "image": "https://i.imgur.com/LHKUJUM.jpeg",
     "stock": 300,
@@ -937,7 +937,7 @@
     "id": 63,
     "name": "Thuốc trị giun sán cho chó",
     "description": "Giúp loại bỏ giun, sán trong hệ tiêu hóa của chó, duy trì sức khỏe đường ruột.",
-    "price": "90.000 VND",
+    "price": 90.0,
     "category": "Khác",
     "image": "https://i.imgur.com/Az7iwD6.jpeg",
     "stock": 250,
@@ -952,7 +952,7 @@
     "id": 64,
     "name": "Thuốc trị viêm da cho chó và mèo",
     "description": "Điều trị viêm da, ngứa ngáy do dị ứng hoặc nhiễm trùng da cho chó và mèo.",
-    "price": "40.000",
+    "price": 40.0,
     "category": "Khác",
     "image": "https://i.imgur.com/2eLWPBo.jpeg",
     "stock": 150,
@@ -967,7 +967,7 @@
     "id": 65,
     "name": "Thuốc bổ sung vitamin cho mèo",
     "description": "Cung cấp vitamin và khoáng chất cần thiết cho mèo, giúp tăng cường sức khỏe và hệ miễn dịch.",
-    "price": "120.000 VND",
+    "price": 120.0,
     "category": "Khác",
     "image": "https://i.imgur.com/WEwTq48.jpeg",
     "stock": 500,
@@ -982,7 +982,7 @@
     "id": 66,
     "name": "Thuốc trị ve rận cho chó",
     "description": "Điều trị ve rận và các ký sinh trùng trên da chó, giúp chó cảm thấy thoải mái hơn.",
-    "price": "135.000 VND",
+    "price": 135.0,
     "category": "Khác",
     "image": "https://i.imgur.com/zw3H3XM.jpeg",
     "stock": 120,
@@ -997,7 +997,7 @@
     "id": 67,
     "name": "Thuốc diệt bọ chét cho mèo",
     "description": "Diệt bọ chét hiệu quả trên mèo, giúp giảm ngứa và ngăn ngừa tái phát.",
-    "price": "140.000 VND",
+    "price": 140.0,
     "category": "Thuốc",
     "image": "https://i.imgur.com/YqjgIt2.png",
     "stock": 220,
@@ -1012,7 +1012,7 @@
     "id": 68,
     "name": "Thuốc giảm đau cho chó",
     "description": "Thuốc giảm đau, giảm viêm cho chó khi bị chấn thương hoặc sau phẫu thuật.",
-    "price": "230.000 VND",
+    "price": 230.0,
     "category": "Khác",
     "image": "https://i.imgur.com/a7e79VO.jpeg",
     "stock": 180,
@@ -1027,7 +1027,7 @@
     "id": 69,
     "name": "Thuốc chống sốt xuất huyết cho chó",
     "description": "Điều trị và phòng ngừa sốt xuất huyết cho chó.",
-    "price": "130.000 VND",
+    "price": 130.0,
     "category": "Khác",
     "image": "https://i.imgur.com/n7hyaUT.jpeg",
     "stock": 130,
@@ -1042,7 +1042,7 @@
     "id": 70,
     "name": "Thuốc bổ xương khớp cho mèo",
     "description": "Giúp hỗ trợ và phục hồi xương khớp cho mèo già hoặc mèo có vấn đề về vận động.",
-    "price": "290.000 VND",
+    "price": 290.0,
     "category": "Khác",
     "image": "https://i.imgur.com/l3U9Frf.jpeg",
     "stock": 90,

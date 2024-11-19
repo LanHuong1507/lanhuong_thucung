@@ -29,44 +29,51 @@ const Home = () => {
         <h2 className="text-xl font-semibold text-center mb-4">
           MUA SẮM THEO THÚ CƯNG CỦA BẠN
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 justify-center">
           <Link
-            href="#"
+            href={routerNames.DOG}
             className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-ss-dog text-white text-4xl"></i>
             <span className="mt-2 text-white text-xl">CHÓ</span>
           </Link>
           <Link
-            href="#"
+            href={routerNames.CAT}
             className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-sr-cat text-white text-4xl"></i>
             <span className="mt-2 text-white text-xl">MÈO</span>
           </Link>
           <Link
-            href="#"
+            href={routerNames.FISH}
             className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-sr-dolphin text-white text-4xl"></i>
             <span className="mt-2 text-white text-xl">CÁ</span>
           </Link>
           <Link
-            href="#"
+            href={routerNames.RABBIT}
             className="flex flex-col items-center rounded-lg bg-slate-600 py-8 px-6 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-sr-rabbit text-white text-4xl"></i>
             <span className="mt-2 text-white text-xl">THỎ</span>
           </Link>
           <Link
-            href="#"
+            href={routerNames.TURTLE}
             className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-sr-turtle text-white text-4xl"></i>
             <span className="mt-2 text-white text-xl">RÙA</span>
           </Link>
           <Link
-            href="#"
+            href={routerNames.BIRD}
+            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
+          >
+            <i className="fi fi-sr-bird text-white text-4xl"></i>
+            <span className="mt-2 text-white text-xl">CHIM</span>
+          </Link>
+          <Link
+            href={routerNames.PRODUCT}
             className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
           >
             <i className="fi fi-sr-steak text-white text-4xl"></i>

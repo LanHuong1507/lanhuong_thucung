@@ -126,7 +126,7 @@ const Header = () => {
         </Link>
       </Menu.Item>
       <Menu.Item>
-        <Link href={routerNames.OTHER} passHref>
+        <Link href={routerNames.PRODUCT} passHref>
           <span className="flex justify-between">
             <i className="fi fi-sr-steak" />
             <span className="ml-2">KHÁC</span>
@@ -266,6 +266,7 @@ const Header = () => {
               <option value="bird">Chim</option>
               <option value="rabbit">Thỏ</option>
               <option value="turtle">Rùa</option>
+              <option value="other">Khác</option>
             </select>
             <input
               type="text"
@@ -392,7 +393,7 @@ const Header = () => {
                   name: "Khác",
                   iconClass: "fi fi-sr-steak",
                   tab: "other",
-                  router: routerNames.OTHER,
+                  router: routerNames.PRODUCT,
                 },
               ].map((item) => (
                 <a

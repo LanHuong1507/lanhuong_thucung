@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { Button } from "antd";
+import { Button, Typography,Card, Space } from "antd";
 import Image from "next/image";
 import { routerNames } from "@/components/constants/router.constant";
 import Head from "next/head";
@@ -11,6 +11,9 @@ import {
   MailFilled,
   TwitterSquareFilled,
 } from "@ant-design/icons";
+
+const { Title, Paragraph } = Typography;
+
 interface Blog {
   id: number;
   title: string;
@@ -29,9 +32,9 @@ const BlogDetail = () => {
 
   if (!blog) {
     return (
-      <div className="text-center py-10 text-xl text-red-600">
+      <Typography.Text className="text-center py-10 text-xl text-red-600">
         Blog không tồn tại!
-      </div>
+      </Typography.Text>
     );
   }
 
@@ -64,49 +67,60 @@ const BlogDetail = () => {
       <Head>
         <title>{blog.title}</title>
       </Head>
-      <div className="p-8 max-w-6xl mx-auto">
+      <Card className="p-8 max-w-6xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl font-serif text-gray-900">{blog.title}</h1>
-          <div className="mt-4 flex justify-center items-center space-x-6 text-gray-500">
-            <p className="text-sm">
+          <Title level={1}>{blog.title}</Title>
+          <Space
+            className="mt-4 flex flex-col items-center justify-center md:flew-row"
+            size="large"
+            align="center"
+            style={{
+              width: "100%",
+            }}
+          >
+            <Typography.Text className="text-sm">
               <strong>Tác giả:</strong> {blog.author}
-            </p>
-            <p className="text-sm">
+            </Typography.Text>
+            <Typography.Text className="text-sm">
               <strong>Ngày đăng:</strong> {blog.date}
-            </p>
-          </div>
-          <div className="flex justify-center items-center space-x-6 mt-6">
-            <p className="text-sm text-gray-500">Chia sẻ:</p>
-            <button
-              onClick={() => handleShare("facebook")}
-              className="hover:text-blue-600"
-            >
-              <FacebookFilled size={28} />
-            </button>
-            <button
-              onClick={() => handleShare("twitter")}
-              className="hover:text-blue-400"
-            >
-              <TwitterSquareFilled size={28} />
-            </button>
-            <button
-              onClick={() => handleShare("linkedin")}
-              className="hover:text-blue-700"
-            >
-              <LinkedinFilled size={28} />
-            </button>
-            <button
-              onClick={() => handleShare("email")}
-              className="hover:text-blue-700"
-            >
-              <MailFilled size={28} />
-            </button>
-          </div>
+            </Typography.Text>
+            <Typography.Text className="text-sm">
+              <strong> Chia sẻ:</strong>
+            </Typography.Text>
+            <Space size="large">
+              <Button
+                type="text"
+                icon={<FacebookFilled />}
+                onClick={() => handleShare("facebook")}
+                size="large"
+              />
+              <Button
+                type="text"
+                icon={<TwitterSquareFilled />}
+                onClick={() => handleShare("twitter")}
+                size="large"
+              />
+              <Button
+                type="text"
+                icon={<LinkedinFilled />}
+                onClick={() => handleShare("linkedin")}
+                size="large"
+              />
+              <Button
+                type="text"
+                icon={<MailFilled />}
+                onClick={() => handleShare("email")}
+                size="large"
+              />
+            </Space>
+          </Space>
         </header>
         <section className="text-center mb-6">
-          <p className="text-lg text-gray-700">{blog.summary}</p>
+          <Paragraph className="text-lg text-gray-700">
+            {blog.summary}
+          </Paragraph>
         </section>
-        <div className="mt-6">
+        <section className="mt-6">
           <Image
             src={blog.image}
             alt={blog.title}
@@ -115,24 +129,22 @@ const BlogDetail = () => {
             layout="responsive"
             className="rounded-lg shadow-md"
           />
-        </div>
-        <div className="mt-8">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            Nội dung
-          </h3>
-          <p className="text-lg text-gray-700 leading-relaxed">
+        </section>
+        <section className="mt-8">
+          <Title level={3}>Nội dung</Title>
+          <Paragraph className="text-lg text-gray-700 leading-relaxed">
             {blog.details}
-          </p>
-        </div>
+          </Paragraph>
+        </section>
         <div className="mt-10 text-center">
           <Button
-            className="bg-blue-500 text-white hover:bg-blue-600 px-6 py-3 rounded-md text-lg"
+            className="bg-blue-500 text-white hover:bg-blue-600 p-6 rounded-md text-lg"
             onClick={() => router.push(routerNames.BLOG)}
           >
             Quay lại
           </Button>
         </div>
-      </div>
+      </Card>
     </>
   );
 };
