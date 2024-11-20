@@ -2,7 +2,6 @@ import React, { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import Image from "next/image";
-import { FolderFilled } from "@ant-design/icons";
 
 interface Product {
   id: number;
@@ -30,6 +29,7 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
     (state: { products: Product[] }) => state.products,
   );
   const [currentPage, setCurrentPage] = useState(0);
+
   const filteredProducts = useMemo(() => {
     if (showBestSeller) {
       return products.filter((product) => product.best_seller);
@@ -58,68 +58,75 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
   };
 
   return (
-    <div className="py-4 w-full">
-      <div className="flex justify-between items-center mb-6 px-4 lg:px-6">
-        <h2 className="text-md md:text-2xl font-bold text-center">
-          {showBestSeller ? "SẢN PHẨM BÁN CHẠY" : "SẢN PHẨM NỔI BẬT"}
-        </h2>
-        <div className="flex">
+    <div className="py-4 w-full ">
+      <div className="flex flex-row justify-between items-center mb-6 px-4 lg:px-6">
+        <div className="flex flex-col items-start w-full mt-4">
+          <h2 className="text-xl md:text-3xl font-semibold text-start text-gray-800">
+            {showBestSeller
+              ? "Top sản phẩm bán chạy nhất tháng này"
+              : "Khám phá sản phẩm nổi bật được yêu thích"}
+          </h2>
+          <p className="text-sm md:text-base text-gray-600 mt-2">
+            {showBestSeller
+              ? "Hãy nhanh tay sở hữu các sản phẩm bán chạy nhất!"
+              : "Được tuyển chọn kỹ lưỡng dành riêng cho bạn."}
+          </p>
+        </div>
+        <div className="flex space-x-4">
           <Button
             onClick={prevPage}
             disabled={currentPage === 0}
-            className="mx-2"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
           >
-            &lt; Prev
+            &lt; Trước
           </Button>
           <Button
             onClick={nextPage}
             disabled={currentPage === chunkedProducts.length - 1}
-            className="mx-2"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
           >
-            Next &gt;
+            Sau &gt;
           </Button>
         </div>
       </div>
 
-      <div className="p-4 lg:p-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-6">
+      <div className="p-4 lg:p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-6">
         {chunkedProducts[currentPage]?.map((product) => (
           <Card
             key={product.id}
             hoverable
+            className="w-full flex-shrink-0 relative group shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
             cover={
               <Image
                 alt={product.name}
                 src={product.image}
                 width={500}
                 height={500}
+                className="object-cover h-64 w-full"
               />
             }
-            className="w-full flex-shrink-0"
           >
-            <div className="mb-2">
-              <FolderFilled className="text-gray-500" />
-              <span className="font-medium text-gray-900 ml-4">
-                {product.pet}
-              </span>
-            </div>
-            <Card.Meta title={product.name} description={product.description} />
-            <div className="mt-4">
-              <p className="text-lg font-bold text-orange-500">
+            <div className="p-4 bg-white flex flex-col h-full">
+              <Card.Meta
+                title={product.name}
+                description={product.description}
+                className="text-gray-700 mb-4"
+              />
+              <p className="text-lg font-semibold text-orange-500 mb-2">
                 {new Intl.NumberFormat("vi-VN", {
                   minimumFractionDigits: 3,
                   maximumFractionDigits: 3,
                 }).format(product.price)}{" "}
                 VNĐ
               </p>
-              <div className="flex items-center mt-2">
-                <Rate disabled defaultValue={product.rating} />
-                <span className="ml-2 text-gray-500">({product.rating}/5)</span>
+              <div className="flex items-center mb-2">
+                <Rate disabled defaultValue={product.rating} className="mr-2" />
+                <span className="text-gray-500">({product.rating}/5)</span>
               </div>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-600 mb-4">
                 Chỉ còn {product.stock} sản phẩm
               </p>
-
-              <Button type="primary" className="mt-4 w-full">
+              <Button type="primary" className="mt-auto w-full" size="large">
                 Mua ngay
               </Button>
             </div>

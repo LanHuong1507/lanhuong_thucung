@@ -8,22 +8,53 @@ import { routerNames } from "@/components/constants/router.constant";
 import {
   EnvironmentOutlined,
   HeartOutlined,
+  ShoppingOutlined,
   SmileOutlined,
+  SolutionOutlined,
   StarOutlined,
+  TeamOutlined,
   ThunderboltOutlined,
 } from "@ant-design/icons";
 import ProductList from "./ProductList";
 import BlogList from "./BlogList";
 const { Title, Paragraph } = Typography;
+
 const Home = () => {
+  const stats = [
+    {
+      id: 1,
+      icon: <SolutionOutlined className="text-4xl text-blue-500" />,
+      number: "1500+",
+      label: "Khách hàng",
+      bgClass: "bg-blue-50",
+      borderColor: "border-blue-400",
+    },
+    {
+      id: 2,
+      icon: <ShoppingOutlined className="text-4xl text-orange-500" />,
+      number: "1000+",
+      label: "Sản phẩm",
+      bgClass: "bg-orange-50",
+      borderColor: "border-orange-400",
+    },
+    {
+      id: 3,
+      icon: <TeamOutlined className="text-4xl text-green-500" />,
+      number: "50+",
+      label: "Giống thú cưng",
+      bgClass: "bg-green-50",
+      borderColor: "border-green-400",
+    },
+  ];
+
   return (
     <main>
       <section className="flex items-center justify-center">
         <ProductCarousel />
       </section>
-      <section className="bg-gray-50 py-6 px-4 flex flex-col md:flex-row items-center">
+      <section className="py-10 px-6 flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
             Chào mừng bạn đến với Lan Hương Pet Shop!
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -35,20 +66,19 @@ const Home = () => {
           <Link href={routerNames.INTRODUCTION} passHref>
             <Button
               type="primary"
-              className="mt-6 p-6 bg-red-600 hover:bg-blue-600 text-white"
+              className="mt-6 py-4 px-8 bg-red-600 hover:bg-blue-600 text-white text-lg rounded-lg shadow-lg"
             >
-              <span className="font-medium text-lg">Gioi Thieu</span>
-              <i className="fi fi-sr-arrow-right text-white text-lg pt-1"></i>
+              Tìm Hiểu Thêm
             </Button>
           </Link>
         </div>
-        <div className="flex-1 mt-6 md:mt-0 md:ml-6 flex justify-center">
+        <div className="flex-1 flex justify-center">
           <Image
             src={shop}
             alt="Pet Care Illustration"
-            width={350}
-            height={350}
-            className="rounded-lg shadow-md mt-4 w-full"
+            width={450}
+            height={450}
+            className="rounded-lg shadow-md object-cover"
           />
         </div>
       </section>
@@ -57,60 +87,37 @@ const Home = () => {
         <ProductList showBestSeller={true} />
       </section>
 
-      <section className="px-4 py-10">
-        <h2 className="text-xl font-semibold text-center mb-4">
-          MUA SẮM THEO THÚ CƯNG CỦA BẠN
+      <section className="px-6 py-12 bg-gray-100">
+        <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+          Mua Sắm Theo Thú Cưng Của Bạn
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 justify-center">
-          <Link
-            href={routerNames.DOG}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-ss-dog text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">CHÓ</span>
-          </Link>
-          <Link
-            href={routerNames.CAT}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-cat text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">MÈO</span>
-          </Link>
-          <Link
-            href={routerNames.FISH}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-dolphin text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">CÁ</span>
-          </Link>
-          <Link
-            href={routerNames.RABBIT}
-            className="flex flex-col items-center rounded-lg bg-slate-600 py-8 px-6 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-rabbit text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">THỎ</span>
-          </Link>
-          <Link
-            href={routerNames.TURTLE}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-turtle text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">RÙA</span>
-          </Link>
-          <Link
-            href={routerNames.BIRD}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-bird text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">CHIM</span>
-          </Link>
-          <Link
-            href={routerNames.PRODUCT}
-            className="flex flex-col items-center rounded-lg bg-slate-600 p-8 hover:bg-slate-500 transition duration-200 ease-in-out"
-          >
-            <i className="fi fi-sr-steak text-white text-4xl"></i>
-            <span className="mt-2 text-white text-xl">KHÁC</span>
-          </Link>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+          {[
+            { label: "CHÓ", icon: "fi fi-ss-dog", link: routerNames.DOG },
+            { label: "MÈO", icon: "fi fi-sr-cat", link: routerNames.CAT },
+            { label: "CÁ", icon: "fi fi-sr-dolphin", link: routerNames.FISH },
+            { label: "THỎ", icon: "fi fi-sr-rabbit", link: routerNames.RABBIT },
+            { label: "RÙA", icon: "fi fi-sr-turtle", link: routerNames.TURTLE },
+            { label: "CHIM", icon: "fi fi-sr-bird", link: routerNames.BIRD },
+            {
+              label: "KHÁC",
+              icon: "fi fi-sr-steak",
+              link: routerNames.PRODUCT,
+            },
+          ].map((item, index) => (
+            <Link
+              key={index}
+              href={item.link}
+              className="flex flex-col items-center rounded-lg bg-white p-6 hover:shadow-lg hover:scale-105 transition transform duration-300 ease-in-out border border-gray-200"
+            >
+              <div className="w-16 h-16 flex items-center justify-center bg-slate-600 text-white rounded-full">
+                <i className={`${item.icon} text-3xl`}></i>
+              </div>
+              <span className="mt-4 text-gray-700 text-lg font-medium">
+                {item.label}
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
       <section className="bg-gray-100 py-16 relative">
@@ -160,6 +167,23 @@ const Home = () => {
       </section>
       <section className="py-4">
         <ProductList showBestSeller={false} />
+      </section>
+      <section className="grid grid-cols-1 gap-6 px-6 md:grid-cols-3 md:gap-8">
+        {stats.map((stat) => (
+          <div
+            key={stat.id}
+            className={`flex space-x-4 p-6 rounded-lg border ${stat.bgClass} ${stat.borderColor} transform transition duration-300 hover:scale-105 hover:shadow-lg`}
+            style={{ borderWidth: "2px" }}
+          >
+            <div className="bg-white p-4 rounded-full shadow-md">
+              {stat.icon}
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold">{stat.number}</h2>
+              <p className="text-gray-500 text-2xl">{stat.label}</p>
+            </div>
+          </div>
+        ))}
       </section>
       <section className="py-4">
         <BlogList />

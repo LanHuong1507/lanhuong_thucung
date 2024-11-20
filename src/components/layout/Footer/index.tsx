@@ -36,7 +36,8 @@ import Visa from "../../../assets/images/visa.jpg";
 import Logo from "../../../assets/images/logo.jpg";
 import dynamic from "next/dynamic";
 import { routerNames } from "@/components/constants/router.constant";
-import { LinkedinFilled } from "@ant-design/icons";
+import { ArrowRightOutlined, LinkedinFilled } from "@ant-design/icons";
+import { Input } from "antd";
 
 const Footer = () => {
   return (
@@ -335,17 +336,14 @@ const Footer = () => {
                 độc quyền.
               </p>
               <div className="flex items-center w-full">
-                <input
+                <Input
                   type="email"
                   placeholder="Nhập email của bạn..."
                   className="rounded-lg md:rounded-l-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
+                  suffix={
+                    <ArrowRightOutlined className="text-red-600 text-lg md:text-xl" />
+                  }
                 />
-                <button className="rounded-r-lg bg-white py-2 text-red-600 flex items-center text-sm md:text-base">
-                  <span className="hidden md:block">
-                    {" "}
-                    Đăng Ký <MailOutlined className="ml-2" />
-                  </span>
-                </button>
               </div>
             </div>
 
