@@ -59,7 +59,7 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
 
   return (
     <div className="py-4 w-full ">
-      <div className="flex flex-row justify-between items-center mb-6 px-4 lg:px-6">
+      <div className="flex flex-row justify-between items-center mb-6 px-2 lg:px-6">
         <div className="flex flex-col items-start w-full mt-4">
           <h2 className="text-xl md:text-3xl font-semibold text-start text-gray-800">
             {showBestSeller
@@ -76,7 +76,7 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
           <Button
             onClick={prevPage}
             disabled={currentPage === 0}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full"
           >
             &lt; Trước
           </Button>

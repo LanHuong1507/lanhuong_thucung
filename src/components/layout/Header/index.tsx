@@ -492,11 +492,11 @@ const Header = () => {
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
               <Link href={routerNames.CATEGORY}> Danh mục sản phẩm</Link>
             </Dropdown>
-            <Link href={routerNames.HISTORY} className="hover:underline">
-              Lịch sử hình thành
-            </Link>
             <Link href={routerNames.ORGANIZATION} className="hover:underline">
               Cơ cấu tổ chức
+            </Link>
+            <Link href={routerNames.HISTORY} className="hover:underline">
+              Lịch sử hình thành
             </Link>
             <Link href={routerNames.CAREER} className="hover:underline">
               Tuyển dụng
