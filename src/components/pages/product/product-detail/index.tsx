@@ -19,7 +19,9 @@ const ProductDetail = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const products = useSelector((state: { products: Product[] }) => state.products);
+  const products = useSelector(
+    (state: { products: Product[] }) => state.products,
+  );
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
@@ -42,7 +44,7 @@ const ProductDetail = () => {
           <Image
             src={product.image}
             alt={product.name}
-            width={500} 
+            width={500}
             height={500}
             className="w-1/2"
           />

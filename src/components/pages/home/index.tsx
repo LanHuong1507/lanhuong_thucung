@@ -58,30 +58,28 @@ const Home = () => {
             Chào mừng bạn đến với Lan Hương Pet Shop!
           </h1>
           <Paragraph className="text-lg text-gray-700">
-              Chúng tôi là một doanh nghiệp chuyên cung cấp các sản phẩm và dịch
-              vụ tốt nhất dành cho thú cưng. Với sự tận tâm, chúng tôi cam kết
-              mang đến những sản phẩm an toàn, chất lượng và phù hợp với mọi nhu
-              cầu của thú cưng, từ thức ăn, phụ kiện đến các sản phẩm chăm sóc
-              sức khỏe.
-            </Paragraph>
-            <Title level={4} className="text-2xl text-gray-800 mt-6">
-              Mô Tả Sản Phẩm
-            </Title>
-            <Paragraph className="text-lg text-gray-700">
-              Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho thú
-              cưng, bao gồm:
-              <ul className="list-disc pl-5">
-                <li>Các giống thú cưng chất lượng</li>
-                <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
-                <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
-                <li>
-                  Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng
-                </li>
-                <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
-              </ul>
-              Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm bảo
-              an toàn cho sức khỏe của thú cưng.
-            </Paragraph>
+            Chúng tôi là một doanh nghiệp chuyên cung cấp các sản phẩm và dịch
+            vụ tốt nhất dành cho thú cưng. Với sự tận tâm, chúng tôi cam kết
+            mang đến những sản phẩm an toàn, chất lượng và phù hợp với mọi nhu
+            cầu của thú cưng, từ thức ăn, phụ kiện đến các sản phẩm chăm sóc sức
+            khỏe.
+          </Paragraph>
+          <Title level={4} className="text-2xl text-gray-800 mt-6">
+            Mô Tả Sản Phẩm
+          </Title>
+          <Paragraph className="text-lg text-gray-700">
+            Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho thú
+            cưng, bao gồm:
+            <ul className="list-disc pl-5">
+              <li>Các giống thú cưng chất lượng gồm chó,mèo,chim,...</li>
+              <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
+              <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
+              <li>Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng</li>
+              <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
+            </ul>
+            Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm bảo an
+            toàn cho sức khỏe của thú cưng.
+          </Paragraph>
           <Link href={routerNames.INTRODUCTION} passHref>
             <Button
               type="primary"

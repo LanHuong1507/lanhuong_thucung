@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false }
+  { ssr: false },
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -31,19 +31,19 @@ const HistoryOutlined = dynamic(
   () => import("@ant-design/icons/HistoryOutlined"),
   {
     ssr: false,
-  }
+  },
 );
 const OrderedListOutlined = dynamic(
   () => import("@ant-design/icons/OrderedListOutlined"),
   {
     ssr: false,
-  }
+  },
 );
 const CarryOutFilled = dynamic(
   () => import("@ant-design/icons/CarryOutFilled"),
   {
     ssr: false,
-  }
+  },
 );
 import { Button, Dropdown, Input, Menu, Modal } from "antd";
 
@@ -150,30 +150,6 @@ const Header = () => {
       <Menu.Item>
         <Link href="#" passHref>
           <span>Đăng suất</span>
-        </Link>
-      </Menu.Item>
-    </Menu>
-  );
-  const aboutMenu = (
-    <Menu>
-      <Menu.Item>
-        <Link href={routerNames.ABOUT} passHref>
-          <span>Về chúng tôi</span>
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link href={routerNames.INTRODUCTION} passHref>
-          <span>Giới Thiệu</span>
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link href={routerNames.HISTORY} passHref>
-          <span>Lịch sử hình thành</span>
-        </Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link href={routerNames.ORGANIZATION} passHref>
-          <span>Cơ cấu tổ chức</span>
         </Link>
       </Menu.Item>
     </Menu>
@@ -445,29 +421,18 @@ const Header = () => {
                       icon: HomeOutlined,
                     },
                     {
-                      name: "Sản phẩm",
-                      tab: "product",
-                      routerName: routerNames.PRODUCT,
-                      icon: ShoppingCartOutlined,
+                      name: "Giới thiệu",
+                      tab: "introduction",
+                      routerName: routerNames.INTRODUCTION,
+                      icon: HomeOutlined,
                     },
                     {
-                      name: "Blog",
-                      tab: "blog",
-                      routerName: routerNames.BLOG,
+                      name: "Danh mục sản phẩm",
+                      tab: "category",
+                      routerName: routerNames.CATEGORY,
                       icon: BookOutlined,
                     },
-                    {
-                      name: "Liên hệ",
-                      tab: "contact",
-                      routerName: routerNames.CONTACT,
-                      icon: PhoneOutlined,
-                    },
-                    {
-                      name: "Về chúng tôi",
-                      tab: "about",
-                      routerName: routerNames.ABOUT,
-                      icon: UserOutlined,
-                    },
+
                     {
                       name: "Lịch sử hình thành",
                       tab: "history",
@@ -480,17 +445,18 @@ const Header = () => {
                       routerName: routerNames.ORGANIZATION,
                       icon: OrderedListOutlined,
                     },
-                    {
-                      name: "Giới thiệu",
-                      tab: "introduction",
-                      routerName: routerNames.INTRODUCTION,
-                      icon: HomeOutlined,
-                    },
+
                     {
                       name: "Tuyển dụng",
                       tab: "career",
                       routerName: routerNames.CAREER,
                       icon: CarryOutFilled,
+                    },
+                    {
+                      name: "Liên hệ",
+                      tab: "contact",
+                      routerName: routerNames.CONTACT,
+                      icon: PhoneOutlined,
                     },
                   ].map((item) => (
                     <Link
@@ -526,11 +492,17 @@ const Header = () => {
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
               <Link href={routerNames.CATEGORY}> Danh mục sản phẩm</Link>
             </Dropdown>
-            <Link href={routerNames.CONTACT} className="hover:underline">
-              Liên hệ
+            <Link href={routerNames.HISTORY} className="hover:underline">
+              Lịch sử hình thành
+            </Link>
+            <Link href={routerNames.ORGANIZATION} className="hover:underline">
+              Cơ cấu tổ chức
             </Link>
             <Link href={routerNames.CAREER} className="hover:underline">
               Tuyển dụng
+            </Link>
+            <Link href={routerNames.CONTACT} className="hover:underline">
+              Liên hệ
             </Link>
           </div>
         </div>

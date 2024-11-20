@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Typography } from "antd";
+import { Card, Col, Row, Typography } from "antd";
 import Image from "next/image";
 import logo from "../../../assets/images/logo.jpg";
 import shop1 from "../../../assets/images/shop.jpg";
@@ -9,15 +9,22 @@ import chamsockhachhang from "../../../assets/images/chamsockhachhang.jpg";
 import chamsocthucung from "../../../assets/images/thucung.jpg";
 const { Title, Paragraph } = Typography;
 import {
+  EnvironmentOutlined,
   FacebookFilled,
+  HeartOutlined,
   InstagramFilled,
   LinkedinFilled,
   LinkOutlined,
   MailOutlined,
   PhoneOutlined,
+  SmileOutlined,
+  StarOutlined,
+  ThunderboltOutlined,
   TwitterCircleFilled,
   YoutubeFilled,
 } from "@ant-design/icons";
+import { routerNames } from "@/components/constants/router.constant";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
@@ -37,7 +44,6 @@ const Introduction = () => {
             Lan Hương - Thương hiệu số một chuyên cung cấp sản phẩm và dịch vụ
             cho thú cưng
           </h1>
-         
         </header>
         <Card className="shadow-lg" bordered={false}>
           <article className="text-gray-700 text-xl leading-relaxed">
@@ -58,22 +64,23 @@ const Introduction = () => {
                   lực để chúng tôi không ngừng phát triển.
                 </p>
                 <Title level={4} className="text-2xl text-gray-800 mt-6">
-              Mô Tả Sản Phẩm
-            </Title>
-            <Paragraph className="text-lg text-gray-700">
-              Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho thú
-              cưng, bao gồm:
-              <ul className="list-disc pl-5">
-                <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
-                <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
-                <li>
-                  Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng
-                </li>
-                <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
-              </ul>
-              Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm bảo
-              an toàn cho sức khỏe của thú cưng.
-            </Paragraph>
+                  Mô Tả Sản Phẩm
+                </Title>
+                <Paragraph className="text-lg text-gray-700">
+                  Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho
+                  thú cưng, bao gồm:
+                  <ul className="list-disc pl-5">
+                    <li>Các giống thú cưng chất lượng như chó,mèo,...</li>
+                    <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
+                    <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
+                    <li>
+                      Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng
+                    </li>
+                    <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
+                  </ul>
+                  Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm
+                  bảo an toàn cho sức khỏe của thú cưng.
+                </Paragraph>
                 <h2 className="mt-6 font-bold text-xl text-gray-800">
                   Giá trị cốt lõi của chúng tôi
                 </h2>
@@ -239,7 +246,182 @@ const Introduction = () => {
               mạnh cho chúng, đồng thời gia tăng sự gắn kết giữa chủ nuôi và thú
               cưng.
             </p>
-
+            <section className="bg-gray-100 py-16 relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-200 to-white opacity-30 z-0"></div>
+              <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>{" "}
+              <div className="container mx-auto px-6 relative z-10">
+                <Title
+                  level={3}
+                  className="text-3xl text-center mb-12 text-gray-800 relative z-10"
+                >
+                  Sứ Mệnh & Tầm Nhìn
+                </Title>
+                <Row gutter={[16, 16]}>
+                  <Col xs={24} md={12}>
+                    <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+                      <Title level={4} className="text-xl text-blue-400 mb-4">
+                        Sứ Mệnh
+                      </Title>
+                      <Paragraph className="text-lg text-gray-700">
+                        Sứ mệnh của chúng tôi là nâng cao chất lượng cuộc sống
+                        của thú cưng và chủ nhân, thông qua việc cung cấp các
+                        sản phẩm tốt nhất và xây dựng một cộng đồng yêu thương,
+                        nơi thú cưng được chăm sóc như một thành viên gia đình.
+                      </Paragraph>
+                      <div className="hidden md:block absolute bottom-0 right-0 p-4 text-blue-400 ">
+                        <HeartOutlined className="text-5xl" />
+                      </div>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={12}>
+                    <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+                      <Title level={4} className="text-xl text-blue-400 mb-4">
+                        Tầm Nhìn
+                      </Title>
+                      <Paragraph className="text-lg text-gray-700">
+                        Chúng tôi mong muốn trở thành nhà cung cấp hàng đầu về
+                        các sản phẩm và dịch vụ thú cưng, tạo nên một thế giới
+                        nơi thú cưng được yêu thương, chăm sóc và tôn trọng.
+                      </Paragraph>
+                      <div className="hidden md:block absolute bottom-0 right-0 p-4 text-blue-400">
+                        <StarOutlined className="text-5xl" />
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </section>
+            <section className="bg-white py-16">
+              <div className="container mx-auto px-6">
+                <Title level={3} className="text-3xl text-center mb-12">
+                  Giá Trị Cốt Lõi
+                </Title>
+                <Row gutter={[16, 16]}>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <i className="fi fi-rs-star text-4xl text-yellow-500"></i>
+                      <Title level={4} className="mt-4">
+                        Chất Lượng Hàng Đầu
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Chúng tôi cam kết cung cấp các sản phẩm đạt tiêu chuẩn
+                        cao nhất về chất lượng và an toàn.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <HeartOutlined className="text-4xl text-red-600" />
+                      <Title level={4} className="mt-4">
+                        Quan Tâm
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Chúng tôi xem mỗi thú cưng như một thành viên trong gia
+                        đình và luôn chăm sóc bằng cả trái tim.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <i className="fi fi-rs-hand-holding-heart text-4xl text-green-500"></i>
+                      <Title level={4} className="mt-4">
+                        Cộng Đồng
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Chúng tôi xây dựng một cộng đồng yêu thương thú cưng
+                        thông qua các chương trình giáo dục và sự kiện kết nối.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <EnvironmentOutlined className="text-4xl text-green-800" />
+                      <Title level={4} className="mt-4">
+                        100% Tự Nhiên
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Tất cả sản phẩm của chúng tôi đều tự nhiên và không chứa
+                        chất bảo quản độc hại, mang lại an toàn cho thú cưng của
+                        bạn.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <SmileOutlined className="text-4xl text-blue-900" />
+                      <Title level={4} className="mt-4">
+                        Dễ Dàng Chuẩn Bị
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Sản phẩm dễ dàng sử dụng và chuẩn bị, giúp tiết kiệm
+                        thời gian cho bạn.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                  <Col xs={24} md={8}>
+                    <div className="text-center">
+                      <ThunderboltOutlined className="text-4xl text-orange-700" />
+                      <Title level={4} className="mt-4">
+                        Giàu Năng Lượng
+                      </Title>
+                      <Paragraph className="text-gray-700">
+                        Các sản phẩm của chúng tôi cung cấp năng lượng dồi dào
+                        cho thú cưng, giúp chúng luôn vui vẻ và khỏe mạnh.
+                      </Paragraph>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </section>
+            <section className="px-6 py-12 bg-gray-100">
+              <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+                Mua Sắm Theo Thú Cưng Của Bạn
+              </h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
+                {[
+                  { label: "CHÓ", icon: "fi fi-ss-dog", link: routerNames.DOG },
+                  { label: "MÈO", icon: "fi fi-sr-cat", link: routerNames.CAT },
+                  {
+                    label: "CÁ",
+                    icon: "fi fi-sr-dolphin",
+                    link: routerNames.FISH,
+                  },
+                  {
+                    label: "THỎ",
+                    icon: "fi fi-sr-rabbit",
+                    link: routerNames.RABBIT,
+                  },
+                  {
+                    label: "RÙA",
+                    icon: "fi fi-sr-turtle",
+                    link: routerNames.TURTLE,
+                  },
+                  {
+                    label: "CHIM",
+                    icon: "fi fi-sr-bird",
+                    link: routerNames.BIRD,
+                  },
+                  {
+                    label: "SẢN PHẨM",
+                    icon: "fi fi-sr-steak",
+                    link: routerNames.PRODUCT,
+                  },
+                ].map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.link}
+                    className="flex flex-col items-center rounded-lg bg-white p-6 hover:shadow-lg hover:scale-105 transition transform duration-300 ease-in-out border border-gray-200"
+                  >
+                    <div className="w-16 h-16 flex items-center justify-center bg-slate-600 text-white rounded-full">
+                      <i className={`${item.icon} text-3xl`}></i>
+                    </div>
+                    <span className="mt-4 text-gray-700 text-lg font-medium">
+                      {item.label}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
             <footer className="mt-8">
               <h1 className="text-2xl font-bold text-gray-800 mb-6">
                 Liên hệ với chúng tôi
