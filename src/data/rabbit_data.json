@@ -8,8 +8,8 @@
     "life_span": "7-14 năm",
     "weight_range": "1-2 kg",
     "coat": "Lông ngắn",
-    "price": "1.500.000-4.000.000",
-    "image": "https://i.imgur.com/xyz123.jpg"
+    "price": "800.000-10.000.000",
+    "image": "https://i.imgur.com/ZJNeFLZ.jpeg"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "life_span": "8-10 năm",
     "weight_range": "1.2-2 kg",
     "coat": "Lông ngắn, mềm như nhung",
-    "price": "1.800.000-4.500.000",
-    "image": "https://i.imgur.com/abc456.jpg"
+    "price": "900.000-1.500.000",
+    "image": "[img]https://i.imgur.com/JCLRbdf.jpeg[/img]"
   },
   {
     "id": 3,
@@ -32,8 +32,8 @@
     "life_span": "7-9 năm",
     "weight_range": "1.2-1.8 kg",
     "coat": "Lông dài, xù quanh cổ",
-    "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/def789.jpg"
+    "price": "800.000-2.000.000",
+    "image": "https://i.imgur.com/YggdH5l.jpeg"
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "life_span": "10-12 năm",
     "weight_range": "0.8-1.2 kg",
     "coat": "Lông ngắn",
-    "price": "1.500.000-3.500.000",
-    "image": "https://i.imgur.com/ghi101.jpg"
+    "price": "800.000-2.000.000",
+    "image": "https://i.imgur.com/p8y4jGg.jpeg"
   },
   {
     "id": 5,
@@ -56,8 +56,8 @@
     "life_span": "8-10 năm",
     "weight_range": "6-10 kg",
     "coat": "Lông ngắn, dày",
-    "price": "3.000.000-7.000.000",
-    "image": "https://i.imgur.com/jkl112.jpg"
+    "price": "10.000.000-15.000.000",
+    "image": "https://i.imgur.com/GIKNFHu.jpeg"
   },
   {
     "id": 6,
@@ -68,8 +68,8 @@
     "life_span": "7-12 năm",
     "weight_range": "2.5-4 kg",
     "coat": "Lông dài, mềm mại",
-    "price": "4.000.000-10.000.000",
-    "image": "https://i.imgur.com/mno123.jpg"
+    "price": "2.000.000-5.000.000",
+    "image": "https://i.imgur.com/OdukFBl.jpeg"
   },
   {
     "id": 7,
@@ -80,8 +80,8 @@
     "life_span": "5-9 năm",
     "weight_range": "2-3.5 kg",
     "coat": "Lông ngắn với đốm",
-    "price": "2.500.000-5.500.000",
-    "image": "https://i.imgur.com/opq234.jpg"
+    "price": "200.000-1.500.000",
+    "image": "https://i.imgur.com/7rzFb21.jpeg"
   },
   {
     "id": 8,
@@ -92,8 +92,8 @@
     "life_span": "8-10 năm",
     "weight_range": "1-1.6 kg",
     "coat": "Lông ngắn",
-    "price": "1.800.000-3.800.000",
-    "image": "https://i.imgur.com/qrs345.jpg"
+    "price": "800.000-1.500.000",
+    "image": "https://i.imgur.com/8G1GRSy.jpeg"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "weight_range": "2.5-3.5 kg",
     "coat": "Lông ngắn, có vân đặc trưng",
     "price": "2.000.000-4.500.000",
-    "image": "https://i.imgur.com/tuv567.jpg"
+    "image": "https://i.imgur.com/l4dAKw6.jpeg"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "weight_range": "1.5-2.5 kg",
     "coat": "Lông ngắn, mịn",
     "price": "2.000.000-4.000.000",
-    "image": "https://i.imgur.com/wxy678.jpg"
+    "image": "https://i.imgur.com/YTUQPJn.jpeg"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "weight_range": "1.5-2.5 kg",
     "coat": "Lông ngắn với màu sắc đặc trưng",
     "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/uvw901.jpg"
+    "image": "https://i.imgur.com/1w0PQqJ.jpeg"
   },
   {
     "id": 12,
@@ -141,6 +141,6 @@
     "weight_range": "1.5-2 kg",
     "coat": "Lông dài, mềm mại",
     "price": "2.500.000-6.000.000",
-    "image": "https://i.imgur.com/xyz890.jpg"
+    "image": "https://i.imgur.com/MuPaaQq.jpeg"
   }
 ]

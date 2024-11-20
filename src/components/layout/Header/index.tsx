@@ -516,7 +516,7 @@ const Header = () => {
         <div className="mx-auto flex items-center justify-between px-4">
           <div className="flex items-center space-x-16 text-lg font-semibold">
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
-              <Link href="#">&#9776; Danh mục sản phẩm</Link>
+              <Link href={routerNames.CATEGORY}>&#9776; Danh mục sản phẩm</Link>
             </Dropdown>
             <Link href={routerNames.HOME} className="hover:underline">
               Trang chủ

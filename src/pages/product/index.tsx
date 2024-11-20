@@ -6,7 +6,7 @@ const Product = () => {
   return (
     <Layout>
       <Head>
-        <title>Sản phẩm</title>
+        <title>Tất Cả Sản phẩm</title>
       </Head>
       <ProductComponent />
     </Layout>

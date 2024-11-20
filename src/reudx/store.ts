@@ -7,6 +7,7 @@ import birdReducer from "./slices/birdSlice";
 import rabbitReducer from "./slices/rabbitSlice";
 import turtleReducer from "./slices/turtleSlice";
 import fishReducer from "./slices/fishSlice";
+import cartReducer from "./slices/cartSlice";
 const store = configureStore({
   reducer: {
     products: productReducer,
@@ -17,6 +18,7 @@ const store = configureStore({
     rabbits: rabbitReducer,
     turtles: turtleReducer,
     fish: fishReducer,
+    cart: cartReducer,
   },
 });
 export type RootState = ReturnType<typeof store.getState>;

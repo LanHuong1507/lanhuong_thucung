@@ -1,17 +1,6 @@
 import React, { useMemo, useState } from "react";
-import {
-  Card,
-  Button,
-  Pagination,
-  Select,
-  InputNumber,
-  Row,
-  Col,
-  Space,
-  Typography,
-} from "antd";
+import { Button, Pagination, Select, InputNumber, Typography } from "antd";
 import Image from "next/image";
-import Link from "next/link";
 import { useSelector } from "react-redux";
 import { routerNames } from "@/components/constants/router.constant";
 
@@ -77,134 +66,159 @@ const Product = ({ productsPerPage = 8 }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleAddToCart = (product: Product) => {
+    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    console.log(`${product.name} đã được thêm vào giỏ hàng.`);
+  };
+
+  const handleProductClick = (productId: number) => {
+    window.location.href = `${routerNames.PRODUCT_DETAIL.replace(
+      "[id]",
+      productId.toString(),
+    )}`;
+  };
+
   return (
     <main className="p-4 w-full mx-auto">
-      <Row gutter={[16, 16]}>
-        <Col xs={20} md={6}>
-          <Card title="Bộ lọc" bordered={false}>
-            <Space direction="vertical" size="large" style={{ width: "100%" }}>
-              <div>
-                <Title level={5}>Lọc theo thú cưng:</Title>
-                <Select
-                  placeholder="Chọn thú cưng"
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <aside className="bg-white shadow-md rounded-lg p-4">
+          <Title level={5} className="text-xl font-semibold mb-4">
+            Bộ lọc
+          </Title>
+          <div className="space-y-6">
+            <div>
+              <Title level={5} className="text-lg">
+                Lọc theo thú cưng:
+              </Title>
+              <Select
+                placeholder="Chọn thú cưng"
+                className="w-full"
+                onChange={(value) => handleFilterChange("pet", value)}
+              >
+                <Option value="">Tất cả</Option>
+                <Option value="Chó">Chó</Option>
+                <Option value="Mèo">Mèo</Option>
+                <Option value="Cá">Cá</Option>
+                <Option value="Thỏ">Thỏ</Option>
+                <Option value="Rùa">Rùa</Option>
+                <Option value="Chim">Chim</Option>
+              </Select>
+            </div>
+
+            <div>
+              <Title level={5} className="text-lg">
+                Lọc theo danh mục:
+              </Title>
+              <Select
+                placeholder="Chọn danh mục"
+                className="w-full"
+                onChange={(value) => handleFilterChange("category", value)}
+              >
+                <Option value="">Tất cả</Option>
+                <Option value="Thức ăn">Thức ăn</Option>
+                <Option value="Dụng cụ chăm sóc">Dụng cụ chăm sóc</Option>
+                <Option value="Phụ kiện">Phụ kiện</Option>
+                <Option value="Đồ chơi">Đồ chơi</Option>
+                <Option value="Khác">Khác</Option>
+              </Select>
+            </div>
+
+            <div>
+              <Title level={5} className="text-lg">
+                Lọc theo giá:
+              </Title>
+              <div className="flex gap-4">
+                <InputNumber
+                  placeholder="Giá thấp nhất"
                   className="w-full"
-                  onChange={(value) => handleFilterChange("pet", value)}
-                >
-                  <Option value="">Tất cả</Option>
-                  <Option value="Chó">Chó</Option>
-                  <Option value="Mèo">Mèo</Option>
-                  <Option value="Cá">Cá</Option>
-                  <Option value="Thỏ">Thỏ</Option>
-                  <Option value="Rùa">Rùa</Option>
-                  <Option value="Chim">Chim</Option>
-                </Select>
-              </div>
-              <div>
-                <Title level={5}>Lọc theo danh mục:</Title>
-                <Select
-                  placeholder="Chọn danh mục"
-                  className="w-full"
-                  onChange={(value) => handleFilterChange("category", value)}
-                >
-                  <Option value="">Tất cả</Option>
-                  <Option value="Thức ăn">Thức ăn</Option>
-                  <Option value="Dụng cụ chăm sóc">Dụng cụ chăm sóc</Option>
-                  <Option value="Phụ kiện">Phụ kiện</Option>
-                  <Option value="Đồ chơi">Đồ chơi</Option>
-                  <Option value="Khác">Khác</Option>
-                </Select>
-              </div>
-              <div>
-                <Title level={5}>Lọc theo giá:</Title>
-                <Row gutter={[8, 8]}>
-                  <Col span={12}>
-                    <InputNumber
-                      placeholder="Giá thấp nhất"
-                      className="w-full"
-                      onChange={(value) =>
-                        handleFilterChange("minPrice", value || 0)
-                      }
-                    />
-                  </Col>
-                  <Col span={12}>
-                    <InputNumber
-                      placeholder="Giá cao nhất"
-                      className="w-full"
-                      onChange={(value) =>
-                        handleFilterChange("maxPrice", value || Infinity)
-                      }
-                    />
-                  </Col>
-                </Row>
-              </div>
-              <div>
-                <Title level={5}>Sản phẩm bán chạy:</Title>
-                <Button
-                  type={filter.bestSeller ? "primary" : "default"}
-                  onClick={() =>
-                    handleFilterChange("bestSeller", !filter.bestSeller)
+                  onChange={(value) =>
+                    handleFilterChange("minPrice", value || 0)
                   }
-                >
-                  {filter.bestSeller ? "Hiển thị tất cả" : "Chỉ bán chạy"}
-                </Button>
+                />
+                <InputNumber
+                  placeholder="Giá cao nhất"
+                  className="w-full"
+                  onChange={(value) =>
+                    handleFilterChange("maxPrice", value || Infinity)
+                  }
+                />
               </div>
-            </Space>
-          </Card>
-        </Col>
-        <Col xs={24} md={18} lg={16}>
+            </div>
+
+            <div>
+              <Title level={5} className="text-lg">
+                Sản phẩm bán chạy:
+              </Title>
+              <Button
+                type={filter.bestSeller ? "primary" : "default"}
+                className="w-full"
+                onClick={() =>
+                  handleFilterChange("bestSeller", !filter.bestSeller)
+                }
+              >
+                {filter.bestSeller ? "Hiển thị tất cả" : "Chỉ bán chạy"}
+              </Button>
+            </div>
+          </div>
+        </aside>
+        <section className="col-span-3">
           <header className="mb-6 text-center">
-            <Title level={3}>Sản phẩm phù hợp với yêu cầu của bạn</Title>
+            <Title level={3} className="text-2xl font-bold">
+              Sản phẩm phù hợp với yêu cầu của bạn
+            </Title>
           </header>
 
-          <Row gutter={[16, 16]}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {chunkedProducts[currentPage - 1]?.map((product) => (
-              <Col key={product.id} xs={24} sm={12} md={8} lg={6}>
-                <Card
-                  hoverable
-                  cover={
-                    <Image
-                      alt={product.name}
-                      src={product.image}
-                      width={500}
-                      height={500}
-                    />
-                  }
-                >
-                  <header className="mb-2">
-                    <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                      {product.name} - {product.category}
-                    </h3>
-                  </header>
-                  <Card.Meta description={product.description} />
-                  <footer className="mt-4">
-                    <p className="text-base font-bold text-orange-500">
-                      {new Intl.NumberFormat("vi-VN", {
-                        minimumFractionDigits: 3,
-                        maximumFractionDigits: 3,
-                      }).format(product.price)}{" "}
-                      VNĐ
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Còn {product.stock} sản phẩm còn lại
-                    </p>
-                    <Link
-                      href={`${routerNames.PRODUCT_DETAIL.replace(
-                        "[id]",
-                        product.id.toString(),
-                      )}`}
-                      passHref
-                    >
-                      <Button type="primary" className="mt-4 w-full">
-                        Mua ngay
-                      </Button>
-                    </Link>
-                  </footer>
-                </Card>
-              </Col>
-            ))}
-          </Row>
+              <div
+                key={product.id}
+                className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow"
+                onClick={() => handleProductClick(product.id)}
+              >
+                <div className="relative w-full h-48 mb-4">
+                  <Image
+                    alt={product.name}
+                    src={product.image}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {product.name}
+                </h3>
+                <p className="text-sm text-gray-600">{product.category}</p>
+                <p className="mt-2 text-orange-500 font-bold">
+                  {new Intl.NumberFormat("vi-VN", {
+                    minimumFractionDigits: 3,
+                    maximumFractionDigits: 3,
+                  }).format(product.price)}{" "}
+                  VNĐ
+                </p>
 
-          <div className="flex justify-center mt-4">
+                <p className="text-sm text-gray-500">
+                  Còn {product.stock} sản phẩm
+                </p>
+
+                <div className="flex justify-between mt-4">
+                  <Button
+                    type="primary"
+                    className="w-full"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleAddToCart(product);
+                    }}
+                  >
+                    Thêm vào giỏ hàng
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-6">
             <Pagination
               total={filteredProducts.length}
               pageSize={productsPerPage}
@@ -214,8 +228,8 @@ const Product = ({ productsPerPage = 8 }) => {
               defaultCurrent={1}
             />
           </div>
-        </Col>
-      </Row>
+        </section>
+      </div>
     </main>
   );
 };

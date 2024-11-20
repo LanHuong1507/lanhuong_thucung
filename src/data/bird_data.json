@@ -8,8 +8,8 @@
     "life_span": "7-15 năm",
     "weight_range": "30-40 g",
     "color": "Xanh, vàng, trắng",
-    "price": "100.000-300.000",
-    "image": "https://i.imgur.com/abc123.jpg"
+    "price": "180.000-400.000",
+    "image": "https://i.imgur.com/KtrHhXC.jpeg"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "weight_range": "80-100 g",
     "color": "Xám, vàng, trắng",
     "price": "1.500.000-3.000.000",
-    "image": "https://i.imgur.com/def456.jpg"
+    "image": "https://i.imgur.com/zOH2Raj.jpeg"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "weight_range": "400-600 g",
     "color": "Xám, đuôi đỏ",
     "price": "10.000.000-25.000.000",
-    "image": "https://i.imgur.com/ghi789.jpg"
+    "image": "https://i.imgur.com/wgGbRoY.jpeg"
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "life_span": "8-12 năm",
     "weight_range": "20-30 g",
     "color": "Đen, trắng, cam",
-    "price": "300.000-1.000.000",
-    "image": "https://i.imgur.com/jkl112.jpg"
+    "price": "400.000-2.000.000",
+    "image": "https://i.imgur.com/1HlfCyX.jpeg"
   },
   {
     "id": 5,
@@ -56,8 +56,8 @@
     "life_span": "10-15 năm",
     "weight_range": "50-80 g",
     "color": "Nâu, trắng",
-    "price": "1.000.000-3.000.000",
-    "image": "https://i.imgur.com/mno456.jpg"
+    "price": "200.000-2.000.000",
+    "image": "https://i.imgur.com/0ZuqGbE.jpeg"
   },
   {
     "id": 6,
@@ -68,8 +68,8 @@
     "life_span": "10-15 năm",
     "weight_range": "30-40 g",
     "color": "Nâu, trắng, đỏ",
-    "price": "500.000-1.500.000",
-    "image": "https://i.imgur.com/pqr678.jpg"
+    "price": "200.000-700.000",
+    "image": "https://i.imgur.com/uurtnbl.jpeg"
   },
   {
     "id": 7,
@@ -80,8 +80,8 @@
     "life_span": "15-20 năm",
     "weight_range": "50-70 g",
     "color": "Đen, vàng",
-    "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/stu789.jpg"
+    "price": "150.000-1.500.000",
+    "image": "https://i.imgur.com/ovqDQg1.jpeg"
   },
   {
     "id": 8,
@@ -92,8 +92,8 @@
     "life_span": "10-20 năm",
     "weight_range": "30-50 g",
     "color": "Nâu, vàng",
-    "price": "700.000-2.000.000",
-    "image": "https://i.imgur.com/vwx901.jpg"
+    "price": "200.000-2.000.000",
+    "image": "https://i.imgur.com/DCD3DYx.png"
   },
   {
     "id": 9,
@@ -104,8 +104,8 @@
     "life_span": "20-30 năm",
     "weight_range": "100-150 g",
     "color": "Xanh lá, vàng, xanh dương",
-    "price": "3.000.000-6.000.000",
-    "image": "https://i.imgur.com/yza123.jpg"
+    "price": "4.000.000-10.000.000",
+    "image": "https://i.imgur.com/jc37kMH.jpeg"
   },
   {
     "id": 10,
@@ -116,8 +116,8 @@
     "life_span": "50-70 năm",
     "weight_range": "1-1.5 kg",
     "color": "Đỏ, xanh dương, vàng",
-    "price": "50.000.000-100.000.000",
-    "image": "https://i.imgur.com/bcd456.jpg"
+    "price": "5.000.000-30.000.000",
+    "image": "https://i.imgur.com/wBVLaNU.png"
   },
   {
     "id": 11,
@@ -128,8 +128,8 @@
     "life_span": "10-15 năm",
     "weight_range": "40-60 g",
     "color": "Xanh, vàng, cam",
-    "price": "1.500.000-3.000.000",
-    "image": "https://i.imgur.com/cde567.jpg"
+    "price": "200.000-2.000.000",
+    "image": "https://i.imgur.com/RqMB6Y0.jpeg"
   },
   {
     "id": 12,
@@ -140,8 +140,8 @@
     "life_span": "10-15 năm",
     "weight_range": "20-25 g",
     "color": "Vàng, xanh, trắng",
-    "price": "1.000.000-2.500.000",
-    "image": "https://i.imgur.com/efg678.jpg"
+    "price": "1.000.000-3.000.000",
+    "image": "https://i.imgur.com/o5uqDsj.jpeg"
   },
   {
     "id": 13,
@@ -152,8 +152,8 @@
     "life_span": "10-15 năm",
     "weight_range": "20-30 g",
     "color": "Đen, trắng",
-    "price": "500.000-1.500.000",
-    "image": "https://i.imgur.com/ghi123.jpg"
+    "price": "200.000-5.000.000",
+    "image": "https://i.imgur.com/QM2q2rK.jpeg"
   },
   {
     "id": 14,
@@ -164,8 +164,8 @@
     "life_span": "12-20 năm",
     "weight_range": "30-40 g",
     "color": "Nâu, trắng",
-    "price": "1.500.000-4.000.000",
-    "image": "https://i.imgur.com/hij456.jpg"
+    "price": "1.000.000-3.000.000",
+    "image": "https://i.imgur.com/hAILTnF.jpeg"
   },
   {
     "id": 15,
@@ -176,8 +176,8 @@
     "life_span": "5-8 năm",
     "weight_range": "15-25 g",
     "color": "Xanh, vàng",
-    "price": "200.000-500.000",
-    "image": "https://i.imgur.com/klm789.jpg"
+    "price": "200.000-2.500.000",
+    "image": "https://i.imgur.com/eOCquDS.jpeg"
   },
   {
     "id": 16,
@@ -188,8 +188,8 @@
     "life_span": "8-12 năm",
     "weight_range": "20-30 g",
     "color": "Vàng, trắng",
-    "price": "800.000-2.000.000",
-    "image": "https://i.imgur.com/nop901.jpg"
+    "price": "1.000.000-5.000.000",
+    "image": "https://i.imgur.com/wW9Q34t.jpeg"
   },
   {
     "id": 17,
@@ -200,7 +200,7 @@
     "life_span": "7-10 năm",
     "weight_range": "15-25 g",
     "color": "Vàng, xanh lá",
-    "price": "300.000-700.000",
+    "price": "3.000.000-5.000.000",
     "image": "https://i.imgur.com/qrs123.jpg"
   },
   {
@@ -212,7 +212,7 @@
     "life_span": "15-25 năm",
     "weight_range": "70-100 g",
     "color": "Đen bóng",
-    "price": "1.000.000-3.000.000",
-    "image": "https://i.imgur.com/tuv456.jpg"
+    "price": "100.000-600.000",
+    "image": "https://i.imgur.com/s4bxrmD.jpeg"
   }
 ]

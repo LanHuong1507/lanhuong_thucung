@@ -8,8 +8,8 @@
     "life_span": "20-40 năm",
     "weight_range": "0.5-2 kg",
     "shell": "Màu xanh lá với sọc đỏ sau mắt",
-    "price": "200.000-500.000",
-    "image": "https://i.imgur.com/abc123.jpg"
+    "price": "40.000-100.000",
+    "image": "https://i.imgur.com/5R7VW1b.jpeg"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "life_span": "30-50 năm",
     "weight_range": "0.5-1.5 kg",
     "shell": "Màu nâu hoặc vàng với hoa văn",
-    "price": "800.000-1.500.000",
-    "image": "https://i.imgur.com/def456.jpg"
+    "price": "100.000-250.000",
+    "image": "https://i.imgur.com/Wbe9n22.jpeg"
   },
   {
     "id": 3,
@@ -32,8 +32,8 @@
     "life_span": "20-30 năm",
     "weight_range": "0.8-2 kg",
     "shell": "Màu xanh sẫm với các sọc vàng",
-    "price": "500.000-1.000.000",
-    "image": "https://i.imgur.com/ghi789.jpg"
+    "price": "2.000.000-2.500.000",
+    "image": "https://i.imgur.com/ewwlNjX.jpeg"
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "life_span": "50-80 năm",
     "weight_range": "8-20 kg",
     "shell": "Màu nâu cát",
-    "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/jkl112.jpg"
+    "price": "2.000.000-4.000.000",
+    "image": "https://i.imgur.com/1bZ3zC9.jpeg"
   },
   {
     "id": 5,
@@ -56,8 +56,8 @@
     "life_span": "30-60 năm",
     "weight_range": "0.4-1.2 kg",
     "shell": "Màu vàng hoặc nâu đậm",
-    "price": "3.000.000-6.000.000",
-    "image": "https://i.imgur.com/mno456.jpg"
+    "price": "600.000-900.000",
+    "image": "https://i.imgur.com/2ZZJ6D0.jpeg"
   },
   {
     "id": 6,
@@ -68,8 +68,8 @@
     "life_span": "70-100 năm",
     "weight_range": "40-100 kg",
     "shell": "Màu vàng cát với các vân lớn",
-    "price": "10.000.000-25.000.000",
-    "image": "https://i.imgur.com/pqr678.jpg"
+    "price": "2.000.000-25.000.000",
+    "image": "https://i.imgur.com/Ggu8n4h.jpeg"
   },
   {
     "id": 7,
@@ -80,8 +80,8 @@
     "life_span": "30-50 năm",
     "weight_range": "0.6-1.5 kg",
     "shell": "Màu nâu đen với vạch vàng nổi bật",
-    "price": "2.000.000-4.000.000",
-    "image": "https://i.imgur.com/stu789.jpg"
+    "price": "50.000.000-150.000.000",
+    "image": "https://i.imgur.com/CUStPQ1.jpeg"
   },
   {
     "id": 8,
@@ -92,8 +92,8 @@
     "life_span": "20-30 năm",
     "weight_range": "0.5-1 kg",
     "shell": "Màu nâu với các sọc vàng trên chân",
-    "price": "500.000-1.500.000",
-    "image": "https://i.imgur.com/vwx901.jpg"
+    "price": "400.000-600.000",
+    "image": "https://i.imgur.com/2xCYYWZ.jpeg"
   },
   {
     "id": 9,
@@ -104,8 +104,8 @@
     "life_span": "40-50 năm",
     "weight_range": "1-3 kg",
     "shell": "Màu nâu hoặc xanh lá",
-    "price": "3.000.000-6.000.000",
-    "image": "https://i.imgur.com/yza123.jpg"
+    "price": "50.000-70.000",
+    "image": "https://i.imgur.com/BcNZk66.jpeg"
   },
   {
     "id": 10,
@@ -116,8 +116,8 @@
     "life_span": "25-35 năm",
     "weight_range": "0.8-2 kg",
     "shell": "Màu nâu vàng với hoa văn đậm",
-    "price": "2.000.000-4.000.000",
-    "image": "https://i.imgur.com/bcd456.jpg"
+    "price": "1.600.000-3.900.000",
+    "image": "https://i.imgur.com/Iu0rIPx.jpeg"
   },
   {
     "id": 11,
@@ -128,8 +128,8 @@
     "life_span": "50-75 năm",
     "weight_range": "2-5 kg",
     "shell": "Màu vàng sáng với vân đậm",
-    "price": "5.000.000-10.000.000",
-    "image": "https://i.imgur.com/cde567.jpg"
+    "price": "2.500.000-3.500.000",
+    "image": "https://i.imgur.com/MVA4gw9.jpeg"
   },
   {
     "id": 12,
@@ -140,7 +140,7 @@
     "life_span": "20-30 năm",
     "weight_range": "1-3 kg",
     "shell": "Mềm, màu xanh xám",
-    "price": "2.000.000-6.000.000",
-    "image": "https://i.imgur.com/efg678.jpg"
+    "price": "1.600.000-3.900.000",
+    "image": "https://i.imgur.com/5VuEcz7.jpeg"
   }
 ]
