@@ -25,6 +25,7 @@ import {
 } from "@ant-design/icons";
 import { routerNames } from "@/components/constants/router.constant";
 import Link from "next/link";
+import ProductList from "../home/ProductList";
 
 const Introduction = () => {
   return (
@@ -375,7 +376,7 @@ const Introduction = () => {
             </section>
             <section className="px-6 py-12 bg-gray-100">
               <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
-                Mua Sắm Theo Thú Cưng Của Bạn
+                Đây là các danh mục sản phẩm của chúng tôi
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6">
                 {[
@@ -421,6 +422,9 @@ const Introduction = () => {
                   </Link>
                 ))}
               </div>
+            </section>
+            <section className="py-4">
+              <ProductList showBestSeller={true} />
             </section>
             <footer className="mt-8">
               <h1 className="text-2xl font-bold text-gray-800 mb-6">

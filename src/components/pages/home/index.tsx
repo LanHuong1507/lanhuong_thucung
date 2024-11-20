@@ -241,16 +241,6 @@ const Home = () => {
             triển bởi các chuyên gia hàng đầu, chúng tôi cam kết mang đến chất
             lượng tốt nhất cho thú cưng của bạn.
           </p>
-
-          <Link href={routerNames.ABOUT} passHref>
-            <Button
-              type="primary"
-              className="mt-6 p-6 bg-red-600 hover:bg-blue-600 text-white"
-            >
-              <span className="font-medium text-lg">Về Chúng Tôi</span>
-              <i className="fi fi-sr-arrow-right text-white text-lg pt-1"></i>
-            </Button>
-          </Link>
         </article>
 
         <aside className="flex-1 mt-4 lg:flex justify-end">
