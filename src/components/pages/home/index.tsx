@@ -57,12 +57,31 @@ const Home = () => {
           <h1 className="text-4xl font-bold text-gray-800 mb-4 leading-tight">
             Chào mừng bạn đến với Lan Hương Pet Shop!
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
-            Chúng tôi chuyên cung cấp các sản phẩm và dịch vụ chăm sóc thú cưng
-            tốt nhất, từ thức ăn, phụ kiện đến các dịch vụ tư vấn sức khỏe. Hãy
-            cùng khám phá để mang lại những điều tuyệt vời nhất cho thú cưng của
-            bạn!
-          </p>
+          <Paragraph className="text-lg text-gray-700">
+              Chúng tôi là một doanh nghiệp chuyên cung cấp các sản phẩm và dịch
+              vụ tốt nhất dành cho thú cưng. Với sự tận tâm, chúng tôi cam kết
+              mang đến những sản phẩm an toàn, chất lượng và phù hợp với mọi nhu
+              cầu của thú cưng, từ thức ăn, phụ kiện đến các sản phẩm chăm sóc
+              sức khỏe.
+            </Paragraph>
+            <Title level={4} className="text-2xl text-gray-800 mt-6">
+              Mô Tả Sản Phẩm
+            </Title>
+            <Paragraph className="text-lg text-gray-700">
+              Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho thú
+              cưng, bao gồm:
+              <ul className="list-disc pl-5">
+                <li>Các giống thú cưng chất lượng</li>
+                <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
+                <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
+                <li>
+                  Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng
+                </li>
+                <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
+              </ul>
+              Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm bảo
+              an toàn cho sức khỏe của thú cưng.
+            </Paragraph>
           <Link href={routerNames.INTRODUCTION} passHref>
             <Button
               type="primary"

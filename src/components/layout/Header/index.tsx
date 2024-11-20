@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 const SearchOutlined = dynamic(
   () => import("@ant-design/icons/SearchOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const ShoppingCartOutlined = dynamic(
   () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false },
+  { ssr: false }
 );
 const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
   ssr: false,
@@ -31,19 +31,19 @@ const HistoryOutlined = dynamic(
   () => import("@ant-design/icons/HistoryOutlined"),
   {
     ssr: false,
-  },
+  }
 );
 const OrderedListOutlined = dynamic(
   () => import("@ant-design/icons/OrderedListOutlined"),
   {
     ssr: false,
-  },
+  }
 );
 const CarryOutFilled = dynamic(
   () => import("@ant-design/icons/CarryOutFilled"),
   {
     ssr: false,
-  },
+  }
 );
 import { Button, Dropdown, Input, Menu, Modal } from "antd";
 
@@ -515,28 +515,20 @@ const Header = () => {
       <nav className="hidden bg-blue-900 py-2 text-white lg:flex">
         <div className="mx-auto flex items-center justify-between px-4">
           <div className="flex items-center space-x-16 text-lg font-semibold">
+            <div className="relative">
+              <Link
+                href={routerNames.INTRODUCTION}
+                className="text-white hover:underline"
+              >
+                Giới thiệu
+              </Link>
+            </div>
             <Dropdown overlay={categoryMenu} trigger={["hover"]}>
-              <Link href={routerNames.CATEGORY}>&#9776; Danh mục sản phẩm</Link>
+              <Link href={routerNames.CATEGORY}> Danh mục sản phẩm</Link>
             </Dropdown>
-            <Link href={routerNames.HOME} className="hover:underline">
-              Trang chủ
-            </Link>
-            <Link href={routerNames.PRODUCT} className="hover:underline">
-              Sản phẩm
-            </Link>
-            <Link href={routerNames.BLOG} className="hover:underline">
-              Blog
-            </Link>
             <Link href={routerNames.CONTACT} className="hover:underline">
               Liên hệ
             </Link>
-            <div className="relative">
-              <Dropdown overlay={aboutMenu} trigger={["hover"]}>
-                <Link href="#" className="text-white hover:underline">
-                  Về chúng tôi
-                </Link>
-              </Dropdown>
-            </div>
             <Link href={routerNames.CAREER} className="hover:underline">
               Tuyển dụng
             </Link>

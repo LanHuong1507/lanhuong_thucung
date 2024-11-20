@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Button, Typography } from "antd";
 import Head from "next/head";
-import Image from "next/image";  // Import Image for optimization
+import Image from "next/image";
 
 const { Title } = Typography;
 
@@ -42,8 +42,8 @@ const ProductDetail = () => {
           <Image
             src={product.image}
             alt={product.name}
-            width={500}  // Set image width
-            height={500} // Set image height
+            width={500} 
+            height={500}
             className="w-1/2"
           />
           <div className="ml-4">

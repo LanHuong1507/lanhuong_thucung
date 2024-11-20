@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "antd";
+import { Card, Typography } from "antd";
 import Image from "next/image";
 import logo from "../../../assets/images/logo.jpg";
 import shop1 from "../../../assets/images/shop.jpg";
@@ -7,6 +7,7 @@ import shop2 from "../../../assets/images/shop2.jpg";
 import thithi from "../../../assets/images/thithipet.jpg";
 import chamsockhachhang from "../../../assets/images/chamsockhachhang.jpg";
 import chamsocthucung from "../../../assets/images/thucung.jpg";
+const { Title, Paragraph } = Typography;
 import {
   FacebookFilled,
   InstagramFilled,
@@ -36,9 +37,7 @@ const Introduction = () => {
             Lan Hương - Thương hiệu số một chuyên cung cấp sản phẩm và dịch vụ
             cho thú cưng
           </h1>
-          <p className="text-gray-600 mt-3">
-            Chuyên cung cấp các sản phẩm và dịch vụ hàng đầu dành cho thú cưng.
-          </p>
+         
         </header>
         <Card className="shadow-lg" bordered={false}>
           <article className="text-gray-700 text-xl leading-relaxed">
@@ -58,7 +57,23 @@ const Introduction = () => {
                   và yêu mến từ cộng đồng. Sự hài lòng của khách hàng là động
                   lực để chúng tôi không ngừng phát triển.
                 </p>
-
+                <Title level={4} className="text-2xl text-gray-800 mt-6">
+              Mô Tả Sản Phẩm
+            </Title>
+            <Paragraph className="text-lg text-gray-700">
+              Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao cho thú
+              cưng, bao gồm:
+              <ul className="list-disc pl-5">
+                <li>Thức ăn dinh dưỡng, phù hợp với từng loại thú cưng</li>
+                <li>Phụ kiện thời trang và tiện ích cho thú cưng</li>
+                <li>
+                  Sản phẩm chăm sóc sức khỏe như vitamin và thuốc thú cưng
+                </li>
+                <li>Đồ chơi và các sản phẩm giải trí cho thú cưng</li>
+              </ul>
+              Mỗi sản phẩm của chúng tôi đều được kiểm tra kỹ lưỡng và đảm bảo
+              an toàn cho sức khỏe của thú cưng.
+            </Paragraph>
                 <h2 className="mt-6 font-bold text-xl text-gray-800">
                   Giá trị cốt lõi của chúng tôi
                 </h2>
