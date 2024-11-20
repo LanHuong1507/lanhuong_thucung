@@ -69,7 +69,8 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGDog, thức ăn khô cho thú cưng của bạn
+              Lan Hương Pet Shop,chúng tôi cung cấp các giống chó và các sản
+              phẩm chăm sóc chất lượng
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
@@ -130,7 +131,8 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGCat, thức ăn cao cấp cho mèo của bạn
+              Lan Hương Pet Shop,nơi có những giống mèo chất lượng và các sản
+              phẩm chăm sóc mèo
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">
@@ -191,7 +193,8 @@ const ProductCarousel = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold text-black mb-4 text-shadow-lg">
-              PGFish, thức ăn lành mạnh cho cá
+              Lan Hương Pet Shop,thức ăn cá chất lượng và các sản phẩm chăm sóc
+              cá cũng như đa dạng các loài cá cảnh
             </h1>
             <div className="flex flex-col justify-start gap-8 text-black text-lg mb-6 font-semibold lg:flex-row">
               <span className="flex items-center gap-2">

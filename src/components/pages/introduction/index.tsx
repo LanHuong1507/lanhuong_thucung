@@ -40,11 +40,7 @@ const Introduction = () => {
             Chuyên cung cấp các sản phẩm và dịch vụ hàng đầu dành cho thú cưng.
           </p>
         </header>
-        <Card
-          className="shadow-lg"
-          bordered={false}
-          bodyStyle={{ padding: "20px" }}
-        >
+        <Card className="shadow-lg" bordered={false}>
           <article className="text-gray-700 text-xl leading-relaxed">
             <section className="flex flex-col md:flex-row items-center">
               <section className="md:w-2/3">
@@ -249,7 +245,7 @@ const Introduction = () => {
                   </div>
                   <div className="text-left">
                     <p className="text-sm font-semibold">Email us</p>
-                    <p className="text-base font-bold">
+                    <p className="text-sm font-bold">
                       phuonghuong150702@gmail.com
                     </p>
                   </div>

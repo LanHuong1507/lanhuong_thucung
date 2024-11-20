@@ -338,10 +338,13 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Nhập email của bạn..."
-                  className="rounded-l-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
+                  className="rounded-lg md:rounded-l-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
                 />
-                <button className="rounded-r-lg bg-white p-2 text-red-600 flex items-center text-sm md:text-base">
-                  Đăng Ký <MailOutlined className="ml-2" />
+                <button className="rounded-r-lg bg-white py-2 text-red-600 flex items-center text-sm md:text-base">
+                  <span className="hidden md:block">
+                    {" "}
+                    Đăng Ký <MailOutlined className="ml-2" />
+                  </span>
                 </button>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { Button, Typography,Card, Space } from "antd";
+import { Button, Typography, Card, Space } from "antd";
 import Image from "next/image";
 import { routerNames } from "@/components/constants/router.constant";
 import Head from "next/head";
@@ -37,29 +37,30 @@ const BlogDetail = () => {
       </Typography.Text>
     );
   }
-
   const handleShare = (platform: string) => {
-    const url = window.location.href;
-    let shareUrl = "";
+    if (typeof window !== "undefined") {
+      const url = window.location.href;
+      let shareUrl = "";
 
-    switch (platform) {
-      case "facebook":
-        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-        break;
-      case "twitter":
-        shareUrl = `https://twitter.com/intent/tweet?url=${url}`;
-        break;
-      case "linkedin":
-        shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}`;
-        break;
-      case "email":
-        shareUrl = `mailto:?subject=${blog.title}&body=${blog.summary}`;
-        break;
-      default:
-        break;
+      switch (platform) {
+        case "facebook":
+          shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+          break;
+        case "twitter":
+          shareUrl = `https://twitter.com/intent/tweet?url=${url}`;
+          break;
+        case "linkedin":
+          shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${url}`;
+          break;
+        case "email":
+          shareUrl = `mailto:?subject=${blog.title}&body=${blog.summary}`;
+          break;
+        default:
+          break;
+      }
+
+      window.open(shareUrl, "_blank");
     }
-
-    window.open(shareUrl, "_blank");
   };
 
   return (
@@ -71,7 +72,7 @@ const BlogDetail = () => {
         <header className="text-center mb-8">
           <Title level={1}>{blog.title}</Title>
           <Space
-            className="mt-4 flex flex-col items-center justify-center md:flew-row"
+            className="mt-4 flex flex-col items-center justify-center md:flex-row"
             size="large"
             align="center"
             style={{

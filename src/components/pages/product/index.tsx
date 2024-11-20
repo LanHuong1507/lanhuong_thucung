@@ -165,7 +165,6 @@ const Product = ({ productsPerPage = 8 }) => {
                     <Image
                       alt={product.name}
                       src={product.image}
-                      layout="responsive"
                       width={500}
                       height={500}
                     />

@@ -74,7 +74,7 @@ const About = () => {
       </main>
       <section className="bg-gray-100 py-16 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-200 to-white opacity-30 z-0"></div>
-        <div className="absolute inset-0 bg-[url('/path/to/your-pattern.png')] bg-cover opacity-20 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>{" "}
         <div className="container mx-auto px-6 relative z-10">
           <Title
             level={3}

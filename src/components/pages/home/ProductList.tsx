@@ -1,13 +1,8 @@
 import React, { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
-import dynamic from "next/dynamic";
 import Image from "next/image";
-
-const FolderFilled = dynamic(
-  () => import("@ant-design/icons").then((icon) => icon.FolderFilled),
-  { ssr: false },
-);
+import { FolderFilled } from "@ant-design/icons";
 
 interface Product {
   id: number;
@@ -95,7 +90,6 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
               <Image
                 alt={product.name}
                 src={product.image}
-                layout="responsive"
                 width={500}
                 height={500}
               />

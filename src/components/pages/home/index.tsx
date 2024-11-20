@@ -2,7 +2,8 @@ import Link from "next/link";
 import ProductCarousel from "../../pages/home/ProductCarousel";
 import Image from "next/image";
 import PeoDog from "../../../assets/images/pd.jpg";
-import { Button } from "antd";
+import shop from "../../../assets/images/shop1.png";
+import { Button, Col, Row, Typography } from "antd";
 import { routerNames } from "@/components/constants/router.constant";
 import {
   EnvironmentOutlined,
@@ -13,12 +14,43 @@ import {
 } from "@ant-design/icons";
 import ProductList from "./ProductList";
 import BlogList from "./BlogList";
-
+const { Title, Paragraph } = Typography;
 const Home = () => {
   return (
     <main>
       <section className="flex items-center justify-center">
         <ProductCarousel />
+      </section>
+      <section className="bg-gray-50 py-6 px-4 flex flex-col md:flex-row items-center">
+        <div className="flex-1 text-center md:text-left">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            Chào mừng bạn đến với Lan Hương Pet Shop!
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Chúng tôi chuyên cung cấp các sản phẩm và dịch vụ chăm sóc thú cưng
+            tốt nhất, từ thức ăn, phụ kiện đến các dịch vụ tư vấn sức khỏe. Hãy
+            cùng khám phá để mang lại những điều tuyệt vời nhất cho thú cưng của
+            bạn!
+          </p>
+          <Link href={routerNames.INTRODUCTION} passHref>
+            <Button
+              type="primary"
+              className="mt-6 p-6 bg-red-600 hover:bg-blue-600 text-white"
+            >
+              <span className="font-medium text-lg">Gioi Thieu</span>
+              <i className="fi fi-sr-arrow-right text-white text-lg pt-1"></i>
+            </Button>
+          </Link>
+        </div>
+        <div className="flex-1 mt-6 md:mt-0 md:ml-6 flex justify-center">
+          <Image
+            src={shop}
+            alt="Pet Care Illustration"
+            width={350}
+            height={350}
+            className="rounded-lg shadow-md mt-4 w-full"
+          />
+        </div>
       </section>
 
       <section className="py-4">
@@ -81,7 +113,51 @@ const Home = () => {
           </Link>
         </div>
       </section>
-
+      <section className="bg-gray-100 py-16 relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-200 to-white opacity-30 z-0"></div>
+        <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>{" "}
+        <div className="container mx-auto px-6 relative z-10">
+          <Title
+            level={3}
+            className="text-3xl text-center mb-12 text-gray-800 relative z-10"
+          >
+            Sứ Mệnh & Tầm Nhìn
+          </Title>
+          <Row gutter={[16, 16]}>
+            <Col xs={24} md={12}>
+              <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+                <Title level={4} className="text-xl text-blue-400 mb-4">
+                  Sứ Mệnh
+                </Title>
+                <Paragraph className="text-lg text-gray-700">
+                  Sứ mệnh của chúng tôi là nâng cao chất lượng cuộc sống của thú
+                  cưng và chủ nhân, thông qua việc cung cấp các sản phẩm tốt
+                  nhất và xây dựng một cộng đồng yêu thương, nơi thú cưng được
+                  chăm sóc như một thành viên gia đình.
+                </Paragraph>
+                <div className="hidden md:block absolute bottom-0 right-0 p-4 text-blue-400 ">
+                  <HeartOutlined className="text-5xl" />
+                </div>
+              </div>
+            </Col>
+            <Col xs={24} md={12}>
+              <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+                <Title level={4} className="text-xl text-blue-400 mb-4">
+                  Tầm Nhìn
+                </Title>
+                <Paragraph className="text-lg text-gray-700">
+                  Chúng tôi mong muốn trở thành nhà cung cấp hàng đầu về các sản
+                  phẩm và dịch vụ thú cưng, tạo nên một thế giới nơi thú cưng
+                  được yêu thương, chăm sóc và tôn trọng.
+                </Paragraph>
+                <div className="hidden md:block absolute bottom-0 right-0 p-4 text-blue-400">
+                  <StarOutlined className="text-5xl" />
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </section>
       <section className="py-4">
         <ProductList showBestSeller={false} />
       </section>

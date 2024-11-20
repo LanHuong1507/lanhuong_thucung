@@ -84,7 +84,6 @@ const BlogList = ({ limit = 8 }) => {
               <Image
                 alt={blog.title}
                 src={blog.image}
-                layout="responsive"
                 width={500}
                 height={500}
               />
