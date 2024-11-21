@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Hamster Syrian",
+      "origin": "Syria",
+      "size": "Lớn",
+      "temperament": ["Hiền lành", "Thân thiện", "Thích khám phá"],
+      "life_span": "2-3 năm",
+      "weight_range": "120-180 g",
+      "color": "Vàng, nâu, đen, trắng",
+      "price": "150.000-500.000",
+      "image": "https://i.imgur.com/1SyFcUl.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Hamster Dwarf Campbells",
+      "origin": "Mông Cổ, Kazakhstan",
+      "size": "Nhỏ",
+      "temperament": ["Hoạt bát", "Thích chạy nhảy", "Thân thiện"],
+      "life_span": "1-3 năm",
+      "weight_range": "30-50 g",
+      "color": "Nâu, xám, trắng",
+      "price": "100.000-400.000",
+      "image": "https://i.imgur.com/7F4k0eK.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Hamster Roborovski",
+      "origin": "Mông Cổ, Trung Á",
+      "size": "Rất nhỏ",
+      "temperament": ["Nhanh nhẹn", "Hoạt bát", "Khó nuôi"],
+      "life_span": "3-4 năm",
+      "weight_range": "20-30 g",
+      "color": "Nâu, trắng, xám",
+      "price": "200.000-600.000",
+      "image": "https://i.imgur.com/FMLYv6z.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Hamster Dwarf Winter White",
+      "origin": "Kazakhstan, Mông Cổ",
+      "size": "Nhỏ",
+      "temperament": ["Hiền lành", "Thích sự yên tĩnh", "Thân thiện"],
+      "life_span": "2-3 năm",
+      "weight_range": "30-50 g",
+      "color": "Trắng, xám, nâu",
+      "price": "150.000-450.000",
+      "image": "https://i.imgur.com/7IqgAd5.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Hamster Chinese",
+      "origin": "Trung Quốc",
+      "size": "Nhỏ",
+      "temperament": ["Thân thiện", "Nhút nhát", "Ít hoạt động"],
+      "life_span": "2-3 năm",
+      "weight_range": "50-80 g",
+      "color": "Nâu vàng, xám",
+      "price": "120.000-400.000",
+      "image": "https://i.imgur.com/2vA5Tb1.jpeg"
+    }
+  ]
+  

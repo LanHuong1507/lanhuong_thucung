@@ -57,25 +57,47 @@ const Home = () => {
             <span className="text-blue-600">Lan Hương Pet Shop!</span>
           </h1>
           <p className="text-lg text-gray-700">
-            <strong>Lan Hương</strong> - thương hiệu chăm sóc thú cưng hàng đầu
-            tại Việt Nam, đồng hành cùng bạn từ năm 2024.
+            <strong>Lan Hương Pet Shop</strong> là một doanh nghiệp một thành
+            viên được thành lập vào năm 2024, với sứ mệnh mang lại những sản
+            phẩm và dịch vụ chăm sóc thú cưng chất lượng nhất tại Việt Nam. Dù
+            là một công ty mới, nhưng chúng tôi đã nhanh chóng khẳng định được
+            uy tín nhờ vào chất lượng sản phẩm vượt trội và sự tận tâm với từng
+            khách hàng.
           </p>
           <p className="text-md text-gray-800">
-            Chúng tôi không chỉ cung cấp sản phẩm chất lượng mà còn hướng đến
-            việc tạo ra một cuộc sống hạnh phúc và khỏe mạnh cho thú cưng của
-            bạn.
+            Tại Lan Hương, chúng tôi chuyên cung cấp giống loài thú cưng, các
+            sản phẩm chăm sóc, dinh dưỡng, cùng dụng cụ hỗ trợ chăm sóc toàn
+            diện cho thú cưng của bạn. Mỗi sản phẩm mà chúng tôi cung cấp đều
+            được chọn lọc kỹ càng, đảm bảo chất lượng cao và phù hợp với nhu cầu
+            của từng loại thú cưng.
           </p>
           <ul className="list-disc list-inside text-gray-800 space-y-2">
-            <li>Mạng lưới cửa hàng tiện lợi, dễ dàng tiếp cận.</li>
-            <li>Sản phẩm giúp thú cưng khỏe mạnh và phát triển toàn diện.</li>
-            <li>Đồng hành cùng chuyên gia để mang lại dịch vụ tối ưu.</li>
             <li>
-              Cộng đồng yêu thú cưng, nơi chia sẻ kiến thức và kinh nghiệm.
+              <strong>Giống loài thú cưng chất lượng</strong>: Chúng tôi cung
+              cấp các giống chó, mèo, chim, cá và các loài thú cưng khác, tất cả
+              đều được chọn lọc kỹ càng và có nguồn gốc rõ ràng.
+            </li>
+            <li>
+              <strong>Sản phẩm chăm sóc sức khỏe</strong>: Các sản phẩm dinh
+              dưỡng, thuốc bổ, sữa tắm, dầu gội, thức ăn cho thú cưng giúp chúng
+              phát triển khỏe mạnh và sạch sẽ.
+            </li>
+            <li>
+              <strong>Dụng cụ chăm sóc chuyên dụng</strong>: Đồ chơi, phụ kiện,
+              quần áo, và các thiết bị chăm sóc giúp thú cưng luôn thoải mái,
+              vui vẻ và an toàn.
+            </li>
+            <li>
+              <strong>Dịch vụ tư vấn chuyên nghiệp</strong>: Với đội ngũ nhân
+              viên tận tâm và am hiểu về thú cưng, Lan Hương cung cấp các dịch
+              vụ tư vấn về dinh dưỡng, chăm sóc và phát triển sức khỏe cho thú
+              cưng.
             </li>
           </ul>
           <p className="text-lg font-semibold text-blue-700 mt-4">
-            Hãy để Lan Hương trở thành người bạn đồng hành đáng tin cậy của bạn
-            và thú cưng!
+            Chúng tôi cam kết mang lại cho bạn và thú cưng những sản phẩm và
+            dịch vụ chăm sóc chất lượng cao, đồng thời luôn nỗ lực để trở thành
+            người bạn đồng hành đáng tin cậy trong hành trình chăm sóc thú cưng.
           </p>
         </div>
         <div className="flex-1 flex justify-center animate-float">
@@ -88,6 +110,7 @@ const Home = () => {
           />
         </div>
       </section>
+
       <section className="py-8">
         <div className="container mx-auto px-6">
           <Tabs defaultActiveKey="1" centered>
@@ -322,7 +345,7 @@ const Home = () => {
                       {category.description}
                     </p>
                     <Link
-                      href={routerNames.PRODUCT_DETAIL + `/${category.id}`}
+                      href={routerNames.CATEGORY}
                       passHref
                     >
                       <Button className="mt-4 bg-yellow-500 text-white hover:bg-yellow-400">
