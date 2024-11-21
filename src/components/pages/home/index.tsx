@@ -441,7 +441,6 @@ const Home = () => {
                 <Image
                   src={PepDog}
                   alt="Pet Community Center"
-                  layout="responsive"
                   width={1899}
                   height={733}
                   className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"

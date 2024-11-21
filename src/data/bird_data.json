@@ -7,7 +7,7 @@
     "temperament": ["Thân thiện", "Hoạt bát", "Dễ nuôi"],
     "life_span": "7-15 năm",
     "weight_range": "30-40 g",
-    "color": "Xanh, vàng, trắng",
+    "color": "Xanh, Vàng,Trắng",
     "price": "180.000-400.000",
     "image": "https://i.imgur.com/KtrHhXC.jpeg"
   },
@@ -19,7 +19,7 @@
     "temperament": ["Thân thiện", "Dễ thương", "Thích hát"],
     "life_span": "15-25 năm",
     "weight_range": "80-100 g",
-    "color": "Xám, vàng, trắng",
+    "color": "Xám, Vàng, Trắng",
     "price": "1.500.000-3.000.000",
     "image": "https://i.imgur.com/zOH2Raj.jpeg"
   },
@@ -31,7 +31,7 @@
     "temperament": ["Thông minh", "Thân thiện", "Dễ huấn luyện"],
     "life_span": "40-60 năm",
     "weight_range": "400-600 g",
-    "color": "Xám, đuôi đỏ",
+    "color": "Xám",
     "price": "10.000.000-25.000.000",
     "image": "https://i.imgur.com/wgGbRoY.jpeg"
   },
@@ -43,7 +43,7 @@
     "temperament": ["Hoạt bát", "Thích hót", "Thân thiện"],
     "life_span": "8-12 năm",
     "weight_range": "20-30 g",
-    "color": "Đen, trắng, cam",
+    "color": "Đen,Trắng,Cam",
     "price": "400.000-2.000.000",
     "image": "https://i.imgur.com/1HlfCyX.jpeg"
   },
@@ -55,7 +55,7 @@
     "temperament": ["Dễ nuôi", "Thích hót", "Thân thiện"],
     "life_span": "10-15 năm",
     "weight_range": "50-80 g",
-    "color": "Nâu, trắng",
+    "color": "Nâu, Trắng",
     "price": "200.000-2.000.000",
     "image": "https://i.imgur.com/0ZuqGbE.jpeg"
   },
@@ -67,7 +67,7 @@
     "temperament": ["Hoạt bát", "Thân thiện", "Dễ chăm sóc"],
     "life_span": "10-15 năm",
     "weight_range": "30-40 g",
-    "color": "Nâu, trắng, đỏ",
+    "color": "Nâu,Trắng,Xanh",
     "price": "200.000-700.000",
     "image": "https://i.imgur.com/uurtnbl.jpeg"
   },
@@ -79,7 +79,7 @@
     "temperament": ["Thông minh", "Học nói tốt", "Thân thiện"],
     "life_span": "15-20 năm",
     "weight_range": "50-70 g",
-    "color": "Đen, vàng",
+    "color": "Đen, Vàng",
     "price": "150.000-1.500.000",
     "image": "https://i.imgur.com/ovqDQg1.jpeg"
   },
@@ -91,7 +91,7 @@
     "temperament": ["Thân thiện", "Thông minh", "Học nói tốt"],
     "life_span": "10-20 năm",
     "weight_range": "30-50 g",
-    "color": "Nâu, vàng",
+    "color": "Nâu, Vàng",
     "price": "200.000-2.000.000",
     "image": "https://i.imgur.com/DCD3DYx.png"
   },
@@ -103,7 +103,7 @@
     "temperament": ["Hoạt bát", "Thông minh", "Học nói tốt"],
     "life_span": "20-30 năm",
     "weight_range": "100-150 g",
-    "color": "Xanh lá, vàng, xanh dương",
+    "color": "Xanh lá, Vàng, Xanh dương",
     "price": "4.000.000-10.000.000",
     "image": "https://i.imgur.com/jc37kMH.jpeg"
   },
@@ -115,7 +115,7 @@
     "temperament": ["Thông minh", "Thân thiện", "Thích nghi tốt"],
     "life_span": "50-70 năm",
     "weight_range": "1-1.5 kg",
-    "color": "Đỏ, xanh dương, vàng",
+    "color": "Đỏ, Xanh dương, Vàng",
     "price": "5.000.000-30.000.000",
     "image": "https://i.imgur.com/wBVLaNU.png"
   },
@@ -127,7 +127,7 @@
     "temperament": ["Thân thiện", "Dễ thương", "Thích bay nhảy"],
     "life_span": "10-15 năm",
     "weight_range": "40-60 g",
-    "color": "Xanh, vàng, cam",
+    "color": "Xanh, Vàng, Cam",
     "price": "200.000-2.000.000",
     "image": "https://i.imgur.com/RqMB6Y0.jpeg"
   },
@@ -139,7 +139,7 @@
     "temperament": ["Thân thiện", "Thích hót", "Dễ chăm sóc"],
     "life_span": "10-15 năm",
     "weight_range": "20-25 g",
-    "color": "Vàng, xanh, trắng",
+    "color": "Vàng, Xanh lá, Trắng",
     "price": "1.000.000-3.000.000",
     "image": "https://i.imgur.com/o5uqDsj.jpeg"
   },
@@ -151,7 +151,7 @@
     "temperament": ["Thân thiện", "Thích hót", "Dễ nuôi"],
     "life_span": "10-15 năm",
     "weight_range": "20-30 g",
-    "color": "Đen, trắng",
+    "color": "Đen, Trắng",
     "price": "200.000-5.000.000",
     "image": "https://i.imgur.com/QM2q2rK.jpeg"
   },
@@ -163,7 +163,7 @@
     "temperament": ["Thân thiện", "Thích hót", "Nhiệt tình"],
     "life_span": "12-20 năm",
     "weight_range": "30-40 g",
-    "color": "Nâu, trắng",
+    "color": "Nâu,Trắng",
     "price": "1.000.000-3.000.000",
     "image": "https://i.imgur.com/hAILTnF.jpeg"
   },
@@ -175,7 +175,7 @@
     "temperament": ["Hoạt bát", "Dễ chăm sóc", "Thích bắt sâu"],
     "life_span": "5-8 năm",
     "weight_range": "15-25 g",
-    "color": "Xanh, vàng",
+    "color": "Xanh lá, Vàng",
     "price": "200.000-2.500.000",
     "image": "https://i.imgur.com/eOCquDS.jpeg"
   },
@@ -187,7 +187,7 @@
     "temperament": ["Thân thiện", "Thích hót", "Dễ nuôi"],
     "life_span": "8-12 năm",
     "weight_range": "20-30 g",
-    "color": "Vàng, trắng",
+    "color": "Vàng, Trắng",
     "price": "1.000.000-5.000.000",
     "image": "https://i.imgur.com/wW9Q34t.jpeg"
   },
@@ -199,7 +199,7 @@
     "temperament": ["Thân thiện", "Hoạt bát", "Thích bắt sâu"],
     "life_span": "7-10 năm",
     "weight_range": "15-25 g",
-    "color": "Vàng, xanh lá",
+    "color": "Vàng, Xanh lá",
     "price": "3.000.000-5.000.000",
     "image": "https://i.imgur.com/qrs123.jpg"
   },
@@ -211,7 +211,7 @@
     "temperament": ["Thông minh", "Học nói tốt", "Thân thiện"],
     "life_span": "15-25 năm",
     "weight_range": "70-100 g",
-    "color": "Đen bóng",
+    "color": "Đen",
     "price": "100.000-600.000",
     "image": "https://i.imgur.com/s4bxrmD.jpeg"
   }

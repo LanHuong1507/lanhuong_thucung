@@ -129,7 +129,7 @@ const Category = () => {
     <div className="text-center p-6">
       <Breadcrumb className="mb-6 flex justify-center">
         <Breadcrumb.Item>
-          <Link href="/products">Danh Mục Sản Phẩm</Link>
+          <Link href={routerNames.CATEGORY}>Danh Mục Sản Phẩm</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
           {activeTab === "thuCung"
@@ -146,8 +146,6 @@ const Category = () => {
       <p className="text-lg text-gray-600 mb-8">
         {categoryDescriptions[activeTab]}
       </p>
-
-      {/* Tab Navigation */}
       <Tabs
         activeKey={activeTab}
         onChange={onTabChange}
