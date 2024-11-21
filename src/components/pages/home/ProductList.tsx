@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import Image from "next/image";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
 interface Product {
   id: number;
@@ -76,16 +77,16 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
           <Button
             onClick={prevPage}
             disabled={currentPage === 0}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6"
           >
-            &lt; Trước
+            <ArrowLeftOutlined />
           </Button>
           <Button
             onClick={nextPage}
             disabled={currentPage === chunkedProducts.length - 1}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6"
           >
-            Sau &gt;
+            <ArrowRightOutlined />
           </Button>
         </div>
       </div>

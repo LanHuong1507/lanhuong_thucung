@@ -1,31 +1,6 @@
-const PhoneOutlined = dynamic(() => import("@ant-design/icons/PhoneOutlined"), {
-  ssr: false,
-});
-const MailOutlined = dynamic(() => import("@ant-design/icons/MailOutlined"), {
-  ssr: false,
-});
-const LinkOutlined = dynamic(() => import("@ant-design/icons/LinkOutlined"), {
-  ssr: false,
-});
-const FacebookFilled = dynamic(
-  () => import("@ant-design/icons/FacebookFilled"),
-  { ssr: false },
-);
-const InstagramFilled = dynamic(
-  () => import("@ant-design/icons/InstagramFilled"),
-  { ssr: false },
-);
-const TwitterCircleFilled = dynamic(
-  () => import("@ant-design/icons/TwitterCircleFilled"),
-  { ssr: false },
-);
-const YoutubeFilled = dynamic(() => import("@ant-design/icons/YoutubeFilled"), {
-  ssr: false,
-});
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import dog from "../../../assets/images/dog1.png";
 import Amex from "../../../assets/images/amex.png";
 import ApplePay from "../../../assets/images/apple_pay.png";
 import Bitcoin from "../../../assets/images/bitcoin.png";
@@ -34,14 +9,22 @@ import Discover from "../../../assets/images/discover.png";
 import MasterCard from "../../../assets/images/mastercard.png";
 import Visa from "../../../assets/images/visa.jpg";
 import Logo from "../../../assets/images/logo.jpg";
-import dynamic from "next/dynamic";
 import { routerNames } from "@/components/constants/router.constant";
-import { ArrowRightOutlined, LinkedinFilled } from "@ant-design/icons";
+import {
+  ArrowRightOutlined,
+  FacebookFilled,
+  InstagramFilled,
+  LinkedinFilled,
+  LinkOutlined,
+  MailOutlined,
+  PhoneOutlined,
+  TwitterCircleFilled,
+  YoutubeFilled,
+} from "@ant-design/icons";
 import { Input } from "antd";
-
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 pb-5 pt-10 text-gray-300 w-full">
+    <footer className="bg-blue-900 py-4 text-gray-300 w-full">
       <main className="container px-4">
         <section className="mb-10 flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
           <article className="flex items-center space-x-4">
@@ -147,217 +130,79 @@ const Footer = () => {
             </article>
           </main>
         </section>
-        <main className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CHÓ
+        <section className="mb-10 grid grid-cols-1 gap-6 lg:grid-cols-3 xl:grid-cols-3">
+          <section className="flex flex-col">
+            <h5 className="mb-4 text-lg  font-semibold text-start lg:text-center">
+              Danh mục sản phẩm
             </h5>
             <ul className="text-start lg:text-center">
               <li>
-                <Link href="#" className="hover:text-white">
-                  Thức ăn cho chó
+                <Link href={routerNames.CATEGORY} className="hover:text-white">
+                  Thú cưng
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
-                  Đồ chơi cho chó
+                <Link href={routerNames.CATEGORY} className="hover:text-white">
+                  Vật nuôi
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
-                  Dụng cụ chăm sóc chó
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Phụ kiện cho chó
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Các dịch vụ khác
-                </Link>
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              MÈO
-            </h5>
-            <ul className="text-start lg:text-center">
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Thức ăn cho mèo
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Đồ chơi cho mèo
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Dụng cụ chăm sóc mèo
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Phụ kiện cho mèo
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Các dịch vụ khác
-                </Link>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CÁC THÚ CƯNG KHÁC
-            </h5>
-            <ul className="text-start lg:text-center">
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Thức ăn
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Đồ chơi
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
+                <Link href={routerNames.CATEGORY} className="hover:text-white">
                   Dụng cụ chăm sóc
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Phụ kiện
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Các dịch vụ khác
-                </Link>
-              </li>
             </ul>
           </section>
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CÁC LIÊN KẾT HỮU ÍCH
+          <section className="flex flex-col">
+            <h5 className="mb-4 text-lg font-semibold text-start lg:text-center">
+              Doanh nghiệp của chúng tôi
             </h5>
             <ul className="text-start lg:text-center">
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Sản phẩm mới
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Bán chạy nhất
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Blog của chúng tôi
-                </Link>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CÔNG TY CHÚNG TÔI
-            </h5>
-            <ul className="text-start lg:text-center">
-              <li>
-                <Link href={routerNames.ABOUT} className="hover:text-white">
-                  Về Chúng Tôi
-                </Link>
-              </li>
               <li>
                 <Link
-                  href={routerNames.INTRODUCTION}
+                  href={routerNames.ORGANIZATION}
                   className="hover:text-white"
                 >
-                  Gioi thiệu
+                  Cơ cấu tổ chức
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link href={routerNames.HISTORY} className="hover:text-white">
+                  Lịch sử hình thành
+                </Link>
+              </li>
+              <li>
+                <Link href={routerNames.CAREER} className="hover:text-white">
                   Tuyển dụng
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
-                  Điều Khoản Dịch Vụ
+                <Link href={routerNames.CONTACT} className="hover:text-white">
+                  Liên hệ
                 </Link>
               </li>
             </ul>
           </section>
-          <section>
-            <h5 className="mb-4 text-start lg:text-center font-semibold">
-              CHÍNH SÁCH
+          <section className="flex flex-col justify-start bg-gradient-to-r from-red-600 to-yellow-600 rounded-lg p-5 text-center text-white">
+            <h5 className="mb-2 text-lg font-semibold">
+              Bản Tin Của Chúng Tôi
             </h5>
-            <ul className="text-start lg:text-center">
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Chính sách hoàn trả
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Chính sách bảo mật
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Điều khoản dịch vụ
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Hỗ trợ khách hàng
-                </Link>
-              </li>
-            </ul>
-          </section>
-        </main>
-        <main className="mb-10 rounded-lg bg-gradient-to-r from-red-600 to-yellow-600 p-5 text-center text-white lg:ml-8">
-          <div className="flex items-center justify-center">
-            <div className="flex-1">
-              <h5 className="mb-2 text-lg font-semibold">
-                Bản Tin Của Chúng Tôi
-              </h5>
-              <p className="mb-4">
-                Hãy là người đầu tiên biết về các sản phẩm mới và những ưu đãi
-                độc quyền.
-              </p>
-              <div className="flex items-center w-full">
-                <Input
-                  type="email"
-                  placeholder="Nhập email của bạn..."
-                  className="rounded-lg md:rounded-l-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
-                  suffix={
-                    <ArrowRightOutlined className="text-red-600 text-lg md:text-xl" />
-                  }
-                />
-              </div>
-            </div>
-
-            <div className="md:flex justify-center mt-4 hidden">
-              <Image
-                src={dog}
-                alt="Chó dễ thương"
-                width={96}
-                height={96}
-                className="rounded-lg w-24 h-24 object-cover"
+            <p className="mb-4">
+              Hãy là người đầu tiên biết về các sản phẩm mới và những ưu đãi độc
+              quyền.
+            </p>
+            <div className="flex items-center justify-center">
+              <Input
+                type="email"
+                placeholder="Nhập email của bạn..."
+                className="rounded-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
+                suffix={
+                  <ArrowRightOutlined className="text-red-600 text-lg md:text-xl" />
+                }
               />
             </div>
-          </div>
-        </main>
+          </section>
+        </section>
         <footer className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-sm lg:flex-row lg:justify-between">
           <p className="text-center md:text-left">
             &copy; 2024 <span className="font-semibold">Lan Hương</span>. Mọi
