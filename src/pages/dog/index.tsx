@@ -2,7 +2,7 @@ import Layout from "../../components/layout/Layout";
 import DogComponent from "../../components/pages/dog";
 import Head from "next/head";
 
-const About = () => {
+const Dog = () => {
   return (
     <Layout>
       <Head>
@@ -13,4 +13,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Dog;

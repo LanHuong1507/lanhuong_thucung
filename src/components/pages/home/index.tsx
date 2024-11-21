@@ -344,10 +344,7 @@ const Home = () => {
                     <p className="text-white text-center">
                       {category.description}
                     </p>
-                    <Link
-                      href={routerNames.CATEGORY}
-                      passHref
-                    >
+                    <Link href={routerNames.CATEGORY} passHref>
                       <Button className="mt-4 bg-yellow-500 text-white hover:bg-yellow-400">
                         Xem Thêm
                       </Button>

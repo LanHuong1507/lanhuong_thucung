@@ -1,7 +1,19 @@
 import React, { useMemo, useState } from "react";
-import { Card, Button, Pagination, Select, Checkbox, Row, Col } from "antd";
+import {
+  Card,
+  Button,
+  Pagination,
+  Select,
+  Checkbox,
+  Row,
+  Col,
+  Radio,
+  Breadcrumb, // Import Breadcrumb component
+} from "antd";
 import Image from "next/image";
 import { useSelector } from "react-redux";
+import Link from "next/link";
+import { routerNames } from "@/components/constants/router.constant";
 
 interface Dog {
   id: number;
@@ -12,6 +24,9 @@ interface Dog {
   life_span: string;
   weight_range: string;
   coat: string;
+  color: string;
+  breedType: string;
+  gender: string;
   price: string;
   image: string;
 }
@@ -26,12 +41,18 @@ const DogList = ({ dogsPerPage = 6 }) => {
     lifeSpan: string[];
     weightRange: string[];
     priceRange: string[];
+    color: string[];
+    breedType: string;
+    gender: string;
   }>({
     size: [],
     temperament: [],
     lifeSpan: [],
     weightRange: [],
     priceRange: [],
+    color: [],
+    breedType: "",
+    gender: "",
   });
 
   const filteredDogs = useMemo(() => {
@@ -80,12 +101,23 @@ const DogList = ({ dogsPerPage = 6 }) => {
           return false;
         });
 
+      const colorMatch =
+        filters.color.length === 0 || filters.color.includes(dog.color);
+
+      const breedTypeMatch =
+        !filters.breedType || filters.breedType === dog.breedType;
+
+      const genderMatch = !filters.gender || filters.gender === dog.gender;
+
       return (
         sizeMatch &&
         temperamentMatch &&
         lifeSpanMatch &&
         weightMatch &&
-        priceMatch
+        priceMatch &&
+        colorMatch &&
+        breedTypeMatch &&
+        genderMatch
       );
     });
   }, [dogs, filters]);
@@ -103,7 +135,10 @@ const DogList = ({ dogsPerPage = 6 }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleFilterChange = (filterName: string, value: string[]) => {
+  const handleFilterChange = <K extends keyof typeof filters>(
+    filterName: K,
+    value: (typeof filters)[K],
+  ) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       [filterName]: value,
@@ -111,12 +146,22 @@ const DogList = ({ dogsPerPage = 6 }) => {
   };
 
   return (
-    <main className="py-4 w-full lg:max-w-7xl mx-auto">
-      <Row gutter={10} justify="center">
-        <Col xs={20} sm={6} md={6} lg={6}>
-          <Card className="p-4 rounded-md shadow-md" title="Bộ Lọc">
+    <main className="p-6 w-full lg:max-w-7xl mx-auto">
+      <Breadcrumb className="mb-6">
+        <Breadcrumb.Item>
+          <Link href={routerNames.CATEGORY}>DANH MỤC SẢN PHẨM</Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Link href={routerNames.CATEGORY}>THÚ CƯNG</Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>CHÓ</Breadcrumb.Item>
+      </Breadcrumb>
+
+      <Row gutter={20} justify="center">
+        <Col xs={24} sm={6} md={6} lg={6}>
+          <Card className="p-2 rounded-md shadow-lg" title="Bộ Lọc">
             <div className="mb-4">
-              <h4 className="font-semibold">Kích thước</h4>
+              <h4 className="font-semibold mb-2">Kích thước</h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn kích thước"
@@ -130,7 +175,7 @@ const DogList = ({ dogsPerPage = 6 }) => {
               </Select>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold">Tính cách</h4>
+              <h4 className="font-semibold mb-2">Tính cách</h4>
               <Checkbox.Group
                 options={[
                   { label: "Trung thành", value: "Trung thành" },
@@ -144,54 +189,53 @@ const DogList = ({ dogsPerPage = 6 }) => {
               />
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold">Tuổi thọ</h4>
-              <Select
-                mode="multiple"
-                placeholder="Chọn tuổi thọ"
-                onChange={(value) => handleFilterChange("lifeSpan", value)}
-                value={filters.lifeSpan}
-                className="w-full"
+              <h4 className="font-semibold mb-2">Màu lông</h4>
+              <Checkbox.Group
+                options={[
+                  { label: "Trắng", value: "Trắng" },
+                  { label: "Đen", value: "Đen" },
+                  { label: "Vàng", value: "Vàng" },
+                  { label: "Nâu", value: "Nâu" },
+                  { label: "Xám", value: "Xám" },
+                ]}
+                onChange={(value) => handleFilterChange("color", value)}
+                value={filters.color}
+              />
+            </div>
+            <div className="mb-4">
+              <h4 className="font-semibold mb-2">Giống</h4>
+              <Radio.Group
+                onChange={(e) =>
+                  handleFilterChange("breedType", e.target.value)
+                }
+                value={filters.breedType}
               >
-                <Select.Option value="10-12 năm">10-12 năm</Select.Option>
-                <Select.Option value="12-15 năm">12-15 năm</Select.Option>
-                <Select.Option value="15-20 năm">15-20 năm</Select.Option>
-              </Select>
+                <Radio value="">Tất cả</Radio>
+                <Radio value="Thuần chủng">Thuần chủng</Radio>
+                <Radio value="Lai">Lai</Radio>
+              </Radio.Group>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold">Cân nặng</h4>
-              <Checkbox.Group
-                options={[
-                  { label: "Nhỏ (dưới 10kg)", value: "Nhỏ (dưới 10kg)" },
-                  { label: "Vừa (10-20kg)", value: "Vừa (10-20kg)" },
-                  { label: "Lớn (trên 20kg)", value: "Lớn (trên 20kg)" },
-                ]}
-                onChange={(value) => handleFilterChange("weightRange", value)}
-                value={filters.weightRange}
-              />
-            </div>
-            <div className="mb-4">
-              <h4 className="font-semibold">Giá bán</h4>
-              <Checkbox.Group
-                options={[
-                  { label: "Dưới 5 triệu", value: "Low" },
-                  { label: "Từ 5 triệu đến 15 triệu", value: "Medium" },
-                  { label: "Trên 15 triệu", value: "High" },
-                ]}
-                onChange={(value) => handleFilterChange("priceRange", value)}
-                value={filters.priceRange}
-              />
+              <h4 className="font-semibold mb-2">Giới tính</h4>
+              <Radio.Group
+                onChange={(e) => handleFilterChange("gender", e.target.value)}
+                value={filters.gender}
+              >
+                <Radio value="">Tất cả</Radio>
+                <Radio value="Đực">Đực</Radio>
+                <Radio value="Cái">Cái</Radio>
+              </Radio.Group>
             </div>
           </Card>
         </Col>
-
-        <Col xs={20} lg={18}>
+        <Col xs={24} lg={18}>
           <header className="flex justify-center py-6 px-4">
-            <h2 className="text-md md:text-2xl font-bold text-center">
-              CÁC GIỐNG CHÓ
+            <h2 className="text-lg md:text-2xl font-bold text-center">
+              Các Giống Chó
             </h2>
           </header>
 
-          <section className="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 justify-items-center">
+          <section className="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             {chunkedDogs[currentPage - 1]?.map((dog) => (
               <Card
                 key={dog.id}
@@ -200,47 +244,71 @@ const DogList = ({ dogsPerPage = 6 }) => {
                   <Image
                     alt={dog.name}
                     src={dog.image}
-                    layout="responsive"
                     width={400}
                     height={400}
+                    className="rounded-lg"
                   />
                 }
-                className="w-full flex-shrink-0"
+                className="relative w-full shadow-lg rounded-lg overflow-hidden group"
               >
-                <header className="mb-2">
-                  <span className="font-medium text-gray-900">
-                    {dog.origin}
-                  </span>
-                </header>
-                <h3 className="text-lg font-semibold text-gray-900 mt-2">
-                  {dog.name}
-                </h3>
-                <Card.Meta description={`Kích thước: ${dog.size}`} />
-                <Card.Meta description={`Tuổi thọ: ${dog.life_span}`} />
-                <Card.Meta description={`Cân nặng: ${dog.weight_range}`} />
-                <Card.Meta description={`Loại lông: ${dog.coat}`} />
-                <Card.Meta
-                  description={`Tính cách: ${dog.temperament.join(", ")}`}
-                />
-                <footer className="mt-4">
-                  <p className="text-base font-semibold">
+                <div className="p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
+                  <h3 className="text-lg font-bold text-gray-800">
+                    {dog.name}
+                  </h3>
+                  <p className="text-lg font-semibold text-gray-800 mt-2">
                     Giá bán: {dog.price} VNĐ
                   </p>
-
-                  <p className="text-sm text-gray-600 mt-2">
-                    Nếu bạn muốn mua, vui lòng{" "}
-                    <strong>liên hệ chúng tôi</strong> để nhận được ưu đãi và tư
-                    vấn tốt nhất.
+                </div>
+                <div className="absolute inset-0 bg-white bg-opacity-90 p-4 flex flex-col justify-center items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="mb-2">
+                    <span className="text-gray-600">{dog.origin}</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Kích thước: {dog.size}
                   </p>
-                  <Button type="primary" className="mt-4 w-full">
-                    Liên hệ ngay
-                  </Button>
-                </footer>
+                  <p className="text-sm text-gray-600">
+                    Tuổi thọ: {dog.life_span}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Cân nặng: {dog.weight_range}
+                  </p>
+                  <p className="text-sm text-gray-600">Loại lông: {dog.coat}</p>
+                  <p className="text-sm text-gray-600">
+                    Tính cách: {dog.temperament.join(", ")}
+                  </p>
+                  <p className="text-sm text-gray-600">Màu lông: {dog.color}</p>
+                  <p className="text-sm text-gray-600">
+                    Giống: {dog.breedType}
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    Giới tính: {dog.gender}
+                  </p>
+                  <div className=" mt-2 flex flex-col gap-4 w-full">
+                    <Link
+                      href={`${routerNames.DOG_DETAIL.replace(
+                        "[id]",
+                        dog.id.toString(),
+                      )}`}
+                    >
+                      <Button
+                        type="primary"
+                        block
+                        className="w-full text-center"
+                      >
+                        Xem chi tiết
+                      </Button>
+                    </Link>
+
+                    <Button type="primary" block className="w-full text-center">
+                      Liên hệ ngay
+                    </Button>
+                  </div>
+                </div>
               </Card>
             ))}
           </section>
 
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-6">
             <Pagination
               total={filteredDogs.length}
               pageSize={dogsPerPage}

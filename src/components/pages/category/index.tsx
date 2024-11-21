@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { routerNames } from "@/components/constants/router.constant";
 import Link from "next/link";
+import { Breadcrumb, Tabs } from "antd"; // Import Breadcrumb and Tabs component
 
 type CategoryType = {
   name: string;
@@ -112,13 +113,33 @@ const Category = () => {
   };
 
   const categoryDescriptions = {
-    thuCung: "Danh mục này bao gồm các giống thú cưng như chó, mèo, chim, và hamster. Tất cả đều được chọn lọc kỹ càng với nguồn gốc rõ ràng, đảm bảo chất lượng cho những ai muốn sở hữu thú cưng khỏe mạnh.",
-    vatNuoi: "Danh mục này tập trung vào các giống vật nuôi như cá, thỏ, rùa, và gà. Chúng tôi cung cấp giống vật nuôi có chất lượng cao, dễ chăm sóc và thích hợp nuôi trong gia đình hoặc nông trại.",
-    dungCuChamSoc: "Danh mục dụng cụ chăm sóc bao gồm các sản phẩm hỗ trợ việc chăm sóc thú cưng, từ thức ăn, thuốc men cho đến các dụng cụ vệ sinh và trang thiết bị cần thiết.",
+    thuCung:
+      "Danh mục này bao gồm các giống thú cưng như chó, mèo, chim, và hamster. Tất cả đều được chọn lọc kỹ càng với nguồn gốc rõ ràng, đảm bảo chất lượng cho những ai muốn sở hữu thú cưng khỏe mạnh.",
+    vatNuoi:
+      "Danh mục này tập trung vào các giống vật nuôi như cá, thỏ, rùa, và gà. Chúng tôi cung cấp giống vật nuôi có chất lượng cao, dễ chăm sóc và thích hợp nuôi trong gia đình hoặc nông trại.",
+    dungCuChamSoc:
+      "Danh mục dụng cụ chăm sóc bao gồm các sản phẩm hỗ trợ việc chăm sóc thú cưng, từ thức ăn, thuốc men cho đến các dụng cụ vệ sinh và trang thiết bị cần thiết.",
+  };
+
+  const onTabChange = (key: string) => {
+    setActiveTab(key as keyof Categories);
   };
 
   return (
     <div className="text-center p-6">
+      <Breadcrumb className="mb-6 flex justify-center">
+        <Breadcrumb.Item>
+          <Link href="/products">Danh Mục Sản Phẩm</Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          {activeTab === "thuCung"
+            ? "Thú Cưng"
+            : activeTab === "vatNuoi"
+              ? "Vật Nuôi"
+              : "Dụng Cụ Chăm Sóc"}
+        </Breadcrumb.Item>
+      </Breadcrumb>
+
       <h1 className="text-4xl font-bold mb-6 text-gray-800">
         Danh Mục Sản Phẩm
       </h1>
@@ -126,32 +147,17 @@ const Category = () => {
         {categoryDescriptions[activeTab]}
       </p>
 
-      <div className="mb-6 flex justify-center space-x-8">
-        <button
-          onClick={() => setActiveTab("thuCung")}
-          className={`${
-            activeTab === "thuCung" ? "text-blue-500" : "text-gray-700"
-          } font-medium hover:text-blue-500 transition duration-200`}
-        >
-          Thú Cưng
-        </button>
-        <button
-          onClick={() => setActiveTab("vatNuoi")}
-          className={`${
-            activeTab === "vatNuoi" ? "text-blue-500" : "text-gray-700"
-          } font-medium hover:text-blue-500 transition duration-200`}
-        >
-          Vật Nuôi
-        </button>
-        <button
-          onClick={() => setActiveTab("dungCuChamSoc")}
-          className={`${
-            activeTab === "dungCuChamSoc" ? "text-blue-500" : "text-gray-700"
-          } font-medium hover:text-blue-500 transition duration-200`}
-        >
-          Dụng Cụ Chăm Sóc
-        </button>
-      </div>
+      {/* Tab Navigation */}
+      <Tabs
+        activeKey={activeTab}
+        onChange={onTabChange}
+        centered
+        className="mb-6"
+      >
+        <Tabs.TabPane tab="Thú Cưng" key="thuCung" />
+        <Tabs.TabPane tab="Vật Nuôi" key="vatNuoi" />
+        <Tabs.TabPane tab="Dụng Cụ Chăm Sóc" key="dungCuChamSoc" />
+      </Tabs>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {categories[activeTab].map((category, index) => (

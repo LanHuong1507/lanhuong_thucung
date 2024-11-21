@@ -53,3 +53,12 @@ body {
 .animate-float {
   animation: float 3s infinite ease-in-out;
 }
+/* Ẩn thanh cuộn trên tất cả trình duyệt */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}

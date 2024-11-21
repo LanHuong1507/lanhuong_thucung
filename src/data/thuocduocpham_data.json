@@ -1,163 +1,162 @@
 [
-    {
-      "id": 1,
-      "name": "Thuốc Tẩy Giun Cho Chó",
-      "description": "Thuốc tẩy giun hiệu quả cho chó ở mọi lứa tuổi, giúp loại bỏ các loại giun sán và ký sinh trùng đường ruột.",
-      "usage": "Dùng định kỳ 3 tháng/lần hoặc theo chỉ định của bác sĩ thú y.",
-      "ingredients": "Praziquantel, Pyrantel Pamoate",
-      "category": "Chó",
-      "price": "80.000 VND",
-      "dosage": "1 viên/10kg",
-      "image": "https://i.imgur.com/jiMvVvW.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/3cIMAAx.jpg",
-        "https://i.imgur.com/KPsHt4Y.jpg",
-        "https://i.imgur.com/nHZ4vcC.jpg"
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Thuốc Tẩy Giun Cho Mèo",
-      "description": "Thuốc tẩy giun đặc chế cho mèo, giúp loại bỏ các loại giun móc, giun đũa và sán dây.",
-      "usage": "Dùng định kỳ 3 tháng/lần hoặc theo chỉ định của bác sĩ thú y.",
-      "ingredients": "Praziquantel, Milbemycin Oxime",
-      "category": "Mèo",
-      "price": "60.000 VND",
-      "dosage": "1 viên/4kg",
-      "image": "https://i.imgur.com/W9X1WnP.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/t5J0bkp.jpg",
-        "https://i.imgur.com/YclXwDo.jpg",
-        "https://i.imgur.com/5EVS7uk.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Thuốc Trị Ve Rận Cho Chó",
-      "description": "Dung dịch trị ve rận dạng nhỏ gáy giúp tiêu diệt ve rận và phòng ngừa ký sinh trùng ngoài da.",
-      "usage": "Nhỏ trực tiếp lên gáy chó, 1 lần/tháng.",
-      "ingredients": "Fipronil, S-Methoprene",
-      "category": "Chó",
-      "price": "200.000 VND",
-      "size": "3 pipettes",
-      "image": "https://i.imgur.com/68ExgRf.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/EafEfJr.jpg",
-        "https://i.imgur.com/vMXk65k.jpg",
-        "https://i.imgur.com/rNfAJlL.jpg"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Dung Dịch Trị Nấm Da Cho Mèo",
-      "description": "Dung dịch trị nấm da và các bệnh da liễu do vi khuẩn hoặc nấm gây ra, giúp phục hồi da nhanh chóng.",
-      "usage": "Xịt trực tiếp lên vùng da bị nấm, 2 lần/ngày.",
-      "ingredients": "Clotrimazole, Chlorhexidine",
-      "category": "Mèo",
-      "price": "120.000 VND",
-      "size": "100ml",
-      "image": "https://i.imgur.com/tsFS6hc.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/UShWrq4.jpg",
-        "https://i.imgur.com/WGmtV9A.jpg",
-        "https://i.imgur.com/OVKrESJ.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Vitamin Tổng Hợp Cho Chó",
-      "description": "Bổ sung vitamin và khoáng chất cần thiết, giúp tăng cường sức đề kháng và duy trì sức khỏe.",
-      "usage": "1 viên/ngày cho chó dưới 10kg, hoặc theo chỉ định.",
-      "ingredients": "Vitamin A, D3, E, B-complex, Kẽm, Canxi",
-      "category": "Chó",
-      "price": "180.000 VND",
-      "size": "60 viên",
-      "image": "https://i.imgur.com/nTF3QVR.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/Ba6kNfp.jpg",
-        "https://i.imgur.com/pFQmAz8.jpg",
-        "https://i.imgur.com/1u6yKfi.jpg"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Vitamin Tổng Hợp Cho Mèo",
-      "description": "Giúp mèo khỏe mạnh, lông mượt và tăng cường miễn dịch với công thức đặc biệt dành riêng cho mèo.",
-      "usage": "1 viên/ngày hoặc theo chỉ định của bác sĩ.",
-      "ingredients": "Vitamin A, Taurine, Biotin, Omega-3",
-      "category": "Mèo",
-      "price": "150.000 VND",
-      "size": "60 viên",
-      "image": "https://i.imgur.com/2W38LFE.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/6D7T7Dt.jpg",
-        "https://i.imgur.com/JYX9H4M.jpg",
-        "https://i.imgur.com/g4HrP7o.jpg"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Thuốc Hạ Sốt Cho Chó",
-      "description": "Thuốc giúp hạ sốt và giảm đau nhanh chóng, an toàn khi sử dụng cho chó trên 3 tháng tuổi.",
-      "usage": "Dùng theo chỉ định của bác sĩ thú y.",
-      "ingredients": "Paracetamol, Ibuprofen",
-      "category": "Chó",
-      "price": "90.000 VND",
-      "size": "10 viên",
-      "image": "https://i.imgur.com/Nrqu7kG.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/CkqlQnx.jpg",
-        "https://i.imgur.com/UVh03pd.jpg",
-        "https://i.imgur.com/Uv1ueNd.jpg"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Dung Dịch Làm Sạch Tai Cho Thú Cưng",
-      "description": "Dung dịch làm sạch tai, giúp loại bỏ bụi bẩn và ngăn ngừa nhiễm trùng tai cho chó và mèo.",
-      "usage": "Nhỏ 2-3 giọt vào tai, sau đó nhẹ nhàng lau sạch.",
-      "ingredients": "Salicylic Acid, Chlorhexidine",
-      "category": "Chó, Mèo",
-      "price": "110.000 VND",
-      "size": "100ml",
-      "image": "https://i.imgur.com/0sc9T5F.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/0iG9UCu.jpg",
-        "https://i.imgur.com/ogWaMYp.jpg",
-        "https://i.imgur.com/SGnbh1b.jpg"
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Gel Ngừa Viêm Nướu Cho Chó",
-      "description": "Gel bảo vệ nướu, giảm viêm và ngăn ngừa mảng bám, giúp chó duy trì răng miệng khỏe mạnh.",
-      "usage": "Thoa trực tiếp lên nướu, 1-2 lần/ngày.",
-      "ingredients": "Chlorhexidine, Vitamin E",
-      "category": "Chó",
-      "price": "140.000 VND",
-      "size": "50g",
-      "image": "https://i.imgur.com/TNJ2DqX.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/7CQ4MwA.jpg",
-        "https://i.imgur.com/2M0mtZQ.jpg",
-        "https://i.imgur.com/sMb2bPf.jpg"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Thuốc Bổ Xương Khớp Cho Chó",
-      "description": "Giúp bảo vệ xương khớp và cải thiện chức năng vận động, phù hợp cho chó lớn tuổi hoặc chó có vấn đề về khớp.",
-      "usage": "1 viên/ngày hoặc theo chỉ định.",
-      "ingredients": "Glucosamine, Chondroitin, MSM",
-      "category": "Chó",
-      "price": "220.000 VND",
-      "size": "90 viên",
-      "image": "https://i.imgur.com/VozUtNR.jpg",
-      "thumbnails": [
-        "https://i.imgur.com/GAK3xhe.jpg",
-        "https://i.imgur.com/Wn8vTiR.jpg",
-        "https://i.imgur.com/o2d95XA.jpg"
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Thuốc Tẩy Giun Cho Chó",
+    "description": "Thuốc tẩy giun hiệu quả cho chó ở mọi lứa tuổi, giúp loại bỏ các loại giun sán và ký sinh trùng đường ruột.",
+    "usage": "Dùng định kỳ 3 tháng/lần hoặc theo chỉ định của bác sĩ thú y.",
+    "ingredients": "Praziquantel, Pyrantel Pamoate",
+    "category": "Chó",
+    "price": "80.000 VND",
+    "dosage": "1 viên/10kg",
+    "image": "https://i.imgur.com/jiMvVvW.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/3cIMAAx.jpg",
+      "https://i.imgur.com/KPsHt4Y.jpg",
+      "https://i.imgur.com/nHZ4vcC.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thuốc Tẩy Giun Cho Mèo",
+    "description": "Thuốc tẩy giun đặc chế cho mèo, giúp loại bỏ các loại giun móc, giun đũa và sán dây.",
+    "usage": "Dùng định kỳ 3 tháng/lần hoặc theo chỉ định của bác sĩ thú y.",
+    "ingredients": "Praziquantel, Milbemycin Oxime",
+    "category": "Mèo",
+    "price": "60.000 VND",
+    "dosage": "1 viên/4kg",
+    "image": "https://i.imgur.com/W9X1WnP.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/t5J0bkp.jpg",
+      "https://i.imgur.com/YclXwDo.jpg",
+      "https://i.imgur.com/5EVS7uk.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Thuốc Trị Ve Rận Cho Chó",
+    "description": "Dung dịch trị ve rận dạng nhỏ gáy giúp tiêu diệt ve rận và phòng ngừa ký sinh trùng ngoài da.",
+    "usage": "Nhỏ trực tiếp lên gáy chó, 1 lần/tháng.",
+    "ingredients": "Fipronil, S-Methoprene",
+    "category": "Chó",
+    "price": "200.000 VND",
+    "size": "3 pipettes",
+    "image": "https://i.imgur.com/68ExgRf.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/EafEfJr.jpg",
+      "https://i.imgur.com/vMXk65k.jpg",
+      "https://i.imgur.com/rNfAJlL.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dung Dịch Trị Nấm Da Cho Mèo",
+    "description": "Dung dịch trị nấm da và các bệnh da liễu do vi khuẩn hoặc nấm gây ra, giúp phục hồi da nhanh chóng.",
+    "usage": "Xịt trực tiếp lên vùng da bị nấm, 2 lần/ngày.",
+    "ingredients": "Clotrimazole, Chlorhexidine",
+    "category": "Mèo",
+    "price": "120.000 VND",
+    "size": "100ml",
+    "image": "https://i.imgur.com/tsFS6hc.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/UShWrq4.jpg",
+      "https://i.imgur.com/WGmtV9A.jpg",
+      "https://i.imgur.com/OVKrESJ.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Vitamin Tổng Hợp Cho Chó",
+    "description": "Bổ sung vitamin và khoáng chất cần thiết, giúp tăng cường sức đề kháng và duy trì sức khỏe.",
+    "usage": "1 viên/ngày cho chó dưới 10kg, hoặc theo chỉ định.",
+    "ingredients": "Vitamin A, D3, E, B-complex, Kẽm, Canxi",
+    "category": "Chó",
+    "price": "180.000 VND",
+    "size": "60 viên",
+    "image": "https://i.imgur.com/nTF3QVR.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/Ba6kNfp.jpg",
+      "https://i.imgur.com/pFQmAz8.jpg",
+      "https://i.imgur.com/1u6yKfi.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Vitamin Tổng Hợp Cho Mèo",
+    "description": "Giúp mèo khỏe mạnh, lông mượt và tăng cường miễn dịch với công thức đặc biệt dành riêng cho mèo.",
+    "usage": "1 viên/ngày hoặc theo chỉ định của bác sĩ.",
+    "ingredients": "Vitamin A, Taurine, Biotin, Omega-3",
+    "category": "Mèo",
+    "price": "150.000 VND",
+    "size": "60 viên",
+    "image": "https://i.imgur.com/2W38LFE.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/6D7T7Dt.jpg",
+      "https://i.imgur.com/JYX9H4M.jpg",
+      "https://i.imgur.com/g4HrP7o.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Thuốc Hạ Sốt Cho Chó",
+    "description": "Thuốc giúp hạ sốt và giảm đau nhanh chóng, an toàn khi sử dụng cho chó trên 3 tháng tuổi.",
+    "usage": "Dùng theo chỉ định của bác sĩ thú y.",
+    "ingredients": "Paracetamol, Ibuprofen",
+    "category": "Chó",
+    "price": "90.000 VND",
+    "size": "10 viên",
+    "image": "https://i.imgur.com/Nrqu7kG.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/CkqlQnx.jpg",
+      "https://i.imgur.com/UVh03pd.jpg",
+      "https://i.imgur.com/Uv1ueNd.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dung Dịch Làm Sạch Tai Cho Thú Cưng",
+    "description": "Dung dịch làm sạch tai, giúp loại bỏ bụi bẩn và ngăn ngừa nhiễm trùng tai cho chó và mèo.",
+    "usage": "Nhỏ 2-3 giọt vào tai, sau đó nhẹ nhàng lau sạch.",
+    "ingredients": "Salicylic Acid, Chlorhexidine",
+    "category": "Chó, Mèo",
+    "price": "110.000 VND",
+    "size": "100ml",
+    "image": "https://i.imgur.com/0sc9T5F.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/0iG9UCu.jpg",
+      "https://i.imgur.com/ogWaMYp.jpg",
+      "https://i.imgur.com/SGnbh1b.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Gel Ngừa Viêm Nướu Cho Chó",
+    "description": "Gel bảo vệ nướu, giảm viêm và ngăn ngừa mảng bám, giúp chó duy trì răng miệng khỏe mạnh.",
+    "usage": "Thoa trực tiếp lên nướu, 1-2 lần/ngày.",
+    "ingredients": "Chlorhexidine, Vitamin E",
+    "category": "Chó",
+    "price": "140.000 VND",
+    "size": "50g",
+    "image": "https://i.imgur.com/TNJ2DqX.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/7CQ4MwA.jpg",
+      "https://i.imgur.com/2M0mtZQ.jpg",
+      "https://i.imgur.com/sMb2bPf.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Thuốc Bổ Xương Khớp Cho Chó",
+    "description": "Giúp bảo vệ xương khớp và cải thiện chức năng vận động, phù hợp cho chó lớn tuổi hoặc chó có vấn đề về khớp.",
+    "usage": "1 viên/ngày hoặc theo chỉ định.",
+    "ingredients": "Glucosamine, Chondroitin, MSM",
+    "category": "Chó",
+    "price": "220.000 VND",
+    "size": "90 viên",
+    "image": "https://i.imgur.com/VozUtNR.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/GAK3xhe.jpg",
+      "https://i.imgur.com/Wn8vTiR.jpg",
+      "https://i.imgur.com/o2d95XA.jpg"
+    ]
+  }
+]

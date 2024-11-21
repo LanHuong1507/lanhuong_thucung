@@ -3,6 +3,8 @@ const withTM = require("next-transpile-modules")([
   "rc-pagination",
   "rc-picker",
   "rc-input",
+  "rc-tree",
+  "rc-table",
   "@ant-design/icons",
   "@ant-design/icons-svg",
 ]);

@@ -5,6 +5,7 @@ export const routerNames = {
   PRODUCT_DETAIL: "/product/product-detail/[id]",
   CONTACT: "/contact",
   DOG: "/dog",
+  DOG_DETAIL: "/dog/dog-detail/[id]",
   CAT: "/cat",
   FISH: "/fish",
   RABBIT: "/rabbit",
