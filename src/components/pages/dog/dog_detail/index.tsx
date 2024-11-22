@@ -174,13 +174,13 @@ const DogDetail = () => {
                 onClick={() => router.push(routerNames.CONTACT)}
                 className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
               >
-                Liên hệ mua giống
+                Liên hệ
               </Button>
             </section>
           </article>
         </section>
 
-        <h1 className="text-2xl font-bold text-center mt-8">
+        <h1 className="text-2xl font-bold text-center my-6">
           Giống chó tiếp theo
         </h1>
 
@@ -245,7 +245,7 @@ const DogDetail = () => {
                   onClick={() => router.push(routerNames.CONTACT)}
                   className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
                 >
-                  Liên hệ mua giống
+                  Liên hệ
                 </Button>
               </section>
             </article>

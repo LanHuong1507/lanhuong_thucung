@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { routerNames } from "@/components/constants/router.constant";
 import Link from "next/link";
-import { Breadcrumb, Tabs } from "antd"; // Import Breadcrumb and Tabs component
+import { Breadcrumb, Tabs } from "antd";
 
 type CategoryType = {
   name: string;

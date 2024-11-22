@@ -54,7 +54,13 @@
     "breedType": "Thuần chủng",
     "gender": "Đực",
     "price": "15.000.000-40.000.000",
-    "image": "https://i.imgur.com/9SxGyDC.jpeg"
+    "image": "https://i.imgur.com/9SxGyDC.jpeg",
+    "thumbnail": [
+      "https://i.imgur.com/zTsiUiT.jpeg",
+      "https://i.imgur.com/tCMCAsR.jpeg",
+      "https://i.imgur.com/1Ydx9ON.jpeg"
+    ],
+    "video": "https://i.imgur.com/JdRusby.mp4"
   },
   {
     "id": 4,
