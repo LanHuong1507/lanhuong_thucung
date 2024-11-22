@@ -200,8 +200,6 @@ const FishList = ({ fishesPerPage = 6 }) => {
                 value={filters.color}
               />
             </div>
-
-           
           </Card>
         </Col>
 

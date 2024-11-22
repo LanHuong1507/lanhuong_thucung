@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-const ShoppingCartOutlined = dynamic(
-  () => import("@ant-design/icons/ShoppingCartOutlined"),
-  { ssr: false },
-);
-const UserOutlined = dynamic(() => import("@ant-design/icons/UserOutlined"), {
-  ssr: false,
-});
 const MenuOutlined = dynamic(() => import("@ant-design/icons/MenuOutlined"), {
   ssr: false,
 });
@@ -20,12 +13,6 @@ import Logo from "../../../assets/images/logo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [cartItems, setCartItems] = useState(0);
-
-  const addToCart = () => {
-    setCartItems(cartItems + 1);
-  };
-
   return (
     <header className="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
       <div className="mx-auto flex items-center justify-between p-4">
@@ -62,23 +49,7 @@ const Header = () => {
             </Link>
           </nav>
         )}
-        <div className="lg:flex items-center space-x-6">
-          <button
-            className="relative text-xl text-white"
-            onClick={addToCart}
-            aria-label="Shopping Cart"
-          >
-            <ShoppingCartOutlined />
-            {cartItems > 0 && (
-              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-yellow-500 text-xs font-bold text-black">
-                {cartItems}
-              </span>
-            )}
-          </button>
-          <button className="text-xl text-white">
-            <UserOutlined />
-          </button>
-        </div>
+
         <div className="lg:hidden flex items-center space-x-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}

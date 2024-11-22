@@ -127,9 +127,6 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
               <p className="text-sm text-gray-600 mb-4">
                 Chỉ còn {product.stock} sản phẩm
               </p>
-              <Button type="primary" className="mt-auto w-full" size="large">
-                Mua ngay
-              </Button>
             </div>
           </Card>
         ))}

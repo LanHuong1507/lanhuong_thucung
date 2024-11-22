@@ -8,7 +8,7 @@ import {
   Row,
   Col,
   Radio,
-  Breadcrumb, // Import Breadcrumb component
+  Breadcrumb,
 } from "antd";
 import Image from "next/image";
 import { useSelector } from "react-redux";
@@ -29,6 +29,7 @@ interface Dog {
   gender: string;
   price: string;
   image: string;
+  thumbnail: string[];
 }
 
 const DogList = ({ dogsPerPage = 6 }) => {
@@ -149,12 +150,15 @@ const DogList = ({ dogsPerPage = 6 }) => {
     <main className="p-6 w-full lg:max-w-7xl mx-auto">
       <Breadcrumb className="mb-6">
         <Breadcrumb.Item>
-          <Link href={routerNames.CATEGORY}>DANH MỤC SẢN PHẨM</Link>
+          <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          <Link href={routerNames.CATEGORY}>THÚ CƯNG</Link>
+          <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>CHÓ</Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <Link href={routerNames.CATEGORY}>Thú Cưng</Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>Chó</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row gutter={20} justify="center">

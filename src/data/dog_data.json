@@ -12,7 +12,13 @@
     "breedType": "Thuần chủng",
     "gender": "Cái",
     "price": "2.000.000-6.000.000",
-    "image": "https://i.imgur.com/Xn2iwCR.jpeg"
+    "image": "https://i.imgur.com/Xn2iwCR.jpeg",
+    "thumbnail": [
+      "https://i.imgur.com/PnMWCKZ.jpeg",
+      "https://i.imgur.com/XcuVdM2.jpeg",
+      "https://i.imgur.com/F34ApNz.png"
+    ],
+    "video": "https://i.imgur.com/G50ZX0p.mp4"
   },
   {
     "id": 2,
@@ -27,7 +33,13 @@
     "breedType": "Thuần chủng",
     "gender": "Đực",
     "price": "10.000.000-20.000.000",
-    "image": "https://i.imgur.com/o9TGCsq.jpeg"
+    "image": "https://i.imgur.com/o9TGCsq.jpeg",
+    "thumbnail": [
+      "https://i.imgur.com/4Jt4E8D.jpeg",
+      "https://i.imgur.com/lML6rqk.jpeg",
+      "https://i.imgur.com/ufbz8qf.jpeg"
+    ],
+    "video": "https://i.imgur.com/n2N8war.mp4"
   },
   {
     "id": 3,

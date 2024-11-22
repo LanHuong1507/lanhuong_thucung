@@ -129,6 +129,9 @@ const Category = () => {
     <div className="text-center p-6">
       <Breadcrumb className="mb-6 flex justify-center">
         <Breadcrumb.Item>
+          <Link href={routerNames.HOME}>Trang Chủ</Link>
+        </Breadcrumb.Item>
+        <Breadcrumb.Item>
           <Link href={routerNames.CATEGORY}>Danh Mục Sản Phẩm</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
