@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Chuồng Mèo TPR",
+    "description": "Chuồng mèo tiện dụng, thoáng mát, giúp mèo có không gian sống sạch sẽ và an toàn.",
+    "usage": "Dùng để nhốt mèo khi di chuyển hoặc để nghỉ ngơi.",
+    "materials": "TPR (Thermoplastic Rubber), thép không gỉ.",
+    "category": "Mèo",
+    "price": "350.000 VND",
+    "size": "50cm x 40cm x 40cm",
+    "image": "https://i.imgur.com/abc7.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb61.jpg",
+      "https://i.imgur.com/thumb62.jpg",
+      "https://i.imgur.com/thumb63.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dây Dắt Chó Nylon",
+    "description": "Dây dắt chó chắc chắn, dễ sử dụng, giúp kiểm soát chó khi đi dạo.",
+    "usage": "Dùng để dắt chó khi đi ra ngoài, đi dạo hoặc huấn luyện.",
+    "materials": "Nylon bền chắc, khóa kim loại.",
+    "category": "Chó",
+    "price": "120.000 VND",
+    "size": "1m5 x 2cm",
+    "image": "https://i.imgur.com/xyz8.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb64.jpg",
+      "https://i.imgur.com/thumb65.jpg",
+      "https://i.imgur.com/thumb66.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bát Ăn Chó Chống Lật",
+    "description": "Bát ăn cho chó được thiết kế đặc biệt để chống lật, giữ cho thức ăn không bị đổ.",
+    "usage": "Dùng để đựng thức ăn hoặc nước cho chó.",
+    "materials": "Nhựa cao cấp, chân đế chống trượt.",
+    "category": "Chó",
+    "price": "80.000 VND",
+    "size": "500ml",
+    "image": "https://i.imgur.com/uvw7.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb67.jpg",
+      "https://i.imgur.com/thumb68.jpg",
+      "https://i.imgur.com/thumb69.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Đồ Chơi Cho Mèo Tinh Nghịch",
+    "description": "Đồ chơi cho mèo giúp giảm căng thẳng, kích thích hoạt động và tăng cường sự linh hoạt.",
+    "usage": "Cho mèo chơi đùa để giải trí và tập thể dục.",
+    "materials": "Nhựa, lông vải.",
+    "category": "Mèo",
+    "price": "50.000 VND",
+    "size": "10cm",
+    "image": "https://i.imgur.com/hij6.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb70.jpg",
+      "https://i.imgur.com/thumb71.jpg",
+      "https://i.imgur.com/thumb72.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Giường Mèo 2 Tầng",
+    "description": "Giường mèo 2 tầng giúp mèo có không gian nghỉ ngơi thoải mái và an toàn.",
+    "usage": "Dùng cho mèo ngủ hoặc thư giãn.",
+    "materials": "Vải bạt, khung thép.",
+    "category": "Mèo",
+    "price": "400.000 VND",
+    "size": "50cm x 40cm x 70cm",
+    "image": "https://i.imgur.com/abc8.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb73.jpg",
+      "https://i.imgur.com/thumb74.jpg",
+      "https://i.imgur.com/thumb75.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lược Chải Lông Chó",
+    "description": "Lược chải lông giúp làm sạch lông chó và loại bỏ lông rụng hiệu quả.",
+    "usage": "Dùng để chải lông cho chó mỗi ngày.",
+    "materials": "Thép không gỉ, tay cầm bằng nhựa.",
+    "category": "Chó",
+    "price": "90.000 VND",
+    "size": "20cm",
+    "image": "https://i.imgur.com/xyz9.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb76.jpg",
+      "https://i.imgur.com/thumb77.jpg",
+      "https://i.imgur.com/thumb78.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Giỏ Xách Cho Mèo",
+    "description": "Giỏ xách dành cho mèo với thiết kế thoáng mát và an toàn khi di chuyển.",
+    "usage": "Dùng để mang mèo đi ra ngoài hoặc di chuyển.",
+    "materials": "Nhựa cao cấp, lưới thông thoáng.",
+    "category": "Mèo",
+    "price": "250.000 VND",
+    "size": "40cm x 30cm x 25cm",
+    "image": "https://i.imgur.com/uvw8.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb79.jpg",
+      "https://i.imgur.com/thumb80.jpg",
+      "https://i.imgur.com/thumb81.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Tấm Lót Chuồng Thỏ",
+    "description": "Tấm lót chuồng thỏ giúp giữ vệ sinh chuồng và tạo không gian thoải mái cho thỏ.",
+    "usage": "Dùng để lót dưới chuồng thỏ giúp giữ sạch sẽ.",
+    "materials": "Bông vải, nhựa PVC.",
+    "category": "Thỏ",
+    "price": "60.000 VND",
+    "size": "50cm x 40cm",
+    "image": "https://i.imgur.com/ijk7.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb82.jpg",
+      "https://i.imgur.com/thumb83.jpg",
+      "https://i.imgur.com/thumb84.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Bể Nuôi Rùa Thủy Sinh",
+    "description": "Bể nuôi rùa có hệ thống lọc nước, giúp duy trì môi trường sống trong sạch cho rùa.",
+    "usage": "Dùng để nuôi rùa trong nhà hoặc ngoài trời.",
+    "materials": "Nhựa cao cấp, hệ thống lọc nước.",
+    "category": "Rùa",
+    "price": "1.500.000 VND",
+    "size": "60cm x 40cm x 30cm",
+    "image": "https://i.imgur.com/xyz10.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb85.jpg",
+      "https://i.imgur.com/thumb86.jpg",
+      "https://i.imgur.com/thumb87.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Bộ Quần Áo Cho Chó",
+    "description": "Bộ quần áo cho chó, giữ ấm và thời trang, thích hợp cho các chuyến dạo phố.",
+    "usage": "Mặc cho chó khi ra ngoài để giữ ấm và làm đẹp.",
+    "materials": "Vải cotton, vải dạ.",
+    "category": "Chó",
+    "price": "150.000 VND",
+    "size": "L",
+    "image": "https://i.imgur.com/hij8.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb88.jpg",
+      "https://i.imgur.com/thumb89.jpg",
+      "https://i.imgur.com/thumb90.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chuồng Nuôi Chuột Hamster",
+    "description": "Chuồng nuôi chuột hamster với thiết kế nhỏ gọn, thông thoáng, dễ dàng vệ sinh.",
+    "usage": "Dùng để nuôi chuột hamster, tạo không gian sống thoải mái cho chúng.",
+    "materials": "Nhựa, kim loại.",
+    "category": "Hamster",
+    "price": "250.000 VND",
+    "size": "30cm x 20cm x 25cm",
+    "image": "https://i.imgur.com/abc1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb1.jpg",
+      "https://i.imgur.com/thumb2.jpg",
+      "https://i.imgur.com/thumb3.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bể Nuôi Rùa Thủy Sinh",
+    "description": "Bể nuôi rùa với hệ thống lọc nước tích hợp, giúp tạo môi trường sống sạch sẽ và an toàn cho rùa.",
+    "usage": "Dùng để nuôi rùa, cá cảnh hoặc các loài bò sát.",
+    "materials": "Kính cường lực, bộ lọc nước.",
+    "category": "Rùa",
+    "price": "800.000 VND",
+    "size": "60cm x 40cm x 35cm",
+    "image": "https://i.imgur.com/uvw1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb4.jpg",
+      "https://i.imgur.com/thumb5.jpg",
+      "https://i.imgur.com/thumb6.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Đèn UV Cho Bò Sát",
+    "description": "Đèn UV cung cấp tia cực tím, giúp hỗ trợ quá trình tổng hợp vitamin D3 cho bò sát.",
+    "usage": "Cắm vào ổ điện và đặt trong khu vực nuôi bò sát hoặc rùa.",
+    "materials": "Thủy tinh, kim loại.",
+    "category": "Rùa, Bò Sát",
+    "price": "180.000 VND",
+    "size": "20W",
+    "image": "https://i.imgur.com/xyz1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb7.jpg",
+      "https://i.imgur.com/thumb8.jpg",
+      "https://i.imgur.com/thumb9.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Máy Sưởi Bể Cá",
+    "description": "Máy sưởi giúp duy trì nhiệt độ ổn định cho bể cá, đặc biệt phù hợp cho các loài cá nhiệt đới.",
+    "usage": "Lắp đặt trong bể cá để duy trì nhiệt độ nước.",
+    "materials": "Nhựa chịu nhiệt, kim loại.",
+    "category": "Cá",
+    "price": "300.000 VND",
+    "size": "50W",
+    "image": "https://i.imgur.com/hij1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb10.jpg",
+      "https://i.imgur.com/thumb11.jpg",
+      "https://i.imgur.com/thumb12.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dụng Cụ Vệ Sinh Chuồng Hamster",
+    "description": "Dụng cụ vệ sinh chuồng hamster giúp bạn dễ dàng làm sạch chuồng và giữ vệ sinh cho vật nuôi.",
+    "usage": "Sử dụng để làm sạch chuồng hamster, thay đổi tấm lót và rửa các vật dụng trong chuồng.",
+    "materials": "Nhựa, kim loại.",
+    "category": "Hamster",
+    "price": "60.000 VND",
+    "size": "30cm x 5cm",
+    "image": "https://i.imgur.com/uvw2.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb13.jpg",
+      "https://i.imgur.com/thumb14.jpg",
+      "https://i.imgur.com/thumb15.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Bóng Đèn Sưởi Cho Bò Sát",
+    "description": "Bóng đèn sưởi giúp duy trì nhiệt độ cho các loài bò sát hoặc các loài vật nuôi cần môi trường ấm áp.",
+    "usage": "Cắm vào ổ điện và lắp vào chuồng hoặc bể nuôi bò sát.",
+    "materials": "Thủy tinh, kim loại.",
+    "category": "Rùa, Bò Sát",
+    "price": "200.000 VND",
+    "size": "25W",
+    "image": "https://i.imgur.com/ijk2.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb16.jpg",
+      "https://i.imgur.com/thumb17.jpg",
+      "https://i.imgur.com/thumb18.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Bể Nuôi Cá Cảnh Mini",
+    "description": "Bể nuôi cá mini, thiết kế hiện đại và sang trọng, phù hợp với các loại cá nhỏ như cá betta hoặc cá guppy.",
+    "usage": "Dùng để nuôi cá cảnh trong không gian nhỏ, dễ dàng chăm sóc và duy trì.",
+    "materials": "Kính cường lực, nhựa.",
+    "category": "Cá",
+    "price": "400.000 VND",
+    "size": "30cm x 20cm x 20cm",
+    "image": "https://i.imgur.com/abc2.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb19.jpg",
+      "https://i.imgur.com/thumb20.jpg",
+      "https://i.imgur.com/thumb21.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Tấm Lót Bể Cá",
+    "description": "Tấm lót giúp giữ vệ sinh và bảo vệ đáy bể cá, giúp dễ dàng vệ sinh và giữ cho nước trong bể luôn sạch.",
+    "usage": "Đặt dưới đáy bể cá để dễ dàng vệ sinh và bảo vệ bể.",
+    "materials": "Silicon, nhựa.",
+    "category": "Cá",
+    "price": "120.000 VND",
+    "size": "50cm x 30cm",
+    "image": "https://i.imgur.com/uvw3.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb22.jpg",
+      "https://i.imgur.com/thumb23.jpg",
+      "https://i.imgur.com/thumb24.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Khay Vệ Sinh Cho Thỏ",
+    "description": "Khay vệ sinh dành cho thỏ, giúp giữ sạch sẽ chuồng và tạo không gian sống thoải mái.",
+    "usage": "Đặt trong chuồng thỏ để thỏ sử dụng khi cần đi vệ sinh.",
+    "materials": "Nhựa bền, không gây độc hại.",
+    "category": "Thỏ",
+    "price": "80.000 VND",
+    "size": "35cm x 25cm",
+    "image": "https://i.imgur.com/hij2.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb25.jpg",
+      "https://i.imgur.com/thumb26.jpg",
+      "https://i.imgur.com/thumb27.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Đồ Chơi Cho Thỏ",
+    "description": "Đồ chơi giúp thỏ giải trí và giữ tinh thần vui vẻ, đồng thời giúp răng thỏ được mài mòn tự nhiên.",
+    "usage": "Cho thỏ chơi hàng ngày để giảm stress và tăng cường sức khỏe.",
+    "materials": "Gỗ tự nhiên, bông vải.",
+    "category": "Thỏ",
+    "price": "50.000 VND",
+    "size": "15cm x 5cm",
+    "image": "https://i.imgur.com/uvw4.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb28.jpg",
+      "https://i.imgur.com/thumb29.jpg",
+      "https://i.imgur.com/thumb30.jpg"
+    ]
+  }
+]

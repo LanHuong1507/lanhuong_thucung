@@ -187,6 +187,10 @@ const DogList = ({ dogsPerPage = 6 }) => {
                   { label: "Cảnh giác", value: "Cảnh giác" },
                   { label: "Hiền lành", value: "Hiền lành" },
                   { label: "Vui vẻ", value: "Vui vẻ" },
+                  { label: "Thông minh", value: "Thông minh" },
+                  { label: "Nghịch ngợm", value: "Nghịch ngợm" },
+                  { label: "Độc lập", value: "Độc lập" },
+                  { label: "Dũng cảm", value: "Dũng cảm" },
                 ]}
                 onChange={(value) => handleFilterChange("temperament", value)}
                 value={filters.temperament}

@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Thức Ăn Cho Mèo Whiskas",
+    "description": "Thức ăn hạt cho mèo với công thức giúp tăng cường sức khỏe và bộ lông mượt mà.",
+    "usage": "Cho mèo ăn từ 50g đến 100g mỗi ngày, tùy vào cân nặng.",
+    "ingredients": "Gạo, thịt gà, rau củ, vitamin, khoáng chất.",
+    "category": "Mèo",
+    "price": "150.000 VND",
+    "size": "1kg",
+    "image": "https://i.imgur.com/abc1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb1.jpg",
+      "https://i.imgur.com/thumb2.jpg",
+      "https://i.imgur.com/thumb3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thức Ăn Cho Chó Pedigree",
+    "description": "Thức ăn khô cho chó, hỗ trợ tiêu hóa tốt và cải thiện sức khỏe răng miệng.",
+    "usage": "Cho chó ăn từ 100g đến 200g mỗi ngày, tùy vào kích thước và tuổi tác.",
+    "ingredients": "Thịt bò, gà, rau củ, vitamin.",
+    "category": "Chó",
+    "price": "180.000 VND",
+    "size": "1.2kg",
+    "image": "https://i.imgur.com/xyz1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb4.jpg",
+      "https://i.imgur.com/thumb5.jpg",
+      "https://i.imgur.com/thumb6.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Thức Ăn Dinh Dưỡng Cho Mèo Royal Canin",
+    "description": "Thức ăn hạt cho mèo, hỗ trợ hệ miễn dịch và sức khỏe toàn diện.",
+    "usage": "Cho mèo ăn theo nhu cầu, từ 40g đến 80g mỗi ngày.",
+    "ingredients": "Cá hồi, gà, vitamin, khoáng chất.",
+    "category": "Mèo",
+    "price": "350.000 VND",
+    "size": "2kg",
+    "image": "https://i.imgur.com/efg1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb7.jpg",
+      "https://i.imgur.com/thumb8.jpg",
+      "https://i.imgur.com/thumb9.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Thức Ăn Dinh Dưỡng Cho Chó Hill's Science Diet",
+    "description": "Thức ăn dinh dưỡng cao cấp cho chó với công thức cân bằng và tốt cho hệ tiêu hóa.",
+    "usage": "Cho chó ăn từ 150g đến 300g mỗi ngày, tùy vào trọng lượng.",
+    "ingredients": "Thịt gà, bắp, đậu nành, vitamin, khoáng chất.",
+    "category": "Chó",
+    "price": "450.000 VND",
+    "size": "3kg",
+    "image": "https://i.imgur.com/hij1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb10.jpg",
+      "https://i.imgur.com/thumb11.jpg",
+      "https://i.imgur.com/thumb12.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Snack Cho Chó Pedigree",
+    "description": "Snack bổ sung dinh dưỡng cho chó, giúp làm sạch răng và tăng cường sức khỏe.",
+    "usage": "Cho chó ăn 1-2 thanh mỗi ngày, tùy theo kích thước và hoạt động.",
+    "ingredients": "Thịt bò, gà, vitamin, khoáng chất.",
+    "category": "Chó",
+    "price": "60.000 VND",
+    "size": "500g",
+    "image": "https://i.imgur.com/klm1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb13.jpg",
+      "https://i.imgur.com/thumb14.jpg",
+      "https://i.imgur.com/thumb15.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Thức Ăn Cho Mèo Orijen",
+    "description": "Thức ăn khô cao cấp cho mèo, chứa nhiều protein từ thịt tươi giúp phát triển cơ bắp khỏe mạnh.",
+    "usage": "Cho mèo ăn từ 40g đến 70g mỗi ngày, tùy vào độ tuổi và hoạt động.",
+    "ingredients": "Thịt gà tươi, cá hồi, trứng, rau củ.",
+    "category": "Mèo",
+    "price": "850.000 VND",
+    "size": "1.8kg",
+    "image": "https://i.imgur.com/xyz2.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb16.jpg",
+      "https://i.imgur.com/thumb17.jpg",
+      "https://i.imgur.com/thumb18.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Thức Ăn Dinh Dưỡng Cho Mèo Nutro",
+    "description": "Thức ăn dinh dưỡng cho mèo với các thành phần tự nhiên giúp tăng cường sức khỏe và miễn dịch.",
+    "usage": "Cho mèo ăn từ 40g đến 60g mỗi ngày.",
+    "ingredients": "Thịt gà, lúa mì, khoai tây, vitamin.",
+    "category": "Mèo",
+    "price": "250.000 VND",
+    "size": "1kg",
+    "image": "https://i.imgur.com/uvw1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb19.jpg",
+      "https://i.imgur.com/thumb20.jpg",
+      "https://i.imgur.com/thumb21.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dinh Dưỡng Cho Chó Acana",
+    "description": "Dinh dưỡng cao cấp cho chó với công thức không ngũ cốc, giúp cải thiện hệ tiêu hóa và tăng cường sức khỏe tổng thể.",
+    "usage": "Cho chó ăn từ 100g đến 200g mỗi ngày, tùy vào trọng lượng và độ tuổi.",
+    "ingredients": "Thịt cừu, gà, cá, trứng.",
+    "category": "Chó",
+    "price": "1.200.000 VND",
+    "size": "2kg",
+    "image": "https://i.imgur.com/ijk1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb22.jpg",
+      "https://i.imgur.com/thumb23.jpg",
+      "https://i.imgur.com/thumb24.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Thức Ăn Cho Mèo Iams",
+    "description": "Thức ăn hạt cho mèo, hỗ trợ duy trì cân nặng khỏe mạnh và tăng cường hệ tiêu hóa.",
+    "usage": "Cho mèo ăn từ 40g đến 80g mỗi ngày, tùy vào cân nặng.",
+    "ingredients": "Gà, cá, khoai tây, vitamin.",
+    "category": "Mèo",
+    "price": "200.000 VND",
+    "size": "1.5kg",
+    "image": "https://i.imgur.com/xyz3.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb25.jpg",
+      "https://i.imgur.com/thumb26.jpg",
+      "https://i.imgur.com/thumb27.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Dinh Dưỡng Cho Chó Royal Canin",
+    "description": "Dinh dưỡng cao cấp cho chó, giúp hỗ trợ sức khỏe tiêu hóa và duy trì cân nặng lý tưởng.",
+    "usage": "Cho chó ăn từ 150g đến 300g mỗi ngày, tùy vào kích thước và độ tuổi.",
+    "ingredients": "Thịt gà, bắp, khoai tây, vitamin, khoáng chất.",
+    "category": "Chó",
+    "price": "1.000.000 VND",
+    "size": "2kg",
+    "image": "https://i.imgur.com/lmn1.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb28.jpg",
+      "https://i.imgur.com/thumb29.jpg",
+      "https://i.imgur.com/thumb30.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Thức Ăn Cho Cá Betta Hikari",
+    "description": "Thức ăn cho cá Betta giúp tăng cường màu sắc và phát triển cơ thể khỏe mạnh.",
+    "usage": "Cho cá ăn 2-3 lần mỗi ngày, mỗi lần một lượng vừa đủ.",
+    "ingredients": "Thịt cá, tôm, vitamin A, D, E.",
+    "category": "Cá",
+    "price": "120.000 VND",
+    "size": "30g",
+    "image": "https://i.imgur.com/abc4.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb31.jpg",
+      "https://i.imgur.com/thumb32.jpg",
+      "https://i.imgur.com/thumb33.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Thức Ăn Cho Cá Koi Saki-Hikari",
+    "description": "Thức ăn cao cấp cho cá Koi, giúp phát triển màu sắc đẹp và sức khỏe lâu dài.",
+    "usage": "Cho cá ăn 2-3 lần mỗi ngày, đảm bảo không bị dư thừa.",
+    "ingredients": "Bột cá, tôm, vitamin C, khoáng chất.",
+    "category": "Cá",
+    "price": "250.000 VND",
+    "size": "500g",
+    "image": "https://i.imgur.com/xyz5.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb34.jpg",
+      "https://i.imgur.com/thumb35.jpg",
+      "https://i.imgur.com/thumb36.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Thức Ăn Cho Cá Vàng Tetra",
+    "description": "Thức ăn viên cho cá vàng giúp duy trì sức khỏe và tăng cường sự phát triển tự nhiên.",
+    "usage": "Cho cá ăn một lượng vừa đủ mỗi lần, từ 2-3 lần mỗi ngày.",
+    "ingredients": "Cá tươi, tôm, các loại vitamin, khoáng chất.",
+    "category": "Cá",
+    "price": "180.000 VND",
+    "size": "100g",
+    "image": "https://i.imgur.com/uvw3.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb37.jpg",
+      "https://i.imgur.com/thumb38.jpg",
+      "https://i.imgur.com/thumb39.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hạt Ăn Cho Chim Lovebird",
+    "description": "Hạt ăn dành riêng cho chim Lovebird, cung cấp đầy đủ dưỡng chất cho sự phát triển và năng lượng.",
+    "usage": "Cho chim ăn 2-3 lần mỗi ngày, đảm bảo không để thức ăn thừa.",
+    "ingredients": "Hạt hướng dương, hạt kê, các loại vitamin.",
+    "category": "Chim",
+    "price": "100.000 VND",
+    "size": "500g",
+    "image": "https://i.imgur.com/abc6.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb40.jpg",
+      "https://i.imgur.com/thumb41.jpg",
+      "https://i.imgur.com/thumb42.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Hạt Cho Chim Vẹt",
+    "description": "Thức ăn cho chim vẹt, cung cấp năng lượng và giúp bộ lông phát triển mượt mà.",
+    "usage": "Cho chim ăn từ 1-2 lần mỗi ngày, lượng thức ăn tùy theo kích thước chim.",
+    "ingredients": "Hạt mè, hạt dẻ, hạt chia, vitamin.",
+    "category": "Chim",
+    "price": "150.000 VND",
+    "size": "300g",
+    "image": "https://i.imgur.com/xyz7.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb43.jpg",
+      "https://i.imgur.com/thumb44.jpg",
+      "https://i.imgur.com/thumb45.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Cỏ Cho Thỏ Oxbow",
+    "description": "Cỏ tươi dành cho thỏ, giúp tiêu hóa tốt và bổ sung chất xơ tự nhiên.",
+    "usage": "Cho thỏ ăn 1-2 lần mỗi ngày, đảm bảo luôn có cỏ sạch cho thỏ ăn.",
+    "ingredients": "Cỏ Timothy, vitamin A, khoáng chất.",
+    "category": "Thỏ",
+    "price": "220.000 VND",
+    "size": "1kg",
+    "image": "https://i.imgur.com/hij4.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb46.jpg",
+      "https://i.imgur.com/thumb47.jpg",
+      "https://i.imgur.com/thumb48.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Cỏ Dried Grass Cho Thỏ",
+    "description": "Cỏ khô bổ sung cho thỏ, hỗ trợ tiêu hóa và giữ cho thỏ luôn khỏe mạnh.",
+    "usage": "Đặt cỏ vào chuồng cho thỏ ăn mỗi ngày.",
+    "ingredients": "Cỏ khô tự nhiên.",
+    "category": "Thỏ",
+    "price": "90.000 VND",
+    "size": "500g",
+    "image": "https://i.imgur.com/uvw6.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb49.jpg",
+      "https://i.imgur.com/thumb50.jpg",
+      "https://i.imgur.com/thumb51.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Thức Ăn Cho Rùa Sera",
+    "description": "Thức ăn chuyên biệt cho rùa giúp tăng cường sức khỏe và phát triển bền vững.",
+    "usage": "Cho rùa ăn từ 2-3 lần mỗi ngày, tùy theo kích thước và loài.",
+    "ingredients": "Cá, tôm, vitamin C, khoáng chất.",
+    "category": "Rùa",
+    "price": "140.000 VND",
+    "size": "200g",
+    "image": "https://i.imgur.com/xyz9.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb52.jpg",
+      "https://i.imgur.com/thumb53.jpg",
+      "https://i.imgur.com/thumb54.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Thức Ăn Cho Rùa Repcal",
+    "description": "Thức ăn bổ sung dinh dưỡng cho rùa, hỗ trợ phát triển vỏ cứng và sức khỏe tổng thể.",
+    "usage": "Cho rùa ăn 1-2 lần mỗi ngày, tùy vào kích thước.",
+    "ingredients": "Cá, tảo spirulina, vitamin A, D3.",
+    "category": "Rùa",
+    "price": "180.000 VND",
+    "size": "250g",
+    "image": "https://i.imgur.com/ijk5.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb55.jpg",
+      "https://i.imgur.com/thumb56.jpg",
+      "https://i.imgur.com/thumb57.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Hạt Ăn Cho Chim Chào Mào",
+    "description": "Hạt ăn cho chim chào mào, giúp duy trì sức khỏe và tăng cường sự năng động cho chim.",
+    "usage": "Cho chim ăn từ 1-2 lần mỗi ngày, đảm bảo đủ thức ăn cho chim.",
+    "ingredients": "Hạt kê, hạt hướng dương, vitamin C.",
+    "category": "Chim",
+    "price": "80.000 VND",
+    "size": "400g",
+    "image": "https://i.imgur.com/xyz6.jpg",
+    "thumbnails": [
+      "https://i.imgur.com/thumb58.jpg",
+      "https://i.imgur.com/thumb59.jpg",
+      "https://i.imgur.com/thumb60.jpg"
+    ]
+  }
+]

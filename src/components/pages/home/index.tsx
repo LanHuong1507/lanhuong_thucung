@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Logo from "../../../assets/images/logo.jpg";
 import shop from "../../../assets/images/shop1.png";
 import { Button, Typography, Row, Col, Tabs } from "antd";
@@ -29,14 +30,14 @@ const Home = () => {
       id: 1,
       name: "Thú Cưng",
       description:
-        "Khám phá bộ sưu tập thú cưng đa dạng tại Lan Hương Pet Shop. Chúng tôi cung cấp những giống chó, mèo, chim, thỏ và nhiều loài khác, mỗi con đều được chăm sóc kỹ lưỡng và đảm bảo sức khỏe tuyệt vời, sẵn sàng trở thành người bạn đồng hành tuyệt vời cho gia đình bạn.",
+        "Khám phá bộ sưu tập thú cưng đa dạng tại Lan Hương Pet Shop. Chúng tôi cung cấp những giống chó, mèo, chim và nhiều loài khác, mỗi con đều được chăm sóc kỹ lưỡng và đảm bảo sức khỏe tuyệt vời, sẵn sàng trở thành người bạn đồng hành tuyệt vời cho gia đình bạn.",
       image: ThuCung,
     },
     {
       id: 2,
       name: "Vật Nuôi",
       description:
-        "Tạo môi trường sống thoải mái và thú vị cho vật nuôi của bạn với các phụ kiện và đồ chơi chất lượng. Từ đồ chơi kích thích trí tuệ, dây xích, cho đến giường ngủ êm ái, mỗi sản phẩm đều được thiết kế để giúp thú cưng của bạn phát triển khỏe mạnh và vui vẻ.",
+        "Khám phá bộ sưu tập vật nuôi đa dạng tại Lan Hương Pet Shop. Chúng tôi cung cấp những giống cá,rùa,thỏ và nhiều loài khác, mỗi con đều được chăm sóc kỹ lưỡng và đảm bảo sức khỏe tuyệt vời, sẵn sàng trở thành người bạn đồng hành tuyệt vời cho gia đình bạn.",
       image: VatNuoi,
     },
     {
@@ -52,11 +53,11 @@ const Home = () => {
     <main>
       <section className="mt-2 py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
         <div className="flex-1 text-center md:text-left space-y-4 animate-fade-in">
-          <h1 className="text-4xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-4xl font-bold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600">
             Chào mừng đến với{" "}
             <span className="text-blue-600">Lan Hương Pet Shop!</span>
           </h1>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 transition-all duration-500 ease-in-out hover:text-gray-800">
             <strong>Lan Hương Pet Shop</strong> là một doanh nghiệp một thành
             viên được thành lập vào năm 2024, với sứ mệnh mang lại những sản
             phẩm và dịch vụ chăm sóc thú cưng chất lượng nhất tại Việt Nam. Dù
@@ -64,14 +65,14 @@ const Home = () => {
             uy tín nhờ vào chất lượng sản phẩm vượt trội và sự tận tâm với từng
             khách hàng.
           </p>
-          <p className="text-md text-gray-800">
+          <p className="text-md text-gray-800 transition-all duration-500 ease-in-out hover:text-gray-700">
             Tại Lan Hương, chúng tôi chuyên cung cấp giống loài thú cưng, các
             sản phẩm chăm sóc, dinh dưỡng, cùng dụng cụ hỗ trợ chăm sóc toàn
             diện cho thú cưng của bạn. Mỗi sản phẩm mà chúng tôi cung cấp đều
             được chọn lọc kỹ càng, đảm bảo chất lượng cao và phù hợp với nhu cầu
             của từng loại thú cưng.
           </p>
-          <ul className="list-disc list-inside text-gray-800 space-y-2">
+          <ul className="list-disc list-inside text-gray-800 space-y-2 transition-all duration-500 ease-in-out hover:text-gray-700">
             <li>
               <strong>Giống loài thú cưng chất lượng</strong>: Chúng tôi cung
               cấp các giống chó, mèo, chim, cá và các loài thú cưng khác, tất cả
@@ -94,7 +95,7 @@ const Home = () => {
               cưng.
             </li>
           </ul>
-          <p className="text-lg font-semibold text-blue-700 mt-4">
+          <p className="text-lg font-semibold text-blue-700 mt-4 transition-all duration-500 ease-in-out hover:text-blue-800">
             Chúng tôi cam kết mang lại cho bạn và thú cưng những sản phẩm và
             dịch vụ chăm sóc chất lượng cao, đồng thời luôn nỗ lực để trở thành
             người bạn đồng hành đáng tin cậy trong hành trình chăm sóc thú cưng.
@@ -106,7 +107,7 @@ const Home = () => {
             alt="Lan Hương Pet Shop"
             width={400}
             height={400}
-            className="rounded-lg shadow-md object-cover"
+            className="rounded-lg shadow-md object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
           />
         </div>
       </section>
@@ -322,16 +323,21 @@ const Home = () => {
           </Tabs>
         </div>
       </section>
-
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-6">
           <Title level={3} className="text-3xl text-center mb-12 text-gray-800">
             Danh Mục Sản Phẩm
           </Title>
           <Row gutter={[16, 16]}>
-            {productCategories.map((category) => (
+            {productCategories.map((category, index) => (
               <Col xs={24} md={8} key={category.id}>
-                <div className="relative group overflow-hidden rounded-lg shadow-lg">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.5, duration: 1 }}
+                  className="relative group overflow-hidden rounded-lg shadow-lg"
+                >
                   <Image
                     src={category.image}
                     alt={category.name}
@@ -350,25 +356,38 @@ const Home = () => {
                       </Button>
                     </Link>
                   </div>
-                </div>
+                </motion.div>
               </Col>
             ))}
           </Row>
         </div>
       </section>
+
       <section className="bg-gray-100 py-16 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-blue-200 to-white opacity-30 z-0"></div>
-        <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>{" "}
+        <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <Title
-            level={3}
-            className="text-3xl text-center mb-12 text-gray-800 relative z-10"
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="relative z-10"
           >
-            Sứ Mệnh & Tầm Nhìn
-          </Title>
+            <Title
+              level={3}
+              className="text-3xl text-center mb-12 text-gray-800"
+            >
+              Sứ Mệnh & Tầm Nhìn
+            </Title>
+          </motion.div>
           <Row gutter={[16, 16]}>
             <Col xs={24} md={12}>
-              <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.9, duration: 1.2 }}
+                className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10"
+              >
                 <Title level={4} className="text-xl text-blue-400 mb-4">
                   Sứ Mệnh
                 </Title>
@@ -378,10 +397,15 @@ const Home = () => {
                   nhất và xây dựng một cộng đồng yêu thương, nơi thú cưng được
                   chăm sóc như một thành viên gia đình.
                 </Paragraph>
-              </div>
+              </motion.div>
             </Col>
             <Col xs={24} md={12}>
-              <div className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.2, duration: 1.5 }}
+                className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10"
+              >
                 <Title level={4} className="text-xl text-blue-400 mb-4">
                   Tầm Nhìn
                 </Title>
@@ -390,7 +414,7 @@ const Home = () => {
                   phẩm và dịch vụ thú cưng, tạo nên một thế giới nơi thú cưng
                   được yêu thương, chăm sóc và tôn trọng.
                 </Paragraph>
-              </div>
+              </motion.div>
             </Col>
           </Row>
         </div>
