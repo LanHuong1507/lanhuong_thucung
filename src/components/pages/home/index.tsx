@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <main>
-      <section className="mt-2 py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
+      <section className="py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
         <div className="flex-1 text-center md:text-left space-y-4 animate-fade-in">
           <h1 className="text-4xl font-bold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600">
             Chào mừng đến với{" "}

@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import Image from "next/image";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import { routerNames } from "@/components/constants/router.constant";
 
 interface Product {
   id: number;
@@ -58,6 +59,13 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
     }
   };
 
+  const handleProductClick = (productId: number) => {
+    window.location.href = `${routerNames.PRODUCT_DETAIL.replace(
+      "[id]",
+      productId.toString(),
+    )}`;
+  };
+
   return (
     <div className="py-4 w-full ">
       <div className="flex flex-row justify-between items-center mb-6 px-2 lg:px-6">
@@ -106,6 +114,7 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
                 className="object-cover h-64 w-full"
               />
             }
+            onClick={() => handleProductClick(product.id)}
           >
             <div className="p-4 bg-white flex flex-col h-full">
               <Card.Meta

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { Button, Typography } from "antd";
+import { Typography, Rate } from "antd";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -13,6 +13,9 @@ interface Product {
   description: string;
   price: number;
   image: string;
+  pet: string;
+  rating: number;
+  stock: number;
 }
 
 const ProductDetail = () => {
@@ -34,6 +37,7 @@ const ProductDetail = () => {
   }, [id, products]);
 
   if (!product) return <div>Loading...</div>;
+
   return (
     <>
       <Head>
@@ -58,9 +62,18 @@ const ProductDetail = () => {
               }).format(product.price)}{" "}
               VNĐ
             </p>
-            <Button type="primary" className="mt-4">
-              Thêm vào giỏ hàng
-            </Button>
+            <div className="flex items-center mt-4">
+              <Rate disabled defaultValue={product.rating} className="mr-2" />
+              <span className="text-gray-500">({product.rating}/5)</span>
+            </div>
+            <p className="mt-2 text-gray-600">
+              Loại vật nuôi:{" "}
+              <span className="font-semibold">{product.pet}</span>
+            </p>
+            <p className="mt-2 text-gray-600">
+              Chỉ còn <span className="font-semibold">{product.stock}</span> sản
+              phẩm
+            </p>
           </div>
         </div>
       </div>

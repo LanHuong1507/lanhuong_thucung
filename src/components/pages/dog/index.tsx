@@ -148,7 +148,7 @@ const DogList = ({ dogsPerPage = 6 }) => {
 
   return (
     <main className="p-6 w-full lg:max-w-7xl mx-auto">
-      <Breadcrumb className="mb-6">
+      <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full">
         <Breadcrumb.Item>
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
@@ -158,9 +158,8 @@ const DogList = ({ dogsPerPage = 6 }) => {
         <Breadcrumb.Item>
           <Link href={routerNames.CATEGORY}>Thú Cưng</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Chó</Breadcrumb.Item>
+        <Breadcrumb.Item className="text-sm md:text-base">Chó</Breadcrumb.Item>
       </Breadcrumb>
-
       <Row gutter={20} justify="center">
         <Col xs={24} sm={6} md={6} lg={6}>
           <Card className="p-2 rounded-md shadow-lg" title="Bộ Lọc">
