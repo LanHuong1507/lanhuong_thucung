@@ -116,7 +116,7 @@ const DogDetail = () => {
           {dog.name}
         </h1>
         <section className="flex flex-col md:flex-row justify-between items-start">
-          <article className="w-full md:w-1/2 flex flex-col items-center mb-6 md:mb-0">
+          <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
             <Image
               src={dog.image}
               alt={dog.name}
@@ -124,21 +124,33 @@ const DogDetail = () => {
               width={400}
               height={400}
             />
-            <div className="flex mt-4 space-x-2 md:space-x-4">
-              {dog.thumbnail.map((thumb, index) => (
-                <Image
-                  key={index}
-                  src={thumb}
-                  alt={`${dog.name} thumbnail ${index + 1}`}
-                  className="w-24 h-20 md:w-48 md:h-40 object-cover rounded-md cursor-pointer"
-                  width={400}
-                  height={400}
-                />
-              ))}
+            <div className="flex flex-col lg:flex-row mt-4 md:space-x-4 space-y-4 md:space-y-0 items-center w-full justify-center">
+              <div className="flex space-x-2 mb-4 lg:mb-0">
+                {dog.thumbnail.map((thumb, index) => (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${dog.name} thumbnail ${index + 1}`}
+                    className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
+                    width={400}
+                    height={400}
+                  />
+                ))}
+              </div>
+              <div className="w-full md:w-72 h-auto">
+                <video
+                  src={dog.video}
+                  autoPlay
+                  loop
+                  muted
+                  controls
+                  className="w-full rounded-lg shadow-lg"
+                ></video>
+              </div>
             </div>
           </article>
 
-          <article className="w-full md:w-1/2">
+          <article className="w-full md:w-1/3">
             <Table
               dataSource={dataSource}
               columns={columns}
@@ -149,65 +161,65 @@ const DogDetail = () => {
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-1/2 p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
               >
                 Liên hệ
               </Button>
             </section>
           </article>
         </section>
-        <div className="flex flex-col">
-          <div className="mt-4 py-4 px-6 w-full md:w-[40%] bg-gray-100 rounded-lg shadow-md">
+        <section className="flex flex-col">
+          <div className="mt-8 py-4 px-6 w-full md:w-[50%] border-2 border-gray-300 rounded-lg shadow-lg bg-white">
             <h2
-              className="text-xl md:text-3xl font-semibold text-black flex items-center cursor-pointer hover:text-blue-600 transition-colors duration-300"
+              className="text-xl md:text-3xl font-semibold text-black py-2 px-4 rounded-lg flex items-center cursor-pointer hover:text-blue-400 hover:translate-x-1 transition-all duration-300"
               onClick={handleToggleSidebar}
             >
               MỤC LỤC NỘI DUNG
-              <span className="ml-4 flex items-center">
+              <span className="ml-12 flex items-center">
                 {isSidebarVisible ? <UpOutlined /> : <DownOutlined />}
               </span>
             </h2>
 
             {isSidebarVisible && (
-              <ol className="mt-2 list-decimal pl-6 space-y-4">
+              <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("temperament")}
                 >
                   Tính cách
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("health")}
                 >
                   Sức khỏe
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("exercise")}
                 >
                   Nhu cầu vận động
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("diet")}
                 >
                   Chế độ ăn
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("training")}
                 >
                   Huấn luyện
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("suitable_for")}
                 >
                   Phù hợp với
                 </li>
                 <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
                   onClick={() => handleSectionClick("care_tips")}
                 >
                   Lời khuyên chăm sóc
@@ -215,14 +227,14 @@ const DogDetail = () => {
               </ol>
             )}
           </div>
-        </div>
+        </section>
 
-        <div className="pt-24 md:flex md:gap-6">
+        <section className="pt-24 md:flex md:gap-6">
           <ol className="space-y-6 mt-6">
             <li id="temperament">
               <h3 className="text-3xl font-bold text-blue-700">1. Tính cách</h3>
               {dog.temperament.map((item, index) => (
-                <p key={index}>{item}</p>
+                <p key={index}>- {item}</p>
               ))}
             </li>
 
@@ -264,19 +276,7 @@ const DogDetail = () => {
               <p>{dog.additional_info.care_tips}</p>
             </li>
           </ol>
-        </div>
-        <div className="mt-6 w-full">
-          <div className="flex justify-center">
-            <video
-              src={dog.video}
-              autoPlay
-              loop
-              muted
-              controls
-              className="w-[80%] rounded-lg shadow-lg"
-            ></video>
-          </div>
-        </div>
+        </section>
       </main>
     </>
   );

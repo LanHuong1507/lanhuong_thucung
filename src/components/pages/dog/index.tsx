@@ -167,8 +167,8 @@ const DogList = ({ dogsPerPage = 4 }) => {
   };
 
   return (
-    <main className="p-6 w-full lg:max-w-7xl mx-auto">
-      <Breadcrumb className="mb-6 flex space-x-4 md:space-x-8 w-full text-lg">
+    <main className="p-6 w-full mx-auto">
+      <Breadcrumb className="mb-6 flex items-center justify-center space-x-4 lg:space-x-8 w-full text-lg">
         <Breadcrumb.Item>
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
@@ -185,8 +185,8 @@ const DogList = ({ dogsPerPage = 4 }) => {
         </Breadcrumb.Item>
       </Breadcrumb>
       <Row gutter={20} justify="center">
-        <Col xs={24} sm={6} md={6} lg={6}>
-          <Card className="p-4 rounded-md shadow-lg" title="Bộ Lọc">
+        <Col xs={24} sm={24} md={24} lg={6}>
+          <Card className="p-4 rounded-md shadow-lg w-full" title="Bộ Lọc">
             <Input
               placeholder="Tìm kiếm giống chó"
               value={filters.searchQuery}
@@ -207,6 +207,26 @@ const DogList = ({ dogsPerPage = 4 }) => {
                 <Select.Option value="Nhỏ">Nhỏ</Select.Option>
                 <Select.Option value="Vừa">Trung bình</Select.Option>
                 <Select.Option value="Lớn">Lớn</Select.Option>
+              </Select>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-semibold mb-2">Cân nặng</h4>
+              <Select
+                mode="multiple"
+                placeholder="Chọn cân nặng"
+                onChange={(value) => handleFilterChange("weightRange", value)}
+                value={filters.weightRange}
+                className="w-full"
+              >
+                <Select.Option value="Nhỏ (dưới 10kg)">
+                  Nhỏ (dưới 10kg)
+                </Select.Option>
+                <Select.Option value="Vừa (10-20kg)">
+                  Vừa (10-20kg)
+                </Select.Option>
+                <Select.Option value="Lớn (trên 20kg)">
+                  Lớn (trên 20kg)
+                </Select.Option>
               </Select>
             </div>
             <div className="mb-4">
@@ -239,6 +259,7 @@ const DogList = ({ dogsPerPage = 4 }) => {
                 <Select.Option value="Trên 15 năm">Trên 15 năm</Select.Option>
               </Select>
             </div>
+
             <div className="mb-4">
               <h4 className="font-semibold mb-2">Khoảng giá</h4>
               <Select
@@ -311,38 +332,54 @@ const DogList = ({ dogsPerPage = 4 }) => {
                     Giá bán: {dog.price} VNĐ
                   </p>
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-90 p-4 flex flex-col justify-start items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-6 flex flex-col justify-start items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div>
-                    <p>
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
                       Xuất xứ:{" "}
-                      <span className="text-base text-gray-700">
+                      <span className="text-sm md:text-lg text-gray-700 font-semibold">
                         {dog.origin}
                       </span>
                     </p>
-                  </div>
-                  <p className="text-base text-gray-700 mt-1 mb-2">
-                    Kích thước: {dog.size}
-                  </p>
-                  <p className="text-base text-gray-700 mb-2">
-                    Tuổi thọ: {dog.life_span}
-                  </p>
-                  <p className="text-base text-gray-700 mb-2">
-                    Cân nặng: {dog.weight_range}
-                  </p>
-                  <p className="text-base text-gray-700 mb-2">
-                    Loại lông: {dog.coat}
-                  </p>
-                  <p className="text-base text-gray-700 mb-2">
-                    Màu lông: {dog.color.join(", ")}
-                  </p>
 
-                  <p className="text-base text-gray-700 mb-2">
-                    Giống: {dog.breedType}
-                  </p>
-                  <p className="text-base text-gray-700 mb-4">
-                    Giới tính: {dog.gender}
-                  </p>
-                  <div className="mt-4 flex flex-col gap-4 w-full">
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Kích thước:{" "}
+                      <span className="font-semibold">{dog.size}</span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Tuổi thọ:{" "}
+                      <span className="font-semibold">{dog.life_span}</span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Cân nặng:{" "}
+                      <span className="font-semibold">{dog.weight_range}</span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Loại lông:{" "}
+                      <span className="font-semibold">{dog.coat}</span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Màu lông:{" "}
+                      <span className="font-semibold">
+                        {dog.color.join(", ")}
+                      </span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                      Giống:{" "}
+                      <span className="font-semibold">{dog.breedType}</span>
+                    </p>
+
+                    <p className="text-sm md:text-lg text-gray-700 mb-4">
+                      Giới tính:{" "}
+                      <span className="font-semibold">{dog.gender}</span>
+                    </p>
+                  </div>
+
+                  <div className="mt-0 md:mt-4 flex flex-col w-full">
                     <Link
                       href={`${routerNames.DOG_DETAIL.replace(
                         "[id]",
@@ -352,15 +389,21 @@ const DogList = ({ dogsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center"
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
                       >
                         Xem chi tiết
                       </Button>
                     </Link>
 
-                    <Button type="primary" block className="w-full text-center">
-                      Liên hệ ngay
-                    </Button>
+                    <Link href={routerNames.CONTACT}>
+                      <Button
+                        type="primary"
+                        block
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                      >
+                        Liên hệ ngay
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </Card>

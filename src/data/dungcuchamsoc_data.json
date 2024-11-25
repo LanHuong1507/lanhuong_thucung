@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Lược Chải Lông",
     "description": "Lược chải lông giúp loại bỏ lông rụng và giữ cho bộ lông của thú cưng luôn mượt mà và sạch sẽ. Lược được thiết kế đặc biệt để không làm tổn thương da thú cưng.",
+    "usage": "Sử dụng để chải lông cho thú cưng hàng ngày, bắt đầu từ phần lông dài hoặc rối để loại bỏ lông rụng. Dùng cho chó và mèo có lông dài hoặc ngắn.",
     "category": "Chó, Mèo",
     "price": "120.000 VND",
     "material": "Nhựa, Thép không gỉ",
@@ -13,12 +14,16 @@
       "https://i.imgur.com/XjZVXYM.jpg",
       "https://i.imgur.com/Yv4h7PO.jpg",
       "https://i.imgur.com/Ak1mXl9.jpg"
-    ]
+    ],
+    "hasc": "Sản phẩm an toàn cho da thú cưng. Không nên sử dụng lực quá mạnh để tránh tổn thương da.",
+    "storage_instructions": "Bảo quản nơi khô ráo, tránh nhiệt độ quá cao và ánh nắng trực tiếp.",
+    "additional_notes": "Lược có thể dễ dàng vệ sinh sau mỗi lần sử dụng. Phù hợp cho các loài thú cưng có lông dài hoặc dày."
   },
   {
     "id": 2,
     "name": "Máy Tắm Cho Thú Cưng",
     "description": "Máy tắm tiện lợi giúp tắm cho thú cưng một cách nhanh chóng và hiệu quả, với chế độ massage nhẹ nhàng, làm sạch lông mà không gây tổn thương cho da thú cưng.",
+    "usage": "Sử dụng máy để tắm cho thú cưng bằng cách bật chế độ massage và xả nước ấm vào cơ thể thú cưng, giúp tắm sạch lông mà không gây khó chịu.",
     "category": "Chó, Mèo, Hamster",
     "price": "1.200.000 VND",
     "material": "Nhựa, Kim loại",
@@ -30,12 +35,16 @@
       "https://i.imgur.com/Z5k7Vbx.jpg",
       "https://i.imgur.com/OoGzfs0.jpg",
       "https://i.imgur.com/U7VYPH6.jpg"
-    ]
+    ],
+    "hasc": "Sử dụng đúng điện áp (220V). Đảm bảo không để nước vào các bộ phận điện tử của máy.",
+    "storage_instructions": "Lưu trữ ở nơi khô ráo, tránh độ ẩm và không để máy tiếp xúc trực tiếp với nước khi không sử dụng.",
+    "additional_notes": "Máy rất nhẹ và dễ sử dụng, thích hợp cho thú cưng có lông dài hoặc dày."
   },
   {
     "id": 3,
     "name": "Bình Xịt Chống Ve Rận",
     "description": "Bình xịt bảo vệ thú cưng khỏi ve rận và các loài ký sinh trùng khác. Thành phần an toàn, phù hợp cho thú cưng có da nhạy cảm.",
+    "usage": "Xịt trực tiếp lên vùng lông và da của thú cưng, tránh xịt vào mắt và miệng. Dùng khi thú cưng có dấu hiệu nhiễm ký sinh trùng hoặc ngừa ký sinh trùng.",
     "category": "Chó, Mèo",
     "price": "150.000 VND",
     "material": "Dung dịch xịt",
@@ -45,12 +54,16 @@
       "https://i.imgur.com/Tm1hxGv.jpg",
       "https://i.imgur.com/2h5ETjx.jpg",
       "https://i.imgur.com/z5Bz3pa.jpg"
-    ]
+    ],
+    "hasc": "Không xịt trực tiếp vào mắt và miệng của thú cưng. Tránh để sản phẩm tiếp xúc với da nhạy cảm nếu có dấu hiệu dị ứng.",
+    "storage_instructions": "Bảo quản nơi khô ráo, tránh ánh sáng mặt trời trực tiếp và nhiệt độ cao.",
+    "additional_notes": "Sản phẩm không gây kích ứng, thích hợp cho thú cưng có da nhạy cảm."
   },
   {
     "id": 4,
     "name": "Dầu Tắm Cho Thú Cưng",
     "description": "Dầu tắm chuyên dụng giúp làm sạch và dưỡng da cho thú cưng, phù hợp với mọi loại lông và da nhạy cảm, không gây kích ứng.",
+    "usage": "Làm ướt lông thú cưng, sau đó xoa dầu tắm đều lên toàn bộ cơ thể. Massage nhẹ nhàng và xả sạch với nước ấm.",
     "category": "Chó, Mèo",
     "price": "250.000 VND",
     "material": "Tinh dầu thiên nhiên, Dung dịch tắm",
@@ -60,12 +73,16 @@
       "https://i.imgur.com/4DpdQTv.jpg",
       "https://i.imgur.com/fg6gtjK.jpg",
       "https://i.imgur.com/n8jrddD.jpg"
-    ]
+    ],
+    "hasc": "Sản phẩm an toàn cho da nhạy cảm, không gây kích ứng. Kiểm tra trước khi sử dụng trên vùng da bị tổn thương.",
+    "storage_instructions": "Lưu trữ nơi khô ráo, tránh ánh sáng trực tiếp và nhiệt độ cao.",
+    "additional_notes": "Sản phẩm thích hợp cho thú cưng có da nhạy cảm hoặc lông dễ gãy."
   },
   {
     "id": 5,
     "name": "Túi Vệ Sinh Cho Thú Cưng",
     "description": "Túi vệ sinh giúp thu gom phân của thú cưng một cách dễ dàng và vệ sinh, thích hợp khi dạo bộ ngoài trời.",
+    "usage": "Mở túi và sử dụng để thu gom phân của thú cưng trong khi đi dạo. Đảm bảo vệ sinh và tiện lợi khi đi ra ngoài.",
     "category": "Chó",
     "price": "30.000 VND",
     "material": "Nhựa phân hủy sinh học",
@@ -75,12 +92,16 @@
       "https://i.imgur.com/eA2BG00.jpg",
       "https://i.imgur.com/oLq5Phd.jpg",
       "https://i.imgur.com/Anf5Ulq.jpg"
-    ]
+    ],
+    "hasc": "Sản phẩm thân thiện với môi trường. Vui lòng không xả túi đã sử dụng vào hệ thống cống rãnh để bảo vệ môi trường.",
+    "storage_instructions": "Bảo quản nơi khô ráo, tránh độ ẩm và ánh sáng trực tiếp.",
+    "additional_notes": "Túi phân hủy sinh học thân thiện với môi trường, dễ sử dụng và tiện lợi khi dạo chơi với chó."
   },
   {
     "id": 6,
     "name": "Bàn Chải Đánh Răng Cho Thú Cưng",
     "description": "Bàn chải giúp làm sạch răng miệng cho thú cưng, ngăn ngừa bệnh lý về răng miệng và bảo vệ sức khỏe lâu dài.",
+    "usage": "Sử dụng bàn chải để chải răng cho thú cưng, bắt đầu từ phần răng sâu và khó tiếp cận, làm sạch toàn bộ khoang miệng.",
     "category": "Chó, Mèo",
     "price": "60.000 VND",
     "material": "Silicon, Thép không gỉ",
@@ -90,67 +111,9 @@
       "https://i.imgur.com/YxZn9bP.jpg",
       "https://i.imgur.com/OYCT7wQ.jpg",
       "https://i.imgur.com/VaNzQnP.jpg"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "Máng Ăn Cho Thú Cưng",
-    "description": "Máng ăn tiện dụng giúp thú cưng ăn uống dễ dàng và sạch sẽ, giúp quản lý khẩu phần ăn của thú cưng và giữ cho không gian sống gọn gàng.",
-    "category": "Chó, Mèo",
-    "price": "150.000 VND",
-    "material": "Nhựa, Inox",
-    "dimensions": "20cm x 10cm",
-    "image": "https://i.imgur.com/8RV7szj.jpg",
-    "thumbnails": [
-      "https://i.imgur.com/lrDovzx.jpg",
-      "https://i.imgur.com/FCUO3Z9.jpg",
-      "https://i.imgur.com/5Fl73nz.jpg"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Túi Vận Chuyển Cho Thú Cưng",
-    "description": "Túi vận chuyển tiện lợi giúp bạn dễ dàng mang thú cưng đi dạo hoặc đi thăm bác sĩ thú y. Thiết kế thông thoáng và chắc chắn.",
-    "category": "Chó, Mèo",
-    "price": "350.000 VND",
-    "material": "Vải Canvas, Nhựa PVC",
-    "color": "Đen, Xám",
-    "size": "40cm x 30cm x 20cm",
-    "image": "https://i.imgur.com/hTPlvc5.jpg",
-    "thumbnails": [
-      "https://i.imgur.com/XXjQyY8.jpg",
-      "https://i.imgur.com/2fdDbHs.jpg",
-      "https://i.imgur.com/C2slXTO.jpg"
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Máy Sấy Lông Cho Thú Cưng",
-    "description": "Máy sấy lông giúp thú cưng khô nhanh chóng và an toàn, phù hợp với những loại lông dài hoặc dày, giảm thiểu tình trạng bị cảm lạnh.",
-    "category": "Chó, Mèo",
-    "price": "1.500.000 VND",
-    "material": "Nhựa, Kim loại",
-    "power": "2000W",
-    "image": "https://i.imgur.com/52uImFi.jpg",
-    "thumbnails": [
-      "https://i.imgur.com/6WpC5g3.jpg",
-      "https://i.imgur.com/QFqj8lr.jpg",
-      "https://i.imgur.com/2w9D0cD.jpg"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Khăn Tắm Cho Thú Cưng",
-    "description": "Khăn tắm mềm mại giúp làm khô lông cho thú cưng nhanh chóng, giữ ấm sau khi tắm hoặc khi đi dạo ngoài trời mưa.",
-    "category": "Chó, Mèo",
-    "price": "80.000 VND",
-    "material": "Cotton, Microfiber",
-    "size": "50cm x 30cm",
-    "image": "https://i.imgur.com/dwL0AwS.jpg",
-    "thumbnails": [
-      "https://i.imgur.com/RHPR5Ea.jpg",
-      "https://i.imgur.com/2MlD9Zh.jpg",
-      "https://i.imgur.com/sGyLgw2.jpg"
-    ]
+    ],
+    "hasc": "Không nên sử dụng lực quá mạnh khi chải răng, tránh gây tổn thương lợi thú cưng.",
+    "storage_instructions": "Bảo quản bàn chải ở nơi khô ráo và sạch sẽ.",
+    "additional_notes": "Thích hợp cho cả chó và mèo. Nên chải răng cho thú cưng ít nhất một lần mỗi tuần."
   }
 ]

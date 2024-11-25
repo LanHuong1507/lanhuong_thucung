@@ -48,7 +48,7 @@ const ChatComponent = () => {
         <MessageFilled style={{ fontSize: "24px" }} />
       </div>
       {isChatVisible && (
-        <div className="fixed bottom-12 right-6 p-4 w-full max-w-md mx-auto border rounded-lg shadow-lg z-40 bg-white">
+        <div className="fixed bottom-12 right-6 p-6 w-full max-w-xs md:max-w-md mx-auto border rounded-lg shadow-lg z-40 bg-white">
           <div className="flex flex-col space-y-2 mb-4 overflow-y-auto h-64">
             {messages.map((msg, idx) => (
               <div

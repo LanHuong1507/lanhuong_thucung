@@ -38,7 +38,11 @@
     "name": "Labrador Retriever",
     "origin": "Canada",
     "size": "Lớn, Trung bình",
-    "temperament": ["Thân thiện", "Hiền hòa", "Thông minh"],
+    "temperament": [
+      "Labrador Retriever là giống chó nổi tiếng với tính cách hòa đồng và dễ gần. Chúng rất vui vẻ khi gặp gỡ mọi người, kể cả người lạ, và luôn sẵn sàng để làm quen. Đặc điểm này khiến Labrador trở thành lựa chọn lý tưởng cho gia đình có trẻ em hoặc người lớn tuổi. Chúng thường không thể hiện sự hung hăng, giúp chủ nhân yên tâm khi nuôi trong môi trường đông đúc. Ngoài ra, Labrador cũng rất yêu thích sự chú ý và thích được vuốt ve, chơi đùa cùng mọi người.",
+      "Tính cách hiền hòa của Labrador thể hiện qua khả năng giữ bình tĩnh trong mọi tình huống. Chúng rất nhạy bén trong việc cảm nhận cảm xúc của con người, thường an ủi chủ khi cảm thấy họ không vui. Labrador dễ dàng hòa nhập với các vật nuôi khác và ít có xu hướng gây sự. Chúng luôn tỏ ra kiên nhẫn, đặc biệt khi chơi cùng trẻ nhỏ hoặc những người chưa quen tiếp xúc với chó. Sự nhẹ nhàng và đáng tin cậy này khiến Labrador trở thành bạn đồng hành tuyệt vời.",
+      "Labrador nổi tiếng là giống chó thông minh và dễ huấn luyện. Chúng học hỏi nhanh và có khả năng ghi nhớ tốt, đặc biệt là các mệnh lệnh đơn giản. Điều này giúp Labrador phù hợp với những công việc đặc biệt như hướng dẫn người khiếm thị, cứu hộ, hay thậm chí làm chó trị liệu. Tuy nhiên, sự thông minh đôi khi khiến chúng nghịch ngợm, đặc biệt nếu không được tập luyện đầy đủ. Một lịch trình huấn luyện kiên nhẫn và đều đặn sẽ giúp phát huy tối đa tiềm năng của chúng."
+    ],
     "life_span": "10-12 năm",
     "weight_range": "25-36 kg",
     "coat": "Ngắn, Mượt",
@@ -54,12 +58,12 @@
     ],
     "video": "https://i.imgur.com/n2N8war.mp4",
     "additional_info": {
-      "health_issues": "Labrador Retriever có thể gặp phải các vấn đề về khớp và mắt. Việc kiểm tra sức khỏe định kỳ, đặc biệt là các vấn đề về hông và khuỷu tay là rất quan trọng. Chúng cũng dễ bị béo phì, vì vậy cần kiểm soát chế độ ăn uống hợp lý.",
-      "exercise_needs": "Labrador là giống chó rất năng động và cần vận động hàng ngày. Chúng yêu cầu các bài tập thể chất như chạy bộ hoặc bơi lội để giữ sức khỏe.",
-      "diet": "Labrador cần chế độ ăn cân đối với lượng protein cao và chất béo vừa phải để duy trì cơ bắp khỏe mạnh và thể lực tốt.",
-      "training_difficulty": "Labrador là giống chó thông minh và dễ huấn luyện, nhưng đôi khi chúng có thể trở nên nghịch ngợm. Việc huấn luyện cần kiên nhẫn và nhất quán.",
-      "suitable_for": "Labrador phù hợp với các gia đình có trẻ em hoặc người có không gian rộng rãi, vì chúng cần vận động nhiều và thích tham gia vào các hoạt động gia đình.",
-      "care_tips": "Chăm sóc Labrador đòi hỏi việc kiểm tra sức khỏe định kỳ, đặc biệt là các vấn đề về khớp. Cần chú ý đến chế độ ăn uống để tránh béo phì và duy trì hoạt động thể chất thường xuyên."
+      "health_issues": "Labrador Retriever thường gặp phải các bệnh về khớp như loạn sản xương hông hoặc khuỷu tay, đặc biệt ở những con thừa cân. Ngoài ra, các bệnh liên quan đến mắt như đục thủy tinh thể hoặc teo võng mạc cũng phổ biến ở giống chó này. Để duy trì sức khỏe tốt, cần kiểm tra định kỳ với bác sĩ thú y, đặc biệt là khi chúng bước vào giai đoạn tuổi già. Việc duy trì cân nặng hợp lý thông qua chế độ ăn uống và vận động là rất quan trọng để giảm nguy cơ các bệnh này.",
+      "exercise_needs": "Labrador là giống chó cực kỳ năng động, luôn cần các hoạt động thể chất hàng ngày. Chúng yêu thích chạy bộ, đi dạo hoặc bơi lội – một trong những hoạt động yêu thích nhất của Labrador. Việc không vận động đầy đủ có thể dẫn đến tình trạng béo phì hoặc gây ra các hành vi phá phách. Chủ nuôi nên dành ít nhất 1-2 giờ mỗi ngày để đưa chúng ra ngoài vận động. Đây cũng là cơ hội để Labrador giải phóng năng lượng và duy trì trạng thái tâm lý ổn định.",
+      "diet": "Labrador cần một chế độ ăn uống giàu protein để phát triển cơ bắp khỏe mạnh, cùng với lượng chất béo vừa phải để duy trì năng lượng. Do dễ bị béo phì, cần kiểm soát khẩu phần ăn và tránh cho chúng ăn các loại thực phẩm có hàm lượng calo cao như đồ ăn vặt. Ngoài ra, bổ sung chất xơ và omega-3 từ rau củ và cá hồi có thể giúp tăng cường hệ miễn dịch và làm đẹp bộ lông. Việc chia bữa ăn thành nhiều phần nhỏ trong ngày cũng là cách hữu ích để kiểm soát cân nặng.",
+      "training_difficulty": "Labrador là giống chó dễ huấn luyện nhờ trí thông minh và tính cách ngoan ngoãn. Tuy nhiên, đôi khi sự nghịch ngợm và tò mò có thể khiến chúng mất tập trung. Chủ nhân cần kiên nhẫn và sử dụng các phương pháp tích cực như thưởng đồ ăn hoặc lời khen để khuyến khích chúng. Một lịch trình huấn luyện nhất quán, kết hợp với các bài tập đơn giản ban đầu, sẽ giúp Labrador phát triển tốt hơn. Khi được hướng dẫn đúng cách, chúng có thể thực hiện những nhiệm vụ phức tạp một cách dễ dàng.",
+      "suitable_for": "Labrador rất phù hợp với các gia đình có trẻ em, nhờ tính cách nhẹ nhàng và thân thiện. Chúng cũng yêu cầu không gian rộng rãi để có thể chạy nhảy và vui chơi. Những người sống trong căn hộ nhỏ có thể gặp khó khăn khi nuôi Labrador trừ khi họ có thể đảm bảo đưa chúng đi dạo thường xuyên. Ngoài ra, chúng cần một môi trường sống hòa hợp, có sự tham gia của gia đình trong các hoạt động hàng ngày, vì Labrador rất ghét bị bỏ rơi hoặc cô đơn.",
+      "care_tips": "Chăm sóc Labrador đòi hỏi sự chú ý đặc biệt đến sức khỏe và chế độ ăn uống. Bộ lông ngắn và mượt của chúng dễ dàng chăm sóc, chỉ cần chải lông 1-2 lần mỗi tuần. Việc cắt móng, vệ sinh răng miệng và kiểm tra tai định kỳ cũng rất quan trọng. Labrador cần hoạt động thể chất thường xuyên để giữ gìn sức khỏe và giảm nguy cơ các vấn đề về khớp. Ngoài ra, cần đảm bảo thời gian vui chơi để duy trì trạng thái tinh thần tích cực của chúng."
     }
   },
   {
@@ -67,7 +71,11 @@
     "name": "German Shepherd",
     "origin": "Đức",
     "size": "Lớn,Trung Bình",
-    "temperament": ["Dũng cảm", "Tự tin", "Thông minh"],
+    "temperament": [
+      "German Shepherd nổi tiếng là giống chó dũng cảm và kiên cường. Chúng sẵn sàng bảo vệ chủ nhân và gia đình khỏi mọi nguy hiểm mà không hề do dự. Tính cách này khiến German Shepherd trở thành lựa chọn hàng đầu trong các công việc liên quan đến bảo vệ hoặc tuần tra. Khả năng đối mặt với các tình huống căng thẳng của chúng rất tốt, giúp chúng luôn giữ được sự điềm tĩnh và hiệu quả trong mọi hoàn cảnh. Sự dũng cảm của German Shepherd là một trong những đặc điểm nổi bật nhất của giống chó này.",
+      "Tự tin là một phẩm chất tự nhiên của German Shepherd. Chúng luôn hành động một cách chắc chắn, không tỏ ra e dè hay lo lắng. Điều này không chỉ giúp chúng tỏa sáng trong các nhiệm vụ đòi hỏi sự chính xác, như tìm kiếm cứu hộ, mà còn trong các hoạt động thường ngày. Tự tin giúp German Shepherd dễ dàng vượt qua các thử thách và hòa nhập với môi trường mới. Dù đối diện với các vật nuôi khác hay người lạ, chúng luôn giữ được phong thái bình tĩnh và tự chủ.",
+      "Với trí thông minh vượt trội, German Shepherd được coi là một trong những giống chó dễ huấn luyện nhất trên thế giới. Chúng học hỏi rất nhanh và có thể ghi nhớ hàng loạt mệnh lệnh chỉ sau vài lần luyện tập. Điều này giúp German Shepherd không chỉ phù hợp với vai trò thú cưng gia đình mà còn trong các công việc đặc thù như cảnh sát, quân đội hay chó dẫn đường. Tuy nhiên, sự thông minh này đòi hỏi chủ nuôi cần đầu tư thời gian và công sức để khai thác và phát huy tối đa tiềm năng của chúng."
+    ],
     "life_span": "9-13 năm",
     "weight_range": "22-40 kg",
     "coat": "Trung bình",
@@ -83,12 +91,12 @@
     ],
     "video": "https://i.imgur.com/JdRusby.mp4",
     "additional_info": {
-      "health_issues": "German Shepherd có thể gặp các vấn đề về xương khớp, đặc biệt là bệnh loạn sản hông. Việc kiểm tra sức khỏe định kỳ là rất quan trọng.",
-      "exercise_needs": "German Shepherd là giống chó rất năng động và cần hoạt động thể chất đều đặn để duy trì thể lực.",
-      "diet": "Chế độ ăn của German Shepherd cần đảm bảo đầy đủ protein và vitamin, đồng thời kiểm soát lượng calo để tránh béo phì.",
-      "training_difficulty": "German Shepherd là giống chó cực kỳ thông minh và dễ huấn luyện. Tuy nhiên, chúng cần được huấn luyện với sự kiên nhẫn và quyết đoán.",
-      "suitable_for": "German Shepherd phù hợp với các gia đình có không gian rộng rãi và người yêu thích hoạt động thể thao, đặc biệt là trong các công việc bảo vệ, cảnh sát hoặc quân đội.",
-      "care_tips": "Chăm sóc German Shepherd cần chú ý đến việc bảo vệ sức khỏe khớp, chăm sóc lông và cung cấp chế độ ăn hợp lý. Các bài tập thể chất là cần thiết để giữ chúng khỏe mạnh."
+      "health_issues": "German Shepherd thường dễ gặp các bệnh liên quan đến xương khớp, đặc biệt là loạn sản hông và khuỷu tay – một vấn đề di truyền phổ biến ở giống chó lớn. Chúng cũng có thể gặp các vấn đề về tiêu hóa hoặc da nếu không được chăm sóc đúng cách. Kiểm tra sức khỏe định kỳ với bác sĩ thú y, cùng chế độ vận động và ăn uống hợp lý, là rất quan trọng để giảm thiểu nguy cơ mắc bệnh. Bên cạnh đó, việc kiểm tra di truyền trước khi chọn nuôi German Shepherd cũng rất cần thiết để đảm bảo sức khỏe lâu dài của chúng.",
+      "exercise_needs": "Là một giống chó năng động, German Shepherd cần được vận động đều đặn để giải tỏa năng lượng và duy trì sức khỏe. Các bài tập như chạy bộ, bắt bóng, hoặc chơi các trò chơi kích thích trí óc là cần thiết. Ngoài ra, chúng rất thích các hoạt động có mục đích, như tìm đồ vật hoặc tham gia vào các bài tập kỹ năng. Nếu không được vận động đầy đủ, German Shepherd có thể trở nên buồn chán và dẫn đến các hành vi phá phách. Tốt nhất, mỗi ngày nên dành ít nhất 1-2 giờ cho các hoạt động thể chất và tinh thần.",
+      "diet": "German Shepherd cần một chế độ ăn uống giàu dinh dưỡng, tập trung vào protein để hỗ trợ cơ bắp phát triển và duy trì năng lượng. Đồng thời, cần bổ sung các loại vitamin và khoáng chất, như canxi và omega-3, để tăng cường sức khỏe khớp và hệ miễn dịch. Vì German Shepherd dễ bị béo phì, nên hạn chế cho ăn quá nhiều đồ ăn vặt và luôn kiểm soát khẩu phần ăn. Các loại thức ăn khô chất lượng cao dành cho chó là lựa chọn phù hợp để đảm bảo cân bằng dinh dưỡng.",
+      "training_difficulty": "German Shepherd cực kỳ dễ huấn luyện nhờ sự thông minh và khao khát làm hài lòng chủ. Tuy nhiên, để đạt được kết quả tốt nhất, cần áp dụng các phương pháp huấn luyện kiên nhẫn và quyết đoán. Chúng phản ứng tốt với sự khích lệ tích cực, như khen ngợi hoặc thưởng thức ăn. Nếu không được đào tạo đúng cách, chúng có thể trở nên bướng bỉnh hoặc mất tập trung. Do đó, một lịch trình huấn luyện bài bản, kết hợp các bài tập kích thích trí óc, sẽ giúp German Shepherd phát huy hết tiềm năng của mình.",
+      "suitable_for": "German Shepherd thích hợp sống ở những nơi có không gian rộng rãi, nơi chúng có thể tự do vận động. Chúng đặc biệt phù hợp với các gia đình năng động hoặc những người yêu thích hoạt động ngoài trời. Tuy nhiên, nếu sống trong không gian nhỏ như căn hộ, cần đảm bảo chúng được dắt đi dạo và vận động thường xuyên. Ngoài ra, chúng cũng là lựa chọn lý tưởng cho những công việc đòi hỏi tính bảo vệ hoặc làm việc trong các lực lượng cảnh sát, quân đội.",
+      "care_tips": "Chăm sóc German Shepherd không chỉ đơn thuần là đáp ứng nhu cầu ăn uống mà còn cần quan tâm đến sức khỏe toàn diện. Bộ lông trung bình của chúng cần được chải 2-3 lần mỗi tuần để loại bỏ lông rụng. Việc kiểm tra và làm sạch tai, răng miệng định kỳ rất quan trọng để phòng ngừa nhiễm trùng. Các bài tập vận động và kích thích trí óc nên được duy trì hàng ngày. Đồng thời, việc kiểm tra sức khỏe định kỳ, đặc biệt các vấn đề về xương khớp, sẽ giúp chúng luôn khỏe mạnh và kéo dài tuổi thọ."
     }
   },
   {
@@ -96,7 +104,12 @@
     "name": "Bulldog",
     "origin": "Anh",
     "size": "Vừa,Nhỏ",
-    "temperament": ["Hiền lành", "Cứng đầu", "Thân thiện"],
+    "temperament": [
+      "Hiền lành Bulldog sở hữu tính cách hiền lành, nhẹ nhàng và đáng yêu. Chúng thường không hung dữ và rất ít khi gây hấn với các vật nuôi khác hoặc người lạ. Tính cách này khiến Bulldog phù hợp để làm thú cưng trong gia đình, đặc biệt với những người yêu thích giống chó có bản tính trầm tĩnh. Dù đôi lúc tỏ ra lười biếng, Bulldog vẫn luôn sẵn sàng dành thời gian chơi đùa và âu yếm với chủ nhân. Sự hiền hòa của chúng là điểm cộng lớn với những gia đình có trẻ em.",
+      "Một trong những đặc điểm nổi bật của Bulldog là sự cứng đầu. Chúng có xu hướng tự lập và không dễ dàng tuân theo mệnh lệnh, đặc biệt nếu cảm thấy không cần thiết. Điều này đôi khi làm việc huấn luyện trở nên khó khăn hơn so với các giống chó khác. Tuy nhiên, sự cứng đầu này cũng mang lại nét duyên dáng riêng, khiến chủ nhân cảm thấy thú vị khi cố gắng thuyết phục chúng làm theo ý mình. Kiên nhẫn và kiên định là chìa khóa để xây dựng mối quan hệ tốt với Bulldog.",
+      "Chihuahua có hàm răng rất sắc như là vũ khí để tự vệ. Vì quá bé nhỏ nên dễ gây mất cảnh giác, chúng có thể cắn lại khi bị trẻ con trêu chọc. Vì vậy nhà có trẻ nhỏ không nên nuôi giống chó này. Có thể sủa ầm ỹ và đòi hỏi chủ phải khá kiên trì trong việc dạy đi vệ sinh đúng chỗ. Cần phải tạo điều kiện cho chúng hòa đồng với các giống chó khác và với người lạ từ lúc còn nhỏ, vì Chihuahua là loại chó khá hung hăng. Đối với các chú Chihuahua khác thì quan hệ có vẻ tốt hơn.",
+      "Bulldog rất thân thiện và hòa đồng, đặc biệt với gia đình chủ và trẻ nhỏ. Chúng yêu thích sự quan tâm và thường tìm cách gần gũi, quấn quýt với người thân. Tính cách này khiến chúng trở thành bạn đồng hành tuyệt vời, đặc biệt cho những ai đang tìm kiếm một người bạn trung thành và dễ mến. Mặc dù ít vận động, Bulldog vẫn luôn sẵn sàng dành thời gian để tương tác và gắn bó với mọi thành viên trong gia đình."
+    ],
     "life_span": "8-12 năm",
     "weight_range": "18-25 kg",
     "coat": "Ngắn",
@@ -106,18 +119,18 @@
     "price": "12.000.000-25.000.000 VNĐ",
     "image": "https://i.imgur.com/nd6HIkL.jpeg",
     "thumbnail": [
-      "https://i.imgur.com/1H7pzBd.jpeg",
-      "https://i.imgur.com/XAkVQIt.jpeg",
-      "https://i.imgur.com/0Tk2b4z.jpeg"
+      "https://i.imgur.com/q9f68z6.jpeg",
+      "https://i.imgur.com/YFj1YlQ.jpeg",
+      "https://i.imgur.com/M5F66UI.jpeg"
     ],
-    "video": "https://i.imgur.com/0DbkczT.mp4",
+    "video": "https://i.imgur.com/T9wsgJa.mp4",
     "additional_info": {
-      "health_issues": "Bulldog dễ gặp phải các vấn đề về hô hấp do cấu trúc mũi ngắn. Cần chú ý đến sức khỏe đường hô hấp và cân nặng của chúng.",
-      "exercise_needs": "Bulldog không yêu cầu quá nhiều vận động, nhưng cần một số hoạt động nhẹ nhàng như đi dạo để duy trì sức khỏe.",
-      "diet": "Chế độ ăn của Bulldog cần chú ý đến lượng calo và chất béo để tránh béo phì, vì chúng dễ bị thừa cân.",
-      "training_difficulty": "Bulldog là giống chó khá cứng đầu và độc lập, vì vậy cần sự kiên nhẫn và quyết đoán trong việc huấn luyện.",
-      "suitable_for": "Bulldog thích hợp với những gia đình sống trong căn hộ hoặc những không gian nhỏ vì chúng không cần quá nhiều vận động.",
-      "care_tips": "Chăm sóc Bulldog đòi hỏi việc chú ý đến sức khỏe hô hấp, kiểm soát cân nặng và vệ sinh hàng ngày, đặc biệt là trong các nếp gấp trên cơ thể."
+      "health_issues": "Bulldog dễ gặp các vấn đề liên quan đến hô hấp, đặc biệt là do cấu trúc mũi ngắn và hộp sọ dẹt. Chúng cũng nhạy cảm với nhiệt độ cao, dễ bị sốc nhiệt nếu vận động trong môi trường nóng bức. Ngoài ra, Bulldog có nguy cơ cao mắc bệnh béo phì, ảnh hưởng đến sức khỏe tim mạch và khớp. Chủ nuôi cần thường xuyên kiểm tra sức khỏe, chú ý đến cân nặng và đảm bảo Bulldog không phải vận động quá sức hoặc ở ngoài trời nắng nóng.",
+      "exercise_needs": "Bulldog không đòi hỏi nhiều vận động và thường hài lòng với lối sống chậm rãi. Tuy nhiên, chúng vẫn cần các hoạt động nhẹ nhàng, như đi dạo hàng ngày, để duy trì sức khỏe và tránh tăng cân. Mỗi ngày, khoảng 20-30 phút đi dạo hoặc chơi đùa trong nhà là đủ để Bulldog cảm thấy thoải mái. Điều này khiến chúng phù hợp với những người bận rộn hoặc sống trong không gian nhỏ hẹp.",
+      "diet": "Bulldog dễ bị béo phì, vì vậy việc kiểm soát khẩu phần ăn là rất quan trọng. Nên chọn thức ăn có hàm lượng calo và chất béo thấp, đồng thời tránh cho chúng ăn các loại đồ ăn vặt không lành mạnh. Một chế độ ăn cân đối, bao gồm protein, chất xơ và các dưỡng chất cần thiết, sẽ giúp Bulldog duy trì sức khỏe và vóc dáng. Việc chia nhỏ bữa ăn trong ngày cũng là một cách hiệu quả để kiểm soát cân nặng và tiêu hóa tốt hơn.",
+      "training_difficulty": "Bulldog là giống chó khá cứng đầu, nên việc huấn luyện đòi hỏi sự kiên nhẫn và linh hoạt từ chủ nhân. Chúng thường không hứng thú với các mệnh lệnh lặp đi lặp lại, vì vậy cần sử dụng các phương pháp khích lệ tích cực, như khen thưởng hoặc thưởng thức ăn, để thu hút sự chú ý của chúng. Huấn luyện Bulldog cần sự nhẹ nhàng nhưng quyết đoán, tránh dùng các biện pháp cứng rắn vì có thể khiến chúng mất niềm tin vào chủ.",
+      "suitable_for": "Bulldog là lựa chọn tuyệt vời cho những gia đình sống trong căn hộ hoặc không gian nhỏ. Chúng không cần không gian rộng rãi và dễ thích nghi với môi trường sống chật hẹp. Tính cách trầm tĩnh cũng giúp Bulldog không gây phiền toái cho hàng xóm, đặc biệt trong các khu chung cư. Chỉ cần đảm bảo chúng được vận động nhẹ nhàng và không bị bỏ lại một mình quá lâu, Bulldog sẽ luôn cảm thấy hài lòng với môi trường sống.",
+      "care_tips": "Chăm sóc Bulldog cần chú ý đến sức khỏe hô hấp, đặc biệt trong những ngày nóng bức hoặc khi chúng vận động nhiều. Bộ lông ngắn của Bulldog dễ chăm sóc, nhưng cần vệ sinh kỹ càng các nếp gấp trên cơ thể để tránh nhiễm trùng da. Kiểm soát cân nặng thông qua chế độ ăn uống và vận động hợp lý cũng rất quan trọng. Ngoài ra, nên thường xuyên đưa chúng đi kiểm tra sức khỏe định kỳ để phát hiện sớm các vấn đề tiềm ẩn và đảm bảo Bulldog luôn khỏe mạnh."
     }
   },
   {
@@ -125,7 +138,11 @@
     "name": "Poodle",
     "origin": "Đức",
     "size": "Nhỏ ,Trung Bình,Lớn",
-    "temperament": ["Năng động", "Thông minh", "Mong muốn làm vừa lòng"],
+    "temperament": [
+      "Poodle là một giống chó rất năng động, luôn tràn đầy năng lượng và thích tham gia vào các hoạt động vui chơi. Dù là ở trong nhà hay ngoài trời, chúng luôn tìm cách di chuyển và khám phá xung quanh. Điều này không chỉ giúp Poodle giữ sức khỏe mà còn khiến chúng trở thành một người bạn đồng hành tuyệt vời cho những gia đình yêu thích sự sôi động. Tuy nhiên, tính cách này cũng đòi hỏi chủ nhân phải đảm bảo chúng được vận động đầy đủ mỗi ngày.",
+      "Là một trong những giống chó thông minh nhất, Poodle có khả năng học hỏi và tiếp thu cực kỳ nhanh. Chúng dễ dàng hiểu và thực hiện các mệnh lệnh, thậm chí còn có thể học được những kỹ năng phức tạp. Sự thông minh của Poodle giúp việc huấn luyện trở nên thú vị và hiệu quả. Tuy nhiên, điều này cũng đồng nghĩa rằng chúng cần được kích thích trí óc thường xuyên để tránh nhàm chán và các hành vi phá phách.",
+      "Poodle rất thích làm hài lòng chủ nhân, điều này khiến chúng luôn sẵn sàng thực hiện các yêu cầu hoặc tham gia vào các hoạt động gia đình. Tính cách này giúp Poodle trở thành một giống chó lý tưởng, không chỉ dễ dạy mà còn rất hòa đồng và đáng yêu. Tuy nhiên, sự gắn bó này cũng khiến Poodle nhạy cảm với cảm xúc của chủ, nên chúng rất cần sự yêu thương và quan tâm từ gia đình."
+    ],
     "life_span": "12-15 năm",
     "weight_range": "3-25 kg",
     "coat": "Xoăn",
@@ -135,18 +152,18 @@
     "price": "5.000.000-15.000.000 VNĐ",
     "image": "https://i.imgur.com/1X3ndCB.jpeg",
     "thumbnail": [
-      "https://i.imgur.com/yxnwpHh.jpeg",
-      "https://i.imgur.com/vzGc2sb.jpeg",
-      "https://i.imgur.com/mcz0lz2.jpeg"
+      "https://i.imgur.com/CWOXON1.jpeg",
+      "https://i.imgur.com/K5GgGno.jpeg",
+      "https://i.imgur.com/tXzvdzZ.jpeg"
     ],
-    "video": "https://i.imgur.com/aOkyYnG.mp4",
+    "video": "https://i.imgur.com/F0GVTck.mp4",
     "additional_info": {
-      "health_issues": "Poodle có thể gặp một số vấn đề về da và mắt, cần kiểm tra sức khỏe định kỳ và vệ sinh lông thường xuyên.",
-      "exercise_needs": "Poodle là giống chó rất năng động và cần tập thể dục hàng ngày. Các bài tập như chạy và chơi là rất thích hợp.",
-      "diet": "Chế độ ăn của Poodle cần chú trọng vào việc cung cấp đủ protein và chất béo tốt để duy trì lông khỏe mạnh.",
-      "training_difficulty": "Poodle rất thông minh và dễ huấn luyện, vì vậy chúng học rất nhanh và thích tham gia vào các hoạt động gia đình.",
-      "suitable_for": "Poodle phù hợp với các gia đình có không gian nhỏ đến vừa và người yêu thích các hoạt động trí tuệ và vận động cùng chó.",
-      "care_tips": "Chăm sóc Poodle yêu cầu việc vệ sinh lông thường xuyên và chú ý đến sức khỏe da và mắt để giữ chúng luôn khỏe mạnh."
+      "health_issues": "Poodle có nguy cơ gặp các vấn đề sức khỏe như bệnh về mắt (đục thủy tinh thể) và da, đặc biệt là viêm da do cấu trúc lông xoăn dày. Chúng cũng dễ bị dị ứng với một số loại thức ăn hoặc môi trường. Để duy trì sức khỏe tốt, cần đưa Poodle đi kiểm tra định kỳ tại bác sĩ thú y, giữ vệ sinh sạch sẽ và chăm sóc lông cẩn thận. Chải lông thường xuyên không chỉ giúp tránh rối mà còn giảm nguy cơ viêm nhiễm da.",
+      "exercise_needs": "Poodle rất năng động và cần được vận động hàng ngày. Các hoạt động như đi dạo, chơi trò bắt bóng, hoặc thậm chí tham gia các môn thể thao dành cho chó sẽ giúp chúng giải tỏa năng lượng dư thừa. Mỗi ngày, ít nhất 30-60 phút vận động là cần thiết để giữ cho Poodle khỏe mạnh và hạnh phúc. Nếu không được vận động đầy đủ, chúng có thể trở nên buồn chán và dẫn đến các hành vi phá phách.",
+      "diet": "Chế độ ăn của Poodle cần tập trung vào việc cung cấp đủ protein chất lượng cao để hỗ trợ cơ bắp và duy trì sức khỏe bộ lông. Omega-3 và omega-6 cũng rất cần thiết để giữ cho lông của chúng mượt mà và bóng khỏe. Ngoài ra, cần hạn chế các loại thức ăn chứa nhiều chất béo không lành mạnh để tránh béo phì. Việc chia khẩu phần ăn thành nhiều bữa nhỏ trong ngày cũng giúp Poodle tiêu hóa tốt hơn.",
+      "training_difficulty": "Nhờ trí thông minh và tính cách mong muốn làm vừa lòng, Poodle rất dễ huấn luyện. Chúng nhanh chóng tiếp thu các mệnh lệnh cơ bản và thậm chí cả những kỹ năng nâng cao. Tuy nhiên, để đạt hiệu quả tối đa, nên sử dụng phương pháp huấn luyện tích cực, khích lệ bằng lời khen hoặc phần thưởng. Poodle đặc biệt thích các bài tập trí tuệ, như trò chơi giải đố hoặc các thử thách yêu cầu sự nhạy bén.",
+      "suitable_for": "Poodle rất linh hoạt và có thể thích nghi với nhiều loại môi trường, từ căn hộ nhỏ cho đến nhà có sân vườn rộng. Miễn là chúng được vận động và quan tâm đầy đủ, Poodle sẽ luôn cảm thấy hạnh phúc. Chúng cũng là lựa chọn tuyệt vời cho những gia đình có trẻ em hoặc những người yêu thích các hoạt động ngoài trời và trí tuệ cùng chó.",
+      "care_tips": "Chăm sóc Poodle cần chú ý đến bộ lông xoăn đặc trưng, vì lông của chúng dễ rối và bám bụi. Nên chải lông hàng ngày và tắm rửa định kỳ để giữ lông luôn sạch sẽ và khỏe mạnh. Các khu vực nhạy cảm, như tai và mắt, cần được kiểm tra thường xuyên để phát hiện sớm các dấu hiệu nhiễm trùng. Ngoài ra, việc đảm bảo chúng được vận động và kích thích trí óc đầy đủ sẽ giúp Poodle luôn khỏe mạnh cả về thể chất lẫn tinh thần."
     }
   },
   {
@@ -154,7 +171,11 @@
     "name": "Golden Retriever",
     "origin": "Scotland",
     "size": "Lớn,Trung Bình",
-    "temperament": ["Thân thiện", "Đáng tin cậy", "Thông minh"],
+    "temperament": [
+      "Golden Retriever nổi tiếng với tính cách thân thiện, luôn hòa đồng và vui vẻ với mọi người. Chúng dễ dàng kết bạn với trẻ em, người lớn, và cả các vật nuôi khác. Điều này khiến Golden Retriever trở thành một thành viên tuyệt vời trong gia đình, đặc biệt là ở những gia đình có trẻ nhỏ. Sự hiền hòa và đáng yêu của chúng tạo cảm giác thoải mái và gần gũi cho bất kỳ ai tiếp xúc.",
+      "Là giống chó rất trung thành, Golden Retriever luôn đặt sự tin cậy và trung thành với chủ nhân lên hàng đầu. Chúng sẵn sàng bảo vệ gia đình và luôn có mặt khi cần. Tính cách đáng tin cậy này khiến chúng không chỉ là bạn đồng hành lý tưởng mà còn là giống chó hỗ trợ tuyệt vời trong các công việc như dẫn đường cho người khiếm thị hay tham gia cứu hộ.",
+      "Với trí thông minh vượt trội, Golden Retriever dễ dàng học các mệnh lệnh và kỹ năng mới. Chúng không chỉ xuất sắc trong việc tiếp thu huấn luyện mà còn biết cách sử dụng sự thông minh để làm hài lòng chủ nhân. Tính cách này giúp Golden Retriever tham gia tốt vào các hoạt động như thi đấu, biểu diễn, hoặc các bài tập trí tuệ tại nhà. Sự thông minh của chúng là một trong những điểm nổi bật khiến chúng được yêu thích trên toàn thế giới."
+    ],
     "life_span": "10-12 năm",
     "weight_range": "25-34 kg",
     "coat": "Dài và sóng",
@@ -164,18 +185,18 @@
     "price": "15.000.000-25.000.000 VNĐ",
     "image": "https://i.imgur.com/m5xNFRI.jpeg",
     "thumbnail": [
-      "https://i.imgur.com/dQsO15r.jpeg",
-      "https://i.imgur.com/tzGB8Yr.jpeg",
-      "https://i.imgur.com/34hKwfa.jpeg"
+      "https://i.imgur.com/Fl5zrZ0.jpeg",
+      "https://i.imgur.com/GCCYniL.jpeg",
+      "https://i.imgur.com/LedaA8N.jpeg"
     ],
-    "video": "https://i.imgur.com/XR1sLHZ.mp4",
+    "video": "https://i.imgur.com/dsRw5ui.mp4",
     "additional_info": {
-      "health_issues": "Golden Retriever dễ gặp các vấn đề về xương khớp và mắt, cần kiểm tra định kỳ để phát hiện sớm các bệnh như loạn sản hông.",
-      "exercise_needs": "Golden Retriever là giống chó rất năng động và cần vận động hàng ngày, đặc biệt là các bài tập như bơi lội và chạy bộ.",
-      "diet": "Chế độ ăn của Golden Retriever cần phải cân bằng giữa protein, chất béo và tinh bột để duy trì cơ thể khỏe mạnh.",
-      "training_difficulty": "Golden Retriever là giống chó dễ huấn luyện nhờ vào sự thông minh và mong muốn làm vừa lòng chủ nhân.",
-      "suitable_for": "Golden Retriever rất phù hợp với các gia đình có trẻ em hoặc những người yêu thích hoạt động ngoài trời, vì chúng thích tham gia vào các trò chơi và thể thao.",
-      "care_tips": "Chăm sóc Golden Retriever cần chú ý đến việc chăm sóc lông dài và vệ sinh mắt. Các hoạt động thể chất đều đặn và chế độ ăn hợp lý là cần thiết."
+      "health_issues": "Golden Retriever dễ gặp phải các vấn đề về xương khớp, đặc biệt là bệnh loạn sản hông và khuỷu tay. Ngoài ra, chúng cũng có nguy cơ mắc các bệnh về mắt, chẳng hạn như đục thủy tinh thể. Kiểm tra sức khỏe định kỳ là rất quan trọng để phát hiện sớm và điều trị kịp thời. Chế độ ăn uống cân đối và các bài tập vừa phải cũng giúp giảm thiểu nguy cơ mắc các bệnh này, đặc biệt là trong giai đoạn trưởng thành và già.",
+      "exercise_needs": "Là giống chó năng động, Golden Retriever cần được vận động hàng ngày để duy trì sức khỏe thể chất và tinh thần. Các hoạt động như chạy bộ, chơi bắt bóng, và bơi lội không chỉ giúp chúng tiêu hao năng lượng mà còn tăng cường cơ bắp và sức bền. Tối thiểu mỗi ngày, chúng cần khoảng 1-2 giờ vận động. Nếu không được vận động đủ, Golden Retriever có thể trở nên buồn chán và dẫn đến các hành vi phá phách.",
+      "diet": "Một chế độ ăn cân đối là rất quan trọng với Golden Retriever. Chúng cần đủ protein để duy trì cơ bắp, chất béo lành mạnh để cung cấp năng lượng và một lượng tinh bột hợp lý để hỗ trợ hoạt động hàng ngày. Nên tránh thức ăn có quá nhiều chất béo hoặc calo để ngăn ngừa béo phì, một vấn đề sức khỏe phổ biến ở giống chó này. Chia khẩu phần ăn thành 2-3 bữa mỗi ngày và tránh cho ăn quá nhiều thức ăn vặt.",
+      "training_difficulty": "Golden Retriever rất dễ huấn luyện nhờ trí thông minh và bản tính mong muốn làm hài lòng chủ nhân. Chúng tiếp thu nhanh các bài tập cơ bản và cả những kỹ năng phức tạp. Điều này khiến Golden Retriever trở thành giống chó lý tưởng cho cả người nuôi thiếu kinh nghiệm lẫn người nuôi chuyên nghiệp. Sử dụng phương pháp huấn luyện tích cực với phần thưởng và lời khen sẽ mang lại hiệu quả tối đa.",
+      "suitable_for": "Golden Retriever thích hợp với cả gia đình sống trong nhà riêng có sân vườn lẫn căn hộ, miễn là chúng được vận động đầy đủ. Chúng rất hòa đồng với trẻ nhỏ và người già, đồng thời cũng thích nghi tốt trong các môi trường đông đúc. Vì bản tính thân thiện, Golden Retriever không thích bị bỏ lại một mình quá lâu. Chúng cần sự đồng hành và yêu thương từ gia đình để cảm thấy hạnh phúc.",
+      "care_tips": "Chăm sóc Golden Retriever đòi hỏi sự quan tâm đến bộ lông dài và sóng của chúng. Nên chải lông ít nhất 2-3 lần mỗi tuần để tránh rối và loại bỏ lông chết. Vệ sinh mắt, tai, và móng chân định kỳ cũng rất quan trọng để giữ cho chúng luôn sạch sẽ và khỏe mạnh. Các bài tập vận động và chế độ ăn uống hợp lý sẽ giúp Golden Retriever duy trì sức khỏe và vóc dáng lý tưởng."
     }
   }
 ]

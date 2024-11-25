@@ -9,7 +9,15 @@
     "weight_range": "1-2 kg",
     "coat": "Lông ngắn",
     "price": "800.000-10.000.000",
-    "image": "https://i.imgur.com/ZJNeFLZ.jpeg"
+    "image": "https://i.imgur.com/ZJNeFLZ.jpeg",
+    "additional_info": {
+      "health_issues": "Thỏ Holland Lop có thể gặp phải các vấn đề về răng miệng và các bệnh về đường tiêu hóa nếu chế độ ăn không phù hợp.",
+      "exercise_needs": "Chúng cần không gian để chạy nhảy và vui chơi.",
+      "diet": "Chế độ ăn chủ yếu bao gồm cỏ khô, rau tươi và thức ăn dành cho thỏ.",
+      "training_difficulty": "Dễ huấn luyện, đặc biệt là trong việc tương tác với con người.",
+      "suitable_for": "Phù hợp cho những người mới nuôi thỏ và yêu thích một con thỏ hiền lành, dễ chăm sóc.",
+      "care_tips": "Cần thay đổi nước hàng ngày và kiểm tra chuồng để giữ vệ sinh."
+    }
   },
   {
     "id": 2,
@@ -21,7 +29,15 @@
     "weight_range": "1.2-2 kg",
     "coat": "Lông ngắn, mềm như nhung",
     "price": "900.000-1.500.000",
-    "image": "[img]https://i.imgur.com/JCLRbdf.jpeg[/img]"
+    "image": "https://i.imgur.com/JCLRbdf.jpeg",
+    "additional_info": {
+      "health_issues": "Mini Rex có thể mắc các bệnh về da và bệnh về đường hô hấp nếu không được chăm sóc đúng cách.",
+      "exercise_needs": "Chúng cần không gian để vận động nhẹ nhàng và tránh được căng thẳng.",
+      "diet": "Thức ăn bao gồm cỏ khô, rau tươi và thức ăn bổ sung dành cho thỏ.",
+      "training_difficulty": "Dễ huấn luyện và rất thân thiện với con người.",
+      "suitable_for": "Phù hợp với những người yêu thích thỏ có lông mềm mại và dễ chăm sóc.",
+      "care_tips": "Lông ngắn của Mini Rex cần được chải thường xuyên để giữ vệ sinh và sức khỏe tốt."
+    }
   },
   {
     "id": 3,
@@ -33,7 +49,15 @@
     "weight_range": "1.2-1.8 kg",
     "coat": "Lông dài, xù quanh cổ",
     "price": "800.000-2.000.000",
-    "image": "https://i.imgur.com/YggdH5l.jpeg"
+    "image": "https://i.imgur.com/YggdH5l.jpeg",
+    "additional_info": {
+      "health_issues": "Lionhead có thể gặp phải các vấn đề về lông và mắt nếu không được chăm sóc đúng cách.",
+      "exercise_needs": "Chúng rất năng động và cần không gian rộng rãi để chạy nhảy.",
+      "diet": "Chế độ ăn bao gồm cỏ khô, rau tươi và thức ăn đặc biệt dành cho thỏ.",
+      "training_difficulty": "Dễ huấn luyện và rất thích tương tác với con người.",
+      "suitable_for": "Phù hợp cho những người yêu thích thỏ có lông dài và thích chơi đùa.",
+      "care_tips": "Lông dài cần được chải kỹ để tránh rối và giữ cho thỏ luôn sạch sẽ."
+    }
   },
   {
     "id": 4,
@@ -45,7 +69,15 @@
     "weight_range": "0.8-1.2 kg",
     "coat": "Lông ngắn",
     "price": "800.000-2.000.000",
-    "image": "https://i.imgur.com/p8y4jGg.jpeg"
+    "image": "https://i.imgur.com/p8y4jGg.jpeg",
+    "additional_info": {
+      "health_issues": "Netherland Dwarf dễ bị stress và có thể mắc các bệnh về tiêu hóa nếu không có chế độ ăn hợp lý.",
+      "exercise_needs": "Chúng cần không gian để chạy nhảy và tránh bị căng thẳng.",
+      "diet": "Cung cấp cỏ khô và thức ăn tươi cho thỏ để đảm bảo sức khỏe.",
+      "training_difficulty": "Khó huấn luyện vì tính cách nhút nhát và không thích sự tương tác nhiều.",
+      "suitable_for": "Phù hợp cho những người yêu thích thỏ nhỏ và có thể kiên nhẫn trong việc chăm sóc.",
+      "care_tips": "Cần chăm sóc đặc biệt về chế độ ăn uống và môi trường sống."
+    }
   },
   {
     "id": 5,
@@ -57,7 +89,15 @@
     "weight_range": "6-10 kg",
     "coat": "Lông ngắn, dày",
     "price": "10.000.000-15.000.000",
-    "image": "https://i.imgur.com/GIKNFHu.jpeg"
+    "image": "https://i.imgur.com/GIKNFHu.jpeg",
+    "additional_info": {
+      "health_issues": "Flemish Giant có thể gặp phải các vấn đề về khớp do trọng lượng lớn, cần theo dõi sức khỏe định kỳ.",
+      "exercise_needs": "Mặc dù chúng lớn nhưng Flemish Giant vẫn cần không gian để vận động.",
+      "diet": "Chế độ ăn của chúng cần có cỏ khô, rau tươi và thức ăn bổ sung phù hợp.",
+      "training_difficulty": "Dễ huấn luyện và rất thân thiện với con người.",
+      "suitable_for": "Phù hợp cho những người yêu thích thỏ lớn và có không gian sống rộng rãi.",
+      "care_tips": "Cần cung cấp đủ không gian sống và đảm bảo chế độ ăn uống đầy đủ."
+    }
   },
   {
     "id": 6,
@@ -69,78 +109,14 @@
     "weight_range": "2.5-4 kg",
     "coat": "Lông dài, mềm mại",
     "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/OdukFBl.jpeg"
-  },
-  {
-    "id": 7,
-    "name": "English Spot",
-    "origin": "Anh",
-    "size": "Trung bình",
-    "temperament": ["Hoạt bát", "Thân thiện", "Tò mò"],
-    "life_span": "5-9 năm",
-    "weight_range": "2-3.5 kg",
-    "coat": "Lông ngắn với đốm",
-    "price": "200.000-1.500.000",
-    "image": "https://i.imgur.com/7rzFb21.jpeg"
-  },
-  {
-    "id": 8,
-    "name": "Polish Rabbit",
-    "origin": "Anh",
-    "size": "Nhỏ",
-    "temperament": ["Hiền lành", "Yêu trẻ", "Thích nghi tốt"],
-    "life_span": "8-10 năm",
-    "weight_range": "1-1.6 kg",
-    "coat": "Lông ngắn",
-    "price": "800.000-1.500.000",
-    "image": "https://i.imgur.com/8G1GRSy.jpeg"
-  },
-  {
-    "id": 9,
-    "name": "Harlequin",
-    "origin": "Pháp",
-    "size": "Trung bình",
-    "temperament": ["Hòa đồng", "Thông minh", "Thân thiện"],
-    "life_span": "5-8 năm",
-    "weight_range": "2.5-3.5 kg",
-    "coat": "Lông ngắn, có vân đặc trưng",
-    "price": "2.000.000-4.500.000",
-    "image": "https://i.imgur.com/l4dAKw6.jpeg"
-  },
-  {
-    "id": 10,
-    "name": "Himalayan",
-    "origin": "Himalaya",
-    "size": "Nhỏ",
-    "temperament": ["Điềm tĩnh", "Thân thiện", "Yêu thích sự chăm sóc"],
-    "life_span": "7-9 năm",
-    "weight_range": "1.5-2.5 kg",
-    "coat": "Lông ngắn, mịn",
-    "price": "2.000.000-4.000.000",
-    "image": "https://i.imgur.com/YTUQPJn.jpeg"
-  },
-  {
-    "id": 11,
-    "name": "Dutch Rabbit",
-    "origin": "Hà Lan",
-    "size": "Nhỏ",
-    "temperament": ["Hiền lành", "Thân thiện", "Tò mò"],
-    "life_span": "5-8 năm",
-    "weight_range": "1.5-2.5 kg",
-    "coat": "Lông ngắn với màu sắc đặc trưng",
-    "price": "2.000.000-5.000.000",
-    "image": "https://i.imgur.com/1w0PQqJ.jpeg"
-  },
-  {
-    "id": 12,
-    "name": "American Fuzzy Lop",
-    "origin": "Mỹ",
-    "size": "Nhỏ",
-    "temperament": ["Thân thiện", "Năng động", "Yêu thích sự vuốt ve"],
-    "life_span": "5-8 năm",
-    "weight_range": "1.5-2 kg",
-    "coat": "Lông dài, mềm mại",
-    "price": "2.500.000-6.000.000",
-    "image": "https://i.imgur.com/MuPaaQq.jpeg"
+    "image": "https://i.imgur.com/OdukFBl.jpeg",
+    "additional_info": {
+      "health_issues": "Angora dễ bị rối lông và cần chăm sóc đặc biệt về lông dài.",
+      "exercise_needs": "Chúng cần không gian đủ rộng để chạy nhảy và giữ sức khỏe.",
+      "diet": "Cần cung cấp chế độ ăn có đầy đủ cỏ khô và thức ăn bổ sung.",
+      "training_difficulty": "Dễ huấn luyện và rất yêu thích sự chú ý từ chủ nhân.",
+      "suitable_for": "Phù hợp với những người có thời gian chăm sóc và yêu thích thỏ có lông dài đẹp.",
+      "care_tips": "Lông dài cần được chải thường xuyên để giữ vệ sinh và tránh rối."
+    }
   }
 ]

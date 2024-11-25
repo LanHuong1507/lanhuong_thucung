@@ -2,21 +2,15 @@ import { configureStore } from "@reduxjs/toolkit";
 import productReducer from "./slices/productSlice";
 import dogReducer from "./slices/dogSlice";
 import catReducer from "./slices/catSlice";
-import birdReducer from "./slices/birdSlice";
 import rabbitReducer from "./slices/rabbitSlice";
-import turtleReducer from "./slices/turtleSlice";
 import fishReducer from "./slices/fishSlice";
-import cartReducer from "./slices/cartSlice";
 const store = configureStore({
   reducer: {
     products: productReducer,
     dogs: dogReducer,
     cats: catReducer,
-    birds: birdReducer,
     rabbits: rabbitReducer,
-    turtles: turtleReducer,
     fish: fishReducer,
-    cart: cartReducer,
   },
 });
 export type RootState = ReturnType<typeof store.getState>;

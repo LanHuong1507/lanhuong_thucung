@@ -9,7 +9,23 @@
     "weight_range": "4-8 kg",
     "coat": "Ngắn, dày",
     "price": "4.000.000-7.000.000",
-    "image": "https://i.imgur.com/MuwUs66.jpeg"
+    "gender": "Đực",
+    "breedType": "Thuần chủng",
+    "image": "https://i.imgur.com/MuwUs66.jpeg",
+    "thumbnail": [
+      "https://i.imgur.com/PnMWCKZ.jpeg",
+      "https://i.imgur.com/XcuVdM2.jpeg",
+      "https://i.imgur.com/F34ApNz.png"
+    ],
+    "video": "https://i.imgur.com/MuwUs66.jpeg",
+    "additional_info": {
+      "health_issues": "Mèo Anh lông ngắn là giống mèo khỏe mạnh, ít mắc bệnh. Tuy nhiên, chúng có thể gặp một số vấn đề về tim mạch hoặc các bệnh về khớp khi về già.",
+      "exercise_needs": "Mèo Anh lông ngắn khá ít vận động, nhưng cần có một không gian để chạy nhảy và chơi đùa để giữ sức khỏe.",
+      "diet": "Chế độ ăn của Mèo Anh lông ngắn nên bao gồm thực phẩm giàu protein và chất béo vừa phải để duy trì sự phát triển khỏe mạnh.",
+      "training_difficulty": "Chúng là giống mèo thông minh, dễ huấn luyện và thích được làm hài lòng chủ nhân.",
+      "suitable_for": "Mèo Anh lông ngắn là lựa chọn tuyệt vời cho những gia đình có trẻ em và các căn hộ nhỏ.",
+      "care_tips": "Chăm sóc lông ngắn của mèo Anh lông ngắn rất dễ dàng, bạn chỉ cần chải lông thường xuyên và kiểm tra sức khỏe định kỳ."
+    }
   },
   {
     "id": 2,
@@ -21,7 +37,23 @@
     "weight_range": "3-6 kg",
     "coat": "Dài, mềm",
     "price": "4.000.000-20.000.000",
-    "image": "https://i.imgur.com/0h4fq3F.jpeg"
+    "breedType": "Lai",
+    "gender": "Cái",
+    "image": "https://i.imgur.com/0h4fq3F.jpeg",
+    "thumnail": [
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg"
+    ],
+    "video": "https://i.imgur.com/0h4fq3F.jpeg",
+    "additional_info": {
+      "health_issues": "Mèo Ba Tư có thể gặp các vấn đề về mắt và hệ hô hấp, đặc biệt nếu sống trong môi trường không sạch sẽ.",
+      "exercise_needs": "Chúng không đòi hỏi quá nhiều vận động, nhưng vẫn cần được chơi đùa nhẹ nhàng để tránh béo phì.",
+      "diet": "Mèo Ba Tư cần chế độ ăn uống giàu protein, cân đối và bổ sung vitamin để duy trì sức khỏe và vẻ đẹp lông.",
+      "training_difficulty": "Mèo Ba Tư khá dễ huấn luyện, nhưng chúng yêu thích sự yên tĩnh và có thể ít hoạt động hơn các giống mèo khác.",
+      "suitable_for": "Phù hợp với những người yêu thích sự yên tĩnh, không gian sống yên tĩnh như căn hộ hoặc gia đình ít trẻ em.",
+      "care_tips": "Lông dài của mèo Ba Tư cần được chăm sóc kỹ lưỡng bằng cách chải lông hàng ngày để tránh tắc nghẽn và gãy lông."
+    }
   },
   {
     "id": 3,
@@ -33,7 +65,23 @@
     "weight_range": "4-9 kg",
     "coat": "Dài, mượt",
     "price": "5.000.000-6.500.000",
-    "image": "https://i.imgur.com/YQng6bE.jpeg"
+    "breedType": "Thuần chủng",
+    "image": "https://i.imgur.com/YQng6bE.jpeg",
+    "thumnail": [
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg"
+    ],
+    "video": "https://i.imgur.com/0h4fq3F.jpeg",
+    "gender": "Đực",
+    "additional_info": {
+      "health_issues": "Mèo Ragdoll có thể gặp phải các vấn đề về tim và thận. Cần kiểm tra sức khỏe định kỳ để phát hiện sớm các bệnh lý.",
+      "exercise_needs": "Mèo Ragdoll thích sự thoải mái, nhưng vẫn cần chơi đùa nhẹ nhàng để duy trì sức khỏe và tăng cường sự linh hoạt.",
+      "diet": "Chế độ ăn của mèo Ragdoll nên bao gồm các loại thức ăn giàu protein để duy trì cơ bắp và sức khỏe toàn diện.",
+      "training_difficulty": "Mèo Ragdoll rất dễ huấn luyện và dễ hòa nhập với các thành viên trong gia đình.",
+      "suitable_for": "Mèo Ragdoll rất phù hợp cho gia đình có trẻ em hoặc những người sống trong căn hộ, vì chúng rất dịu dàng và dễ chịu.",
+      "care_tips": "Lông dài của mèo Ragdoll cần được chăm sóc kỹ lưỡng, bạn nên chải lông ít nhất 2 lần mỗi tuần."
+    }
   },
   {
     "id": 4,
@@ -45,7 +93,23 @@
     "weight_range": "2.5-6 kg",
     "coat": "Ngắn hoặc dài",
     "price": "15.000.000-25.000.000",
-    "image": "https://i.imgur.com/WuO1bdE.jpeg"
+    "gender": "Cái",
+    "breedType": "Lai",
+    "image": "https://i.imgur.com/WuO1bdE.jpeg",
+    "thumnail": [
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg"
+    ],
+    "video": "https://i.imgur.com/0h4fq3F.jpeg",
+    "additional_info": {
+      "health_issues": "Mèo Scottish Fold có thể gặp các vấn đề về tai và khớp. Vì vậy, bạn cần chăm sóc và kiểm tra sức khỏe định kỳ.",
+      "exercise_needs": "Chúng khá năng động và thích chơi đùa nhẹ nhàng, nhưng không yêu cầu vận động quá mạnh.",
+      "diet": "Mèo Scottish Fold cần một chế độ ăn uống cân bằng với thực phẩm giàu protein và vitamin để duy trì sức khỏe và lông.",
+      "training_difficulty": "Chúng dễ huấn luyện và rất ngoan ngoãn, thích làm hài lòng chủ nhân.",
+      "suitable_for": "Mèo Scottish Fold là lựa chọn lý tưởng cho những người yêu thích sự dễ thương và mong muốn một chú mèo hiền lành.",
+      "care_tips": "Chăm sóc lông ngắn hoặc dài của mèo Scottish Fold cần lưu ý tránh làm tổn thương tai và khớp của chúng."
+    }
   },
   {
     "id": 5,
@@ -57,7 +121,23 @@
     "weight_range": "4-7 kg",
     "coat": "Ngắn, hoa văn như báo",
     "price": "7.000.000-15.000.000",
-    "image": "https://i.imgur.com/JvXBou2.png"
+    "breedType": "Thuần chủng",
+    "image": "https://i.imgur.com/JvXBou2.png",
+    "thumnail": [
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg"
+    ],
+    "video": "https://i.imgur.com/0h4fq3F.jpeg",
+    "gender": "Đực",
+    "additional_info": {
+      "health_issues": "Mèo Bengal có thể gặp vấn đề về tim và các bệnh lý liên quan đến huyết áp. Cần chú ý đến chế độ ăn và kiểm tra sức khỏe định kỳ.",
+      "exercise_needs": "Chúng là giống mèo rất năng động, cần có không gian rộng lớn để chạy nhảy và chơi đùa, giúp duy trì sức khỏe tốt.",
+      "diet": "Mèo Bengal cần một chế độ ăn giàu protein, bao gồm thịt tươi, để phát triển cơ bắp và duy trì thể trạng khỏe mạnh.",
+      "training_difficulty": "Mèo Bengal rất thông minh và có thể học các trò chơi và lệnh đơn giản rất nhanh chóng.",
+      "suitable_for": "Phù hợp với những người yêu thích mèo năng động và thích chơi đùa, đặc biệt là các gia đình có không gian sống rộng rãi.",
+      "care_tips": "Chế độ ăn uống giàu protein và các hoạt động thể chất thường xuyên sẽ giúp mèo Bengal luôn khỏe mạnh và phát triển tốt."
+    }
   },
   {
     "id": 6,
@@ -69,150 +149,22 @@
     "weight_range": "2-4 kg",
     "coat": "Ngắn hoặc dài",
     "price": "5.000.000-6.000.000",
-    "image": "https://i.imgur.com/L7mJjPW.jpeg"
-  },
-  {
-    "id": 7,
-    "name": "Mèo Maine Coon",
-    "origin": "Mỹ",
-    "size": "Rất lớn",
-    "temperament": ["Thân thiện", "Điềm tĩnh", "Thông minh"],
-    "life_span": "12-15 năm",
-    "weight_range": "6-12 kg",
-    "coat": "Dài, dày",
-    "price": "5.000.000-50.000.000",
-    "image": "https://i.imgur.com/J9rFRoc.jpeg"
-  },
-  {
-    "id": 8,
-    "name": "Mèo Sphynx",
-    "origin": "Canada",
-    "size": "Trung bình",
-    "temperament": ["Thân thiện", "Năng động", "Tò mò"],
-    "life_span": "9-15 năm",
-    "weight_range": "3-6 kg",
-    "coat": "Không lông",
-    "price": "8.000.000-12.000.000",
-    "image": "https://i.imgur.com/VnHMkTc.jpeg"
-  },
-  {
-    "id": 9,
-    "name": "Mèo Abyssinian",
-    "origin": "Ethiopia",
-    "size": "Trung bình",
-    "temperament": ["Năng động", "Thông minh", "Thân thiện"],
-    "life_span": "12-15 năm",
-    "weight_range": "3-5 kg",
-    "coat": "Ngắn, mượt",
-    "price": "1.000.000-3.000.000",
-    "image": "https://i.imgur.com/gAfu67e.jpeg"
-  },
-  {
-    "id": 10,
-    "name": "Mèo Siamese",
-    "origin": "Thái Lan",
-    "size": "Trung bình",
-    "temperament": ["Thân thiện", "Tình cảm", "Thích nói chuyện"],
-    "life_span": "12-20 năm",
-    "weight_range": "3-5 kg",
-    "coat": "Ngắn, bóng",
-    "price": "2.000.000-12.000.000",
-    "image": "https://i.imgur.com/iN53tSw.jpeg"
-  },
-  {
-    "id": 11,
-    "name": "Mèo Mỹ lông ngắn",
-    "origin": "Mỹ",
-    "size": "Trung bình",
-    "temperament": ["Thân thiện", "Điềm tĩnh", "Dễ nuôi"],
-    "life_span": "12-15 năm",
-    "weight_range": "3-6 kg",
-    "coat": "Ngắn, dày",
-    "price": "1.000.000-4.000.000",
-    "image": "https://i.imgur.com/EFIU1oW.jpeg"
-  },
-  {
-    "id": 12,
-    "name": "Mèo Exotic",
-    "origin": "Mỹ",
-    "size": "Trung bình",
-    "temperament": ["Điềm tĩnh", "Dễ thương", "Thân thiện"],
-    "life_span": "12-15 năm",
-    "weight_range": "3-6 kg",
-    "coat": "Ngắn, mịn",
-    "price": "8.000.000-20.000.000",
-    "image": "https://i.imgur.com/03GGGoH.jpeg"
-  },
-  {
-    "id": 13,
-    "name": "Mèo Norwegain Forest",
-    "origin": "Na Uy",
-    "size": "Lớn",
-    "temperament": ["Thân thiện", "Điềm tĩnh", "Thích khám phá"],
-    "life_span": "14-16 năm",
-    "weight_range": "5-10 kg",
-    "coat": "Dài, dày",
-    "price": "12.000.000-60.000.000",
-    "image": "https://i.imgur.com/HxWs3VG.jpeg"
-  },
-  {
-    "id": 14,
-    "name": "Mèo Burmese",
-    "origin": "Miến Điện",
-    "size": "Trung bình",
-    "temperament": ["Thân thiện", "Tình cảm", "Dễ chăm sóc"],
-    "life_span": "16-18 năm",
-    "weight_range": "3-5 kg",
-    "coat": "Ngắn, bóng",
-    "price": "23.000.000-45.000.000",
-    "image": "https://i.imgur.com/z2rHV8z.jpeg"
-  },
-  {
-    "id": 15,
-    "name": "Mèo Korat",
-    "origin": "Thái Lan",
-    "size": "Nhỏ",
-    "temperament": ["Tình cảm", "Thân thiện", "Yêu thích sự yên tĩnh"],
-    "life_span": "10-15 năm",
-    "weight_range": "2.5-4.5 kg",
-    "coat": "Ngắn, mượt",
-    "price": "11.000.000-16.000.000",
-    "image": "https://i.imgur.com/JOVq30h.jpeg"
-  },
-  {
-    "id": 16,
-    "name": "Mèo Turkish Angora",
-    "origin": "Thổ Nhĩ Kỳ",
-    "size": "Trung bình",
-    "temperament": ["Thông minh", "Thân thiện", "Thích chơi"],
-    "life_span": "12-18 năm",
-    "weight_range": "3-5 kg",
-    "coat": "Dài, mượt",
-    "price": "35.000.000-59.000.000",
-    "image": "https://i.imgur.com/ZUmWWjF.jpeg"
-  },
-  {
-    "id": 17,
-    "name": "Mèo Manx",
-    "origin": "Đảo Man",
-    "size": "Nhỏ",
-    "temperament": ["Thân thiện", "Điềm tĩnh", "Dễ chăm sóc"],
-    "life_span": "12-14 năm",
-    "weight_range": "3-5 kg",
-    "coat": "Ngắn, dày",
-    "price": "10.000.000-15.000.000",
-    "image": "https://i.imgur.com/FppiUf3.png"
-  },
-  {
-    "id": 18,
-    "name": "Mèo Savannah",
-    "origin": "Mỹ",
-    "size": "Lớn",
-    "temperament": ["Năng động", "Thông minh", "Độc lập"],
-    "life_span": "12-20 năm",
-    "weight_range": "5-11 kg",
-    "coat": "Ngắn, vằn",
-    "price": "130.000.000-300.000.000",
-    "image": "https://i.imgur.com/RYrDEUb.jpeg"
+    "breedType": "Thuần chủng",
+    "image": "https://i.imgur.com/L7mJjPW.jpeg",
+    "thumnail": [
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg",
+      "https://i.imgur.com/0h4fq3F.jpeg"
+    ],
+    "gender": "Cái",
+    "video": "https://i.imgur.com/0h4fq3F.jpeg",
+    "additional_info": {
+      "health_issues": "Mèo Munchkin có thể gặp phải vấn đề về xương và khớp do cấu trúc cơ thể ngắn. Cần tránh các hoạt động quá mạnh.",
+      "exercise_needs": "Chúng khá năng động và thích chơi đùa nhưng cần hạn chế những hoạt động có thể gây tổn thương cho xương.",
+      "diet": "Mèo Munchkin cần chế độ ăn uống giàu protein để duy trì sức khỏe xương khớp và cơ bắp.",
+      "training_difficulty": "Mèo Munchkin dễ huấn luyện và rất thân thiện, chúng thích tham gia các trò chơi đơn giản với chủ nhân.",
+      "suitable_for": "Mèo Munchkin rất phù hợp với gia đình có trẻ em hoặc các căn hộ nhỏ, vì chúng rất dễ gần và vui vẻ.",
+      "care_tips": "Chăm sóc lông ngắn hoặc dài của mèo Munchkin không quá khó khăn, bạn chỉ cần chú ý đến sức khỏe xương khớp và chế độ ăn uống hợp lý."
+    }
   }
 ]
