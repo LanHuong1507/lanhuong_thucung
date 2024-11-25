@@ -4,6 +4,7 @@ import { ArrowUpOutlined } from "@ant-design/icons";
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+
   const handleScroll = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -27,6 +28,7 @@ const BackToTopButton = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -47,7 +49,7 @@ const BackToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 p-4 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center"
+          className="fixed bottom-4 right-6 p-4 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all flex items-center justify-center z-20"
         >
           <ArrowUpOutlined className="text-white text-2xl" />
         </button>

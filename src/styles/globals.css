@@ -61,3 +61,11 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+#health,
+#exercise,
+#diet,
+#training,
+#suitable_for,
+#care_tips {
+  scroll-margin-top: 80px;
+}

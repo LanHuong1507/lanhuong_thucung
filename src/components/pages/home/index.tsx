@@ -7,9 +7,11 @@ import { Button, Typography, Row, Col, Tabs } from "antd";
 import ThuCung from "../../../assets/images/thucung.jpg";
 import VatNuoi from "../../../assets/images/vatnuoi.jpg";
 import DungCu from "../../../assets/images/dungcuchamsoc.jpg";
-
+import PetBanner from "./PetBanner";
+import PetBusinessCircle from "./PetBusinessCircle";
 import PepDog from "../../../assets/images/pd.jpg";
 import PepCat from "../../../assets/images/pc.jpg";
+
 import {
   EnvironmentOutlined,
   HarmonyOSOutlined,
@@ -51,6 +53,9 @@ const Home = () => {
 
   return (
     <main>
+      <section className="mb-6">
+        <PetBanner />
+      </section>
       <section className="py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
         <div className="flex-1 text-center md:text-left space-y-4 animate-fade-in">
           <h1 className="text-4xl font-bold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600">
@@ -111,7 +116,6 @@ const Home = () => {
           />
         </div>
       </section>
-
       <section className="py-8">
         <div className="container mx-auto px-6">
           <Tabs defaultActiveKey="1" centered>
@@ -322,6 +326,9 @@ const Home = () => {
             </TabPane>
           </Tabs>
         </div>
+      </section>
+      <section className="py-8">
+        <PetBusinessCircle />
       </section>
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-6">

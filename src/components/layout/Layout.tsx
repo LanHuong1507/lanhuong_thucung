@@ -4,7 +4,7 @@ import BackToTopButton from "./BacktoTop";
 import Loading from "./Loading";
 import { ReactNode, useState, useEffect } from "react";
 import { useRouter } from "next/router";
-
+import ChatComponent from "./Chat";
 const Layout = ({ children }: { children: ReactNode }) => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -25,12 +25,15 @@ const Layout = ({ children }: { children: ReactNode }) => {
   }, [router]);
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {loading && <Loading />}
       <Header />
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
       <BackToTopButton />
+      <div className="fixed bottom-4 right-4">
+        <ChatComponent />
+      </div>
     </div>
   );
 };

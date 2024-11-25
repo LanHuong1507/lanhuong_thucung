@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { useRouter } from "next/router";
-import { useSelector } from "react-redux";
 import { Breadcrumb, Button, Table } from "antd";
 import Head from "next/head";
 import { routerNames } from "@/components/constants/router.constant";
 import Image from "next/image";
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { DownOutlined, UpOutlined } from "@ant-design/icons";
 
 interface Dog {
   id: number;
@@ -15,16 +17,25 @@ interface Dog {
   life_span: string;
   weight_range: string;
   coat: string;
-  color: string;
+  color: string[];
   breedType: string;
   gender: string;
   price: string;
   image: string;
   thumbnail: string[];
   video: string;
+  additional_info: {
+    health_issues: string[];
+    exercise_needs: string;
+    diet: string;
+    training_difficulty: string;
+    suitable_for: string[];
+    care_tips: string[];
+  };
 }
 
 const DogDetail = () => {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const router = useRouter();
   const { id } = router.query;
   const dogs = useSelector((state: { dogs: Dog[] }) => state.dogs);
@@ -40,40 +51,18 @@ const DogDetail = () => {
       </section>
     );
   }
-  const nextDog = dogs.find((d) => d.id === dog.id + 1);
 
   const dataSource = [
-    { key: "1", attribute: "Tên", value: dog.name },
     { key: "2", attribute: "Xuất xứ", value: dog.origin },
     { key: "3", attribute: "Kích thước", value: dog.size },
     { key: "4", attribute: "Tuổi thọ", value: dog.life_span },
     { key: "5", attribute: "Cân nặng", value: dog.weight_range },
     { key: "6", attribute: "Loại lông", value: dog.coat },
-    { key: "7", attribute: "Tính cách", value: dog.temperament.join(", ") },
-    { key: "8", attribute: "Màu lông", value: dog.color },
+    { key: "8", attribute: "Màu lông", value: dog.color.join(", ") },
     { key: "9", attribute: "Giống", value: dog.breedType },
     { key: "10", attribute: "Giới tính", value: dog.gender },
     { key: "11", attribute: "Giá bán", value: `${dog.price} VNĐ` },
   ];
-  const dataSourceNextDog = nextDog
-    ? [
-        { key: "1", attribute: "Tên", value: nextDog.name },
-        { key: "2", attribute: "Xuất xứ", value: nextDog.origin },
-        { key: "3", attribute: "Kích thước", value: nextDog.size },
-        { key: "4", attribute: "Tuổi thọ", value: nextDog.life_span },
-        { key: "5", attribute: "Cân nặng", value: nextDog.weight_range },
-        { key: "6", attribute: "Loại lông", value: nextDog.coat },
-        {
-          key: "7",
-          attribute: "Tính cách",
-          value: nextDog.temperament.join(", "),
-        },
-        { key: "8", attribute: "Màu lông", value: nextDog.color },
-        { key: "9", attribute: "Giống", value: nextDog.breedType },
-        { key: "10", attribute: "Giới tính", value: nextDog.gender },
-        { key: "11", attribute: "Giá bán", value: `${nextDog.price} VNĐ` },
-      ]
-    : [];
 
   const columns = [
     {
@@ -88,13 +77,27 @@ const DogDetail = () => {
     },
   ];
 
+  const handleToggleSidebar = () => {
+    setIsSidebarVisible((prevState) => !prevState);
+  };
+
+  const handleSectionClick = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <>
       <Head>
         <title>{dog.name}</title>
       </Head>
       <main className="container mx-auto py-8 px-4">
-        <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full">
+        <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full text-lg">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>
           </Breadcrumb.Item>
@@ -105,56 +108,37 @@ const DogDetail = () => {
             <Link href={routerNames.CATEGORY}>Thú Cưng</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Link href={routerNames.DOG} className="text-sm md:text-base">
-              Chó
-            </Link>
+            <Link href={routerNames.DOG}>Chó</Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item className="text-sm md:text-base">
-            {dog.name}
-          </Breadcrumb.Item>
+          <Breadcrumb.Item className="font-bold">{dog.name}</Breadcrumb.Item>
         </Breadcrumb>
-
+        <h1 className="text-2xl font-bold mb-6 text-center w-full">
+          {dog.name}
+        </h1>
         <section className="flex flex-col md:flex-row justify-between items-start">
-          <h1 className="text-2xl font-bold mb-6 md:hidden text-center w-full">
-            {dog.name}
-          </h1>
           <article className="w-full md:w-1/2 flex flex-col items-center mb-6 md:mb-0">
             <Image
               src={dog.image}
               alt={dog.name}
-              className="w-[90%] h-96 object-cover rounded-lg shadow-lg"
+              className="w-full md:w-[95%] h-96 object-cover rounded-md"
               width={400}
               height={400}
             />
-            <div className="flex mt-4 space-x-4">
+            <div className="flex mt-4 space-x-2 md:space-x-4">
               {dog.thumbnail.map((thumb, index) => (
                 <Image
                   key={index}
                   src={thumb}
                   alt={`${dog.name} thumbnail ${index + 1}`}
-                  className="w-20 h-20 md:w-40 md:h-40 object-cover rounded-lg shadow-sm cursor-pointer"
+                  className="w-24 h-20 md:w-48 md:h-40 object-cover rounded-md cursor-pointer"
                   width={400}
                   height={400}
                 />
               ))}
             </div>
-            <div className="mt-6 w-full">
-              <div className="flex justify-center">
-                <video
-                  src={dog.video}
-                  autoPlay
-                  loop
-                  muted
-                  controls
-                  className="w-[80%] rounded-lg shadow-lg"
-                ></video>
-              </div>
-            </div>
           </article>
+
           <article className="w-full md:w-1/2">
-            <h1 className="text-2xl font-bold text-center mb-6 hidden md:block">
-              {dog.name}
-            </h1>
             <Table
               dataSource={dataSource}
               columns={columns}
@@ -162,13 +146,6 @@ const DogDetail = () => {
               className="w-full"
             />
             <section className="flex justify-center mt-6 space-x-4 w-full">
-              <Button
-                type="primary"
-                onClick={() => router.push(routerNames.DOG)}
-                className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
-              >
-                Trở về
-              </Button>
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
@@ -179,78 +156,127 @@ const DogDetail = () => {
             </section>
           </article>
         </section>
+        <div className="flex flex-col">
+          <div className="mt-4 py-4 px-6 w-full md:w-[40%] bg-gray-100 rounded-lg shadow-md">
+            <h2
+              className="text-xl md:text-3xl font-semibold text-black flex items-center cursor-pointer hover:text-blue-600 transition-colors duration-300"
+              onClick={handleToggleSidebar}
+            >
+              MỤC LỤC NỘI DUNG
+              <span className="ml-4 flex items-center">
+                {isSidebarVisible ? <UpOutlined /> : <DownOutlined />}
+              </span>
+            </h2>
 
-        <h1 className="text-2xl font-bold text-center my-6">
-          Giống chó tiếp theo
-        </h1>
+            {isSidebarVisible && (
+              <ol className="mt-2 list-decimal pl-6 space-y-4">
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("temperament")}
+                >
+                  Tính cách
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("health")}
+                >
+                  Sức khỏe
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("exercise")}
+                >
+                  Nhu cầu vận động
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("diet")}
+                >
+                  Chế độ ăn
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("training")}
+                >
+                  Huấn luyện
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("suitable_for")}
+                >
+                  Phù hợp với
+                </li>
+                <li
+                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-colors duration-300 hover:bg-blue-100 hover:text-blue-600"
+                  onClick={() => handleSectionClick("care_tips")}
+                >
+                  Lời khuyên chăm sóc
+                </li>
+              </ol>
+            )}
+          </div>
+        </div>
 
-        {nextDog && (
-          <section className="flex flex-col md:flex-row justify-between items-start">
-            <h1 className="text-2xl font-bold mb-6 md:hidden text-center w-full">
-              {nextDog.name}
-            </h1>
-            <article className="w-full md:w-1/2 flex flex-col items-center mb-6 md:mb-0">
-              <Image
-                src={nextDog.image}
-                alt={nextDog.name}
-                className="w-[90%] h-96 object-cover rounded-lg shadow-lg"
-                width={400}
-                height={400}
-              />
-              <div className="flex mt-4 space-x-4">
-                {nextDog.thumbnail.map((thumb, index) => (
-                  <Image
-                    key={index}
-                    src={thumb}
-                    alt={`${nextDog.name} thumbnail ${index + 1}`}
-                    className="w-20 h-20 md:w-40 md:h-40 object-cover rounded-lg shadow-sm cursor-pointer"
-                    width={400}
-                    height={400}
-                  />
-                ))}
-              </div>
-              <div className="mt-6 w-full">
-                <div className="flex justify-center">
-                  <video
-                    src={nextDog.video}
-                    autoPlay
-                    loop
-                    muted
-                    controls
-                    className="w-[80%] rounded-lg shadow-lg"
-                  ></video>
-                </div>
-              </div>
-            </article>
-            <article className="w-full md:w-1/2">
-              <h1 className="text-2xl font-bold text-center mb-6 hidden md:block">
-                {nextDog.name}
-              </h1>
-              <Table
-                dataSource={dataSourceNextDog}
-                columns={columns}
-                pagination={false}
-                className="w-full"
-              />
-              <section className="flex justify-center mt-6 space-x-4 w-full">
-                <Button
-                  type="primary"
-                  onClick={() => router.push(routerNames.DOG)}
-                  className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
-                >
-                  Trở về
-                </Button>
-                <Button
-                  type="primary"
-                  onClick={() => router.push(routerNames.CONTACT)}
-                  className="w-1/2 p-4 hover:bg-blue-700 hover:text-white transition-all duration-300"
-                >
-                  Liên hệ
-                </Button>
-              </section>
-            </article>
-          </section>
-        )}
+        <div className="pt-24 md:flex md:gap-6">
+          <ol className="space-y-6 mt-6">
+            <li id="temperament">
+              <h3 className="text-3xl font-bold text-blue-700">1. Tính cách</h3>
+              {dog.temperament.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </li>
+
+            <li id="health">
+              <h3 className="text-3xl font-bold text-blue-700">2. Sức khỏe</h3>
+              <p>{dog.additional_info.health_issues}</p>
+            </li>
+
+            <li id="exercise">
+              <h3 className="text-3xl font-bold text-blue-700">
+                3. Nhu cầu vận động
+              </h3>
+              <p>{dog.additional_info.exercise_needs}</p>
+            </li>
+
+            <li id="diet">
+              <h3 className="text-3xl font-bold text-blue-700">4. Chế độ ăn</h3>
+              <p>{dog.additional_info.diet}</p>
+            </li>
+
+            <li id="training">
+              <h3 className="text-3xl font-bold text-blue-700">
+                5. Huấn luyện
+              </h3>
+              <p>{dog.additional_info.training_difficulty}</p>
+            </li>
+
+            <li id="suitable_for">
+              <h3 className="text-3xl font-bold text-blue-700">
+                6. Phù hợp với
+              </h3>
+              <p>{dog.additional_info.suitable_for}</p>
+            </li>
+
+            <li id="care_tips">
+              <h3 className="text-3xl font-bold text-blue-700">
+                7. Lời khuyên chăm sóc
+              </h3>
+              <p>{dog.additional_info.care_tips}</p>
+            </li>
+          </ol>
+        </div>
+        <div className="mt-6 w-full">
+          <div className="flex justify-center">
+            <video
+              src={dog.video}
+              autoPlay
+              loop
+              muted
+              controls
+              className="w-[80%] rounded-lg shadow-lg"
+            ></video>
+          </div>
+        </div>
       </main>
     </>
   );
