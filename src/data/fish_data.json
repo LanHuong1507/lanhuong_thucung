@@ -7,56 +7,56 @@
     "temperament": ["Hiếu chiến", "Dễ chăm sóc", "Sặc sỡ"],
     "life_span": "2-4 năm",
     "size_range": "4-6 cm",
-    "color": "Đỏ, xanh, tím, trắng",
+    "color": ["Đỏ", "Xanh", "Tím", "Trắng"],
     "price": "80.000-120.000",
     "image": "https://i.imgur.com/r6yUmA8.png",
     "additional_info": {
-      "health_issues": "Cá Betta có thể bị nhiễm trùng nấm và các bệnh về vây nếu môi trường không sạch sẽ.",
-      "exercise_needs": "Cá Betta không cần không gian quá rộng, nhưng cần môi trường nước sạch để phát triển tốt.",
-      "diet": "Chế độ ăn chủ yếu của cá Betta là thức ăn sống như sâu, tôm nhỏ hoặc thức ăn viên chuyên dụng.",
+      "health_issues": "Cá Betta có thể bị nhiễm trùng nấm và các bệnh về vây nếu môi trường không sạch sẽ. Điều này có thể gây ảnh hưởng đến sức khỏe của cá và giảm tuổi thọ nếu không được chăm sóc đúng cách. Để tránh các vấn đề này, cần thường xuyên thay nước và giữ cho bể cá luôn sạch sẽ. Cá Betta cũng dễ bị stress khi sống trong điều kiện không ổn định.",
+      "exercise_needs": "Cá Betta không cần không gian quá rộng, nhưng cần môi trường nước sạch và thoải mái để phát triển tốt. Chúng thích bơi lội và có thể di chuyển tự do trong bể cá. Tuy nhiên, không nên nuôi chung với các loài cá khác để tránh tình trạng cá đánh nhau.",
+      "diet": "Cá Betta chủ yếu ăn thức ăn sống như sâu, tôm nhỏ hoặc thức ăn viên chuyên dụng. Chế độ ăn cần được đa dạng hóa để cá khỏe mạnh và có đủ chất dinh dưỡng. Cần chú ý không cho cá ăn quá nhiều, vì điều này có thể dẫn đến béo phì.",
       "training_difficulty": "Cá Betta có thể huấn luyện để ăn từ tay người, nhưng do tính hiếu chiến, cần tránh nuôi chung với các loài cá khác.",
-      "suitable_for": "Thích hợp cho những người nuôi cá cảnh trong hồ nhỏ hoặc bể cá đơn lẻ.",
-      "care_tips": "Cần duy trì chất lượng nước sạch và thường xuyên thay nước để cá Betta luôn khỏe mạnh."
+      "suitable_for": "Cá Betta có thể huấn luyện để ăn từ tay người, tuy nhiên, do tính hiếu chiến, chúng không thích hợp với môi trường có nhiều cá. Huấn luyện cá Betta cần kiên nhẫn và tôn trọng tính cách của chúng, vì cá Betta có thể trở nên hung dữ nếu bị quấy rầy quá mức.",
+      "care_tips": "Để chăm sóc cá Betta tốt nhất, cần duy trì chất lượng nước sạch và thường xuyên thay nước. Nước trong bể phải luôn được giữ ở mức độ ổn định về nhiệt độ và pH, và cá Betta cũng cần một môi trường yên tĩnh."
     }
   },
   {
     "id": 2,
+    "name": "Cá Neon",
+    "origin": "Nam Mỹ",
+    "size": "Nhỏ",
+    "temperament": ["Thân thiện", "Hoạt bát", "Thích sống bầy đàn"],
+    "life_span": "5-8 năm",
+    "size_range": "2-4 cm",
+    "color": ["Đỏ", "Xanh"],
+    "price": "7.000-100.000",
+    "image": "https://i.imgur.com/19hhSQb.jpeg",
+    "additional_info": {
+      "health_issues": "Cá Neon có thể dễ dàng mắc các bệnh về đường tiêu hóa hoặc viêm đường hô hấp nếu môi trường không được chăm sóc đúng cách. Việc không thay nước định kỳ và chất lượng nước kém có thể làm suy yếu hệ miễn dịch của chúng. Để giữ cá Neon khỏe mạnh, cần đảm bảo bể cá sạch sẽ và không có các yếu tố gây căng thẳng.",
+      "exercise_needs": "Cá Neon là loài cá hoạt bát và cần sống trong bầy đàn để cảm thấy an toàn. Chúng thường xuyên bơi lội và thích khám phá môi trường sống xung quanh. Nếu sống một mình, cá Neon sẽ cảm thấy cô đơn và có thể bị stress. Do đó, nuôi chúng trong nhóm ít nhất 5-6 con sẽ giúp cá phát triển tốt hơn.",
+      "diet": "Cá Neon có chế độ ăn chủ yếu là thức ăn viên dành cho cá nhỏ, nhưng cũng cần bổ sung thêm tôm hoặc sâu để cung cấp đủ dinh dưỡng. Việc thay đổi chế độ ăn định kỳ sẽ giúp cá khỏe mạnh và tăng khả năng miễn dịch. Nên cho cá ăn ít và nhiều lần trong ngày để tránh việc thức ăn dư thừa.",
+      "training_difficulty": "Cá Neon rất dễ nuôi và ít đòi hỏi huấn luyện. Chúng không cần sự can thiệp quá nhiều từ người nuôi, chỉ cần một môi trường sống ổn định là đủ. Tuy nhiên, việc giữ chúng sống trong môi trường bầy đàn sẽ giúp chúng ít bị căng thẳng và phát triển tốt hơn.",
+      "suitable_for": " Loài cá này thích hợp cho những người nuôi cá cảnh lần đầu, hoặc những ai muốn nuôi trong các bể cá cộng đồng. Chúng dễ sống chung với các loài cá khác và thích hợp với bể cá nhỏ hoặc trung bình.",
+      "care_tips": "Cần duy trì nhiệt độ nước ổn định và đảm bảo môi trường sống an toàn cho cá Neon. Nước phải luôn trong sạch và không có tạp chất. Đảm bảo chất lượng nước tốt sẽ giúp cá Neon sống lâu và khỏe mạnh."
+    }
+  },
+  {
+    "id": 3,
     "name": "Cá Vàng",
     "origin": "Trung Quốc",
     "size": "Nhỏ",
     "temperament": ["Hiền lành", "Thân thiện", "Dễ nuôi"],
     "life_span": "10-15 năm",
     "size_range": "10-20 cm",
-    "color": "Vàng, cam, trắng",
+    "color": ["Vàng", "Trắng", "Cam"],
     "price": "20.000-80.000",
     "image": "https://i.imgur.com/wCY8xvO.jpeg",
     "additional_info": {
-      "health_issues": "Cá Vàng dễ mắc bệnh về da và mắt nếu sống trong môi trường nước bẩn.",
-      "exercise_needs": "Cá Vàng cần không gian bơi lội rộng rãi, đặc biệt là khi chúng trưởng thành.",
-      "diet": "Chế độ ăn của cá Vàng nên bao gồm thức ăn viên, cám, và rau củ.",
-      "training_difficulty": "Rất dễ nuôi và không cần huấn luyện nhiều, nhưng cần điều kiện môi trường sống tốt.",
-      "suitable_for": "Phù hợp với người mới bắt đầu nuôi cá cảnh hoặc gia đình có trẻ em.",
-      "care_tips": "Chăm sóc cá Vàng cần thay nước định kỳ và kiểm tra chất lượng nước để tránh các bệnh về da."
-    }
-  },
-  {
-    "id": 3,
-    "name": "Cá Neon",
-    "origin": "Nam Mỹ",
-    "size": "Rất nhỏ",
-    "temperament": ["Thân thiện", "Hoạt bát", "Thích sống bầy đàn"],
-    "life_span": "5-8 năm",
-    "size_range": "2-4 cm",
-    "color": "Xanh, đỏ",
-    "price": "7.000-100.000",
-    "image": "https://i.imgur.com/oudTljO.jpeg",
-    "additional_info": {
-      "health_issues": "Cá Neon có thể bị nhiễm các bệnh về đường tiêu hóa hoặc viêm đường hô hấp nếu không được chăm sóc đúng cách.",
-      "exercise_needs": "Chúng là loài cá hoạt bát, cần sống trong bầy đàn để cảm thấy an toàn.",
-      "diet": "Chế độ ăn của cá Neon chủ yếu là thức ăn viên cho cá nhỏ, nhưng cũng cần bổ sung tôm hoặc sâu.",
-      "training_difficulty": "Cá Neon rất dễ nuôi và ít đòi hỏi về huấn luyện.",
-      "suitable_for": "Phù hợp cho những người muốn nuôi cá cảnh trong các bể cá cộng đồng hoặc bể cá nhỏ.",
-      "care_tips": "Cần duy trì nhiệt độ nước ổn định và đảm bảo môi trường sống an toàn cho cá Neon."
+      "health_issues": "Cá Vàng dễ mắc bệnh về da và mắt nếu sống trong môi trường nước bẩn hoặc bị thiếu oxy. Các bệnh phổ biến bao gồm nhiễm trùng da, viêm mắt, và các bệnh do vi khuẩn. Cần chú ý vệ sinh bể cá và thay nước thường xuyên để tránh những vấn đề này. Cá Vàng cũng dễ bị stress nếu môi trường sống không được giữ sạch sẽ.",
+      "exercise_needs": "Cá Vàng cần không gian bơi lội rộng rãi, đặc biệt là khi chúng trưởng thành. Một bể cá quá chật hẹp có thể làm cá cảm thấy căng thẳng và phát triển không tốt. Do đó, việc lựa chọn bể cá có kích thước phù hợp rất quan trọng để cá có thể bơi lội tự do.",
+      "diet": "Chế độ ăn của cá Vàng bao gồm thức ăn viên, cám, và rau củ. Thỉnh thoảng có thể cho cá ăn thêm các loại thực phẩm tươi như giun, tôm hoặc trùn chỉ. Việc duy trì chế độ ăn đa dạng giúp cá khỏe mạnh và phát triển tốt.",
+      "training_difficulty": "Cá Vàng rất dễ nuôi và không cần huấn luyện nhiều. Tuy nhiên, chúng cần môi trường sống sạch sẽ và ổn định để phát triển tốt. Cá Vàng không đòi hỏi kỹ thuật chăm sóc phức tạp, nhưng cần chú ý đến chất lượng nước.",
+      "suitable_for": "Phù hợp với người mới bắt đầu nuôi cá cảnh hoặc gia đình có trẻ em. Cá Vàng rất hiền lành và dễ chăm sóc, làm cho nó trở thành sự lựa chọn lý tưởng cho những người mới bắt đầu.",
+      "care_tips": "Cá Vàng cần thay nước định kỳ và kiểm tra chất lượng nước để tránh các bệnh về da. Ngoài ra, nên tránh cho cá ăn quá nhiều, vì chúng dễ bị béo phì."
     }
   },
   {
@@ -67,16 +67,16 @@
     "temperament": ["Hiền lành", "Thân thiện", "Khó chăm sóc"],
     "life_span": "8-10 năm",
     "size_range": "15-20 cm",
-    "color": "Đỏ, xanh, vàng, trắng",
+    "color": ["Đỏ", "Xanh", "Vàng", "Trắng"],
     "price": "140.000-300.000",
     "image": "https://i.imgur.com/4NA0h8A.jpeg",
     "additional_info": {
-      "health_issues": "Cá Dĩa nhạy cảm với chất lượng nước, dễ bị mắc các bệnh về da nếu môi trường sống không đạt tiêu chuẩn.",
-      "exercise_needs": "Cá Dĩa cần bể cá lớn với nhiều không gian bơi lội, chúng thích sống trong môi trường có ít dòng chảy.",
-      "diet": "Chế độ ăn của cá Dĩa nên bao gồm thức ăn tươi và thức ăn sống như tôm, giun, cùng các loại thực phẩm chuyên dụng.",
-      "training_difficulty": "Khá khó chăm sóc và nuôi dưỡng, cần kiên nhẫn và kiến thức về chăm sóc cá cảnh.",
-      "suitable_for": "Chỉ nên nuôi cá Dĩa với những người đã có kinh nghiệm trong việc nuôi cá cảnh.",
-      "care_tips": "Cần phải duy trì nước sạch, kiểm tra pH và nhiệt độ thường xuyên để cá phát triển tốt."
+      "health_issues": "Cá Dĩa rất nhạy cảm với chất lượng nước. Chúng dễ bị mắc các bệnh về da, vi khuẩn, và nấm nếu môi trường sống không đạt tiêu chuẩn. Để tránh các vấn đề này, cần duy trì pH và nhiệt độ nước ổn định, cùng với việc thay nước định kỳ. Việc kiểm tra chất lượng nước thường xuyên rất quan trọng.",
+      "exercise_needs": "Cá Dĩa cần một bể cá lớn với nhiều không gian bơi lội. Chúng thích sống trong môi trường có ít dòng chảy và không gian thoáng mát. Vì vậy, bể cá cần được trang bị đầy đủ lọc và hệ thống duy trì nhiệt độ ổn định.",
+      "diet": "Chế độ ăn của cá Dĩa bao gồm thức ăn tươi và thức ăn sống như tôm, giun, cùng các loại thực phẩm chuyên dụng. Cá Dĩa cần một chế độ ăn giàu dinh dưỡng và đa dạng để phát triển tốt. Việc bổ sung thức ăn tươi giúp cải thiện sức khỏe của cá.",
+      "training_difficulty": " Cá Dĩa khá khó chăm sóc và nuôi dưỡng. Chúng cần môi trường sống ổn định và sự chăm sóc tỉ mỉ. Do tính nhạy cảm của chúng, người nuôi cần có kiến thức và kinh nghiệm trong việc chăm sóc cá cảnh.",
+      "suitable_for": " Cá Dĩa chỉ nên nuôi với những người có kinh nghiệm trong việc nuôi cá cảnh. Loài cá này yêu cầu sự chăm sóc đặc biệt và có thể gặp khó khăn trong việc phát triển nếu không được chăm sóc đúng cách.",
+      "care_tips": "Cần phải duy trì nước sạch, kiểm tra pH và nhiệt độ thường xuyên để cá phát triển tốt. Điều này giúp tránh các bệnh tật và đảm bảo cá luôn khỏe mạnh."
     }
   },
   {
@@ -87,16 +87,16 @@
     "temperament": ["Hiền lành", "Thích sống bầy đàn", "Sặc sỡ"],
     "life_span": "4-6 năm",
     "size_range": "5-7 cm",
-    "color": "Vàng, đỏ, xanh",
+    "color": ["Đỏ", "Xanh", "Vàng", "Trắng"],
     "price": "15.000-50.000",
     "image": "https://i.imgur.com/OwQWXZO.jpeg",
     "additional_info": {
-      "health_issues": "Cá Phượng Hoàng có thể bị bệnh nếu sống trong nước không sạch hoặc không có đủ oxy.",
-      "exercise_needs": "Chúng thích sống bầy đàn và cần có không gian bơi lội thoải mái.",
-      "diet": "Chế độ ăn chủ yếu của chúng là thức ăn viên cho cá nhỏ hoặc thức ăn tươi như giun, tôm.",
-      "training_difficulty": "Rất dễ nuôi và thích hợp cho những người nuôi cá cảnh lần đầu.",
-      "suitable_for": "Phù hợp cho bể cá nhỏ hoặc bể cộng đồng với các loài cá khác.",
-      "care_tips": "Cần thay nước định kỳ và kiểm tra chất lượng nước thường xuyên để cá luôn khỏe mạnh."
+      "health_issues": "Cá Phượng Hoàng có thể bị bệnh nếu sống trong nước không sạch hoặc không có đủ oxy. Các bệnh phổ biến là viêm đường hô hấp và các vấn đề về da. Để tránh điều này, cần đảm bảo bể cá luôn sạch sẽ và nước trong bể có đủ oxy cho cá.",
+      "exercise_needs": " Cá Phượng Hoàng thích sống bầy đàn và cần không gian bơi lội thoải mái. Chúng sẽ cảm thấy thoải mái hơn khi sống cùng với các loài cá khác trong môi trường yên tĩnh và an toàn.",
+      "diet": "Chế độ ăn chủ yếu của cá Phượng Hoàng là thức ăn viên cho cá nhỏ hoặc thức ăn tươi như giun, tôm. Cần cung cấp đủ dinh dưỡng và thay đổi chế độ ăn để cá phát triển tốt.",
+      "training_difficulty": "Cá Phượng Hoàng rất dễ nuôi và thích hợp cho những người nuôi cá cảnh lần đầu. Chúng không đòi hỏi kỹ thuật chăm sóc phức tạp và dễ dàng thích nghi với môi trường mới.",
+      "suitable_for": " Phù hợp cho bể cá nhỏ hoặc bể cộng đồng với các loài cá khác. Cá Phượng Hoàng có thể sống hòa thuận với các loài cá hiền lành khác.",
+      "care_tips": "Cần thay nước định kỳ và kiểm tra chất lượng nước thường xuyên để cá luôn khỏe mạnh. Đảm bảo môi trường sống sạch sẽ và an toàn sẽ giúp cá phát triển tốt."
     }
   },
   {
@@ -107,15 +107,15 @@
     "temperament": ["Hiền lành", "Thân thiện", "Dễ nuôi"],
     "life_span": "25-35 năm",
     "size_range": "30-90 cm",
-    "color": "Trắng, đỏ, cam, đen",
+    "color": ["Đỏ", "Vàng", "Trắng", "Đen"],
     "price": "600.000-6.500.000",
-    "image": "https://i.imgur.com/4I367hK.jpeg",
+    "image": "https://i.imgur.com/Lp2IntV.png",
     "additional_info": {
-      "health_issues": "Cá Koi có thể bị nhiễm bệnh nếu môi trường không được duy trì đúng tiêu chuẩn, đặc biệt là bệnh nấm và vi khuẩn.",
-      "exercise_needs": "Chúng cần không gian rộng lớn, hồ nước sâu và có thể di chuyển tự do.",
-      "diet": "Chế độ ăn của cá Koi rất phong phú, bao gồm thức ăn viên, rau củ, và các loại thức ăn tươi khác.",
-      "training_difficulty": "Cá Koi rất dễ nuôi và có thể sống lâu dài với sự chăm sóc đúng cách.",
-      "suitable_for": "Phù hợp cho những ai muốn nuôi cá trong hồ lớn hoặc có khu vực rộng để nuôi cá cảnh ngoài trời.",
+      "health_issues": " Cá Koi dễ bị nhiễm bệnh nếu môi trường không đạt tiêu chuẩn, đặc biệt là bệnh nấm và vi khuẩn. Cần duy trì nước sạch và đảm bảo hệ thống lọc tốt để ngăn ngừa bệnh tật. Cá Koi cũng có thể gặp vấn đề về da nếu sống trong môi trường thiếu oxy.",
+      "exercise_needs": "Cá Koi có chế độ ăn rất phong phú, bao gồm thức ăn viên, rau củ, và các loại thức ăn tươi khác. Để chúng khỏe mạnh và phát triển tốt, cần cho cá ăn đầy đủ chất dinh dưỡng.",
+      "diet": "Cá Koi có chế độ ăn rất phong phú, bao gồm thức ăn viên, rau củ, và các loại thức ăn tươi khác. Để chúng khỏe mạnh và phát triển tốt, cần cho cá ăn đầy đủ chất dinh dưỡng.",
+      "training_difficulty": " Cá Koi rất dễ nuôi và có thể sống lâu dài với sự chăm sóc đúng cách. Tuy nhiên, việc duy trì chất lượng nước ổn định là yếu tố quan trọng giúp cá phát triển tốt và khỏe mạnh.",
+      "suitable_for": " Cá Koi phù hợp cho những người muốn nuôi cá trong hồ lớn hoặc có khu vực rộng để nuôi cá cảnh ngoài trời. Chúng cũng là lựa chọn lý tưởng cho những hồ cá ngoài trời.",
       "care_tips": "Cần kiểm tra chất lượng nước, duy trì nhiệt độ ổn định và thay nước thường xuyên để cá Koi phát triển khỏe mạnh."
     }
   }

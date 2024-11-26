@@ -135,7 +135,7 @@ const CatDetail = () => {
                       key={index}
                       src={thumb}
                       alt={`${cat.name} thumbnail ${(index as number) + 1}`}
-                      className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
+                      className="w-24 h-20 md:w-36 lg:w-44 md:h-40 object-cover rounded-md cursor-pointer"
                       width={400}
                       height={400}
                     />

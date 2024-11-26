@@ -2,118 +2,501 @@
   {
     "id": 1,
     "name": "Lược Chải Lông",
-    "description": "Lược chải lông giúp loại bỏ lông rụng và giữ cho bộ lông của thú cưng luôn mượt mà và sạch sẽ. Lược được thiết kế đặc biệt để không làm tổn thương da thú cưng.",
-    "usage": "Sử dụng để chải lông cho thú cưng hàng ngày, bắt đầu từ phần lông dài hoặc rối để loại bỏ lông rụng. Dùng cho chó và mèo có lông dài hoặc ngắn.",
+    "description": "Lược chải lông là sản phẩm không thể thiếu cho thú cưng, giúp loại bỏ lông rụng, bụi bẩn và các tạp chất khác trên bộ lông. Với thiết kế đặc biệt từ chất liệu cao cấp, lược đảm bảo không gây tổn thương cho da thú cưng. Răng lược được gia công tỉ mỉ, có độ dài phù hợp để tiếp cận cả những lớp lông dày. Lược giúp kích thích tuần hoàn máu dưới da, làm cho bộ lông trở nên óng mượt và chắc khỏe hơn. Phù hợp cho mọi loại thú cưng, đặc biệt là chó và mèo có bộ lông dài hoặc xoăn. Lược không chỉ giúp chăm sóc lông mà còn giúp thú cưng thư giãn, giảm căng thẳng và cảm thấy thoải mái hơn trong quá trình chải lông.",
+    "usage": "Sử dụng để chải lông cho thú cưng hàng ngày, bắt đầu từ phần lông dài hoặc rối để loại bỏ lông rụng. Dùng cho chó và mèo có lông dài hoặc ngắn. Có thể sử dụng mỗi ngày hoặc khi cần thiết để giữ cho bộ lông thú cưng luôn sạch sẽ và bóng mượt.",
     "category": "Chó, Mèo",
     "price": "120.000 VND",
     "material": "Nhựa, Thép không gỉ",
-    "color": "Trắng, Đen",
     "dimensions": "20cm x 5cm",
-    "image": "https://i.imgur.com/CmrT6uT.jpeg",
+    "image": "https://i.imgur.com/azxWwxg.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/XjZVXYM.jpg",
-      "https://i.imgur.com/Yv4h7PO.jpg",
-      "https://i.imgur.com/Ak1mXl9.jpg"
+      "https://i.imgur.com/xD9I21j.jpeg",
+      "https://i.imgur.com/nqCTxBL.jpeg",
+      "https://i.imgur.com/yCjI3bq.jpeg"
     ],
-    "hasc": "Sản phẩm an toàn cho da thú cưng. Không nên sử dụng lực quá mạnh để tránh tổn thương da.",
-    "storage_instructions": "Bảo quản nơi khô ráo, tránh nhiệt độ quá cao và ánh nắng trực tiếp.",
-    "additional_notes": "Lược có thể dễ dàng vệ sinh sau mỗi lần sử dụng. Phù hợp cho các loài thú cưng có lông dài hoặc dày."
+    "features": [
+      "Phù hợp với nhiều loại lông: dài, ngắn, xoăn.",
+      "Chất liệu không gây kích ứng da.",
+      "Thiết kế tay cầm thoải mái, chống trượt.",
+      "Lược nhẹ, dễ mang theo.",
+      "Dễ vệ sinh sau khi sử dụng."
+    ],
+    "brand": "PetCare Plus",
+    "hasc": "Sản phẩm an toàn cho da thú cưng nhờ thiết kế các răng lược mịn màng và không gây tổn thương khi chải. Tuy nhiên, để đảm bảo sự thoải mái và an toàn cho thú cưng, bạn không nên sử dụng lực quá mạnh khi chải lông, đặc biệt là ở những khu vực da nhạy cảm. Việc sử dụng lực quá mạnh có thể gây kích ứng hoặc làm tổn thương da của thú cưng. Nếu gặp tình trạng lông rối hoặc bị mắc kẹt, hãy kiên nhẫn và nhẹ nhàng gỡ rối để tránh làm đau cho thú cưng. Đảm bảo rằng lược luôn được sử dụng đúng cách và vệ sinh sạch sẽ sau mỗi lần sử dụng để giữ hiệu quả tốt nhất.",
+    "storage_instructions": "Để sản phẩm luôn bền lâu, hãy bảo quản lược ở nơi khô ráo và tránh tiếp xúc với độ ẩm cao, vì điều này có thể ảnh hưởng đến chất lượng của nhựa và thép không gỉ. Tránh để sản phẩm dưới ánh nắng trực tiếp hoặc nhiệt độ quá cao, vì điều này có thể làm hư hỏng cấu trúc và độ bền của lược. Đặc biệt, không để lược ở những nơi có độ ẩm cao như phòng tắm, vì thép không gỉ có thể bị oxi hóa nếu tiếp xúc lâu với nước hoặc hơi ẩm. Khi không sử dụng, hãy đặt lược vào một nơi sạch sẽ, khô ráo để đảm bảo rằng nó luôn sẵn sàng cho lần sử dụng tiếp theo.",
+    "maintenance_instructions": "Rửa lược bằng nước ấm và xà phòng nhẹ sau mỗi lần sử dụng để loại bỏ bụi bẩn hoặc lông thừa. Sau khi rửa, để lược khô hoàn toàn trước khi bảo quản. Tránh sử dụng hóa chất mạnh để vệ sinh sản phẩm. Kiểm tra định kỳ để đảm bảo các răng lược không bị cong hoặc gãy.",
+    "additional_notes": "Lược có thể dễ dàng vệ sinh sau mỗi lần sử dụng, chỉ cần rửa sạch bằng nước ấm và xà phòng nhẹ. Sau khi vệ sinh, bạn nên để lược khô hoàn toàn trước khi bảo quản để tránh sự phát triển của vi khuẩn hoặc nấm mốc. Phù hợp cho các loài thú cưng có lông dài, dày hoặc xoăn, lược giúp làm sạch lông hiệu quả mà không gây khó chịu. Ngoài ra, nếu lược có bất kỳ dấu hiệu nào của hư hỏng hoặc rỉ sét, bạn nên thay thế để đảm bảo an toàn cho thú cưng. Để duy trì hiệu quả lâu dài, hãy kiểm tra lược định kỳ để đảm bảo các răng lược vẫn còn nguyên vẹn.",
+    "compatible_breeds": [
+      "Chihuahua",
+      "Golden Retriever",
+      "Persian Cat",
+      "Alaskan Malamute",
+      "Shih Tzu",
+      "Poodle"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Lược rất tiện dụng và giúp thú cưng của tôi trở nên thoải mái hơn khi chải lông. Chất lượng tuyệt vời và dễ sử dụng. Tôi sẽ mua thêm một chiếc nữa!"
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Sản phẩm tốt, nhưng tôi thấy một số vùng lông của thú cưng vẫn còn bị rối nhẹ. Tuy nhiên, lược rất mềm mại và dễ sử dụng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Rất ưng ý! Lược nhẹ nhàng, không gây đau cho thú cưng, và bộ lông của mèo tôi đã trở nên bóng mượt hơn."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Lược chải tốt, nhưng tôi cảm thấy nó không phù hợp với lông quá dài và dày. Lược vẫn khá hiệu quả đối với lông ngắn."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Lược rất bền và chất lượng cao, phù hợp với mọi loài thú cưng. Mèo của tôi rất thích được chải lông mỗi ngày!"
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "Máy Tắm Cho Thú Cưng",
-    "description": "Máy tắm tiện lợi giúp tắm cho thú cưng một cách nhanh chóng và hiệu quả, với chế độ massage nhẹ nhàng, làm sạch lông mà không gây tổn thương cho da thú cưng.",
-    "usage": "Sử dụng máy để tắm cho thú cưng bằng cách bật chế độ massage và xả nước ấm vào cơ thể thú cưng, giúp tắm sạch lông mà không gây khó chịu.",
-    "category": "Chó, Mèo, Hamster",
-    "price": "1.200.000 VND",
-    "material": "Nhựa, Kim loại",
-    "color": "Trắng, Xám",
-    "dimensions": "30cm x 20cm x 10cm",
-    "power": "220V",
-    "image": "https://i.imgur.com/Qkt2r8Q.jpg",
-    "thumbnails": [
-      "https://i.imgur.com/Z5k7Vbx.jpg",
-      "https://i.imgur.com/OoGzfs0.jpg",
-      "https://i.imgur.com/U7VYPH6.jpg"
-    ],
-    "hasc": "Sử dụng đúng điện áp (220V). Đảm bảo không để nước vào các bộ phận điện tử của máy.",
-    "storage_instructions": "Lưu trữ ở nơi khô ráo, tránh độ ẩm và không để máy tiếp xúc trực tiếp với nước khi không sử dụng.",
-    "additional_notes": "Máy rất nhẹ và dễ sử dụng, thích hợp cho thú cưng có lông dài hoặc dày."
-  },
-  {
-    "id": 3,
-    "name": "Bình Xịt Chống Ve Rận",
-    "description": "Bình xịt bảo vệ thú cưng khỏi ve rận và các loài ký sinh trùng khác. Thành phần an toàn, phù hợp cho thú cưng có da nhạy cảm.",
+    "name": "Bình Xịt Chống Ve Rận Hantox",
+    "description": "Bình xịt chống ve rận là giải pháp hữu hiệu bảo vệ thú cưng khỏi các loài ký sinh trùng như ve, bọ chét và rận. Sản phẩm có thành phần an toàn, không gây kích ứng, đặc biệt phù hợp với những thú cưng có da nhạy cảm. Hương thơm dễ chịu giúp thú cưng luôn thơm mát sau khi sử dụng. Sản phẩm không chỉ giúp diệt trừ ve rận mà còn ngăn ngừa sự quay lại của chúng. Thích hợp cho cả chó và mèo, bình xịt này là người bạn đồng hành trong việc giữ gìn sức khỏe thú cưng.",
     "usage": "Xịt trực tiếp lên vùng lông và da của thú cưng, tránh xịt vào mắt và miệng. Dùng khi thú cưng có dấu hiệu nhiễm ký sinh trùng hoặc ngừa ký sinh trùng.",
     "category": "Chó, Mèo",
     "price": "150.000 VND",
     "material": "Dung dịch xịt",
-    "size": "250ml",
-    "image": "https://i.imgur.com/YDbkLX5.jpg",
+    "image": "https://i.imgur.com/qxuCdVW.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/Tm1hxGv.jpg",
-      "https://i.imgur.com/2h5ETjx.jpg",
-      "https://i.imgur.com/z5Bz3pa.jpg"
+      "https://i.imgur.com/wF9Xk1c.jpeg",
+      "https://i.imgur.com/3pX2zjg.jpeg",
+      "https://i.imgur.com/qxAD6mI.jpeg"
     ],
-    "hasc": "Không xịt trực tiếp vào mắt và miệng của thú cưng. Tránh để sản phẩm tiếp xúc với da nhạy cảm nếu có dấu hiệu dị ứng.",
-    "storage_instructions": "Bảo quản nơi khô ráo, tránh ánh sáng mặt trời trực tiếp và nhiệt độ cao.",
-    "additional_notes": "Sản phẩm không gây kích ứng, thích hợp cho thú cưng có da nhạy cảm."
+    "features": [
+      "Giúp bảo vệ thú cưng khỏi ký sinh trùng như ve, bọ chét, rận.",
+      "Hương thơm dễ chịu, không gây kích ứng da.",
+      "Thành phần an toàn, phù hợp với thú cưng có da nhạy cảm.",
+      "Ngăn ngừa sự quay lại của ký sinh trùng.",
+      "Dễ sử dụng và hiệu quả."
+    ],
+    "brand": "Hantox",
+    "hasc": "Khi sử dụng bình xịt chống ve rận Hantox, bạn cần chú ý không xịt trực tiếp vào mắt, miệng hoặc vùng da nhạy cảm của thú cưng. Nếu sản phẩm tiếp xúc với mắt hoặc miệng, cần rửa ngay lập tức với nước sạch. Nếu thú cưng có dấu hiệu dị ứng hoặc kích ứng da sau khi sử dụng, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ thú y. Để đảm bảo an toàn tối đa, chỉ xịt vào vùng lông và da mà không làm sản phẩm tiếp xúc trực tiếp với niêm mạc hay các vùng da mỏng. Đọc kỹ hướng dẫn sử dụng trước khi áp dụng để tránh các rủi ro không mong muốn.",
+    "storage_instructions": "Để đảm bảo chất lượng và hiệu quả lâu dài của bình xịt chống ve rận Hantox, sản phẩm cần được bảo quản ở nơi khô ráo, thoáng mát. Tránh để sản phẩm tiếp xúc trực tiếp với ánh sáng mặt trời hoặc nhiệt độ cao, vì điều này có thể làm ảnh hưởng đến hiệu quả của dung dịch xịt. Hãy lưu trữ sản phẩm ở nhiệt độ phòng, tránh để nơi có độ ẩm cao, như phòng tắm, vì độ ẩm có thể ảnh hưởng đến chất lượng của sản phẩm. Khi không sử dụng, đảm bảo rằng nắp bình được đóng kín để tránh làm mất đi tác dụng bảo vệ của sản phẩm.",
+    "maintenance_instructions": "Lắc đều bình xịt trước khi sử dụng để đảm bảo dung dịch được hòa đều. Sau mỗi lần sử dụng, đảm bảo bình xịt luôn sạch sẽ và không bị rò rỉ. Kiểm tra vòi xịt định kỳ để đảm bảo không bị tắc nghẽn, và nếu phát hiện bất kỳ dấu hiệu nào của sự hư hỏng, hãy thay thế vòi xịt. Để duy trì hiệu quả lâu dài, hãy bảo quản bình xịt ở nơi sạch sẽ và tránh xa các yếu tố có thể làm ảnh hưởng đến chất lượng sản phẩm, như hóa chất mạnh hoặc nhiệt độ quá cao.",
+    "additional_notes": "Sản phẩm không gây kích ứng, thích hợp cho thú cưng có da nhạy cảm. Bình xịt này không chỉ giúp loại bỏ ve, rận mà còn giúp ngăn ngừa sự quay lại của chúng trong tương lai. Hương thơm dễ chịu, không gây khó chịu cho thú cưng, làm cho chúng cảm thấy thoải mái và thư giãn sau khi sử dụng. Nếu bạn thấy thú cưng có dấu hiệu kích ứng hoặc phản ứng tiêu cực, ngừng sử dụng ngay lập tức và tham khảo ý kiến bác sĩ thú y. Để đạt được kết quả tốt nhất, nên sử dụng sản phẩm đều đặn và theo hướng dẫn sử dụng.",
+    "compatible_breeds": [
+      "Chihuahua",
+      "Golden Retriever",
+      "Persian Cat",
+      "Alaskan Malamute",
+      "Shih Tzu",
+      "Poodle"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Bình xịt rất hiệu quả, thú cưng của tôi không còn bị ve rận nữa. Hương thơm dễ chịu và sản phẩm rất an toàn."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Sản phẩm tốt, nhưng tôi muốn nó có thể bảo vệ lâu dài hơn. Tuy nhiên, mùi thơm dễ chịu và không gây kích ứng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Tôi rất hài lòng với sản phẩm này. Bình xịt dễ sử dụng và giúp thú cưng của tôi luôn sạch sẽ và khỏe mạnh."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Bình xịt tốt nhưng tôi thấy nó cần phải xịt thường xuyên hơn để hiệu quả lâu dài."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Sản phẩm tuyệt vời! Mèo của tôi không bị ngứa và luôn thoải mái sau khi dùng xịt."
+      }
+    ]
   },
   {
-    "id": 4,
-    "name": "Dầu Tắm Cho Thú Cưng",
-    "description": "Dầu tắm chuyên dụng giúp làm sạch và dưỡng da cho thú cưng, phù hợp với mọi loại lông và da nhạy cảm, không gây kích ứng.",
+    "id": 3,
+    "name": "Dầu Tắm Cho Thú Cưng SOS",
+    "description": "Dầu tắm chuyên dụng cho thú cưng không chỉ giúp làm sạch bụi bẩn mà còn bổ sung dưỡng chất cho da và lông. Sản phẩm chứa các thành phần tự nhiên, giúp da thú cưng mềm mịn và ngăn ngừa các vấn đề như gàu hoặc khô ráp. Hương thơm dịu nhẹ mang đến cảm giác dễ chịu cho cả thú cưng và chủ nhân. Đặc biệt, dầu tắm này còn có tác dụng kháng khuẩn, bảo vệ da khỏi các tác nhân gây bệnh. Thích hợp cho chó và mèo ở mọi lứa tuổi, kể cả những thú cưng có da nhạy cảm.",
     "usage": "Làm ướt lông thú cưng, sau đó xoa dầu tắm đều lên toàn bộ cơ thể. Massage nhẹ nhàng và xả sạch với nước ấm.",
     "category": "Chó, Mèo",
     "price": "250.000 VND",
     "material": "Tinh dầu thiên nhiên, Dung dịch tắm",
-    "size": "500ml",
-    "image": "https://i.imgur.com/goyXMtO.jpg",
+    "image": "https://i.imgur.com/nWUqcKH.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/4DpdQTv.jpg",
-      "https://i.imgur.com/fg6gtjK.jpg",
-      "https://i.imgur.com/n8jrddD.jpg"
+      "https://i.imgur.com/OXyUvDy.jpeg",
+      "https://i.imgur.com/KmqxnwJ.jpeg",
+      "https://i.imgur.com/ukXJ2zM.png"
     ],
-    "hasc": "Sản phẩm an toàn cho da nhạy cảm, không gây kích ứng. Kiểm tra trước khi sử dụng trên vùng da bị tổn thương.",
-    "storage_instructions": "Lưu trữ nơi khô ráo, tránh ánh sáng trực tiếp và nhiệt độ cao.",
-    "additional_notes": "Sản phẩm thích hợp cho thú cưng có da nhạy cảm hoặc lông dễ gãy."
+    "features": [
+      "Chứa tinh dầu thiên nhiên giúp dưỡng ẩm cho da và lông.",
+      "Kháng khuẩn, bảo vệ da khỏi các tác nhân gây bệnh.",
+      "Hương thơm dịu nhẹ mang lại cảm giác dễ chịu.",
+      "Không gây kích ứng, an toàn cho thú cưng có da nhạy cảm.",
+      "Giúp ngăn ngừa gàu và khô da."
+    ],
+    "brand": "SOS",
+    "hasc": "Sản phẩm dầu tắm SOS rất an toàn cho da nhạy cảm và không gây kích ứng. Tuy nhiên, trước khi sử dụng, bạn nên kiểm tra sản phẩm trên một vùng da nhỏ của thú cưng để đảm bảo không có phản ứng dị ứng. Đặc biệt, nếu da thú cưng bị tổn thương, bạn không nên sử dụng sản phẩm trên vùng da bị tổn thương. Hãy tránh để dầu tắm tiếp xúc với mắt hoặc niêm mạc miệng của thú cưng. Nếu có bất kỳ dấu hiệu kích ứng nào xuất hiện sau khi sử dụng, hãy ngừng sử dụng ngay lập tức và tham khảo ý kiến bác sĩ thú y.",
+    "storage_instructions": "Để đảm bảo chất lượng lâu dài của dầu tắm SOS, bạn nên bảo quản sản phẩm ở nơi khô ráo, thoáng mát. Tránh để sản phẩm tiếp xúc với ánh sáng mặt trời trực tiếp hoặc nhiệt độ cao, vì điều này có thể làm giảm hiệu quả của các thành phần trong sản phẩm. Bảo quản dầu tắm trong nhiệt độ phòng và tránh để trong những môi trường ẩm ướt hoặc có sự thay đổi nhiệt độ quá lớn, điều này có thể làm ảnh hưởng đến tính ổn định của sản phẩm.",
+    "maintenance_instructions": "Lắc đều chai dầu tắm trước khi sử dụng để các thành phần được hòa trộn đều. Sau mỗi lần sử dụng, hãy đóng kín nắp chai để tránh sản phẩm bị rò rỉ hoặc bay hơi. Đảm bảo chai dầu tắm luôn sạch sẽ và không bị bẩn, đặc biệt là phần vòi xịt, nếu có. Kiểm tra định kỳ để đảm bảo sản phẩm không bị hư hỏng, nếu thấy sản phẩm có dấu hiệu thay đổi mùi hoặc màu sắc, ngừng sử dụng và thay thế sản phẩm mới.",
+    "additional_notes": "Sản phẩm thích hợp cho thú cưng có da nhạy cảm hoặc lông dễ gãy. Dầu tắm SOS giúp giữ cho bộ lông thú cưng luôn mềm mịn, không bị khô và không gây ngứa. Hương thơm dễ chịu không chỉ làm sạch mà còn tạo cảm giác thư giãn cho cả thú cưng và chủ nhân. Đặc biệt, với thành phần tự nhiên, dầu tắm này an toàn cho thú cưng ở mọi lứa tuổi. Nếu thú cưng có dấu hiệu bất kỳ dị ứng nào, hãy ngừng sử dụng và tham khảo ý kiến bác sĩ thú y.",
+    "compatible_breeds": [
+      "Chihuahua",
+      "Golden Retriever",
+      "Persian Cat",
+      "Alaskan Malamute",
+      "Shih Tzu",
+      "Poodle"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Sản phẩm tuyệt vời, giúp thú cưng của tôi không còn bị khô da và bộ lông trở nên mềm mịn hơn. Hương thơm nhẹ nhàng rất dễ chịu."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Dầu tắm này tốt, nhưng tôi cảm thấy cần dùng nhiều hơn một chút cho những chú chó có lông dài. Tuy nhiên, sản phẩm rất an toàn và dễ sử dụng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Rất hài lòng! Bộ lông của mèo tôi trở nên bóng mượt hơn, không còn gàu nữa, và cả tôi và mèo đều thích mùi hương nhẹ nhàng này."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Sản phẩm tốt nhưng tôi cảm thấy mùi hương có thể được cải thiện thêm một chút. Tuy nhiên, nó không gây kích ứng cho da thú cưng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Sản phẩm rất tốt, phù hợp cho chó mèo có da nhạy cảm như của tôi. Mèo của tôi rất thích khi tắm bằng dầu này."
+      }
+    ]
   },
   {
-    "id": 5,
-    "name": "Túi Vệ Sinh Cho Thú Cưng",
-    "description": "Túi vệ sinh giúp thu gom phân của thú cưng một cách dễ dàng và vệ sinh, thích hợp khi dạo bộ ngoài trời.",
+    "id": 4,
+    "name": "Túi Vệ Sinh Cho Thú Cưng AUPET",
+    "description": "Túi vệ sinh cho thú cưng là sản phẩm tiện ích, giúp bạn dễ dàng thu gom phân của thú cưng khi đi dạo. Chất liệu nhựa phân hủy sinh học thân thiện với môi trường, giúp giảm thiểu tác động đến thiên nhiên. Thiết kế chắc chắn, không rách khi sử dụng, đảm bảo vệ sinh tối đa. Kích thước túi phù hợp với mọi loại thú cưng, tiện lợi mang theo mọi lúc, mọi nơi. Sản phẩm không chỉ giữ vệ sinh môi trường mà còn thể hiện ý thức bảo vệ thiên nhiên của chủ nuôi.",
     "usage": "Mở túi và sử dụng để thu gom phân của thú cưng trong khi đi dạo. Đảm bảo vệ sinh và tiện lợi khi đi ra ngoài.",
     "category": "Chó",
     "price": "30.000 VND",
     "material": "Nhựa phân hủy sinh học",
-    "size": "20cm x 30cm",
-    "image": "https://i.imgur.com/B43FJ2T.jpg",
+    "image": "https://i.imgur.com/7QshZix.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/eA2BG00.jpg",
-      "https://i.imgur.com/oLq5Phd.jpg",
-      "https://i.imgur.com/Anf5Ulq.jpg"
+      "https://i.imgur.com/EWe8kxv.jpeg",
+      "https://i.imgur.com/jkAsS6y.jpeg",
+      "https://i.imgur.com/9B6r0qf.jpeg"
     ],
-    "hasc": "Sản phẩm thân thiện với môi trường. Vui lòng không xả túi đã sử dụng vào hệ thống cống rãnh để bảo vệ môi trường.",
-    "storage_instructions": "Bảo quản nơi khô ráo, tránh độ ẩm và ánh sáng trực tiếp.",
-    "additional_notes": "Túi phân hủy sinh học thân thiện với môi trường, dễ sử dụng và tiện lợi khi dạo chơi với chó."
+    "features": [
+      "Túi phân hủy sinh học thân thiện với môi trường.",
+      "Thiết kế chắc chắn, không dễ rách khi sử dụng.",
+      "Dễ dàng mang theo khi đi dạo cùng thú cưng.",
+      "Giúp giữ vệ sinh và bảo vệ môi trường.",
+      "Phù hợp với mọi kích thước và loại chó."
+    ],
+    "brand": "AUPET",
+    "hasc": "Sản phẩm rất thân thiện với môi trường. Tuy nhiên, sau khi sử dụng, bạn không nên xả túi vào hệ thống cống rãnh hoặc các khu vực nước để tránh ô nhiễm. Hãy chắc chắn rằng túi được xử lý đúng cách sau khi sử dụng. Bảo vệ môi trường là trách nhiệm của mỗi người nuôi thú cưng, vì vậy đừng vứt bỏ túi vào những nơi không phù hợp, tránh gây tác hại đến thiên nhiên.",
+    "storage_instructions": "Để đảm bảo sản phẩm luôn trong tình trạng tốt nhất, bạn nên bảo quản túi ở nơi khô ráo, thoáng mát. Tránh để túi tiếp xúc với độ ẩm cao hoặc ánh sáng mặt trời trực tiếp, vì điều này có thể làm giảm chất lượng nhựa phân hủy sinh học. Hãy lưu trữ túi ở những nơi khô ráo, tránh xa những nơi có độ ẩm cao như phòng tắm hoặc nhà bếp để bảo vệ tính năng phân hủy sinh học của sản phẩm.",
+    "maintenance_instructions": "Túi vệ sinh cho thú cưng AUPET không cần bảo trì phức tạp. Tuy nhiên, bạn cần đảm bảo rằng túi không bị hư hỏng trước khi sử dụng. Nếu phát hiện túi bị rách hoặc hư hỏng, không nên sử dụng và thay thế bằng túi mới để đảm bảo vệ sinh. Khi không sử dụng, hãy bảo quản sản phẩm trong bao bì gốc hoặc trong các hộp đựng kín để tránh bụi bẩn và giữ cho sản phẩm luôn sạch sẽ.",
+    "additional_notes": "Túi phân hủy sinh học này không chỉ giúp giữ vệ sinh mà còn góp phần bảo vệ môi trường, điều này giúp bạn cảm thấy yên tâm khi dạo chơi cùng thú cưng. Sản phẩm dễ sử dụng và tiện lợi mang theo, giúp bạn chăm sóc thú cưng trong những chuyến đi dạo. Khi sử dụng, hãy chắc chắn rằng túi được đóng gói cẩn thận và xử lý đúng cách sau khi sử dụng.",
+    "compatible_breeds": [
+      "Chihuahua",
+      "Golden Retriever",
+      "Bulldog",
+      "Shih Tzu",
+      "Beagle"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Túi rất tiện dụng và dễ mang theo khi dạo chơi cùng thú cưng. Chất liệu phân hủy sinh học là điểm cộng lớn, giúp bảo vệ môi trường."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Sản phẩm rất tốt, nhưng tôi cảm thấy túi hơi mỏng đối với những thú cưng có kích thước lớn. Tuy nhiên, rất tiện lợi và dễ sử dụng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Chất lượng tuyệt vời và thân thiện với môi trường. Tôi cảm thấy yên tâm hơn khi sử dụng túi này cho thú cưng của mình."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Túi không rách khi sử dụng, nhưng có thể cải thiện độ dày hơn một chút. Tuy nhiên, giá cả hợp lý và dễ sử dụng."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Rất thích sản phẩm này! Túi dễ sử dụng và giúp tôi bảo vệ môi trường khi dạo chơi cùng chó."
+      }
+    ]
   },
   {
-    "id": 6,
-    "name": "Bàn Chải Đánh Răng Cho Thú Cưng",
-    "description": "Bàn chải giúp làm sạch răng miệng cho thú cưng, ngăn ngừa bệnh lý về răng miệng và bảo vệ sức khỏe lâu dài.",
+    "id": 5,
+    "name": "Bàn Chải Đánh Răng Cho Thú Cưng Lovinland",
+    "description": "Bàn chải đánh răng cho thú cưng được thiết kế đặc biệt với đầu chải mềm, giúp làm sạch hiệu quả mà không gây tổn thương lợi. Chất liệu silicon an toàn và bền bỉ, dễ dàng vệ sinh sau mỗi lần sử dụng. Sản phẩm giúp ngăn ngừa mảng bám, sâu răng và các vấn đề về răng miệng thường gặp. Tay cầm được thiết kế chống trượt, giúp bạn kiểm soát tốt hơn khi chải răng cho thú cưng. Đây là lựa chọn lý tưởng để bảo vệ sức khỏe răng miệng của chó và mèo.",
     "usage": "Sử dụng bàn chải để chải răng cho thú cưng, bắt đầu từ phần răng sâu và khó tiếp cận, làm sạch toàn bộ khoang miệng.",
     "category": "Chó, Mèo",
     "price": "60.000 VND",
     "material": "Silicon, Thép không gỉ",
-    "color": "Xanh, Hồng",
-    "image": "https://i.imgur.com/4FzXjr9.jpg",
+    "image": "https://i.imgur.com/e8wgAhu.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/YxZn9bP.jpg",
-      "https://i.imgur.com/OYCT7wQ.jpg",
-      "https://i.imgur.com/VaNzQnP.jpg"
+      "https://i.imgur.com/oV21PeQ.jpeg",
+      "https://i.imgur.com/mf6MPQP.jpeg",
+      "https://i.imgur.com/a7xlgNj.jpeg"
     ],
-    "hasc": "Không nên sử dụng lực quá mạnh khi chải răng, tránh gây tổn thương lợi thú cưng.",
-    "storage_instructions": "Bảo quản bàn chải ở nơi khô ráo và sạch sẽ.",
-    "additional_notes": "Thích hợp cho cả chó và mèo. Nên chải răng cho thú cưng ít nhất một lần mỗi tuần."
+    "features": [
+      "Đầu chải mềm, giúp làm sạch hiệu quả mà không gây tổn thương lợi.",
+      "Chất liệu silicon bền bỉ, an toàn cho thú cưng.",
+      "Giúp ngăn ngừa mảng bám và sâu răng.",
+      "Tay cầm chống trượt, dễ dàng sử dụng.",
+      "Dễ dàng vệ sinh sau mỗi lần sử dụng."
+    ],
+    "brand": "Lovinland",
+    "hasc": "Khi sử dụng bàn chải đánh răng cho thú cưng Lovinland, bạn cần chú ý không sử dụng lực quá mạnh để tránh gây tổn thương cho lợi và nướu của thú cưng. Hãy nhẹ nhàng và kiên nhẫn khi chải răng, đặc biệt là đối với những chú chó hoặc mèo chưa quen với việc chải răng. Nếu bạn gặp khó khăn, có thể tham khảo các video hướng dẫn hoặc nhờ đến bác sĩ thú y để được tư vấn cách sử dụng đúng cách.",
+    "storage_instructions": "Bảo quản bàn chải ở nơi khô ráo và sạch sẽ, tránh nơi ẩm ướt như phòng tắm để bảo vệ độ bền của sản phẩm. Đảm bảo rằng tay cầm không tiếp xúc với các bề mặt bẩn để sản phẩm luôn trong tình trạng tốt nhất.",
+    "maintenance_instructions": "Rửa sạch bàn chải bằng nước ấm và xà phòng nhẹ sau mỗi lần sử dụng. Đảm bảo sản phẩm được vệ sinh kỹ lưỡng và khô ráo trước khi bảo quản. Kiểm tra bàn chải định kỳ để đảm bảo không có dấu hiệu hư hỏng như đầu chải bị mòn hoặc tay cầm bị hư hỏng.",
+    "additional_notes": "Bàn chải Lovinland thích hợp cho cả chó và mèo. Nên chải răng cho thú cưng ít nhất một lần mỗi tuần để bảo vệ sức khỏe răng miệng và ngăn ngừa các bệnh về răng miệng. Đây là một công cụ lý tưởng cho những người muốn chăm sóc răng miệng cho thú cưng của mình.",
+    "compatible_breeds": [
+      "Chihuahua",
+      "Persian Cat",
+      "Golden Retriever",
+      "Poodle",
+      "Shih Tzu"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Bàn chải này rất tiện lợi và dễ sử dụng. Chất liệu silicon mềm giúp thú cưng của tôi không bị đau khi chải răng."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Tôi rất hài lòng với bàn chải này, tuy nhiên, tôi cảm thấy nó hơi nhỏ đối với những chú chó lớn. Nhưng sản phẩm rất bền và dễ vệ sinh."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Sản phẩm tuyệt vời! Thú cưng của tôi rất thích được chải răng với bàn chải này. Chất liệu an toàn và dễ sử dụng."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Bàn chải này tốt, nhưng tôi cảm thấy cần cải thiện thêm về kích thước. Thích hợp cho chó và mèo nhỏ, nhưng với thú cưng lớn có thể hơi nhỏ."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Sản phẩm tuyệt vời cho việc chải răng cho thú cưng. Chất liệu silicon rất an toàn và dễ sử dụng."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Đồ Chơi Gặm Nhai Hình Xương",
+    "description": "Đồ chơi gặm nhai hình xương là sản phẩm lý tưởng để giải trí và rèn luyện sức khỏe răng miệng cho thú cưng. Chất liệu cao su tự nhiên, an toàn và không gây hại khi nhai. Thiết kế hình xương với màu sắc bắt mắt, kích thích sự tò mò và hứng thú của thú cưng. Sản phẩm còn giúp giảm stress và hạn chế hành vi phá phách khi thú cưng cảm thấy buồn chán. Thích hợp cho mọi loại chó, kể cả những giống chó có hàm răng mạnh mẽ.",
+    "usage": "Dùng để giải trí và gặm nhai cho thú cưng. Thích hợp cho chó mọi kích thước.",
+    "category": "Chó",
+    "price": "90.000 VND",
+    "material": "Cao su tự nhiên",
+    "image": "https://i.imgur.com/e2AE3DR.jpeg",
+    "thumbnails": [
+      "https://i.imgur.com/vLYnZ0A.jpeg",
+      "https://i.imgur.com/O1ptGoH.png",
+      "https://i.imgur.com/FpBnAwi.jpeg"
+    ],
+    "features": [
+      "Chất liệu cao su tự nhiên an toàn cho thú cưng.",
+      "Giúp thú cưng giải trí và giảm stress hiệu quả.",
+      "Thiết kế hình xương bắt mắt kích thích sự tò mò.",
+      "Hạn chế hành vi phá phách khi thú cưng cảm thấy buồn chán.",
+      "Thích hợp cho chó mọi kích thước, kể cả giống chó mạnh mẽ."
+    ],
+    "brand": "AUPET",
+    "hasc": "Sản phẩm này không phải đồ ăn và không nên để thú cưng nuốt. Nếu có dấu hiệu sản phẩm bị hư hỏng hoặc bị rách, cần thay thế ngay để tránh nguy hiểm cho thú cưng. Hãy luôn theo dõi khi thú cưng sử dụng đồ chơi để đảm bảo an toàn. Tránh sử dụng cho những thú cưng có thói quen nuốt đồ vật hoặc có nguy cơ nghẹt thở.",
+    "storage_instructions": "Bảo quản sản phẩm ở nơi khô ráo, tránh ánh nắng trực tiếp và nơi có độ ẩm cao. Tránh để sản phẩm tiếp xúc với hóa chất có thể làm hỏng chất liệu cao su tự nhiên.",
+    "maintenance_instructions": "Để duy trì chất lượng sản phẩm, bạn nên vệ sinh đồ chơi thường xuyên bằng nước sạch và xà phòng nhẹ. Sau khi vệ sinh, hãy để đồ chơi khô ráo hoàn toàn trước khi cho thú cưng sử dụng lại. Kiểm tra đồ chơi định kỳ để phát hiện sớm dấu hiệu hư hỏng.",
+    "additional_notes": "Đồ chơi này không chỉ giúp giải trí mà còn giúp rèn luyện sức khỏe răng miệng cho thú cưng. Chất liệu cao su tự nhiên không độc hại và an toàn cho thú cưng khi sử dụng. Hãy thay thế đồ chơi nếu có dấu hiệu bị hư hỏng hoặc mòn.",
+    "compatible_breeds": [
+      "Pitbull",
+      "Beagle",
+      "Bulldog",
+      "Golden Retriever",
+      "Labrador"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Đồ chơi rất chắc chắn và an toàn cho chó của tôi. Nó giúp giảm bớt sự buồn chán và phá phách của chú chó."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Chất liệu rất tốt, tuy nhiên tôi thấy kích thước hơi nhỏ cho một số giống chó lớn. Tuy nhiên, chó của tôi rất thích."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Sản phẩm tuyệt vời! Chó của tôi thích gặm đồ chơi này và nó giúp bảo vệ răng miệng cho cậu ấy."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Sản phẩm này rất tốt nhưng tôi thấy hơi nhẹ đối với một số giống chó lớn. Cần chú ý đến độ bền của sản phẩm."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Đồ chơi này rất tiện lợi và giúp chó của tôi luôn bận rộn, không bị phá phách đồ đạc trong nhà."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bát Ăn Chống Trượt",
+    "description": "Bát ăn chống trượt được thiết kế thông minh để giữ thức ăn và nước uống không bị đổ. Chất liệu nhựa cao cấp kết hợp với đế cao su chống trượt, đảm bảo an toàn ngay cả khi thú cưng hoạt động mạnh. Thiết kế đơn giản nhưng hiện đại, dễ dàng vệ sinh sau mỗi lần sử dụng. Kích thước bát phù hợp với cả chó và mèo, từ giống nhỏ đến giống trung bình. Đây là lựa chọn hoàn hảo để đảm bảo giờ ăn uống của thú cưng luôn sạch sẽ và gọn gàng.",
+    "usage": "Đặt thức ăn hoặc nước uống vào bát và để thú cưng sử dụng. Phù hợp cho cả chó và mèo.",
+    "category": "Chó, Mèo",
+    "price": "70.000 VND",
+    "material": "Nhựa cao cấp, Cao su chống trượt",
+    "image": "https://i.imgur.com/rqpvOk1.jpeg",
+    "thumbnails": [
+      "https://i.imgur.com/JsQ8dc1.jpeg",
+      "https://i.imgur.com/2vkcck7.jpeg",
+      "https://i.imgur.com/XY8Qi8T.jpeg"
+    ],
+    "features": [
+      "Chất liệu nhựa cao cấp bền bỉ, an toàn cho thú cưng.",
+      "Đế cao su chống trượt giữ bát cố định, ngăn thức ăn và nước uống đổ.",
+      "Thiết kế đơn giản nhưng hiện đại, dễ dàng vệ sinh.",
+      "Phù hợp với chó và mèo, từ giống nhỏ đến giống trung bình.",
+      "Giúp giữ không gian ăn uống gọn gàng và sạch sẽ."
+    ],
+    "brand": "PetSafe",
+    "hasc": "Không nên sử dụng bát ăn khi sản phẩm bị nứt hoặc hư hỏng. Sản phẩm có thể gây trượt hoặc không hoạt động tốt khi đế cao su bị mòn. Hãy kiểm tra và thay bát nếu có dấu hiệu hư hỏng.",
+    "storage_instructions": "Sau mỗi lần sử dụng, hãy rửa bát sạch sẽ và bảo quản ở nơi khô ráo, tránh tiếp xúc với hóa chất có thể làm hỏng chất liệu nhựa. Để bảo vệ độ bền của sản phẩm, tránh để bát tiếp xúc trực tiếp với ánh nắng mặt trời hoặc nhiệt độ quá cao.",
+    "maintenance_instructions": "Để giữ bát luôn sạch sẽ và bền lâu, bạn cần rửa sạch sau mỗi lần sử dụng. Sử dụng nước ấm và xà phòng nhẹ để làm sạch bát, sau đó để bát khô ráo trước khi sử dụng lại. Định kỳ kiểm tra đế cao su để đảm bảo bát không bị trượt hoặc hư hỏng.",
+    "additional_notes": "Bát ăn này không chỉ giúp giữ vệ sinh mà còn giúp thú cưng dễ dàng ăn uống mà không lo thức ăn bị đổ. Thiết kế chống trượt rất hữu ích cho những thú cưng năng động.",
+    "compatible_breeds": [
+      "Shih Tzu",
+      "Chihuahua",
+      "Persian Cat",
+      "Golden Retriever",
+      "Poodle"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Bát ăn này thật sự rất tiện lợi và sạch sẽ. Chó của tôi không còn làm đổ thức ăn nữa!"
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Sản phẩm chất lượng tốt, nhưng tôi thấy đế cao su hơi yếu. Tuy nhiên, vẫn rất hài lòng với thiết kế chống trượt."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Bát ăn chống trượt này rất tốt cho mèo của tôi. Nó giữ thức ăn luôn gọn gàng và không bị đổ."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Bát ăn này rất ổn, nhưng nếu cải thiện đế cao su chắc chắn hơn thì sẽ tốt hơn."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Chắc chắn sẽ mua lại! Bát ăn này rất dễ vệ sinh và không bị đổ thức ăn ra ngoài."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Cát Vệ Sinh Cho Mèo",
+    "description": "Cát vệ sinh cho mèo được làm từ bentonite tự nhiên, có khả năng thấm hút cao, giữ cho khay vệ sinh luôn khô ráo. Đặc tính vón cục nhanh giúp việc thu gom trở nên đơn giản và tiện lợi. Sản phẩm có khả năng kiểm soát mùi hiệu quả, mang lại không gian sạch sẽ cho cả mèo và chủ nhân. Đặc biệt, cát an toàn khi sử dụng, không gây kích ứng cho mèo. Thích hợp với mọi giống mèo và phù hợp cho cả mèo con và mèo trưởng thành.",
+    "usage": "Đổ cát vào khay vệ sinh của mèo. Thay lớp cát bẩn định kỳ để đảm bảo vệ sinh.",
+    "category": "Mèo",
+    "price": "120.000 VND",
+    "material": "Bentonite tự nhiên",
+    "image": "https://i.imgur.com/DpUApfu.jpeg",
+    "thumbnails": [
+      "https://i.imgur.com/yh2TJGT.jpeg",
+      "https://i.imgur.com/zI72RJT.png",
+      "https://i.imgur.com/Foj9mZh.jpeg"
+    ],
+    "features": [
+      "Chất liệu bentonite tự nhiên an toàn cho mèo.",
+      "Khả năng thấm hút cao, giúp khay vệ sinh luôn khô ráo.",
+      "Vón cục nhanh, dễ dàng thu gom.",
+      "Kiểm soát mùi hiệu quả, mang lại không gian sạch sẽ.",
+      "An toàn cho mèo, không gây kích ứng da."
+    ],
+    "brand": "CatLover",
+    "hasc": "Không xả cát vào hệ thống cống. Tránh để mèo nuốt phải cát, có thể gây hại cho sức khỏe của mèo. Thay cát bẩn định kỳ để duy trì vệ sinh và tránh mùi hôi. Đảm bảo vệ sinh khay vệ sinh cho mèo sạch sẽ sau mỗi lần sử dụng.",
+    "storage_instructions": "Bảo quản nơi khô ráo, tránh độ ẩm để tránh cát bị ẩm và mất hiệu quả thấm hút. Đảm bảo bao bì luôn kín để cát không bị rò rỉ.",
+    "maintenance_instructions": "Thay cát bẩn mỗi tuần hoặc khi có mùi hôi. Lau sạch khay vệ sinh thường xuyên để đảm bảo vệ sinh cho mèo. Dùng dụng cụ thu gom cát vón cục để làm sạch nhanh chóng và hiệu quả.",
+    "additional_notes": "Cát vệ sinh này có khả năng vón cục rất tốt, giúp việc thu gom trở nên đơn giản và tiện lợi hơn. Đặc biệt, sản phẩm này an toàn cho mèo, không gây kích ứng và có thể sử dụng cho mọi giống mèo, từ mèo con đến mèo trưởng thành.",
+    "compatible_breeds": [
+      "Mèo Anh Lông Dài",
+      "Mèo Ba Tư",
+      "Mèo Maine Coon",
+      "Mèo Ragdoll",
+      "Mèo Siamese"
+    ],
+    "pet_size_compatibility": ["Nhỏ", "Vừa", "Lớn"],
+    "reviews": [
+      {
+        "rating": 5,
+        "reviewer": "Ngọc Lan",
+        "comment": "Cát rất tốt, thấm hút nhanh và dễ dàng thu gom. Mèo nhà mình rất thích và không bị kích ứng."
+      },
+      {
+        "rating": 4,
+        "reviewer": "Minh Tuấn",
+        "comment": "Cát này vón cục tốt và kiểm soát mùi khá hiệu quả. Tuy nhiên, tôi nghĩ giá hơi cao một chút."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Hà Anh",
+        "comment": "Rất hài lòng với sản phẩm. Mèo của tôi không gặp vấn đề gì với cát này, rất an toàn và dễ sử dụng."
+      },
+      {
+        "rating": 3,
+        "reviewer": "Quang Huy",
+        "comment": "Cát này vón cục tốt, nhưng tôi thấy có mùi không phải là hoàn toàn khử hết mùi hôi trong thời gian dài."
+      },
+      {
+        "rating": 5,
+        "reviewer": "Mai Chi",
+        "comment": "Cát này tuyệt vời, tôi sẽ tiếp tục sử dụng. Cát rất mềm, mèo nhà tôi cũng thích và không có dấu hiệu dị ứng."
+      }
+    ]
   }
 ]

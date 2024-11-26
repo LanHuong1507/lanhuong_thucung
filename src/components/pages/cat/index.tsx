@@ -223,7 +223,6 @@ const CatList = ({ catsPerPage = 4 }) => {
                 </Select.Option>
               </Select>
             </div>
-          
 
             <div className="mb-4">
               <h4 className="font-semibold mb-2">Tuổi thọ</h4>

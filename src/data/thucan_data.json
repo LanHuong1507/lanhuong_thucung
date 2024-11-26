@@ -2,115 +2,149 @@
   {
     "id": 1,
     "name": "Thức Ăn Cho Mèo Whiskas",
-    "description": "Thức ăn hạt cho mèo với công thức giúp tăng cường sức khỏe và bộ lông mượt mà.",
-    "usage": "Cho mèo ăn từ 50g đến 100g mỗi ngày, tùy vào cân nặng. Chia làm 2 bữa sáng và tối. Đảm bảo cung cấp đủ nước cho mèo khi sử dụng.",
-    "ingredients": "Gạo, thịt gà, rau củ, vitamin, khoáng chất.",
+    "description": "Whiskas là dòng thức ăn hạt cao cấp dành cho mèo với công thức chuyên biệt, giúp tăng cường sức khỏe và hỗ trợ bộ lông mềm mượt, bóng bẩy. Sản phẩm cung cấp đầy đủ dưỡng chất thiết yếu, đảm bảo mèo của bạn phát triển khỏe mạnh. Whiskas phù hợp cho mèo ở mọi độ tuổi và kích thước, mang đến hương vị thơm ngon hấp dẫn, kích thích vị giác của mèo. Được chế biến từ nguyên liệu tự nhiên, sản phẩm đảm bảo an toàn cho sức khỏe của mèo. Công thức dinh dưỡng của Whiskas còn giúp tăng cường hệ miễn dịch và duy trì cân nặng lý tưởng. Những thành phần dễ tiêu hóa hỗ trợ hệ tiêu hóa của mèo, giúp giảm thiểu các vấn đề về dạ dày. Với Whiskas, bạn có thể yên tâm về chất lượng và sự an toàn của thức ăn cho mèo. Sản phẩm không chỉ cung cấp dinh dưỡng mà còn làm phong phú thêm bữa ăn của mèo. Đặc biệt, Whiskas rất dễ sử dụng và có thể áp dụng cho mọi giống mèo. Mỗi bữa ăn là một cách tuyệt vời để chăm sóc sức khỏe của mèo yêu.",
+    "usage": "Chia thức ăn thành hai bữa chính vào sáng và tối để mèo có thể hấp thụ tốt nhất dinh dưỡng. Lượng thức ăn cần điều chỉnh theo trọng lượng cơ thể mèo, giúp duy trì sức khỏe và sự cân đối. Đối với mèo dưới 4kg, cần cung cấp khoảng 50g thức ăn mỗi ngày. Mèo từ 4kg đến 6kg nên ăn 75g mỗi ngày, và mèo trên 6kg sẽ cần khoảng 100g thức ăn mỗi ngày. Bạn cũng có thể điều chỉnh lượng thức ăn tùy thuộc vào mức độ hoạt động và thể trạng của mèo. Để đảm bảo mèo luôn khỏe mạnh, hãy luôn để sẵn nước sạch cho mèo uống, đặc biệt trong suốt quá trình ăn. Việc chia bữa ăn đều đặn giúp mèo dễ tiêu hóa và hấp thụ đầy đủ dưỡng chất. Cần chú ý quan sát và thay đổi chế độ ăn nếu có dấu hiệu của bất kỳ vấn đề sức khỏe nào. Luôn làm sạch bát ăn và thay nước sạch mỗi ngày để duy trì vệ sinh. Sử dụng thức ăn kèm theo chế độ ăn hợp lý giúp mèo phát triển toàn diện.",
+    "ingredients": "Whiskas được chế biến từ những nguyên liệu chọn lọc, bao gồm gạo, thịt gà tươi, rau củ tươi, cùng các vitamin nhóm B và khoáng chất như sắt và kẽm. Các thành phần này không chỉ cung cấp năng lượng mà còn giúp tăng cường hệ miễn dịch, hỗ trợ tiêu hóa. Thịt gà là nguồn protein chính, giúp phát triển cơ bắp và duy trì sức khỏe tổng thể. Các vitamin nhóm B giúp cải thiện sự trao đổi chất và hỗ trợ các chức năng cơ thể khác. Khoáng chất sắt và kẽm giúp duy trì sức khỏe làn da và bộ lông của mèo. Rau củ cung cấp chất xơ, giúp cải thiện hệ tiêu hóa, làm sạch ruột và giữ cho mèo luôn khỏe mạnh. Mỗi thành phần đều được chọn lọc kỹ càng để đảm bảo độ an toàn và chất lượng cao nhất. Whiskas cam kết không sử dụng các chất bảo quản hay phẩm màu nhân tạo, bảo vệ sức khỏe cho mèo. Các thành phần tự nhiên giúp tăng cường khả năng hấp thu dinh dưỡng của mèo. Mỗi bữa ăn là một bước đi vững chắc để mèo phát triển khỏe mạnh.",
     "category": "Mèo",
     "price": "150.000 VND",
     "size": "1kg",
-    "image": "https://i.imgur.com/abc1.jpg",
+    "image": "https://i.imgur.com/YzSvASz.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/thumb1.jpg",
-      "https://i.imgur.com/thumb2.jpg",
-      "https://i.imgur.com/thumb3.jpg"
+      "https://i.imgur.com/g31zW4I.jpeg",
+      "https://i.imgur.com/vGed1o6.jpeg",
+      "https://i.imgur.com/irpXoG2.jpeg"
     ],
-    "nutritional_information": "Protein: 30%, Fat: 10%, Fiber: 5%, Ash: 7%. Chứa các vitamin và khoáng chất giúp hỗ trợ miễn dịch và cải thiện sức khỏe.",
-    "storage_instructions": "Bảo quản nơi khô ráo, thoáng mát và tránh ánh sáng trực tiếp.",
-    "additional_notes": "Lượng thức ăn có thể thay đổi tùy theo độ tuổi và mức độ hoạt động của mèo."
+    "nutritional_information": [
+      "Protein: 30% giúp phát triển cơ bắp và duy trì sức khỏe tổng thể.",
+      "Chất béo: 10% giúp cung cấp năng lượng cho mèo hoạt động suốt cả ngày.",
+      "Chất xơ: 5% giúp hỗ trợ tiêu hóa và duy trì sự khỏe mạnh cho hệ ruột.",
+      "Tro: 7% là thành phần cần thiết giúp cân bằng dinh dưỡng trong cơ thể mèo. Sản phẩm còn chứa các vitamin và khoáng chất thiết yếu như vitamin A, D, E và sắt, kẽm, canxi, giúp hỗ trợ miễn dịch, tăng cường sức khỏe và làm đẹp bộ lông. Việc duy trì tỷ lệ dinh dưỡng này giúp mèo không chỉ khỏe mạnh mà còn tràn đầy năng lượng. Các thành phần dinh dưỡng được nghiên cứu kỹ lưỡng để phù hợp với nhu cầu sinh lý của mèo. Sự kết hợp giữa protein và chất béo giúp mèo duy trì một cơ thể săn chắc và năng động. Các chất xơ trong Whiskas cũng giúp giảm thiểu vấn đề về đường ruột. Thức ăn Whiskas cung cấp đầy đủ dinh dưỡng giúp mèo luôn khỏe mạnh."
+    ],
+    "storage_instructions": "Sau khi mở bao bì, bạn nên bảo quản thức ăn trong hộp kín hoặc túi zip ở nơi khô ráo và thoáng mát, tránh ánh sáng trực tiếp. Điều này giúp thức ăn không bị ẩm ướt và giữ được hương vị lâu dài. Nên để thức ăn ở nhiệt độ phòng, không để nơi có nhiệt độ cao hoặc nơi ẩm ướt. Hãy đảm bảo rằng bao bì hoặc hộp đựng luôn được đóng kín để tránh nhiễm khuẩn. Nếu có thể, hãy sử dụng thức ăn trong vòng một tháng sau khi mở bao bì để đảm bảo chất lượng. Tránh để thức ăn bị ôi thiu hoặc tiếp xúc với không khí quá lâu. Thức ăn cần được bảo quản ở môi trường sạch sẽ và thoáng mát để duy trì chất lượng dinh dưỡng. Đảm bảo rằng không có vật lạ hoặc chất bẩn xâm nhập vào thức ăn khi bảo quản. Sản phẩm sẽ giữ được chất lượng tốt nhất nếu bạn tuân thủ các hướng dẫn này. Hãy luôn kiểm tra hạn sử dụng của sản phẩm để đảm bảo an toàn cho mèo của bạn.",
+    "additional_notes": " Lượng thức ăn có thể thay đổi tùy theo nhu cầu dinh dưỡng và mức độ hoạt động của mèo. Nếu mèo có dấu hiệu dị ứng hoặc tiêu hóa kém, bạn nên tham khảo ý kiến bác sĩ thú y để điều chỉnh chế độ ăn phù hợp. Cũng cần lưu ý đến các yếu tố như độ tuổi, trọng lượng cơ thể và giống mèo khi điều chỉnh lượng thức ăn. Mèo con hoặc mèo đang mang thai sẽ có nhu cầu dinh dưỡng khác biệt, vì vậy cần điều chỉnh chế độ ăn cho phù hợp. Đối với mèo có tình trạng sức khỏe đặc biệt, bạn nên tìm kiếm lời khuyên từ bác sĩ thú y để chọn lựa thực phẩm phù hợp. Khi thay đổi thức ăn cho mèo, nên làm từ từ để mèo có thời gian làm quen với hương vị và thành phần mới. Nếu mèo gặp phải bất kỳ vấn đề nào liên quan đến sức khỏe, việc thay đổi chế độ ăn cần được thực hiện dưới sự hướng dẫn của bác sĩ. Hãy theo dõi sức khỏe của mèo thường xuyên để điều chỉnh chế độ ăn kịp thời."
   },
   {
     "id": 2,
     "name": "Thức Ăn Cho Chó Pedigree",
-    "description": "Thức ăn khô cho chó, hỗ trợ tiêu hóa tốt và cải thiện sức khỏe răng miệng.",
-    "usage": "Cho chó ăn từ 100g đến 200g mỗi ngày, tùy vào kích thước và tuổi tác của chó. Chia làm 2 bữa sáng và tối.",
-    "ingredients": "Thịt bò, gà, rau củ, vitamin.",
+    "description": "Pedigree là thức ăn khô chất lượng cao dành cho chó, được chế biến với công thức đặc biệt giúp hỗ trợ hệ tiêu hóa và cải thiện sức khỏe răng miệng. Sản phẩm này giúp bổ sung đầy đủ năng lượng cho chó, đồng thời hỗ trợ việc nhai và gặm, làm sạch răng miệng một cách tự nhiên. Với hương vị thơm ngon từ thịt bò và gà, Pedigree kích thích khẩu vị của chó, khiến chó yêu thích mỗi bữa ăn. Sản phẩm chứa các thành phần dinh dưỡng được chọn lọc kỹ lưỡng, đảm bảo an toàn và phù hợp với nhu cầu dinh dưỡng của chó ở mọi độ tuổi và kích thước. Pedigree giúp duy trì cân nặng lý tưởng và cải thiện sức khỏe toàn diện cho chó. Ngoài ra, thức ăn này còn hỗ trợ bảo vệ hệ miễn dịch và sức khỏe tim mạch. Pedigree dễ dàng sử dụng và mang lại hiệu quả rõ rệt khi sử dụng lâu dài. Đặc biệt, việc chăm sóc răng miệng cho chó trở nên đơn giản hơn nhờ công thức giúp làm sạch răng miệng tự nhiên. Sản phẩm này cũng giúp giảm nguy cơ mắc các bệnh về răng miệng cho chó. Pedigree không chỉ là thức ăn mà còn là một phần quan trọng trong việc chăm sóc sức khỏe của thú cưng.",
+    "usage": "Lượng thức ăn cần thiết cho chó phụ thuộc vào kích thước và trọng lượng cơ thể. Đối với chó nhỏ (dưới 10kg), cần cung cấp khoảng 100g thức ăn mỗi ngày. Chó có trọng lượng từ 10kg đến 25kg cần khoảng 150g thức ăn mỗi ngày, trong khi chó lớn (trên 25kg) cần khoảng 200g thức ăn mỗi ngày. Bạn có thể chia đều lượng thức ăn này thành hai bữa ăn chính vào sáng và tối để giúp chó tiêu hóa dễ dàng hơn. Nên cung cấp thức ăn đầy đủ trong mỗi bữa ăn để đảm bảo chó có đủ năng lượng cho các hoạt động. Đồng thời, hãy chú ý quan sát trọng lượng và sức khỏe của chó để điều chỉnh lượng thức ăn sao cho hợp lý. Đảm bảo cho chó luôn có nước sạch để uống trong suốt quá trình ăn, giúp hỗ trợ hệ tiêu hóa. Nếu chó có dấu hiệu không ăn hết, bạn có thể điều chỉnh lượng thức ăn cho phù hợp với nhu cầu. Đối với chó con hoặc chó trưởng thành, lượng thức ăn có thể thay đổi tùy vào độ tuổi và mức độ hoạt động. Hãy luôn cân nhắc đến các yếu tố này khi cho chó ăn.",
+    "ingredients": "Pedigree được chế biến từ những nguyên liệu tươi ngon, bao gồm thịt bò, thịt gà, và các loại rau củ cung cấp vitamin A, D3, E cùng các khoáng chất thiết yếu. Thịt bò và thịt gà là nguồn protein chất lượng cao, giúp chó phát triển cơ bắp và duy trì sức khỏe. Vitamin A giúp tăng cường thị lực và bảo vệ làn da cho chó, trong khi vitamin D3 giúp hấp thu canxi và duy trì xương chắc khỏe. Vitamin E có tác dụng chống oxy hóa, giúp bảo vệ tế bào khỏi các tác hại của môi trường. Các khoáng chất như canxi và phốt pho giúp duy trì sức khỏe răng miệng và xương khớp. Các loại rau củ trong sản phẩm cung cấp chất xơ, hỗ trợ tiêu hóa và duy trì sức khỏe ruột. Mọi thành phần đều được kiểm định nghiêm ngặt để đảm bảo chất lượng cao và an toàn cho thú cưng. Pedigree cam kết không sử dụng các chất bảo quản hay phẩm màu nhân tạo trong sản phẩm. Với Pedigree, bạn có thể yên tâm rằng chó của mình đang được chăm sóc tốt nhất với nguồn dinh dưỡng tự nhiên. Sản phẩm đáp ứng đầy đủ nhu cầu dinh dưỡng của chó, giúp chó khỏe mạnh, năng động và vui vẻ.",
     "category": "Chó",
     "price": "180.000 VND",
     "size": "1.2kg",
-    "image": "https://i.imgur.com/xyz1.jpg",
+    "image": "https://i.imgur.com/StKZ8g6.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/thumb4.jpg",
-      "https://i.imgur.com/thumb5.jpg",
-      "https://i.imgur.com/thumb6.jpg"
+      "https://i.imgur.com/m459hb6.jpeg",
+      "https://i.imgur.com/QMwx4Xw.jpeg",
+      "https://i.imgur.com/wyqmWyT.jpeg"
     ],
-    "nutritional_information": "Protein: 20%, Fat: 8%, Fiber: 4%, Omega 3 & 6. Hỗ trợ tiêu hóa và duy trì sức khỏe răng miệng.",
-    "storage_instructions": "Lưu trữ trong bao bì kín và bảo quản nơi khô ráo, thoáng mát.",
-    "additional_notes": "Có thể bổ sung với các loại đồ ăn khác để tạo thực đơn đa dạng cho chó."
+    "nutritional_information": [
+      "Protein: 20%, giúp duy trì cơ bắp khỏe mạnh và phát triển thể lực.",
+      "Chất béo: 8%, cung cấp năng lượng cho các hoạt động hàng ngày của chó.",
+      "Chất xơ: 4%, hỗ trợ hệ tiêu hóa và làm sạch ruột.",
+      "Omega 3 và Omega 6 giúp duy trì làn da khỏe mạnh và bóng mượt. Sản phẩm còn chứa các vitamin và khoáng chất quan trọng như vitamin A, D3, E, giúp tăng cường miễn dịch và duy trì sức khỏe răng miệng. Omega 3 và 6 trong sản phẩm hỗ trợ sức khỏe da lông, giúp chó có bộ lông bóng mượt và giảm thiểu vấn đề về da. Chất xơ giúp làm sạch hệ tiêu hóa, giảm thiểu tình trạng táo bón và các vấn đề tiêu hóa khác. Với tỷ lệ dinh dưỡng hợp lý, Pedigree giúp chó có sức khỏe tối ưu và thể trạng lý tưởng. Đây là một lựa chọn tuyệt vời cho việc chăm sóc sức khỏe lâu dài của chó."
+    ],
+    "storage_instructions": "Để bảo quản Pedigree, bạn cần giữ sản phẩm trong túi kín hoặc hộp đựng kín ở nơi khô ráo và thoáng mát, tránh ánh sáng trực tiếp. Điều này giúp sản phẩm không bị ẩm ướt và giữ được hương vị lâu dài. Sau khi mở bao bì, bạn nên sử dụng sản phẩm trong vòng 1 tháng để đảm bảo chất lượng và độ tươi ngon của thức ăn. Hãy chú ý đóng kín bao bì sau mỗi lần sử dụng để tránh không khí và độ ẩm xâm nhập. Nơi bảo quản sản phẩm cần khô ráo, không có độ ẩm quá cao, và tránh nơi có nhiệt độ cao hoặc nơi có ánh sáng mặt trời chiếu trực tiếp. Đảm bảo nơi bảo quản sạch sẽ để giữ được sự an toàn và chất lượng của sản phẩm. Kiểm tra bao bì và hạn sử dụng của sản phẩm để tránh sử dụng sản phẩm đã hết hạn.",
+    "additional_notes": "Để hỗ trợ hệ tiêu hóa của chó, bạn nên bổ sung thêm nước sạch trong suốt cả ngày. Việc cung cấp nước giúp chó duy trì sự cân bằng điện giải và hỗ trợ quá trình tiêu hóa hiệu quả. Bạn cũng có thể kết hợp Pedigree với thực phẩm tươi khác như rau củ, thịt, hoặc cá để tạo ra một chế độ ăn đa dạng và cân bằng dinh dưỡng cho chó. Nên theo dõi cân nặng và sức khỏe của chó để điều chỉnh chế độ ăn phù hợp. Nếu chó có dấu hiệu dị ứng hoặc không dung nạp thức ăn, hãy tham khảo ý kiến bác sĩ thú y để có giải pháp kịp thời. Thêm vào đó, hãy lưu ý rằng chó con, chó mang thai hoặc chó đang cho con bú sẽ có nhu cầu dinh dưỡng khác biệt."
   },
   {
     "id": 3,
     "name": "Thức Ăn Dinh Dưỡng Cho Mèo Royal Canin",
-    "description": "Thức ăn hạt cho mèo, hỗ trợ hệ miễn dịch và sức khỏe toàn diện.",
-    "usage": "Cho mèo ăn theo nhu cầu, từ 40g đến 80g mỗi ngày. Tùy thuộc vào độ tuổi, trọng lượng và mức độ hoạt động của mèo.",
-    "ingredients": "Cá hồi, gà, vitamin, khoáng chất.",
+    "description": "Royal Canin là thức ăn hạt cao cấp dành cho mèo, được nghiên cứu và phát triển để đáp ứng các nhu cầu dinh dưỡng của mèo ở mọi giai đoạn phát triển. Sản phẩm chứa Omega 3 và 6, giúp hỗ trợ sức khỏe làn da và cải thiện chất lượng lông, mang lại bộ lông bóng mượt và khỏe mạnh. Công thức đặc biệt này còn giúp tăng cường hệ miễn dịch, bảo vệ mèo khỏi các tác nhân gây bệnh. Royal Canin cung cấp một chế độ ăn đầy đủ dưỡng chất, giúp mèo phát triển toàn diện về cả thể chất và tinh thần. Mùi vị hấp dẫn của sản phẩm kích thích mèo ăn ngon miệng hơn, làm bữa ăn trở nên thú vị và bổ dưỡng. Với nguồn nguyên liệu chất lượng cao như cá hồi, thịt gà, và rau củ tươi, Royal Canin cam kết không sử dụng chất bảo quản hóa học. Đây là lựa chọn hoàn hảo để duy trì sức khỏe cho mèo yêu của bạn. Bên cạnh đó, sản phẩm còn giúp giảm thiểu các vấn đề về tiêu hóa nhờ vào công thức dễ hấp thu. Royal Canin không chỉ giúp mèo khỏe mạnh mà còn mang đến sự hài lòng về hương vị. Bạn có thể yên tâm rằng mèo của bạn đang được chăm sóc tốt nhất với sản phẩm này.",
+    "usage": "Lượng thức ăn cần thiết cho mèo sẽ phụ thuộc vào trọng lượng và độ tuổi của mèo. Đối với mèo trưởng thành, bạn có thể cho mèo ăn từ 40g đến 80g mỗi ngày, chia đều thành 2 bữa vào sáng và tối. Sản phẩm được thiết kế để cung cấp đầy đủ dinh dưỡng, giúp mèo phát triển khỏe mạnh và năng động. Bạn nên theo dõi mức độ hoạt động của mèo để điều chỉnh khẩu phần ăn sao cho phù hợp. Nếu mèo có mức độ hoạt động cao, có thể cần lượng thức ăn lớn hơn. Ngược lại, nếu mèo ít vận động hoặc có dấu hiệu thừa cân, bạn nên giảm khẩu phần ăn để duy trì cân nặng lý tưởng. Hãy luôn đảm bảo rằng mèo có nước sạch để uống, điều này rất quan trọng trong quá trình tiêu hóa. Bạn cũng có thể điều chỉnh chế độ ăn tùy thuộc vào sở thích của mèo, kết hợp với các loại thực phẩm khác để bổ sung dinh dưỡng. Sản phẩm dễ sử dụng và tiện lợi cho cả bạn và mèo. Thực phẩm sẽ phát huy hiệu quả tối đa khi được sử dụng đúng cách, giúp mèo có sức khỏe tốt và bộ lông đẹp.",
+    "ingredients": "Royal Canin được chế biến từ các nguyên liệu cao cấp, bao gồm cá hồi, thịt gà, tinh bột, rau củ, dầu cá, vitamin E, và các khoáng chất thiết yếu. Cá hồi là nguồn cung cấp protein chất lượng cao, giúp xây dựng cơ bắp và duy trì sức khỏe toàn diện cho mèo. Thịt gà là một nguồn protein nhẹ nhàng, dễ tiêu hóa, hỗ trợ tăng trưởng và phục hồi cơ thể mèo. Tinh bột giúp cung cấp năng lượng lâu dài cho mèo, đồng thời hỗ trợ tiêu hóa. Rau củ cung cấp các vitamin và chất xơ, giúp hệ tiêu hóa của mèo luôn khỏe mạnh. Dầu cá chứa Omega 3 và Omega 6, giúp duy trì một bộ lông bóng mượt và làn da khỏe mạnh. Vitamin E đóng vai trò quan trọng trong việc bảo vệ tế bào và tăng cường hệ miễn dịch của mèo. Sản phẩm không chứa chất bảo quản hóa học, đảm bảo an toàn và chất lượng cho mèo. Các thành phần trong Royal Canin đều được chọn lọc kỹ lưỡng, đáp ứng đầy đủ nhu cầu dinh dưỡng của mèo trong mọi giai đoạn phát triển.",
     "category": "Mèo",
     "price": "350.000 VND",
     "size": "2kg",
-    "image": "https://i.imgur.com/efg1.jpg",
+    "image": "https://i.imgur.com/kk3CxOE.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/thumb7.jpg",
-      "https://i.imgur.com/thumb8.jpg",
-      "https://i.imgur.com/thumb9.jpg"
+      "https://i.imgur.com/ZG8Wdd3.jpeg",
+      "https://i.imgur.com/1k1K90l.jpeg",
+      "https://i.imgur.com/3Ppjxvd.jpeg"
     ],
-    "nutritional_information": "Protein: 32%, Fat: 12%, Fiber: 4%, Vitamin E, Omega 3 & 6. Tăng cường hệ miễn dịch và giúp bảo vệ làn da và bộ lông.",
-    "storage_instructions": "Bảo quản nơi khô ráo và tránh ẩm ướt để đảm bảo chất lượng sản phẩm.",
-    "additional_notes": "Thích hợp cho mèo trưởng thành và giúp duy trì cân nặng khỏe mạnh."
+    "nutritional_information": [
+      "Protein: 32%, giúp xây dựng và duy trì cơ bắp khỏe mạnh cho mèo.",
+      "Chất béo: 12%, cung cấp năng lượng cho các hoạt động hàng ngày và duy trì một cơ thể khỏe mạnh.",
+      "Chất xơ: 4%, giúp hỗ trợ tiêu hóa và duy trì sự khỏe mạnh của hệ ruột.",
+      "Vitamin E và Omega 3 & 6 giúp tăng cường miễn dịch và bảo vệ làn da, cải thiện chất lượng bộ lông. Các thành phần dinh dưỡng này được thiết kế đặc biệt để đáp ứng nhu cầu dinh dưỡng của mèo trưởng thành. Công thức chứa Omega 3 và 6 giúp hỗ trợ sự phát triển làn da khỏe mạnh, đồng thời bảo vệ da khỏi các tác hại từ môi trường. Vitamin E giúp tăng cường khả năng miễn dịch, giúp mèo có sức khỏe tốt. Tỷ lệ dinh dưỡng cân đối giúp mèo duy trì một cơ thể khỏe mạnh và tràn đầy năng lượng. Royal Canin còn giúp giảm thiểu các vấn đề tiêu hóa, giữ cho mèo luôn thoải mái và khỏe mạnh."
+    ],
+    "storage_instructions": "Để bảo quản Royal Canin, bạn cần giữ sản phẩm ở nơi khô ráo và thoáng mát. Tránh ánh sáng trực tiếp và nhiệt độ cao, vì điều này có thể làm giảm chất lượng sản phẩm. Sản phẩm nên được bảo quản trong bao bì kín để tránh ẩm ướt và bụi bẩn xâm nhập. Đảm bảo sản phẩm được lưu trữ ở nhiệt độ phòng và không bị ảnh hưởng bởi các yếu tố bên ngoài. Để bảo vệ hương vị và chất lượng, bạn nên đóng kín bao bì sau mỗi lần sử dụng. Royal Canin có thể sử dụng tốt nhất trong vòng 1 tháng sau khi mở bao bì, vì vậy hãy kiểm tra ngày hết hạn để đảm bảo chất lượng. Môi trường bảo quản tốt sẽ giúp sản phẩm giữ được giá trị dinh dưỡng và hương vị.",
+    "additional_notes": "Royal Canin phù hợp với mèo trưởng thành, cung cấp đầy đủ dinh dưỡng cho mèo trong giai đoạn này. Nếu mèo của bạn có dấu hiệu tiêu hóa bất thường hoặc không thích ăn, hãy giảm khẩu phần ăn và tham khảo ý kiến bác sĩ thú y. Việc theo dõi sức khỏe của mèo là rất quan trọng để điều chỉnh khẩu phần ăn hợp lý. Mèo có thể có nhu cầu dinh dưỡng khác nhau tùy vào mức độ hoạt động và tình trạng sức khỏe. Hãy tham khảo ý kiến bác sĩ thú y để điều chỉnh chế độ ăn phù hợp với từng mèo."
   },
   {
     "id": 4,
     "name": "Thức Ăn Dinh Dưỡng Cho Chó Hill's Science Diet",
-    "description": "Thức ăn dinh dưỡng cao cấp cho chó với công thức cân bằng và tốt cho hệ tiêu hóa.",
-    "usage": "Cho chó ăn từ 150g đến 300g mỗi ngày, tùy vào trọng lượng và mức độ hoạt động của chó.",
-    "ingredients": "Thịt gà, bắp, đậu nành, vitamin, khoáng chất.",
+    "description": "Hill's Science Diet là thức ăn dinh dưỡng cao cấp dành cho chó trưởng thành, được thiết kế với công thức cân bằng, giúp hỗ trợ hệ tiêu hóa và cải thiện sức khỏe tổng thể. Sản phẩm này giàu đạm từ thịt gà tươi, cung cấp nguồn protein chất lượng cao giúp xây dựng cơ bắp và duy trì sức khỏe của chó. Hill's Science Diet cũng chứa các dưỡng chất thiết yếu như vitamin và khoáng chất, giúp chó duy trì cân nặng lý tưởng và tăng cường năng lượng cho các hoạt động hàng ngày. Công thức của sản phẩm không chứa chất tạo màu nhân tạo, đảm bảo an toàn cho sức khỏe của chó. Đặc biệt, với tỷ lệ chất béo và chất xơ hợp lý, sản phẩm giúp duy trì sức khỏe tim mạch, hỗ trợ tiêu hóa và tăng cường hệ miễn dịch. Mùi vị thơm ngon từ thịt gà và các thành phần tự nhiên sẽ khiến chó yêu thích và ăn ngon miệng. Hill's Science Diet là lựa chọn tuyệt vời cho chó trưởng thành, giúp duy trì sức khỏe và sự năng động của chúng trong suốt cuộc đời.",
+    "usage": "Lượng thức ăn cần thiết cho chó phụ thuộc vào trọng lượng và mức độ hoạt động của chúng. Đối với chó trưởng thành, bạn có thể cho ăn từ 150g đến 300g mỗi ngày, chia đều thành 2 bữa vào sáng và tối. Chó có mức độ hoạt động cao có thể cần khẩu phần ăn lớn hơn để đáp ứng nhu cầu năng lượng. Để đạt được kết quả tốt nhất, bạn nên theo dõi trọng lượng và sức khỏe của chó để điều chỉnh khẩu phần ăn sao cho hợp lý. Sản phẩm này được thiết kế để cung cấp đầy đủ dinh dưỡng cho chó trưởng thành, giúp duy trì một cơ thể khỏe mạnh và cân đối. Đảm bảo chó luôn có nước sạch để uống trong suốt ngày, giúp quá trình tiêu hóa diễn ra tốt hơn. Nếu chó có dấu hiệu không hợp khẩu vị, bạn có thể kết hợp thức ăn này với các loại thực phẩm khác để thay đổi khẩu vị. Tuy nhiên, việc duy trì khẩu phần ăn hợp lý và đầy đủ dinh dưỡng là rất quan trọng để chó luôn khỏe mạnh.",
+    "ingredients": "Hill's Science Diet được chế biến từ các nguyên liệu cao cấp, bao gồm thịt gà tươi, bắp, đậu nành, dầu thực vật, vitamin A, C, D và khoáng chất. Thịt gà tươi là nguồn cung cấp protein chính, giúp hỗ trợ sự phát triển cơ bắp và duy trì một cơ thể khỏe mạnh. Bắp cung cấp năng lượng lâu dài cho chó, giúp duy trì sức mạnh và năng lượng cho các hoạt động hàng ngày. Đậu nành là một nguồn chất xơ tuyệt vời, giúp hỗ trợ tiêu hóa và duy trì một hệ tiêu hóa khỏe mạnh. Dầu thực vật cung cấp axit béo thiết yếu cho cơ thể, giúp duy trì làn da và bộ lông khỏe mạnh. Vitamin A, C, và D giúp tăng cường hệ miễn dịch và duy trì thị lực tốt. Các khoáng chất thiết yếu như canxi và phốt pho giúp duy trì xương chắc khỏe. Sản phẩm không chứa chất tạo màu nhân tạo, bảo đảm an toàn cho sức khỏe của chó.",
     "category": "Chó",
     "price": "450.000 VND",
     "size": "3kg",
-    "image": "https://i.imgur.com/hij1.jpg",
+    "image": "https://i.imgur.com/uvz1spZ.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/thumb10.jpg",
-      "https://i.imgur.com/thumb11.jpg",
-      "https://i.imgur.com/thumb12.jpg"
+      "https://i.imgur.com/DC6YK4P.jpeg",
+      "https://i.imgur.com/EZKPhjP.jpeg",
+      "https://i.imgur.com/XWaCyMp.jpeg"
     ],
-    "nutritional_information": "Protein: 25%, Fat: 15%, Fiber: 5%, Omega 3 & 6. Cung cấp dinh dưỡng tối ưu cho chó trưởng thành và giúp duy trì cân nặng lý tưởng.",
-    "storage_instructions": "Lưu trữ nơi khô ráo và tránh ánh sáng mặt trời trực tiếp.",
-    "additional_notes": "Cung cấp thực phẩm tươi và sạch cho chó để tăng cường hiệu quả của chế độ ăn."
+    "nutritional_information": [
+      "Protein: 25%, giúp xây dựng và duy trì cơ bắp khỏe mạnh cho chó trưởng thành.",
+      "Chất béo: 15%, cung cấp năng lượng cho các hoạt động hàng ngày và giúp duy trì một cơ thể khỏe mạnh.",
+      "Chất xơ: 5%, hỗ trợ hệ tiêu hóa và giữ cho chó không bị táo bón.",
+      "Omega 3 & 6 giúp duy trì sức khỏe tim mạch và một bộ lông mượt mà.Công thức cân đối này giúp chó duy trì trọng lượng lý tưởng, đồng thời hỗ trợ sức khỏe tim mạch và hệ miễn dịch. Các thành phần dinh dưỡng này được thiết kế để cung cấp đủ năng lượng cho chó trong suốt một ngày dài, giúp chúng duy trì sự năng động và sức khỏe tốt."
+    ],
+    "storage_instructions": " Để bảo quản Hill's Science Diet, bạn cần giữ sản phẩm trong bao bì kín và bảo quản ở nơi thoáng mát, khô ráo, tránh ẩm mốc và nhiệt độ cao. Sản phẩm nên được lưu trữ ở nhiệt độ phòng và tránh tiếp xúc trực tiếp với ánh sáng mặt trời. Sau khi mở bao bì, hãy sử dụng trong vòng 30 ngày để đảm bảo chất lượng tối ưu. Đóng kín bao bì sau mỗi lần sử dụng để bảo vệ hương vị và dưỡng chất. Việc bảo quản đúng cách sẽ giúp sản phẩm giữ được giá trị dinh dưỡng và hương vị tươi mới.",
+    "additional_notes": "Hill's Science Diet thích hợp cho chó trưởng thành và không nên sử dụng cho chó con hoặc chó đang mang thai mà không có sự hướng dẫn từ bác sĩ thú y. Nếu chó của bạn có dấu hiệu dị ứng hoặc vấn đề về tiêu hóa, hãy tham khảo ý kiến bác sĩ thú y để điều chỉnh chế độ ăn phù hợp. Sản phẩm này giúp duy trì cân nặng lý tưởng và hỗ trợ sức khỏe tổng thể, nhưng cần kết hợp với một chế độ vận động hợp lý để đạt được kết quả tốt nhất."
   },
   {
     "id": 5,
     "name": "Snack Cho Chó Pedigree",
-    "description": "Snack bổ sung dinh dưỡng cho chó, giúp làm sạch răng và tăng cường sức khỏe.",
-    "usage": "Cho chó ăn 1-2 thanh mỗi ngày, tùy theo kích thước và hoạt động.",
-    "ingredients": "Thịt bò, gà, vitamin, khoáng chất.",
+    "description": "Pedigree Snack là một món ăn vặt tuyệt vời dành cho chó, giúp làm sạch răng miệng và bổ sung các dưỡng chất thiết yếu. Với hương vị thơm ngon từ thịt bò và gà, Pedigree Snack không chỉ hấp dẫn thú cưng mà còn hỗ trợ sức khỏe răng miệng thông qua cơ chế nhai tự nhiên, giúp làm sạch và giữ cho răng chắc khỏe. Sản phẩm này là lựa chọn lý tưởng để bổ sung vào chế độ ăn uống hàng ngày của chó, đồng thời làm thú cưng vui vẻ hơn khi thưởng thức món ăn yêu thích. Pedigree Snack không chứa chất phụ gia độc hại, đảm bảo an toàn cho sức khỏe của chó. Bạn có thể dùng sản phẩm như một món ăn vặt bổ sung hoặc làm phần thưởng khi huấn luyện chó, giúp tăng thêm động lực cho thú cưng. Snack phù hợp cho mọi giống chó, dù chó nhỏ hay lớn, đều có thể thưởng thức. Tuy nhiên, bạn cần lưu ý không cho chó ăn quá nhiều snack để tránh ảnh hưởng đến cân nặng.",
+    "usage": "Cho chó ăn 1-2 thanh mỗi ngày như một món ăn vặt hoặc thưởng khi huấn luyện. Đảm bảo không vượt quá khẩu phần để tránh tăng cân. Bạn có thể chia khẩu phần này vào những thời điểm khác nhau trong ngày, giúp chó luôn vui vẻ và được thưởng khi hoàn thành các bài huấn luyện. Không nên thay thế bữa ăn chính bằng snack, vì điều này có thể gây mất cân bằng dinh dưỡng cho chó. Nếu bạn nuôi nhiều chó, hãy chú ý điều chỉnh khẩu phần cho từng con phù hợp với trọng lượng và mức độ hoạt động của chúng. Đảm bảo luôn cung cấp đủ nước sạch cho chó trong suốt ngày.",
+    "ingredients": "Sản phẩm bao gồm thịt bò, thịt gà, các loại vitamin và khoáng chất cần thiết. Pedigree Snack không chứa chất phụ gia độc hại, đảm bảo an toàn tuyệt đối cho thú cưng khi sử dụng. Các thành phần này được chọn lựa kỹ càng để mang lại sự bổ sung dinh dưỡng hợp lý cho chó mà không gây hại. Chất lượng thịt bò và gà được đảm bảo, cung cấp nguồn protein tự nhiên giúp tăng cường sức khỏe cơ bắp và duy trì hoạt động tốt cho chó. Vitamin và khoáng chất giúp hỗ trợ sức khỏe tổng thể, đặc biệt là hệ tiêu hóa và răng miệng của chó.",
     "category": "Chó",
     "price": "60.000 VND",
     "size": "500g",
-    "image": "https://i.imgur.com/klm1.jpg",
+    "image": "https://i.imgur.com/3zGlaQ8.jpeg",
     "thumbnails": [
-      "https://i.imgur.com/thumb13.jpg",
-      "https://i.imgur.com/thumb14.jpg",
-      "https://i.imgur.com/thumb15.jpg"
+      "https://i.imgur.com/EjiJlpM.png",
+      "https://i.imgur.com/DOSVDaS.jpeg",
+      "https://i.imgur.com/TjmehQZ.jpeg"
     ],
-    "nutritional_information": "Protein: 18%, Fat: 10%, Fiber: 3%. Cung cấp các vitamin và khoáng chất thiết yếu cho sức khỏe tổng thể.",
-    "storage_instructions": "Lưu trữ trong bao bì kín và bảo quản ở nơi khô ráo, tránh độ ẩm cao.",
-    "additional_notes": "Có thể dùng như một món ăn vặt giữa các bữa chính để thưởng cho chó."
+    "nutritional_information": [
+      "Protein (18%): Protein là thành phần quan trọng giúp hỗ trợ sự phát triển và duy trì cơ bắp, giúp chó duy trì năng lượng và sức khỏe tổng thể. Trong Pedigree Snack, protein chủ yếu đến từ thịt bò và thịt gà, cung cấp một nguồn protein chất lượng giúp chó khỏe mạnh, năng động và duy trì sự phát triển cơ thể ổn định.",
+      "Chất béo (10%): Chất béo là một nguồn năng lượng quan trọng, cung cấp axit béo thiết yếu cho chó. Pedigree Snack chứa một lượng chất béo vừa phải để cung cấp năng lượng dồi dào cho chó mà không gây nguy cơ tăng cân. Axit béo cũng giúp duy trì làn da và bộ lông khỏe mạnh cho thú cưng.",
+      "Chất xơ (3%): Chất xơ đóng vai trò quan trọng trong việc hỗ trợ tiêu hóa và duy trì sự khỏe mạnh của hệ thống tiêu hóa của chó. Chất xơ cũng giúp kiểm soát cân nặng và ngăn ngừa táo bón. Việc bổ sung chất xơ trong Pedigree Snack giúp hỗ trợ quá trình tiêu hóa diễn ra trơn tru và hiệu quả.",
+      "Vitamin và khoáng chất: Pedigree Snack bổ sung các vitamin và khoáng chất thiết yếu như Vitamin A, D3, E, canxi và phốt pho, giúp hỗ trợ sự phát triển và duy trì sức khỏe xương, răng miệng, da, và các cơ quan trong cơ thể của chó. Các khoáng chất này cũng giúp duy trì một hệ miễn dịch khỏe mạnh và bảo vệ chó khỏi các bệnh tật.",
+      "Hỗ trợ răng miệng khỏe mạnh, nhờ cơ chế nhai tự nhiên.Tăng cường sức khỏe tổng thể, bao gồm hệ miễn dịch và tiêu hóa.Cung cấp năng lượng cho chó hoạt động và duy trì sức khỏe cơ thể."
+    ],
+    "storage_instructions": "Giữ sản phẩm trong bao bì kín và bảo quản ở nơi khô ráo, thoáng mát, tránh độ ẩm và nhiệt độ cao để đảm bảo chất lượng. Tránh để sản phẩm tiếp xúc trực tiếp với ánh sáng mặt trời. Nếu bao bì đã mở, bạn cần sử dụng sản phẩm trong thời gian ngắn để duy trì độ tươi ngon và dinh dưỡng.",
+    "additional_notes": "Snack này phù hợp với mọi giống chó. Tuy nhiên, bạn không nên thay thế bữa ăn chính bằng snack để đảm bảo chó nhận đầy đủ dinh dưỡng từ các bữa ăn chính. Để tránh tăng cân, hãy điều chỉnh khẩu phần snack cho chó sao cho hợp lý."
   },
   {
     "id": 6,
     "name": "Thức Ăn Cho Mèo Orijen",
-    "description": "Thức ăn khô cao cấp cho mèo, chứa nhiều protein từ thịt tươi giúp phát triển cơ bắp khỏe mạnh.",
-    "usage": "Cho mèo ăn từ 40g đến 70g mỗi ngày, tùy vào độ tuổi và hoạt động.",
-    "ingredients": "Thịt gà tươi, cá hồi, trứng, rau củ.",
+    "description": "Orijen là dòng thức ăn cao cấp dành cho mèo, được chế tạo với hàm lượng protein cao từ thịt tươi. Sản phẩm này không chứa ngũ cốc, phù hợp với mèo có hệ tiêu hóa nhạy cảm hoặc dễ bị dị ứng với ngũ cốc. Công thức của Orijen giàu dinh dưỡng, giúp mèo phát triển cơ bắp khỏe mạnh, tăng cường hệ miễn dịch và cung cấp năng lượng dồi dào cho mèo hoạt động suốt ngày. Sản phẩm chứa các thành phần tự nhiên như thịt gà tươi, cá hồi, trứng và rau củ, đảm bảo cung cấp đầy đủ các dưỡng chất cần thiết cho mèo. Không chỉ là thức ăn, Orijen còn giúp cải thiện chất lượng lông và da của mèo, mang lại bộ lông mượt mà và khỏe mạnh. Orijen là sự lựa chọn tuyệt vời cho mèo ở mọi độ tuổi, giúp hỗ trợ sức khỏe tổng thể của mèo.",
+    "usage": "Tùy theo cân nặng và mức độ hoạt động, cho mèo ăn từ 40g đến 70g mỗi ngày. Có thể chia đều thành 2-3 bữa để mèo dễ tiêu hóa hơn.Tùy theo cân nặng và mức độ hoạt động của mèo, bạn có thể cho mèo ăn từ 40g đến 70g mỗi ngày. Để mèo dễ tiêu hóa hơn, bạn có thể chia bữa ăn thành 2-3 lần mỗi ngày. Đảm bảo theo dõi tình trạng sức khỏe và cân nặng của mèo để điều chỉnh khẩu phần ăn sao cho phù hợp. Bạn có thể tăng hoặc giảm lượng thức ăn tùy theo nhu cầu dinh dưỡng của mèo. Ngoài ra, luôn cung cấp nước sạch cho mèo để hỗ trợ quá trình tiêu hóa và đảm bảo sức khỏe.",
+    "ingredients": "Orijen được làm từ thịt gà tươi, cá hồi, trứng, các loại rau củ, dầu cá, vitamin B, D3 và Omega 3 & 6. Sản phẩm không chứa chất bảo quản hoặc phụ gia nhân tạo, đảm bảo an toàn tuyệt đối cho mèo. Thịt gà tươi cung cấp protein chất lượng cao, giúp phát triển cơ bắp. Cá hồi cung cấp axit béo Omega-3 giúp duy trì một bộ lông khỏe mạnh. Vitamin và khoáng chất hỗ trợ hệ miễn dịch và sức khỏe tổng thể. Sản phẩm hoàn toàn tự nhiên và không chứa ngũ cốc, giúp mèo dễ dàng tiêu hóa hơn.",
     "category": "Mèo",
-    "price": "850.000 VND",
-    "size": "1.8kg",
-    "image": "https://i.imgur.com/xyz2.jpg",
+    "price": "180.000 VND",
+    "size": "0.5kg",
+    "image": "https://i.imgur.com/hhnd0nZ.png",
     "thumbnails": [
-      "https://i.imgur.com/thumb16.jpg",
-      "https://i.imgur.com/thumb17.jpg",
-      "https://i.imgur.com/thumb18.jpg"
+      "https://i.imgur.com/65Ut8YK.png",
+      "https://i.imgur.com/6Jztcvs.jpeg",
+      "https://i.imgur.com/qB5Xsor.jpeg"
     ],
-    "nutritional_information": "Protein: 40%, Fat: 18%, Fiber: 4%, Omega 3 & 6. Cung cấp protein chất lượng cao và giúp tăng cường cơ bắp.",
-    "storage_instructions": "Bảo quản trong bao bì kín, ở nhiệt độ phòng và tránh độ ẩm cao.",
-    "additional_notes": "Không chứa ngũ cốc, phù hợp cho mèo có hệ tiêu hóa nhạy cảm hoặc dị ứng với ngũ cốc."
+    "nutritional_information": [
+      "Protein (40%): Orijen chứa một hàm lượng protein rất cao (40%), chủ yếu từ thịt gà tươi và cá hồi. Protein là thành phần quan trọng nhất trong khẩu phần ăn của mèo, giúp phát triển và duy trì cơ bắp, đặc biệt quan trọng trong việc duy trì một cơ thể khỏe mạnh và năng động cho mèo. Protein cũng là nguồn năng lượng chính cho các hoạt động thể chất của mèo trong suốt cả ngày.",
+      "Chất béo (18%): Chất béo có vai trò cung cấp năng lượng dồi dào cho mèo, đồng thời cung cấp các axit béo omega-3 và omega-6, rất quan trọng cho sự phát triển và duy trì sức khỏe da, lông và hệ thống thần kinh. Omega-3 và omega-6 cũng giúp cải thiện độ bóng của lông và hỗ trợ sức khỏe tim mạch.",
+      "Chất xơ (4%): Chất xơ hỗ trợ tiêu hóa, giúp duy trì một hệ tiêu hóa khỏe mạnh cho mèo, giảm nguy cơ táo bón và các vấn đề về dạ dày. Chất xơ trong Orijen cũng giúp hỗ trợ sự chuyển hóa chất dinh dưỡng từ thức ăn và duy trì mức đường huyết ổn định.",
+      "Omega 3 & 6: Omega-3 và omega-6 là những axit béo thiết yếu không thể thiếu trong chế độ ăn của mèo. Chúng giúp duy trì sự linh hoạt của da, tăng cường sức khỏe hệ tim mạch, giảm viêm và hỗ trợ sự phát triển của cơ thể. Omega-3 có trong cá hồi và dầu cá trong Orijen, giúp duy trì bộ lông bóng mượt và khỏe mạnh.",
+      "Vitamin B, D3: Vitamin B hỗ trợ quá trình chuyển hóa năng lượng và cải thiện sức khỏe da, trong khi Vitamin D3 giúp tăng cường khả năng hấp thụ canxi và phốt pho, hỗ trợ sự phát triển xương và răng miệng.",
+      "Khoáng chất thiết yếu (Canxi, Phốt pho): Những khoáng chất này giúp duy trì sức khỏe xương và răng miệng của mèo, hỗ trợ hệ thần kinh và cơ bắp, đồng thời cũng giúp điều hòa các chức năng của các cơ quan khác trong cơ thể mèo.",
+      "Hỗ trợ phát triển cơ bắp khỏe mạnh nhờ vào hàm lượng protein cao.Cung cấp axit béo Omega-3 và Omega-6 giúp cải thiện chất lượng lông và sức khỏe da.Cung cấp vitamin và khoáng chất thiết yếu cho sự phát triển và duy trì xương, răng miệng và sức khỏe tổng thể của mèo."
+    ],
+    "storage_instructions": "Bảo quản Orijen trong bao bì kín và đặt ở nhiệt độ phòng, tránh ánh sáng trực tiếp và độ ẩm cao. Để thức ăn luôn tươi ngon và bảo toàn dinh dưỡng, bạn nên bảo quản sản phẩm ở nơi khô ráo và thoáng mát. Tránh bảo quản sản phẩm ở nơi có nhiệt độ quá cao hoặc quá thấp.",
+    "additional_notes": "Orijen phù hợp với mèo ở mọi độ tuổi, từ mèo con đến mèo trưởng thành. Nếu mèo có dấu hiệu dị ứng, hãy dừng sử dụng sản phẩm và tham khảo ý kiến bác sĩ thú y. Sản phẩm này giúp hỗ trợ sức khỏe toàn diện và phát triển thể chất cho mèo."
   }
 ]

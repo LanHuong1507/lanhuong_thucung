@@ -11,12 +11,16 @@
     "price": "800.000-10.000.000",
     "image": "https://i.imgur.com/ZJNeFLZ.jpeg",
     "additional_info": {
-      "health_issues": "Thỏ Holland Lop có thể gặp phải các vấn đề về răng miệng và các bệnh về đường tiêu hóa nếu chế độ ăn không phù hợp.",
-      "exercise_needs": "Chúng cần không gian để chạy nhảy và vui chơi.",
-      "diet": "Chế độ ăn chủ yếu bao gồm cỏ khô, rau tươi và thức ăn dành cho thỏ.",
-      "training_difficulty": "Dễ huấn luyện, đặc biệt là trong việc tương tác với con người.",
-      "suitable_for": "Phù hợp cho những người mới nuôi thỏ và yêu thích một con thỏ hiền lành, dễ chăm sóc.",
-      "care_tips": "Cần thay đổi nước hàng ngày và kiểm tra chuồng để giữ vệ sinh."
+      "health_issues": "Thỏ Holland Lop có thể gặp phải các vấn đề về răng miệng và các bệnh về đường tiêu hóa nếu chế độ ăn không phù hợp. Những vấn đề này có thể gây ra đau đớn và giảm chất lượng cuộc sống của thỏ. Vì vậy, cần đảm bảo chế độ ăn hợp lý và thường xuyên kiểm tra sức khỏe của thỏ.",
+      "exercise_needs": "Holland Lop cần một không gian rộng rãi để có thể chạy nhảy và vui chơi. Việc vận động thường xuyên giúp thỏ giữ được cơ bắp khỏe mạnh và tránh tình trạng béo phì. Bạn nên tạo ra một môi trường an toàn cho chúng để thỏ có thể khám phá và chơi đùa.",
+      "diet": "Chế độ ăn của thỏ Holland Lop bao gồm cỏ khô, rau tươi và thức ăn dành riêng cho thỏ. Cần đảm bảo thỏ được cung cấp đủ chất xơ để giúp tiêu hóa tốt. Bổ sung các vitamin và khoáng chất là điều cần thiết để duy trì sức khỏe tốt cho thỏ. Nên tránh cho thỏ ăn quá nhiều thức ăn chứa đường hoặc tinh bột.",
+      "training_difficulty": "Holland Lop rất dễ huấn luyện, đặc biệt là trong việc tương tác với con người. Thỏ này rất thông minh và thường nhanh chóng làm quen với các lệnh đơn giản. Bạn có thể dạy thỏ của mình các lệnh cơ bản như 'ngồi', 'đi' hay 'lại đây'. Tuy nhiên, cần kiên nhẫn và thường xuyên khen thưởng khi thỏ hoàn thành nhiệm vụ.",
+      "suitable_for": "Holland Lop là giống thỏ rất phù hợp cho những người mới bắt đầu nuôi thỏ. Chúng dễ dàng hòa nhập vào môi trường gia đình và thích được chăm sóc. Thỏ này cũng phù hợp cho những người muốn có một con vật dễ thương và hiền lành để nuôi trong nhà.",
+      "care_tips": "Cần thay đổi nước cho thỏ hàng ngày để tránh tình trạng nước bị bẩn, gây ảnh hưởng đến sức khỏe của chúng. Ngoài ra, bạn nên kiểm tra chuồng của thỏ thường xuyên để giữ vệ sinh sạch sẽ. Nếu thỏ có lông dài, hãy chắc chắn chải lông cho chúng ít nhất một lần mỗi tuần.",
+      "grooming_tips": "Dù có lông ngắn, bạn vẫn cần chải chuốt cho thỏ thường xuyên để tránh tình trạng lông rối. Thỏ Holland Lop không cần tắm thường xuyên, nhưng cần được vệ sinh chân tay sạch sẽ để tránh nhiễm bẩn từ chuồng.",
+      "interaction": "Holland Lop rất thích giao tiếp và vui chơi với chủ nhân. Chúng có thể nhận biết chủ nhân của mình và phản ứng theo cách rất đáng yêu. Thỏ này cũng thích được vuốt ve và làm bạn với các thành viên trong gia đình.",
+      "lifespan": "Với chế độ chăm sóc tốt, thỏ Holland Lop có thể sống từ 7 đến 14 năm. Điều này giúp bạn có thời gian dài để đồng hành và chăm sóc chúng, mang lại niềm vui cho gia đình.",
+      "space_needs": "Mặc dù chúng có kích thước nhỏ, thỏ Holland Lop vẫn cần một không gian đủ rộng để di chuyển tự do. Cung cấp cho chúng một khu vực chơi rộng rãi và thoải mái giúp giảm stress và khuyến khích chúng vận động."
     }
   },
   {
@@ -31,12 +35,16 @@
     "price": "900.000-1.500.000",
     "image": "https://i.imgur.com/JCLRbdf.jpeg",
     "additional_info": {
-      "health_issues": "Mini Rex có thể mắc các bệnh về da và bệnh về đường hô hấp nếu không được chăm sóc đúng cách.",
-      "exercise_needs": "Chúng cần không gian để vận động nhẹ nhàng và tránh được căng thẳng.",
-      "diet": "Thức ăn bao gồm cỏ khô, rau tươi và thức ăn bổ sung dành cho thỏ.",
-      "training_difficulty": "Dễ huấn luyện và rất thân thiện với con người.",
-      "suitable_for": "Phù hợp với những người yêu thích thỏ có lông mềm mại và dễ chăm sóc.",
-      "care_tips": "Lông ngắn của Mini Rex cần được chải thường xuyên để giữ vệ sinh và sức khỏe tốt."
+      "health_issues": "Mini Rex dễ mắc các bệnh về da, đặc biệt là khi tiếp xúc với những điều kiện ẩm ướt hoặc không được vệ sinh sạch sẽ. Hơn nữa, thỏ này cũng có thể gặp phải các bệnh về đường hô hấp nếu không sống trong môi trường thoáng mát và không khí trong lành.",
+      "exercise_needs": "Mini Rex cần không gian để vận động nhẹ nhàng, nhưng không cần quá nhiều không gian rộng rãi. Việc cho thỏ vận động thường xuyên giúp chúng duy trì cơ bắp khỏe mạnh và cải thiện sức khỏe tổng thể. Tránh để thỏ bị căng thẳng vì điều này có thể ảnh hưởng đến sức khỏe của chúng.",
+      "diet": "Chế độ ăn của Mini Rex bao gồm cỏ khô, rau tươi và thức ăn bổ sung cho thỏ. Cần đặc biệt lưu ý đến chế độ ăn để giúp thỏ duy trì một trọng lượng hợp lý và sức khỏe tốt. Hạn chế cho thỏ ăn các loại thức ăn chứa nhiều đường hay tinh bột.",
+      "training_difficulty": "Mini Rex là thỏ dễ huấn luyện, chúng rất thân thiện và dễ dàng làm quen với các chủ nhân. Thỏ này cũng thích được vuốt ve và gần gũi với con người, giúp bạn dễ dàng dạy chúng các lệnh cơ bản và kỹ năng cần thiết.",
+      "suitable_for": "Mini Rex rất phù hợp với những người yêu thích thỏ có lông mềm mại và dễ chăm sóc. Chúng đặc biệt thích hợp cho những người mới nuôi thỏ vì tính cách hiền lành và dễ gần.",
+      "care_tips": "Lông của Mini Rex rất mềm mại, nhưng cũng dễ bám bụi bẩn. Bạn nên chải lông cho chúng thường xuyên để giữ vệ sinh và tránh tình trạng rối lông. Đặc biệt chú ý chăm sóc móng và tai của thỏ để tránh nhiễm trùng.",
+      "grooming_tips": "Chải lông cho Mini Rex giúp loại bỏ bụi bẩn và làm cho bộ lông luôn mượt mà. Bạn cũng nên kiểm tra tai của thỏ thường xuyên để phát hiện các dấu hiệu nhiễm trùng hoặc vết thương.",
+      "interaction": "Mini Rex rất thân thiện và thích giao tiếp với con người. Chúng thích được ôm ấp và chơi đùa, vì vậy bạn sẽ cảm thấy thỏ rất dễ thương và vui vẻ khi ở gần.",
+      "lifespan": "Mini Rex có thể sống từ 8 đến 10 năm nếu được chăm sóc đúng cách. Chế độ dinh dưỡng hợp lý và môi trường sống thoải mái sẽ giúp thỏ sống lâu và khỏe mạnh.",
+      "space_needs": "Mặc dù kích thước nhỏ nhưng Mini Rex vẫn cần không gian để vận động tự do. Đảm bảo rằng chúng có một khu vực đủ lớn để chơi đùa và khám phá, giúp giảm căng thẳng và mang lại niềm vui cho thỏ."
     }
   },
   {
@@ -51,12 +59,16 @@
     "price": "800.000-2.000.000",
     "image": "https://i.imgur.com/YggdH5l.jpeg",
     "additional_info": {
-      "health_issues": "Lionhead có thể gặp phải các vấn đề về lông và mắt nếu không được chăm sóc đúng cách.",
-      "exercise_needs": "Chúng rất năng động và cần không gian rộng rãi để chạy nhảy.",
-      "diet": "Chế độ ăn bao gồm cỏ khô, rau tươi và thức ăn đặc biệt dành cho thỏ.",
-      "training_difficulty": "Dễ huấn luyện và rất thích tương tác với con người.",
-      "suitable_for": "Phù hợp cho những người yêu thích thỏ có lông dài và thích chơi đùa.",
-      "care_tips": "Lông dài cần được chải kỹ để tránh rối và giữ cho thỏ luôn sạch sẽ."
+      "health_issues": "Lionhead có thể gặp phải các vấn đề về lông và mắt nếu không được chăm sóc đúng cách. Đặc biệt, thỏ có thể gặp vấn đề về mắt như viêm kết mạc nếu không vệ sinh khu vực mắt sạch sẽ. Bên cạnh đó, thỏ cũng có thể bị rối lông quanh cổ nếu không được chải thường xuyên.",
+      "exercise_needs": "Lionhead rất năng động và cần không gian rộng rãi để chạy nhảy. Việc cho thỏ vận động thường xuyên không chỉ giúp chúng duy trì thể chất tốt mà còn cải thiện tâm trạng của chúng. Thỏ Lionhead cũng thích khám phá môi trường xung quanh.",
+      "diet": "Chế độ ăn của Lionhead bao gồm cỏ khô, rau tươi và thức ăn đặc biệt dành cho thỏ. Bạn nên bổ sung thêm vitamin và khoáng chất vào chế độ ăn của thỏ để đảm bảo chúng phát triển khỏe mạnh. Tránh cho thỏ ăn các loại thức ăn chứa nhiều đường.",
+      "training_difficulty": "Lionhead rất dễ huấn luyện và thích tương tác với con người. Bạn có thể dạy thỏ các lệnh đơn giản như 'ngồi', 'đi' hay 'lại đây'. Chúng cũng dễ dàng làm quen với các thành viên trong gia đình và thích được quan tâm.",
+      "suitable_for": "Lionhead rất phù hợp cho những người yêu thích thỏ có lông dài và thích chơi đùa. Chúng thích được ôm ấp và có thể trở thành bạn đồng hành tuyệt vời cho gia đình có trẻ nhỏ.",
+      "care_tips": "Lông dài của thỏ Lionhead cần được chải kỹ để tránh rối và giữ cho thỏ luôn sạch sẽ. Thường xuyên vệ sinh tai và mắt của thỏ để ngăn ngừa viêm nhiễm. Nếu thấy dấu hiệu bất thường, cần kiểm tra sức khỏe của thỏ ngay lập tức.",
+      "grooming_tips": "Chải lông thỏ Lionhead là rất quan trọng để giữ cho bộ lông không bị rối. Bạn cũng nên kiểm tra mắt và tai của thỏ thường xuyên để phát hiện các dấu hiệu viêm nhiễm hoặc dị ứng.",
+      "interaction": "Lionhead rất thích được ôm ấp và tiếp xúc gần gũi với chủ nhân. Chúng có tính cách tò mò và sẽ vui mừng khi được khám phá mọi thứ xung quanh.",
+      "lifespan": "Lionhead có thể sống từ 7 đến 9 năm nếu được chăm sóc chu đáo. Với tình yêu và sự chăm sóc đúng cách, thỏ có thể sống lâu và khỏe mạnh.",
+      "space_needs": "Mặc dù Lionhead có kích thước nhỏ nhưng chúng vẫn cần không gian để vận động và chơi đùa. Cung cấp một khu vực rộng rãi và an toàn cho thỏ để chúng có thể tự do chạy nhảy."
     }
   },
   {
@@ -71,12 +83,16 @@
     "price": "800.000-2.000.000",
     "image": "https://i.imgur.com/p8y4jGg.jpeg",
     "additional_info": {
-      "health_issues": "Netherland Dwarf dễ bị stress và có thể mắc các bệnh về tiêu hóa nếu không có chế độ ăn hợp lý.",
-      "exercise_needs": "Chúng cần không gian để chạy nhảy và tránh bị căng thẳng.",
-      "diet": "Cung cấp cỏ khô và thức ăn tươi cho thỏ để đảm bảo sức khỏe.",
-      "training_difficulty": "Khó huấn luyện vì tính cách nhút nhát và không thích sự tương tác nhiều.",
-      "suitable_for": "Phù hợp cho những người yêu thích thỏ nhỏ và có thể kiên nhẫn trong việc chăm sóc.",
-      "care_tips": "Cần chăm sóc đặc biệt về chế độ ăn uống và môi trường sống."
+      "health_issues": "Netherland Dwarf rất dễ bị stress và có thể mắc các bệnh về tiêu hóa nếu không có chế độ ăn hợp lý. Các vấn đề về tiêu hóa có thể dẫn đến rối loạn đường ruột, vì vậy cần chú ý đến chế độ ăn uống và giữ cho thỏ trong môi trường yên tĩnh.",
+      "exercise_needs": "Chúng cần không gian để chạy nhảy và vui chơi, nhưng cũng dễ bị căng thẳng trong môi trường đông đúc hoặc ồn ào. Bạn nên tạo ra một khu vực yên tĩnh để thỏ có thể thư giãn và vận động nhẹ nhàng.",
+      "diet": "Cung cấp cỏ khô chất lượng cao và thức ăn tươi cho thỏ để đảm bảo sức khỏe tốt. Thỏ Netherland Dwarf cần một chế độ ăn cân đối để tránh các vấn đề về cân nặng và tiêu hóa. Tránh cho thỏ ăn quá nhiều thức ăn chế biến sẵn hoặc thực phẩm chứa nhiều đường.",
+      "training_difficulty": "Khó huấn luyện vì tính cách nhút nhát và không thích sự tương tác quá nhiều. Thỏ này cần thời gian để làm quen với chủ nhân và môi trường sống. Bạn cần kiên nhẫn và không ép buộc thỏ tham gia vào các hoạt động huấn luyện quá sớm.",
+      "suitable_for": "Phù hợp cho những người yêu thích thỏ nhỏ và có thể kiên nhẫn trong việc chăm sóc. Đây là giống thỏ lý tưởng cho những ai có thời gian và sự kiên nhẫn để xây dựng mối quan hệ với thỏ.",
+      "care_tips": "Chăm sóc thỏ Netherland Dwarf đòi hỏi phải tạo ra một môi trường sống an toàn và yên tĩnh. Ngoài ra, bạn cần phải đảm bảo chế độ ăn uống đầy đủ và phù hợp để tránh các vấn đề về tiêu hóa. Đặc biệt, thỏ này có thể bị căng thẳng nếu không có đủ thời gian nghỉ ngơi.",
+      "grooming_tips": "Lông ngắn của thỏ Netherland Dwarf không cần chải nhiều, nhưng bạn vẫn nên kiểm tra thường xuyên để đảm bảo rằng thỏ không bị rối lông hoặc bị bẩn. Đảm bảo vệ sinh tai, móng và các khu vực khác của thỏ để ngăn ngừa nhiễm trùng.",
+      "interaction": "Netherland Dwarf thường rất nhút nhát và có thể không thích sự tương tác mạnh mẽ. Tuy nhiên, nếu được chăm sóc nhẹ nhàng và kiên nhẫn, thỏ này có thể dần dần làm quen và trở nên gần gũi với chủ nhân.",
+      "lifespan": "Netherland Dwarf có thể sống từ 10 đến 12 năm nếu được chăm sóc đúng cách. Đảm bảo chế độ ăn uống hợp lý và một môi trường sống yên tĩnh sẽ giúp thỏ phát triển khỏe mạnh và sống lâu.",
+      "space_needs": "Dù có kích thước nhỏ, thỏ Netherland Dwarf vẫn cần không gian để chạy nhảy và vận động. Đảm bảo rằng khu vực sống của thỏ đủ rộng để chúng có thể di chuyển tự do mà không bị căng thẳng."
     }
   },
   {
@@ -91,12 +107,16 @@
     "price": "10.000.000-15.000.000",
     "image": "https://i.imgur.com/GIKNFHu.jpeg",
     "additional_info": {
-      "health_issues": "Flemish Giant có thể gặp phải các vấn đề về khớp do trọng lượng lớn, cần theo dõi sức khỏe định kỳ.",
-      "exercise_needs": "Mặc dù chúng lớn nhưng Flemish Giant vẫn cần không gian để vận động.",
-      "diet": "Chế độ ăn của chúng cần có cỏ khô, rau tươi và thức ăn bổ sung phù hợp.",
-      "training_difficulty": "Dễ huấn luyện và rất thân thiện với con người.",
-      "suitable_for": "Phù hợp cho những người yêu thích thỏ lớn và có không gian sống rộng rãi.",
-      "care_tips": "Cần cung cấp đủ không gian sống và đảm bảo chế độ ăn uống đầy đủ."
+      "health_issues": "Flemish Giant có thể gặp phải các vấn đề về khớp do trọng lượng lớn, đặc biệt là khi chúng già đi. Thỏ này cũng dễ bị béo phì nếu chế độ ăn không hợp lý. Để tránh các vấn đề này, cần theo dõi sức khỏe định kỳ và cung cấp chế độ ăn uống hợp lý.",
+      "exercise_needs": "Mặc dù kích thước lớn, Flemish Giant vẫn cần không gian để vận động và giữ cơ thể khỏe mạnh. Chúng cần một không gian rộng rãi để chạy nhảy và vận động nhẹ nhàng, tránh bị béo phì hoặc các vấn đề khớp.",
+      "diet": "Chế độ ăn của Flemish Giant cần bao gồm cỏ khô, rau tươi, và thức ăn bổ sung. Do thỏ có kích thước lớn, chúng cần lượng thức ăn nhiều hơn để duy trì sức khỏe và trọng lượng cơ thể. Hãy tránh cho thỏ ăn quá nhiều thức ăn có hàm lượng tinh bột cao.",
+      "training_difficulty": "Flemish Giant rất dễ huấn luyện và thân thiện với con người. Chúng có tính cách điềm tĩnh và dễ dàng hòa nhập với môi trường gia đình. Bạn có thể dạy chúng các lệnh cơ bản và thỏ sẽ thích chơi đùa cùng bạn.",
+      "suitable_for": "Flemish Giant rất phù hợp cho những người yêu thích thỏ lớn và có không gian sống rộng rãi. Chúng có tính cách hiền lành, dễ gần và thích được chú ý, làm chúng trở thành người bạn tuyệt vời cho gia đình.",
+      "care_tips": "Cần cung cấp đủ không gian sống và đảm bảo chế độ ăn uống đầy đủ để thỏ Flemish Giant có thể phát triển khỏe mạnh. Bạn cũng nên theo dõi sức khỏe định kỳ để đảm bảo rằng thỏ không bị các vấn đề về khớp hoặc béo phì.",
+      "grooming_tips": "Lông của Flemish Giant cần được chải nhẹ nhàng để giữ cho bộ lông luôn sạch sẽ và không bị rối. Bạn nên kiểm tra móng, tai và mắt của thỏ thường xuyên để phát hiện dấu hiệu nhiễm trùng hoặc các vấn đề sức khỏe khác.",
+      "interaction": "Flemish Giant thích giao tiếp và rất thân thiện với con người. Chúng thích được ôm ấp và vuốt ve, và có thể giao tiếp tốt với các thành viên trong gia đình. Thỏ này cũng có thể chơi đùa với trẻ em một cách nhẹ nhàng và an toàn.",
+      "lifespan": "Flemish Giant có thể sống từ 8 đến 10 năm nếu được chăm sóc đúng cách. Cung cấp cho thỏ một chế độ ăn uống hợp lý và môi trường sống thoải mái sẽ giúp chúng phát triển khỏe mạnh và sống lâu.",
+      "space_needs": "Với kích thước lớn, Flemish Giant cần một không gian rộng để di chuyển và vận động. Đảm bảo rằng khu vực sống của thỏ đủ lớn để thỏ có thể tự do chạy nhảy mà không bị hạn chế."
     }
   },
   {
@@ -111,12 +131,16 @@
     "price": "2.000.000-5.000.000",
     "image": "https://i.imgur.com/OdukFBl.jpeg",
     "additional_info": {
-      "health_issues": "Angora dễ bị rối lông và cần chăm sóc đặc biệt về lông dài.",
-      "exercise_needs": "Chúng cần không gian đủ rộng để chạy nhảy và giữ sức khỏe.",
-      "diet": "Cần cung cấp chế độ ăn có đầy đủ cỏ khô và thức ăn bổ sung.",
-      "training_difficulty": "Dễ huấn luyện và rất yêu thích sự chú ý từ chủ nhân.",
-      "suitable_for": "Phù hợp với những người có thời gian chăm sóc và yêu thích thỏ có lông dài đẹp.",
-      "care_tips": "Lông dài cần được chải thường xuyên để giữ vệ sinh và tránh rối."
+      "health_issues": "Thỏ Angora dễ bị rối lông và có thể gặp các vấn đề về lông nếu không được chăm sóc đúng cách. Nếu lông bị rối, thỏ có thể bị đau đớn và ảnh hưởng đến sức khỏe. Ngoài ra, thỏ cũng dễ bị mắc các bệnh về mắt và đường hô hấp nếu môi trường sống không sạch sẽ.",
+      "exercise_needs": "Thỏ Angora cần không gian đủ rộng để chạy nhảy và giữ sức khỏe. Chúng thích vận động nhẹ nhàng và thường xuyên, vì vậy bạn cần đảm bảo rằng thỏ có một khu vực chơi đùa thoải mái.",
+      "diet": "Cần cung cấp chế độ ăn có đầy đủ cỏ khô và thức ăn bổ sung. Chế độ ăn uống hợp lý giúp duy trì sức khỏe lông và hệ tiêu hóa của thỏ. Bạn cũng có thể bổ sung vitamin và khoáng chất vào chế độ ăn của thỏ để tăng cường sức khỏe tổng thể.",
+      "training_difficulty": "Angora dễ huấn luyện và rất yêu thích sự chú ý từ chủ nhân. Chúng có thể học các lệnh cơ bản và rất thích khi được trò chuyện hoặc chơi đùa với con người.",
+      "suitable_for": "Angora rất phù hợp với những người có thời gian chăm sóc và yêu thích thỏ có lông dài đẹp. Thỏ này cần sự chăm sóc đặc biệt về lông và môi trường sống sạch sẽ, vì vậy nó phù hợp với những người có thể dành thời gian chăm sóc thường xuyên.",
+      "care_tips": "Lông dài của Angora cần được chải thường xuyên để giữ vệ sinh và tránh bị rối. Bạn cần kiểm tra lông và cơ thể thỏ hàng ngày để phát hiện bất kỳ vấn đề sức khỏe nào. Chăm sóc đặc biệt về mắt và tai cũng rất quan trọng để thỏ không gặp phải các vấn đề viêm nhiễm.",
+      "grooming_tips": "Chải lông thỏ Angora ít nhất 3 lần mỗi tuần để tránh tình trạng rối lông. Bạn cũng nên kiểm tra tai, mắt và móng của thỏ để phát hiện các dấu hiệu bất thường. Lông của Angora cần được chăm sóc đặc biệt để giữ cho chúng luôn mềm mại và sạch sẽ.",
+      "interaction": "Angora thích sự chú ý và sẽ rất vui khi được chơi đùa cùng bạn. Thỏ này thích gần gũi và sẽ thường xuyên tìm cách tương tác với chủ nhân. Hãy chắc chắn dành thời gian để chơi với thỏ và tạo mối quan hệ bền vững.",
+      "lifespan": "Thỏ Angora có thể sống từ 7 đến 12 năm nếu được chăm sóc đúng cách. Việc cung cấp chế độ ăn uống và môi trường sống hợp lý sẽ giúp thỏ phát triển khỏe mạnh và sống lâu.",
+      "space_needs": "Thỏ Angora cần một không gian sống thoải mái để vận động. Cung cấp cho thỏ một khu vực rộng để chúng có thể chơi đùa và giữ sức khỏe tốt."
     }
   }
 ]
