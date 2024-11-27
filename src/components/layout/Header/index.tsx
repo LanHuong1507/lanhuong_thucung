@@ -1,55 +1,69 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import { routerNames } from "@/components/constants/router.constant";
+import Logo from "../../../assets/images/logo.jpg";
+
 const MenuOutlined = dynamic(() => import("@ant-design/icons/MenuOutlined"), {
   ssr: false,
 });
 const CloseOutlined = dynamic(() => import("@ant-design/icons/CloseOutlined"), {
   ssr: false,
 });
-import { routerNames } from "@/components/constants/router.constant";
-import dynamic from "next/dynamic";
-import Logo from "../../../assets/images/logo.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-      <div className="mx-auto flex items-center justify-between p-4">
+    <header className="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+      <div className="mx-auto flex items-center justify-between p-4 lg:px-8 transition-all duration-300">
         <Link href={routerNames.HOME}>
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-2xl font-bold">
-              <Image
-                src={Logo}
-                alt="logo"
-                width={40}
-                height={40}
-                className="h-10 w-10"
-              />
-              <span>Lan Huong</span>
-            </div>
+          <div className="flex items-center space-x-4 cursor-pointer">
+            <Image
+              src={Logo}
+              alt="logo"
+              width={40}
+              height={40}
+              className="h-12 w-12"
+            />
+            <span className="text-xl font-semibold">Lan Hương</span>
           </div>
         </Link>
         {!menuOpen && (
           <nav className="hidden lg:flex space-x-8 text-lg font-semibold">
-            <Link href={routerNames.CATEGORY} className="hover:underline">
+            <Link
+              href={routerNames.CATEGORY}
+              className="hover:text-yellow-400 transition duration-300"
+            >
               Danh mục sản phẩm
             </Link>
-            <Link href={routerNames.ORGANIZATION} className="hover:underline">
+            <Link
+              href={routerNames.ORGANIZATION}
+              className="hover:text-yellow-400 transition duration-300"
+            >
               Cơ cấu tổ chức
             </Link>
-            <Link href={routerNames.HISTORY} className="hover:underline">
+            <Link
+              href={routerNames.HISTORY}
+              className="hover:text-yellow-400 transition duration-300"
+            >
               Lịch sử hình thành
             </Link>
-            <Link href={routerNames.CAREER} className="hover:underline">
+            <Link
+              href={routerNames.CAREER}
+              className="hover:text-yellow-400 transition duration-300"
+            >
               Tuyển dụng
             </Link>
-            <Link href={routerNames.CONTACT} className="hover:underline">
+            <Link
+              href={routerNames.CONTACT}
+              className="hover:text-yellow-400 transition duration-300"
+            >
               Liên hệ
             </Link>
           </nav>
         )}
-
         <div className="lg:hidden flex items-center space-x-4">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -68,20 +82,20 @@ const Header = () => {
         ></div>
       )}
       <div
-        className={`fixed left-0 top-0 h-full w-72 md:w-96 transform bg-white text-black overflow-y-auto ${
+        className={`fixed left-0 top-0 h-full w-72 md:w-96 transform bg-white text-black overflow-y-auto transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
-        } z-50 shadow-lg transition-transform duration-300 ease-in-out`}
+        } z-50 shadow-xl`}
       >
-        <div className="flex justify-between items-center p-4 bg-blue-900">
+        <div className="flex justify-between items-center p-4 bg-blue-900 text-white">
           <div className="flex items-center space-x-2">
             <Image
               src={Logo}
               alt="logo"
               width={35}
               height={35}
-              className="h-10 w-10"
+              className="h-10 w-10 rounded-full"
             />
-            <span className="text-white text-lg font-semibold">Lan Huong</span>
+            <span className="text-lg font-semibold">Lan Hương</span>
           </div>
           <button
             onClick={() => setMenuOpen(false)}
@@ -91,6 +105,8 @@ const Header = () => {
             <CloseOutlined />
           </button>
         </div>
+
+        {/* Mobile Menu Links */}
         <div className="p-6 space-y-4">
           <Link
             href={routerNames.CATEGORY}

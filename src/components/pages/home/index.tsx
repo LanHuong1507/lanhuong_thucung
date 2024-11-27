@@ -11,7 +11,6 @@ import PetBanner from "./PetBanner";
 import PetBusinessCircle from "./PetBusinessCircle";
 import PepDog from "../../../assets/images/pd.jpg";
 import PepCat from "../../../assets/images/pc.jpg";
-
 import {
   EnvironmentOutlined,
   HarmonyOSOutlined,
@@ -21,6 +20,7 @@ import {
   ThunderboltOutlined,
 } from "@ant-design/icons";
 import { routerNames } from "@/components/constants/router.constant";
+import PartnerCarousel from "./PartnerCarousel";
 import ProductList from "./ProductList";
 
 const { TabPane } = Tabs;
@@ -427,7 +427,10 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <ProductList showBestSeller={true} />
+        <ProductList />
+      </section>
+      <section>
+        <PartnerCarousel />
       </section>
       <footer className="bg-white py-4">
         <div className="container mx-auto px-6 py-16">
@@ -458,7 +461,6 @@ const Home = () => {
                   <Image
                     src={PepCat}
                     alt="Pet Community Center"
-                    layout="responsive"
                     width={1899}
                     height={733}
                     className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"

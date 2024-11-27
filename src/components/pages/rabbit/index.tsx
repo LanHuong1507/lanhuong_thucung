@@ -13,8 +13,8 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
+import Rabbit1 from "@/assets/images/rabbit1.png";
 
-// Define a Rabbit interface based on the provided data structure
 interface Rabbit {
   id: number;
   name: string;
@@ -63,10 +63,10 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
         filters.lifeSpan.length === 0 ||
         filters.lifeSpan.some((range) => {
           const [min, max] =
-            range === "Dưới 5 năm"
-              ? [0, 5]
-              : range === "5-10 năm"
-                ? [5, 10]
+            range === "Dưới 8 năm"
+              ? [0, 8]
+              : range === "8-10 năm"
+                ? [8, 10]
                 : range === "Trên 10 năm"
                   ? [10, Infinity]
                   : [0, 0];
@@ -82,11 +82,10 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
           const price = rabbit.price
             .split("-")
             .map((val) => parseInt(val.replace(/[^\d]/g, "")));
-          if (range === "Low") return price[0] < 3000000; // Prices below 3 million
+          if (range === "Low") return price[0] < 1000000;
           if (range === "Medium")
-            return price[0] >= 3000000 && price[0] < 7000000; // Between 3 million and 7 million
-          if (range === "High")
-            return price[0] >= 7000000 && price[0] <= 10000000; // Between 7 million and 10 million
+            return price[0] >= 1000000 && price[0] < 5000000;
+          if (range === "High") return price[0] >= 5000000;
           return false;
         });
 
@@ -175,8 +174,8 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                 value={filters.lifeSpan}
                 className="w-full"
               >
-                <Select.Option value="Dưới 5 năm">Dưới 5 năm</Select.Option>
-                <Select.Option value="5-10 năm">5-10 năm</Select.Option>
+                <Select.Option value="Dưới 8 năm">Dưới 8 năm</Select.Option>
+                <Select.Option value="8-10 năm">8-10 năm</Select.Option>
                 <Select.Option value="Trên 10 năm">Trên 10 năm</Select.Option>
               </Select>
             </div>
@@ -190,21 +189,35 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                 value={filters.priceRange}
                 className="w-full"
               >
-                <Select.Option value="Low">Dưới 3 triệu</Select.Option>
-                <Select.Option value="Medium">3 triệu - 7 triệu</Select.Option>
-                <Select.Option value="High">7 triệu - 10 triệu</Select.Option>
+                <Select.Option value="Low">Dưới 1 triệu</Select.Option>
+                <Select.Option value="Medium">1 triệu - 5 triệu</Select.Option>
+                <Select.Option value="High">Hơn 5 triệu</Select.Option>
               </Select>
             </div>
           </Card>
         </Col>
 
         <Col xs={24} lg={18}>
-          <h1 className="text-center text-2xl font-bold mb-6">CÁC GIỐNG THỎ</h1>
+          <header className="flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
+            <div className="flex items-center space-x-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+                Các Giống Thỏ
+              </h2>{" "}
+              <Image
+                src={Rabbit1}
+                alt="Rabbit"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            </div>
+          </header>
           <section className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             {chunkedRabbits[currentPage - 1]?.map((rabbit) => (
               <Card
                 key={rabbit.id}
                 hoverable
+                className="relative shadow-lg rounded-lg overflow-hidden group transition-transform duration-500 ease-in-out transform hover:scale-105"
                 cover={
                   <Image
                     alt={rabbit.name}
@@ -214,9 +227,8 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     className="rounded-lg"
                   />
                 }
-                className="relative w-full shadow-lg rounded-lg overflow-hidden group"
               >
-                <div className="p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
+                <div className="p-2 md:p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {rabbit.name}
                   </h3>
@@ -249,11 +261,6 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     <strong>Giá:</strong> {rabbit.price} VNĐ
                   </p>
 
-                  <p className="mb-4">
-                    <strong>Chăm sóc:</strong>{" "}
-                    {rabbit.additional_info.care_tips}
-                  </p>
-
                   <Link
                     href={`${routerNames.RABBIT_DETAIL.replace(
                       "[id]",
@@ -263,7 +270,7 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     <Button
                       type="primary"
                       block
-                      className="mb-4 py-3 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                      className="mb-4 py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                     >
                       Xem chi tiết
                     </Button>
@@ -273,7 +280,7 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     <Button
                       type="default"
                       block
-                      className="py-3 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                      className="py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                     >
                       Liên hệ
                     </Button>

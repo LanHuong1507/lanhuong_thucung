@@ -36,15 +36,15 @@ const FoodNutrition: React.FC = () => {
           <Link href={routerNames.CATEGORY}>Dụng Cụ Chăm Sóc</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          <span className="font-bold">Danh Sách Thức Ăn Dinh Dưỡng</span>
+          <span className="font-bold">Thức Ăn & Dinh Dưỡng</span>
         </Breadcrumb.Item>
       </Breadcrumb>
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Danh Sách Thức Ăn Dinh Dưỡng
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center text-blue-800 border-b-4 border-blue-600 pb-2">
+        Thức Ăn & Dinh Dưỡng
       </h1>
       <Row gutter={[16, 16]} justify="center">
         {paginatedProducts.map((product) => (
-          <Col key={product.id} xs={24} sm={12} md={8}>
+          <Col key={product.id} xs={24} sm={12} md={12} lg={8}>
             <Card
               hoverable
               className="relative shadow-lg rounded-lg overflow-hidden group transition-transform duration-500 ease-in-out transform hover:scale-105"

@@ -14,7 +14,7 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
-
+import Cat1 from "@/assets/images/cat1.png";
 interface Cat {
   id: number;
   name: string;
@@ -281,17 +281,27 @@ const CatList = ({ catsPerPage = 4 }) => {
         </Col>
 
         <Col xs={24} lg={18}>
-          <header className="flex justify-center py-2 px-4">
-            <h2 className="text-lg md:text-2xl font-bold text-center">
-              Các Giống Mèo
-            </h2>
+          <header className="flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
+            <div className="flex items-center space-x-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+                Các Giống Mèo
+              </h2>{" "}
+              <Image
+                src={Cat1}
+                alt="Cat"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            </div>
           </header>
 
           <section className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             {chunkedCats[currentPage - 1]?.map((cat) => (
               <Card
-                key={cat.id}
                 hoverable
+                className="relative shadow-lg rounded-lg overflow-hidden group transition-transform duration-500 ease-in-out transform hover:scale-105"
+                key={cat.id}
                 cover={
                   <Image
                     alt={cat.name}
@@ -301,9 +311,8 @@ const CatList = ({ catsPerPage = 4 }) => {
                     className="rounded-lg"
                   />
                 }
-                className="relative w-full shadow-lg rounded-lg overflow-hidden group"
               >
-                <div className="p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
+                <div className="p-2 text-center transition-opacity duration-300 group-hover:opacity-0">
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {cat.name}
                   </h3>
@@ -313,45 +322,43 @@ const CatList = ({ catsPerPage = 4 }) => {
                 </div>
                 <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-6 flex flex-col justify-start items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div>
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Xuất xứ:{" "}
-                      <span className="text-sm md:text-lg text-gray-700 font-semibold">
-                        {cat.origin}
-                      </span>
+                      <span className="font-semibold">{cat.origin}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Kích thước:{" "}
                       <span className="font-semibold">{cat.size}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Tuổi thọ:{" "}
                       <span className="font-semibold">{cat.life_span}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Cân nặng:{" "}
                       <span className="font-semibold">{cat.weight_range}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Loại lông:{" "}
                       <span className="font-semibold">{cat.coat}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-2">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
                       Giống:{" "}
                       <span className="font-semibold">{cat.breedType}</span>
                     </p>
 
-                    <p className="text-sm md:text-lg text-gray-700 mb-4">
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-4">
                       Giới tính:{" "}
                       <span className="font-semibold">{cat.gender}</span>
                     </p>
                   </div>
 
-                  <div className="mt-0 md:mt-4 flex flex-col w-full">
+                  <div className="mt-0 md:mt-2 flex flex-col w-full">
                     <Link
                       href={`${routerNames.CAT_DETAIL.replace(
                         "[id]",
@@ -361,7 +368,7 @@ const CatList = ({ catsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
+                        className="w-full text-center py-4 lg:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
                       >
                         Xem chi tiết
                       </Button>
@@ -371,7 +378,7 @@ const CatList = ({ catsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                        className="w-full text-center py-4 lg:py-6 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
                       >
                         Liên hệ ngay
                       </Button>

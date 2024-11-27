@@ -50,13 +50,13 @@ const Banner = () => {
             </p>
 
             <Link href={routerNames.CATEGORY}>
-              <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+              <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-4 px-6 rounded-lg shadow-md hover:bg-yellow-500 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600">
                 Tìm Hiểu Thêm
               </div>
             </Link>
           </motion.div>
           <motion.div
-            className="mt-10"
+            className="mt-12"
             initial="hidden"
             animate="visible"
             transition={{ duration: 1, delay: 0.5 }}
@@ -71,7 +71,6 @@ const Banner = () => {
               src={Banner2}
               alt="Banner Image 2"
               layout="fill"
-              objectFit="cover"
               className="z-0"
             />
           </div>
@@ -93,7 +92,7 @@ const Banner = () => {
                 bạn dễ dàng tìm được người bạn đồng hành lý tưởng.
               </p>
               <Link href={routerNames.CATEGORY}>
-                <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+                <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-4 px-6 rounded-lg shadow-md hover:bg-yellow-500 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600">
                   Tìm Hiểu Thêm
                 </div>
               </Link>
@@ -102,33 +101,28 @@ const Banner = () => {
         </div>
         <div className="relative w-full h-screen">
           <div className="absolute inset-0">
-            <Image
-              src={Banner3}
-              alt="Banner Image 3"
-              layout="fill"
-              objectFit="cover"
-              className="z-0"
-            />
+            <Image src={Banner3} alt="Banner Image 3" className="z-0" />
           </div>
+
           <motion.div
-            className="absolute inset-0 flex items-start justify-start text-left px-4 md:p-8 z-10"
+            className="absolute inset-0 flex items-center justify-center text-center px-4 md:p-8 z-10"
             initial="hidden"
             animate="visible"
             transition={{ duration: 1, delay: 0.3 }}
             variants={textVariants}
           >
-            <div className="max-w-4xl">
-              <h1 className="text-3xl md:text-5xl leading-tight mb-6">
+            <div className="max-w-3xl text-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
                 Dụng Cụ Chăm Sóc Thú Cưng Chất Lượng
               </h1>
-              <p className="text-lg md:text-2xl mb-6">
+              <p className="text-lg md:text-xl text-white mb-6">
                 Mua dụng cụ chăm sóc thú cưng từ các thương hiệu uy tín. Chúng
                 tôi cung cấp các sản phẩm chất lượng cao giúp bạn chăm sóc vật
                 nuôi một cách tốt nhất.
               </p>
 
               <Link href={routerNames.CATEGORY}>
-                <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-2 px-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+                <div className="inline-block bg-yellow-400 text-gray-800 text-lg font-semibold py-4 px-6 rounded-lg shadow-md hover:bg-yellow-500 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-600">
                   Tìm Hiểu Thêm
                 </div>
               </Link>

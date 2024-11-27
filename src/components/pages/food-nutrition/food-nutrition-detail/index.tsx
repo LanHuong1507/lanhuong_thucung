@@ -35,6 +35,7 @@ const FoodNutritionDetail = () => {
     null,
   );
   const [isSidebarVisible, setSidebarVisible] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>("");
 
   useEffect(() => {
     if (id && foodNutritionData.length > 0) {
@@ -42,6 +43,10 @@ const FoodNutritionDetail = () => {
         (product) => product.id === Number(id),
       );
       setFoodNutrition(product || null);
+
+      if (product) {
+        setSelectedImage(product.image);
+      }
     }
   }, [id, foodNutritionData]);
 
@@ -54,6 +59,10 @@ const FoodNutritionDetail = () => {
     if (element) {
       window.scrollTo({ top: element.offsetTop - 100, behavior: "smooth" });
     }
+  };
+
+  const handleThumbnailClick = (thumb: string) => {
+    setSelectedImage(thumb);
   };
 
   if (!foodNutrition) {
@@ -71,12 +80,10 @@ const FoodNutritionDetail = () => {
       </section>
     );
   }
-
-  // Remove "Cách sử dụng" and "Thành phần" from the table's data source
   const dataSource = [
-    { key: "2", attribute: "Danh mục", value: foodNutrition.category },
+    { key: "1", attribute: "Danh mục", value: foodNutrition.category },
+    { key: "2", attribute: "Kích thước", value: foodNutrition.size },
     { key: "3", attribute: "Giá bán", value: foodNutrition.price },
-    { key: "4", attribute: "Kích thước", value: foodNutrition.size },
   ];
 
   const columns = [
@@ -98,9 +105,6 @@ const FoodNutritionDetail = () => {
             <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Link href={routerNames.CATEGORY}>Dụng Cụ Chăm Sóc</Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>
             <Link href={routerNames.FOOD_NUTRITION}>Thức Ăn & Dinh Dưỡng</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item className="font-bold">
@@ -111,7 +115,7 @@ const FoodNutritionDetail = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <article className="flex flex-col items-center mb-6 md:mb-0">
             <Image
-              src={foodNutrition.image}
+              src={selectedImage}
               alt={foodNutrition.name}
               className="w-full h-[70%] object-cover rounded-lg shadow-lg"
               width={400}
@@ -122,32 +126,31 @@ const FoodNutritionDetail = () => {
                 <Image
                   key={index}
                   src={thumb}
-                  alt={`${foodNutrition.name} thumbnail ${
-                    (index as number) + 1
-                  }`}
-                  className="w-32 h-28 object-cover rounded-md cursor-pointer"
+                  alt={`${foodNutrition.name} thumbnail ${index + 1}`}
+                  className="w-24 lg:w-32 h-28 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
+                  onClick={() => handleThumbnailClick(thumb)}
                 />
               ))}
             </div>
           </article>
 
           <article>
-            <h1 className="text-2xl font-bold mb-6 text-center w-full">
+            <h1 className="text-2xl font-bold mb-6 text-center">
               {foodNutrition.name}
             </h1>
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="shadow-md rounded-lg"
+              className="rounded-lg"
             />
             <section className="flex justify-center mt-6">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-[90%] py-4 px-6 hover:bg-blue-700 transition duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:scale-105 transform transition-all duration-300 ease-in-out shadow-lg"
               >
                 Liên hệ
               </Button>

@@ -32,18 +32,23 @@ const CareTool = () => {
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
+          <Link href={routerNames.CATEGORY}>Danh Mục Sản Phẩm</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          <Link href={routerNames.CATEGORY}>Dụng cụ chăm sóc</Link>
+          <Link
+            href={routerNames.CATEGORY}
+            className="font-semibold text-blue-600"
+          >
+            Dụng Cụ
+          </Link>
         </Breadcrumb.Item>
       </Breadcrumb>
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Danh Sách Sản Phẩm
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center text-blue-800 border-b-4 border-blue-600 pb-2">
+        Dụng Cụ Chăm Sóc
       </h1>
       <Row gutter={[16, 16]} justify="center">
         {paginatedProducts.map((product) => (
-          <Col key={product.id} xs={24} sm={12} md={8}>
+          <Col key={product.id} xs={24} sm={12} md={12} lg={8}>
             <Card
               hoverable
               className="relative shadow-lg rounded-lg overflow-hidden group transition-transform duration-500 ease-in-out transform hover:scale-105"

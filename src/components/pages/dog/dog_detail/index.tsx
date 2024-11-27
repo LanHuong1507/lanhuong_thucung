@@ -36,6 +36,7 @@ interface Dog {
 
 const DogDetail = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const [mainImage, setMainImage] = useState<string>("");
   const router = useRouter();
   const { id } = router.query;
   const dogs = useSelector((state: { dogs: Dog[] }) => state.dogs);
@@ -51,17 +52,20 @@ const DogDetail = () => {
       </section>
     );
   }
+  if (!mainImage) {
+    setMainImage(dog.image);
+  }
 
   const dataSource = [
-    { key: "2", attribute: "Xuất xứ", value: dog.origin },
-    { key: "3", attribute: "Kích thước", value: dog.size },
-    { key: "4", attribute: "Tuổi thọ", value: dog.life_span },
-    { key: "5", attribute: "Cân nặng", value: dog.weight_range },
-    { key: "6", attribute: "Loại lông", value: dog.coat },
-    { key: "8", attribute: "Màu lông", value: dog.color.join(", ") },
-    { key: "9", attribute: "Giống", value: dog.breedType },
-    { key: "10", attribute: "Giới tính", value: dog.gender },
-    { key: "11", attribute: "Giá bán", value: `${dog.price} VNĐ` },
+    { key: "1", attribute: "Xuất xứ", value: dog.origin },
+    { key: "2", attribute: "Kích thước", value: dog.size },
+    { key: "3", attribute: "Tuổi thọ", value: dog.life_span },
+    { key: "4", attribute: "Cân nặng", value: dog.weight_range },
+    { key: "5", attribute: "Loại lông", value: dog.coat },
+    { key: "6", attribute: "Màu lông", value: dog.color.join(", ") },
+    { key: "7", attribute: "Giống", value: dog.breedType },
+    { key: "8", attribute: "Giới tính", value: dog.gender },
+    { key: "9", attribute: "Giá bán", value: `${dog.price}` },
   ];
 
   const columns = [
@@ -91,6 +95,10 @@ const DogDetail = () => {
     }
   };
 
+  const handleThumbnailClick = (thumbnail: string) => {
+    setMainImage(thumbnail);
+  };
+
   return (
     <>
       <Head>
@@ -118,7 +126,7 @@ const DogDetail = () => {
         <section className="flex flex-col md:flex-row justify-between items-start">
           <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
             <Image
-              src={dog.image}
+              src={mainImage}
               alt={dog.name}
               className="w-full md:w-[95%] h-96 object-cover rounded-md"
               width={400}
@@ -134,6 +142,7 @@ const DogDetail = () => {
                     className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
                     width={400}
                     height={400}
+                    onClick={() => handleThumbnailClick(thumb)}
                   />
                 ))}
               </div>
@@ -161,70 +170,72 @@ const DogDetail = () => {
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-1/2 p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
               >
                 Liên hệ
               </Button>
             </section>
           </article>
         </section>
-        <section className="flex flex-col">
-          <div className="mt-8 py-4 px-6 w-full md:w-[50%] border-2 border-gray-300 rounded-lg shadow-lg bg-white">
+        <section className="mt-12">
+          <div className="w-full md:w-[70%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
-              className="text-xl md:text-3xl font-semibold text-black py-2 px-4 rounded-lg flex items-center cursor-pointer hover:text-blue-400 hover:translate-x-1 transition-all duration-300"
+              className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
               onClick={handleToggleSidebar}
             >
-              MỤC LỤC NỘI DUNG
-              <span className="ml-12 flex items-center">
+              <span>MỤC LỤC NỘI DUNG</span>
+              <span>
                 {isSidebarVisible ? <UpOutlined /> : <DownOutlined />}
               </span>
             </h2>
 
             {isSidebarVisible && (
-              <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("temperament")}
-                >
-                  Tính cách
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("health")}
-                >
-                  Sức khỏe
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("exercise")}
-                >
-                  Nhu cầu vận động
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("diet")}
-                >
-                  Chế độ ăn
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("training")}
-                >
-                  Huấn luyện
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("suitable_for")}
-                >
-                  Phù hợp với
-                </li>
-                <li
-                  className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                  onClick={() => handleSectionClick("care_tips")}
-                >
-                  Lời khuyên chăm sóc
-                </li>
-              </ol>
+              <div className="p-4">
+                <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("temperament")}
+                  >
+                    Tính cách
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("health")}
+                  >
+                    Sức khỏe
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("exercise")}
+                  >
+                    Nhu cầu vận động
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("diet")}
+                  >
+                    Chế độ ăn
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("training")}
+                  >
+                    Huấn luyện
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("suitable_for")}
+                  >
+                    Phù hợp với
+                  </li>
+                  <li
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    onClick={() => handleSectionClick("care_tips")}
+                  >
+                    Lời khuyên chăm sóc
+                  </li>
+                </ol>
+              </div>
             )}
           </div>
         </section>

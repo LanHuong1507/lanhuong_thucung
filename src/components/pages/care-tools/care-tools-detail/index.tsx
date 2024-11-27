@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Breadcrumb, Button, Table, Rate } from "antd"; // Import Rate here
+import { Breadcrumb, Button, Table, Rate } from "antd";
 import Head from "next/head";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
@@ -38,11 +38,15 @@ const CareToolDetail = () => {
   );
   const [careTool, setCareTool] = useState<CareTool | null>(null);
   const [isSidebarVisible, setSidebarVisible] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>("");
 
   useEffect(() => {
     if (id && careTools.length > 0) {
       const tool = careTools.find((tool) => tool.id === Number(id));
       setCareTool(tool || null);
+      if (tool) {
+        setSelectedImage(tool.image);
+      }
     }
   }, [id, careTools]);
 
@@ -55,6 +59,10 @@ const CareToolDetail = () => {
     if (element) {
       window.scrollTo({ top: element.offsetTop - 100, behavior: "smooth" });
     }
+  };
+
+  const handleThumbnailClick = (thumb: string) => {
+    setSelectedImage(thumb);
   };
 
   if (!careTool) {
@@ -74,21 +82,20 @@ const CareToolDetail = () => {
   }
 
   const dataSource = [
-    { key: "1", attribute: "Cách sử dụng", value: careTool.usage },
-    { key: "2", attribute: "Danh mục", value: careTool.category },
-    { key: "3", attribute: "Giá bán", value: careTool.price },
-    { key: "4", attribute: "Chất liệu", value: careTool.material },
-    { key: "5", attribute: "Thương hiệu", value: careTool.brand },
+    { key: "1", attribute: "Danh mục", value: careTool.category },
+    { key: "2", attribute: "Chất liệu", value: careTool.material },
+    { key: "3", attribute: "Thương hiệu", value: careTool.brand },
     {
-      key: "6",
+      key: "4",
       attribute: "Kích thước thú cưng tương thích",
       value: careTool.pet_size_compatibility.join(", "),
     },
     {
-      key: "7",
+      key: "5",
       attribute: "Giống chó tương thích",
       value: careTool.compatible_breeds.join(", "),
     },
+    { key: "6", attribute: "Giá bán", value: careTool.price },
   ];
 
   const columns = [
@@ -107,23 +114,28 @@ const CareToolDetail = () => {
             <Link href={routerNames.HOME}>Trang Chủ</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
+            <Link href={routerNames.CATEGORY}>Danh Mục Sản Phẩm</Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <Link href={routerNames.CARE_TOOLS}>Dụng Cụ Chăm Sóc</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item className="font-bold">
             {careTool.name}
           </Breadcrumb.Item>
         </Breadcrumb>
+
         <h1 className="text-2xl font-bold mb-6 text-center w-full">
           {careTool.name}
         </h1>
+
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <article className="flex flex-col items-center mb-6 md:mb-0">
             <Image
-              src={careTool.image}
+              src={selectedImage}
               alt={careTool.name}
               className="w-full h-[70%] object-cover rounded-lg shadow-lg"
-              width={400}
-              height={400}
+              width={500}
+              height={500}
             />
             <div className="flex space-x-4 mt-4 flex-wrap justify-center">
               {careTool.thumbnails.map((thumb, index) => (
@@ -131,9 +143,10 @@ const CareToolDetail = () => {
                   key={index}
                   src={thumb}
                   alt={`${careTool.name} thumbnail ${(index as number) + 1}`}
-                  className="w-32 h-28 object-cover rounded-md cursor-pointer"
+                  className="w-24 lg:w-32 h-28 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
+                  onClick={() => handleThumbnailClick(thumb)}
                 />
               ))}
             </div>
@@ -150,7 +163,7 @@ const CareToolDetail = () => {
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-full md:w-auto py-4 px-6 hover:bg-blue-700 transition duration-300"
+                className="w-full md:w-[90%] py-4 px-6 hover:bg-blue-700 transition duration-300"
               >
                 Liên hệ
               </Button>
@@ -158,13 +171,13 @@ const CareToolDetail = () => {
           </article>
         </section>
 
-        <section className="mt-12">
+        <section className="mt-8">
           <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
           <p className="mt-4 text-gray-700">{careTool.description}</p>
         </section>
 
         <section className="mt-12">
-          <div className="w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
+          <div className="w-full md:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
               className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
               onClick={handleToggleSidebar}
@@ -224,6 +237,7 @@ const CareToolDetail = () => {
             </li>
           </ol>
         </section>
+
         <section className="my-10">
           <h2 className="text-xl font-semibold">
             Đánh giá của khách hàng về sản phẩm này

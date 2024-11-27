@@ -13,7 +13,7 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
-
+import Fish1 from "@/assets/images/fish1.png";
 interface Fish {
   id: number;
   name: string;
@@ -90,10 +90,10 @@ const FishList = ({ fishPerPage = 4 }) => {
           const price = fish.price
             .split("-")
             .map((val) => parseInt(val.replace(/[^\d]/g, "")));
-          if (range === "Low") return price[0] < 5000000;
+          if (range === "Low") return price[0] < 100000;
           if (range === "Medium")
-            return price[0] >= 5000000 && price[0] < 15000000;
-          if (range === "High") return price[0] >= 15000000;
+            return price[0] >= 100000 && price[0] < 500000;
+          if (range === "High") return price[0] >= 500000;
           return false;
         });
 
@@ -181,9 +181,9 @@ const FishList = ({ fishPerPage = 4 }) => {
                 value={filters.lifeSpan}
                 className="w-full"
               >
-                <Select.Option value="Dưới 10 năm">Dưới 10 năm</Select.Option>
-                <Select.Option value="10-15 năm">10-15 năm</Select.Option>
-                <Select.Option value="Trên 15 năm">Trên 15 năm</Select.Option>
+                <Select.Option value="Dưới 10 năm">Dưới 5 năm</Select.Option>
+                <Select.Option value="10-15 năm">5-10 năm</Select.Option>
+                <Select.Option value="Trên 15 năm">Trên 10 năm</Select.Option>
               </Select>
             </div>
 
@@ -196,19 +196,30 @@ const FishList = ({ fishPerPage = 4 }) => {
                 value={filters.priceRange}
                 className="w-full"
               >
-                <Select.Option value="Low">Dưới 5 triệu</Select.Option>
-                <Select.Option value="Medium">5 triệu - 15 triệu</Select.Option>
-                <Select.Option value="High">Trên 15 triệu</Select.Option>
+                <Select.Option value="Low">Dưới 100 ngàn</Select.Option>
+                <Select.Option value="Medium">
+                  Trên 100 ngàn - Dưới 500 ngàn
+                </Select.Option>
+                <Select.Option value="High">Trên 500 ngàn</Select.Option>
               </Select>
             </div>
           </Card>
         </Col>
 
         <Col xs={24} lg={18}>
-          <header className="flex justify-center py-2 px-4">
-            <h2 className="text-lg md:text-2xl font-bold text-center">
-              Các Giống Cá
-            </h2>
+          <header className="flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
+            <div className="flex items-center space-x-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+                Các Giống Cá
+              </h2>{" "}
+              <Image
+                src={Fish1}
+                alt="Fish"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            </div>
           </header>
 
           <section className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
@@ -216,16 +227,16 @@ const FishList = ({ fishPerPage = 4 }) => {
               <Card
                 key={fish.id}
                 hoverable
+                className="relative shadow-lg rounded-lg overflow-hidden group transition-transform duration-500 ease-in-out transform hover:scale-105"
                 cover={
                   <Image
                     alt={fish.name}
                     src={fish.image}
-                    width={250} // Reduced image size
-                    height={250} // Reduced image size
+                    width={250}
+                    height={250}
                     className="rounded-lg"
                   />
                 }
-                className="relative w-full shadow-lg rounded-lg overflow-hidden group"
               >
                 <div className="p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
@@ -239,11 +250,24 @@ const FishList = ({ fishPerPage = 4 }) => {
                   <h3 className="font-bold text-xl mb-4 text-center">
                     {fish.name}
                   </h3>
-                  <p className="mb-4">Màu sắc: {fish.color.join(", ")}</p>
-                  <p className="mb-4">Kích thước: {fish.size_range}</p>
-                  <p className="mb-4">Tuổi thọ: {fish.life_span}</p>
-                  <p className="mb-4">Giá: {fish.price}</p>
-                  <p className="mb-4">Xuất xứ: {fish.origin}</p>
+                  <p className="mb-4 text-sm md:text-base lg:text-lg">
+                    <strong>Màu sắc: </strong>
+                    <span>{fish.color.join(", ")}</span>
+                  </p>
+                  <p className="mb-4 text-sm md:text-base lg:text-lg">
+                    <strong>Kích thước: </strong>
+                    <span>{fish.size_range}</span>
+                  </p>
+                  <p className="mb-4 text-sm md:text-base lg:text-lg">
+                    <strong>Tuổi thọ:</strong> <span>{fish.life_span}</span>
+                  </p>
+                  <p className="mb-4 text-sm md:text-base lg:text-lg">
+                    <strong>Giá: </strong>
+                    <span>{fish.price}</span>
+                  </p>
+                  <p className="mb-4 text-sm md:text-base lg:text-lg">
+                    <strong>Xuất xứ:</strong> <span>{fish.origin}</span>
+                  </p>
 
                   <div className="mt-0 md:mt-4 flex flex-col w-full">
                     <Link

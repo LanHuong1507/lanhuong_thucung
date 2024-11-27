@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { Card, Button, Rate } from "antd";
 import Image from "next/image";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
-import { routerNames } from "@/components/constants/router.constant";
 
 interface Product {
   id: number;
@@ -13,31 +12,18 @@ interface Product {
   pet: string;
   price: number;
   rating: number;
-  stock: number;
   best_seller: boolean;
 }
 
-const shuffleArray = (array: Product[]): Product[] => {
-  const shuffledArray = [...array];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-
-const ProductList = ({ limit = 10, showBestSeller = false }) => {
+const ProductList = ({ limit = 10 }) => {
   const products = useSelector(
     (state: { products: Product[] }) => state.products,
   );
   const [currentPage, setCurrentPage] = useState(0);
 
   const filteredProducts = useMemo(() => {
-    if (showBestSeller) {
-      return products.filter((product) => product.best_seller);
-    }
-    return shuffleArray(products).slice(0, limit);
-  }, [products, showBestSeller, limit]);
+    return products.filter((product) => product.best_seller).slice(0, limit);
+  }, [products, limit]);
 
   const chunkedProducts = useMemo(() => {
     const result: Product[][] = [];
@@ -59,52 +45,42 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
     }
   };
 
-  const handleProductClick = (productId: number) => {
-    window.location.href = `${routerNames.PRODUCT_DETAIL.replace(
-      "[id]",
-      productId.toString(),
-    )}`;
-  };
-
   return (
-    <div className="py-4 w-full ">
-      <div className="flex flex-row justify-between items-center mb-6 px-2 lg:px-6">
+    <div className="py-6 w-full">
+      <div className="flex flex-row justify-between items-center mb-6 px-4 lg:px-8">
         <div className="flex flex-col items-start w-full mt-4">
-          <h2 className="text-xl md:text-3xl font-semibold text-start text-gray-800">
-            {showBestSeller
-              ? "Top sản phẩm bán chạy nhất tháng này"
-              : "Khám phá sản phẩm nổi bật được yêu thích"}
+          <h2 className="text-2xl md:text-4xl font-semibold text-start text-gray-800">
+            Sản phẩm nổi bật
           </h2>
-          <p className="text-sm md:text-base text-gray-600 mt-2">
-            {showBestSeller
-              ? "Hãy nhanh tay sở hữu các sản phẩm bán chạy nhất!"
-              : "Được tuyển chọn kỹ lưỡng dành riêng cho bạn."}
+          <p className="text-base md:text-lg text-gray-600 mt-2">
+            Những sản phẩm đặc biệt được yêu thích nhất.
           </p>
         </div>
+
         <div className="flex space-x-4">
           <Button
             onClick={prevPage}
             disabled={currentPage === 0}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-colors"
           >
             <ArrowLeftOutlined />
           </Button>
           <Button
             onClick={nextPage}
             disabled={currentPage === chunkedProducts.length - 1}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-colors"
           >
             <ArrowRightOutlined />
           </Button>
         </div>
       </div>
 
-      <div className="p-4 lg:p-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-6">
+      <div className="p-4 lg:p-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {chunkedProducts[currentPage]?.map((product) => (
           <Card
             key={product.id}
             hoverable
-            className="w-full flex-shrink-0 relative group shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+            className="w-full flex-shrink-0 relative group shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 bg-white"
             cover={
               <Image
                 alt={product.name}
@@ -114,12 +90,17 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
                 className="object-cover h-64 w-full"
               />
             }
-            onClick={() => handleProductClick(product.id)}
           >
-            <div className="p-4 bg-white flex flex-col h-full">
+            <div className="p-4 flex flex-col h-full space-y-4">
               <Card.Meta
-                title={product.name}
-                description={product.description}
+                title={
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {product.name}
+                  </h3>
+                }
+                description={
+                  <p className="text-sm text-gray-600">{product.description}</p>
+                }
                 className="text-gray-700 mb-4"
               />
               <p className="text-lg font-semibold text-orange-500 mb-2">
@@ -129,13 +110,14 @@ const ProductList = ({ limit = 10, showBestSeller = false }) => {
                 }).format(product.price)}{" "}
                 VNĐ
               </p>
-              <div className="flex items-center mb-2">
-                <Rate disabled defaultValue={product.rating} className="mr-2" />
+              <div className="flex items-center">
+                <Rate
+                  disabled
+                  defaultValue={product.rating}
+                  className="mr-2 text-yellow-400"
+                />
                 <span className="text-gray-500">({product.rating}/5)</span>
               </div>
-              <p className="text-sm text-gray-600 mb-4">
-                Chỉ còn {product.stock} sản phẩm
-              </p>
             </div>
           </Card>
         ))}
