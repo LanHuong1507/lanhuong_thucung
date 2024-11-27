@@ -96,7 +96,7 @@ const FoodNutritionDetail = () => {
       <Head>
         <title>{foodNutrition.name}</title>
       </Head>
-      <main className="container mx-auto py-8 px-4">
+      <main className="container mx-auto py-8 px-6">
         <Breadcrumb className="mb-6 text-lg text-center">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>
@@ -111,13 +111,12 @@ const FoodNutritionDetail = () => {
             {foodNutrition.name}
           </Breadcrumb.Item>
         </Breadcrumb>
-
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <article className="flex flex-col items-center mb-6 md:mb-0">
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:col-span-3">
             <Image
               src={selectedImage}
               alt={foodNutrition.name}
-              className="w-full h-[70%] object-cover rounded-lg shadow-lg"
+              className="w-full"
               width={400}
               height={400}
             />
@@ -127,7 +126,7 @@ const FoodNutritionDetail = () => {
                   key={index}
                   src={thumb}
                   alt={`${foodNutrition.name} thumbnail ${index + 1}`}
-                  className="w-24 lg:w-32 h-28 object-cover rounded-md cursor-pointer"
+                  className="w-24 md:w-36 h-28 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
                   onClick={() => handleThumbnailClick(thumb)}
@@ -136,7 +135,7 @@ const FoodNutritionDetail = () => {
             </div>
           </article>
 
-          <article>
+          <article className="md:col-span-2">
             <h1 className="text-2xl font-bold mb-6 text-center">
               {foodNutrition.name}
             </h1>
@@ -155,15 +154,14 @@ const FoodNutritionDetail = () => {
                 Liên hệ
               </Button>
             </section>
+            <section className="mt-6">
+              <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
+              <p className="mt-4 text-gray-700">{foodNutrition.description}</p>
+            </section>
           </article>
         </section>
 
-        <section className="mt-12">
-          <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
-          <p className="mt-4 text-gray-700">{foodNutrition.description}</p>
-        </section>
-
-        <section className="mt-12">
+        <section className="mt-4">
           <div className="w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
               className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"

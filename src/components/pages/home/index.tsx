@@ -56,6 +56,7 @@ const Home = () => {
       <section className="mb-6">
         <PetBanner />
       </section>
+
       <section className="py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
         <div className="flex-1 text-center md:text-left space-y-4 animate-fade-in">
           <h1 className="text-4xl font-bold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600">
@@ -63,47 +64,35 @@ const Home = () => {
             <span className="text-blue-600">Lan Hương Pet Shop!</span>
           </h1>
           <p className="text-lg text-gray-700 transition-all duration-500 ease-in-out hover:text-gray-800">
-            <strong>Lan Hương Pet Shop</strong> là một doanh nghiệp một thành
-            viên được thành lập vào năm 2024, với sứ mệnh mang lại những sản
-            phẩm và dịch vụ chăm sóc thú cưng chất lượng nhất tại Việt Nam. Dù
-            là một công ty mới, nhưng chúng tôi đã nhanh chóng khẳng định được
-            uy tín nhờ vào chất lượng sản phẩm vượt trội và sự tận tâm với từng
-            khách hàng.
+            <strong>Lan Hương Pet Shop</strong> được thành lập năm 2024, với sứ
+            mệnh cung cấp sản phẩm và dịch vụ chăm sóc thú cưng chất lượng cao
+            tại Việt Nam.
           </p>
           <p className="text-md text-gray-800 transition-all duration-500 ease-in-out hover:text-gray-700">
-            Tại Lan Hương, chúng tôi chuyên cung cấp giống loài thú cưng, các
-            sản phẩm chăm sóc, dinh dưỡng, cùng dụng cụ hỗ trợ chăm sóc toàn
-            diện cho thú cưng của bạn. Mỗi sản phẩm mà chúng tôi cung cấp đều
-            được chọn lọc kỹ càng, đảm bảo chất lượng cao và phù hợp với nhu cầu
-            của từng loại thú cưng.
+            Chúng tôi chuyên cung cấp giống loài thú cưng, sản phẩm chăm sóc và
+            dinh dưỡng, cùng dụng cụ hỗ trợ chăm sóc toàn diện cho thú cưng.
           </p>
           <ul className="list-disc list-inside text-gray-800 space-y-2 transition-all duration-500 ease-in-out hover:text-gray-700">
             <li>
-              <strong>Giống loài thú cưng chất lượng</strong>: Chúng tôi cung
-              cấp các giống chó, mèo, chim, cá và các loài thú cưng khác, tất cả
-              đều được chọn lọc kỹ càng và có nguồn gốc rõ ràng.
+              <strong>Giống loài thú cưng chất lượng</strong>: Các giống chó,
+              mèo, cá, chim và thú cưng khác.
             </li>
             <li>
-              <strong>Sản phẩm chăm sóc sức khỏe</strong>: Các sản phẩm dinh
-              dưỡng, thuốc bổ, sữa tắm, dầu gội, thức ăn cho thú cưng giúp chúng
-              phát triển khỏe mạnh và sạch sẽ.
+              <strong>Sản phẩm chăm sóc sức khỏe</strong>: Dinh dưỡng, thuốc bổ,
+              sữa tắm, thức ăn cho thú cưng.
             </li>
             <li>
               <strong>Dụng cụ chăm sóc chuyên dụng</strong>: Đồ chơi, phụ kiện,
-              quần áo, và các thiết bị chăm sóc giúp thú cưng luôn thoải mái,
-              vui vẻ và an toàn.
+              quần áo, thiết bị chăm sóc.
             </li>
             <li>
-              <strong>Dịch vụ tư vấn chuyên nghiệp</strong>: Với đội ngũ nhân
-              viên tận tâm và am hiểu về thú cưng, Lan Hương cung cấp các dịch
-              vụ tư vấn về dinh dưỡng, chăm sóc và phát triển sức khỏe cho thú
-              cưng.
+              <strong>Dịch vụ tư vấn chuyên nghiệp</strong>: Tư vấn dinh dưỡng
+              và chăm sóc thú cưng.
             </li>
           </ul>
           <p className="text-lg font-semibold text-blue-700 mt-4 transition-all duration-500 ease-in-out hover:text-blue-800">
-            Chúng tôi cam kết mang lại cho bạn và thú cưng những sản phẩm và
-            dịch vụ chăm sóc chất lượng cao, đồng thời luôn nỗ lực để trở thành
-            người bạn đồng hành đáng tin cậy trong hành trình chăm sóc thú cưng.
+            Cam kết cung cấp sản phẩm và dịch vụ chăm sóc chất lượng cao, trở
+            thành người bạn đồng hành đáng tin cậy cho thú cưng của bạn.
           </p>
         </div>
         <div className="flex-1 flex justify-center animate-float">
@@ -114,6 +103,46 @@ const Home = () => {
             height={400}
             className="rounded-lg shadow-md object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
           />
+        </div>
+      </section>
+
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          <Title level={3} className="text-3xl text-center mb-12 text-gray-800">
+            Danh Mục Sản Phẩm
+          </Title>
+          <Row gutter={[16, 16]}>
+            {productCategories.map((category, index) => (
+              <Col xs={24} md={8} key={category.id}>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.5, duration: 1 }}
+                  className="relative group overflow-hidden rounded-lg shadow-lg"
+                >
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h4 className="text-2xl text-white mb-4">
+                      {category.name}
+                    </h4>
+                    <p className="text-white text-center">
+                      {category.description}
+                    </p>
+                    <Link href={routerNames.CATEGORY} passHref>
+                      <Button className="mt-4 bg-yellow-500 text-white hover:bg-yellow-400">
+                        Xem Thêm
+                      </Button>
+                    </Link>
+                  </div>
+                </motion.div>
+              </Col>
+            ))}
+          </Row>
         </div>
       </section>
       <section className="py-8">
@@ -329,45 +358,6 @@ const Home = () => {
       </section>
       <section className="py-8">
         <PetBusinessCircle />
-      </section>
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
-          <Title level={3} className="text-3xl text-center mb-12 text-gray-800">
-            Danh Mục Sản Phẩm
-          </Title>
-          <Row gutter={[16, 16]}>
-            {productCategories.map((category, index) => (
-              <Col xs={24} md={8} key={category.id}>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.5, duration: 1 }}
-                  className="relative group overflow-hidden rounded-lg shadow-lg"
-                >
-                  <Image
-                    src={category.image}
-                    alt={category.name}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h4 className="text-2xl text-white mb-4">
-                      {category.name}
-                    </h4>
-                    <p className="text-white text-center">
-                      {category.description}
-                    </p>
-                    <Link href={routerNames.CATEGORY} passHref>
-                      <Button className="mt-4 bg-yellow-500 text-white hover:bg-yellow-400">
-                        Xem Thêm
-                      </Button>
-                    </Link>
-                  </div>
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
-        </div>
       </section>
 
       <section className="bg-gray-100 py-16 relative">

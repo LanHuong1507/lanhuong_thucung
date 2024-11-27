@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
-
+import DefaultImage from "@/assets/images/default.jpg";
 interface Dog {
   id: number;
   name: string;
@@ -33,10 +33,9 @@ interface Dog {
     care_tips: string[];
   };
 }
-
 const DogDetail = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
-  const [mainImage, setMainImage] = useState<string>("");
+  const [mainImage, setMainImage] = useState<string | null>(null);
   const router = useRouter();
   const { id } = router.query;
   const dogs = useSelector((state: { dogs: Dog[] }) => state.dogs);
@@ -52,6 +51,7 @@ const DogDetail = () => {
       </section>
     );
   }
+
   if (!mainImage) {
     setMainImage(dog.image);
   }
@@ -69,16 +69,8 @@ const DogDetail = () => {
   ];
 
   const columns = [
-    {
-      title: "Thuộc tính",
-      dataIndex: "attribute",
-      key: "attribute",
-    },
-    {
-      title: "Thông tin",
-      dataIndex: "value",
-      key: "value",
-    },
+    { title: "Thuộc tính", dataIndex: "attribute", key: "attribute" },
+    { title: "Thông tin", dataIndex: "value", key: "value" },
   ];
 
   const handleToggleSidebar = () => {
@@ -99,12 +91,15 @@ const DogDetail = () => {
     setMainImage(thumbnail);
   };
 
+  const isMainImageVideo =
+    mainImage && (mainImage.endsWith(".mp4") || mainImage.endsWith(".webm"));
+
   return (
     <>
       <Head>
         <title>{dog.name}</title>
       </Head>
-      <main className="container mx-auto py-8 px-4">
+      <main className="container mx-auto py-8 px-6">
         <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full text-lg">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>
@@ -125,36 +120,59 @@ const DogDetail = () => {
         </h1>
         <section className="flex flex-col md:flex-row justify-between items-start">
           <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
-            <Image
-              src={mainImage}
-              alt={dog.name}
-              className="w-full md:w-[95%] h-96 object-cover rounded-md"
-              width={400}
-              height={400}
-            />
+            {isMainImageVideo ? (
+              <video
+                src={mainImage}
+                className="w-full md:w-[95%] h-96 object-cover rounded-md"
+                width={400}
+                height={400}
+                controls
+                autoPlay
+              >
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <Image
+                src={mainImage || DefaultImage}
+                alt={dog.name}
+                className="w-full md:w-[95%] h-96 object-cover rounded-md"
+                width={400}
+                height={400}
+              />
+            )}
+
             <div className="flex flex-col lg:flex-row mt-4 md:space-x-4 space-y-4 md:space-y-0 items-center w-full justify-center">
               <div className="flex space-x-2 mb-4 lg:mb-0">
-                {dog.thumbnail.map((thumb, index) => (
-                  <Image
-                    key={index}
-                    src={thumb}
-                    alt={`${dog.name} thumbnail ${index + 1}`}
-                    className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
-                    width={400}
-                    height={400}
-                    onClick={() => handleThumbnailClick(thumb)}
-                  />
-                ))}
-              </div>
-              <div className="w-full md:w-72 h-auto">
-                <video
-                  src={dog.video}
-                  autoPlay
-                  loop
-                  muted
-                  controls
-                  className="w-full rounded-lg shadow-lg"
-                ></video>
+                {dog.thumbnail.map((thumb, index) => {
+                  const isVideo =
+                    thumb.endsWith(".mp4") || thumb.endsWith(".webm");
+                  return (
+                    <div key={index} className="relative">
+                      {isVideo ? (
+                        <video
+                          className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
+                          width={400}
+                          height={400}
+                          onClick={() => handleThumbnailClick(thumb)}
+                          controls
+                          autoPlay
+                        >
+                          <source src={thumb} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      ) : (
+                        <Image
+                          src={thumb}
+                          alt={`${dog.name} thumbnail ${index + 1}`}
+                          className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
+                          width={400}
+                          height={400}
+                          onClick={() => handleThumbnailClick(thumb)}
+                        />
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </article>

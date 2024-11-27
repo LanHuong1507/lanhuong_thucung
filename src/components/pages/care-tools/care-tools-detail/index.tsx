@@ -128,12 +128,12 @@ const CareToolDetail = () => {
           {careTool.name}
         </h1>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <article className="flex flex-col items-center mb-6 md:mb-0">
+        <section className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:mb-0 col-span-3">
             <Image
               src={selectedImage}
               alt={careTool.name}
-              className="w-full h-[70%] object-cover rounded-lg shadow-lg"
+              className="w-full"
               width={500}
               height={500}
             />
@@ -143,7 +143,7 @@ const CareToolDetail = () => {
                   key={index}
                   src={thumb}
                   alt={`${careTool.name} thumbnail ${(index as number) + 1}`}
-                  className="w-24 lg:w-32 h-28 object-cover rounded-md cursor-pointer"
+                  className="w-24 lg:w-32 h-24 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
                   onClick={() => handleThumbnailClick(thumb)}
@@ -152,7 +152,7 @@ const CareToolDetail = () => {
             </div>
           </article>
 
-          <article>
+          <article className="col-span-2">
             <Table
               dataSource={dataSource}
               columns={columns}
@@ -168,15 +168,17 @@ const CareToolDetail = () => {
                 Liên hệ
               </Button>
             </section>
+            <section className="mt-6 hidden lg:block">
+              <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
+              <p className="mt-4 text-gray-700">{careTool.description}</p>
+            </section>
           </article>
         </section>
-
-        <section className="mt-8">
+        <section className="mt-6 md:block lg:hidden">
           <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
           <p className="mt-4 text-gray-700">{careTool.description}</p>
         </section>
-
-        <section className="mt-12">
+        <section className="mt-6">
           <div className="w-full md:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
               className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"

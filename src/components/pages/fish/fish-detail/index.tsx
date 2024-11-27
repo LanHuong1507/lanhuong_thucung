@@ -80,7 +80,7 @@ const FishDetail = () => {
       <Head>
         <title>{selectedFish.name}</title>
       </Head>
-      <main className="container mx-auto py-8 px-4">
+      <main className="container mx-auto py-8 px-6">
         <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full text-lg">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>

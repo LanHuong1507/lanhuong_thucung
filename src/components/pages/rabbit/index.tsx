@@ -198,7 +198,7 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
         </Col>
 
         <Col xs={24} lg={18}>
-          <header className="flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
+          <header className="my-4 lg:mb-2 flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
             <div className="flex items-center space-x-4">
               <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
                 Các Giống Thỏ

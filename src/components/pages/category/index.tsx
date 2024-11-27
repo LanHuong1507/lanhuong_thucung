@@ -74,36 +74,14 @@ const Category = () => {
   const [activeTab, setActiveTab] = useState<keyof Categories>("thuCung");
   const [searchTerm, setSearchTerm] = useState<string>("");
 
-  const [filteredCategories, setFilteredCategories] = useState<CategoryType[]>(
-    categories[activeTab],
-  );
-
-  const categoryDescriptions = {
-    thuCung:
-      "Danh mục này bao gồm các giống thú cưng như chó, mèo. Tất cả đều được chọn lọc kỹ càng với nguồn gốc rõ ràng, đảm bảo chất lượng cho những ai muốn sở hữu thú cưng khỏe mạnh.",
-    vatNuoi:
-      "Danh mục này tập trung vào các giống vật nuôi như cá, thỏ. Chúng tôi cung cấp giống vật nuôi có chất lượng cao, dễ chăm sóc và thích hợp nuôi trong gia đình hoặc nông trại.",
-    dungCuChamSoc:
-      "Danh mục dụng cụ chăm sóc bao gồm các sản phẩm hỗ trợ việc chăm sóc thú cưng, từ thức ăn, thuốc men cho đến các dụng cụ vệ sinh và trang thiết bị cần thiết.",
-  };
-
   const onTabChange = (key: string) => {
     setActiveTab(key as keyof Categories);
-    setFilteredCategories(categories[key as keyof Categories]);
   };
 
   const onSearch = (value: string) => {
     setSearchTerm(value);
-    if (value) {
-      setFilteredCategories(
-        categories[activeTab].filter((category) =>
-          category.name.toLowerCase().includes(value.toLowerCase()),
-        ),
-      );
-    } else {
-      setFilteredCategories(categories[activeTab]);
-    }
   };
+
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (index: number) => ({
@@ -111,6 +89,13 @@ const Category = () => {
       y: 0,
       transition: { delay: index * 0.2, duration: 0.5 },
     }),
+  };
+
+  const getFilteredCategories = () => {
+    const filteredCategories = categories[activeTab].filter((category) =>
+      category.name.toLowerCase().includes(searchTerm.toLowerCase()),
+    );
+    return filteredCategories;
   };
 
   return (
@@ -131,7 +116,7 @@ const Category = () => {
         </Breadcrumb.Item>
       </Breadcrumb>
 
-      <div className="relative p-6 rounded-lg mb-8">
+      <div className="relative p-6 rounded-lg mb-4">
         <div className="relative z-10">
           <h1 className="text-2xl md:text-4xl font-bold text-black mb-4">
             Danh Mục Sản Phẩm
@@ -147,10 +132,6 @@ const Category = () => {
           />
         </div>
       </div>
-
-      <p className="text-lg text-gray-600 mb-8">
-        {categoryDescriptions[activeTab]}
-      </p>
 
       <Tabs
         activeKey={activeTab}
@@ -192,12 +173,10 @@ const Category = () => {
         animate="visible"
         variants={{
           hidden: {},
-          visible: {
-            transition: { staggerChildren: 0.2 },
-          },
+          visible: { transition: { staggerChildren: 0.2 } },
         }}
       >
-        {filteredCategories.map((category, index) => (
+        {getFilteredCategories().map((category, index) => (
           <motion.div
             key={category.name}
             variants={itemVariants}
