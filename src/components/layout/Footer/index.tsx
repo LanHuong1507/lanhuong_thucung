@@ -1,6 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Input } from "antd";
+import {
+  ArrowRightOutlined,
+  FacebookFilled,
+  InstagramFilled,
+  LinkedinFilled,
+  MailOutlined,
+  PhoneOutlined,
+  TwitterCircleFilled,
+  YoutubeFilled,
+  LinkOutlined,
+} from "@ant-design/icons";
 import Amex from "../../../assets/images/amex.png";
 import ApplePay from "../../../assets/images/apple_pay.png";
 import Bitcoin from "../../../assets/images/bitcoin.png";
@@ -10,60 +22,51 @@ import MasterCard from "../../../assets/images/mastercard.png";
 import Visa from "../../../assets/images/visa.jpg";
 import Logo from "../../../assets/images/logo.jpg";
 import { routerNames } from "@/components/constants/router.constant";
-import {
-  ArrowRightOutlined,
-  FacebookFilled,
-  InstagramFilled,
-  LinkedinFilled,
-  LinkOutlined,
-  MailOutlined,
-  PhoneOutlined,
-  TwitterCircleFilled,
-  YoutubeFilled,
-} from "@ant-design/icons";
-import { Input } from "antd";
+
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 py-4 text-gray-300 w-full">
+    <footer className="bg-blue-900 py-6 text-white w-full">
       <main className="container px-4">
         <section className="mb-10 flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
           <article className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-2xl font-bold">
+            <div className="flex items-center space-x-2 text-xl font-semibold">
               <Image
                 src={Logo}
                 alt="logo"
                 width={40}
                 height={40}
-                className="h-14 w-14"
+                className="h-12 w-12"
               />
-              <span className="ml-4">Lan Huong</span>
+              <span className="ml-4">Lan Hương</span>
             </div>
           </article>
           <main className="flex flex-col items-start space-y-6 lg:flex-row lg:items-center lg:space-x-8 lg:space-y-0">
             <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
-                <PhoneOutlined className="text-2xl text-teal-900" />
+                <PhoneOutlined className="text-xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Hotline đặt hàng</p>
+                <p className="text-base font-semibold">Hotline đặt hàng</p>
                 <p className="text-lg font-bold">070 393 5114</p>
               </div>
             </article>
             <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
-                <MailOutlined className="text-2xl text-teal-900" />
+                <MailOutlined className="text-xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Nhắn tin cho chúng tôi</p>
-                <p className="text-md font-bold">phuonghuong150702@gmail.com</p>
+                <p className="text-base font-semibold">
+                  Nhắn tin cho chúng tôi
+                </p>
+                <p className="text-lg font-bold">phuonghuong150702@gmail.com</p>
               </div>
             </article>
             <article className="flex items-start space-x-2">
               <div className="rounded-full bg-white p-3">
-                <LinkOutlined className="text-2xl text-teal-900" />
+                <LinkOutlined className="text-xl text-teal-900" />
               </div>
               <div className="text-left">
-                <p className="text-sm font-semibold">Theo dõi chúng tôi</p>
+                <p className="text-base font-semibold">Theo dõi chúng tôi</p>
                 <div className="mt-1 flex space-x-2">
                   <a
                     href="https://www.facebook.com/PetCommunityCenter"
@@ -102,7 +105,7 @@ const Footer = () => {
                     </button>
                   </a>
                   <a
-                    href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F18656628%2Fadmin%2Ffeed%2Fposts%2F"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -114,7 +117,7 @@ const Footer = () => {
                     </button>
                   </a>
                   <a
-                    href="https://www.youtube.com/@petcommunitycenter1098"
+                    href="https://www.youtube.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -130,61 +133,77 @@ const Footer = () => {
             </article>
           </main>
         </section>
-        <section className="mb-10 grid grid-cols-1 gap-6 lg:grid-cols-3 xl:grid-cols-3">
+        <section className="mb-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <section className="flex flex-col">
-            <h5 className="mb-4 text-lg  font-semibold text-start lg:text-center">
-              Danh mục sản phẩm
-            </h5>
-            <ul className="text-start lg:text-center">
+            <h5 className="mb-4 text-xl font-semibold">Danh mục sản phẩm</h5>
+            <ul className="space-y-2 text-lg font-medium">
               <li>
-                <Link href={routerNames.CATEGORY} className="hover:text-white">
+                <Link
+                  href={routerNames.CATEGORY}
+                  className="hover:text-yellow-400"
+                >
                   Thú cưng
                 </Link>
               </li>
               <li>
-                <Link href={routerNames.CATEGORY} className="hover:text-white">
+                <Link
+                  href={routerNames.CATEGORY}
+                  className="hover:text-yellow-400"
+                >
                   Vật nuôi
                 </Link>
               </li>
               <li>
-                <Link href={routerNames.CATEGORY} className="hover:text-white">
+                <Link
+                  href={routerNames.CATEGORY}
+                  className="hover:text-yellow-400"
+                >
                   Dụng cụ chăm sóc
                 </Link>
               </li>
             </ul>
           </section>
           <section className="flex flex-col">
-            <h5 className="mb-4 text-lg font-semibold text-start lg:text-center">
+            <h5 className="mb-4 text-xl font-semibold">
               Doanh nghiệp của chúng tôi
             </h5>
-            <ul className="text-start lg:text-center">
+            <ul className="space-y-2 text-lg font-medium">
               <li>
                 <Link
                   href={routerNames.ORGANIZATION}
-                  className="hover:text-white"
+                  className="hover:text-yellow-400"
                 >
                   Cơ cấu tổ chức
                 </Link>
               </li>
               <li>
-                <Link href={routerNames.HISTORY} className="hover:text-white">
+                <Link
+                  href={routerNames.HISTORY}
+                  className="hover:text-yellow-400"
+                >
                   Lịch sử hình thành
                 </Link>
               </li>
               <li>
-                <Link href={routerNames.CAREER} className="hover:text-white">
+                <Link
+                  href={routerNames.CAREER}
+                  className="hover:text-yellow-400"
+                >
                   Tuyển dụng
                 </Link>
               </li>
               <li>
-                <Link href={routerNames.CONTACT} className="hover:text-white">
+                <Link
+                  href={routerNames.CONTACT}
+                  className="hover:text-yellow-400"
+                >
                   Liên hệ
                 </Link>
               </li>
             </ul>
           </section>
           <section className="flex flex-col justify-start bg-gradient-to-r from-red-600 to-yellow-600 rounded-lg p-5 text-center text-white">
-            <h5 className="mb-2 text-lg font-semibold">
+            <h5 className="mb-2 text-xl font-semibold">
               Bản Tin Của Chúng Tôi
             </h5>
             <p className="mb-4">
@@ -195,16 +214,14 @@ const Footer = () => {
               <Input
                 type="email"
                 placeholder="Nhập email của bạn..."
-                className="rounded-lg px-4 py-2 text-gray-700 flex-grow text-sm md:text-base"
-                suffix={
-                  <ArrowRightOutlined className="text-red-600 text-lg md:text-xl" />
-                }
+                className="rounded-lg px-4 py-2 text-gray-700 flex-grow text-base"
+                suffix={<ArrowRightOutlined className="text-red-600 text-lg" />}
               />
             </div>
           </section>
         </section>
-        <footer className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-sm lg:flex-row lg:justify-between">
-          <p className="text-center md:text-left">
+        <footer className="flex w-full flex-col items-center border-t border-gray-600 pt-5 text-base lg:flex-row lg:justify-between">
+          <p>
             &copy; 2024 <span className="font-semibold">Lan Hương</span>. Mọi
             quyền đã được bảo hộ.
           </p>
@@ -218,13 +235,13 @@ const Footer = () => {
             <Image src={Bitcoin} alt="Bitcoin" width={30} height={30} />
           </div>
           <div className="mt-4 space-x-4 md:mt-0">
-            <button type="button" className="hover:text-white">
+            <button type="button" className="hover:text-yellow-400">
               Chính sách bảo mật
             </button>
-            <button type="button" className="hover:text-white">
+            <button type="button" className="hover:text-yellow-400">
               Liên hệ
             </button>
-            <button type="button" className="hover:text-white">
+            <button type="button" className="hover:text-yellow-400">
               Điều khoản
             </button>
           </div>

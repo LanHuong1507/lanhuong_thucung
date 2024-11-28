@@ -95,7 +95,7 @@ const Header = () => {
               height={35}
               className="h-10 w-10 rounded-full"
             />
-            <span className="text-lg font-semibold">Lan Hương</span>
+            <span className="text-xl font-semibold">Lan Hương</span>
           </div>
           <button
             onClick={() => setMenuOpen(false)}
@@ -105,36 +105,34 @@ const Header = () => {
             <CloseOutlined />
           </button>
         </div>
-
-        {/* Mobile Menu Links */}
         <div className="p-6 space-y-4">
           <Link
             href={routerNames.CATEGORY}
-            className="block py-3 text-lg font-medium text-black opacity-75 hover:opacity-100 transition-opacity duration-300 rounded-md"
+            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Danh mục sản phẩm
           </Link>
           <Link
             href={routerNames.ORGANIZATION}
-            className="block py-3 text-lg font-medium text-black opacity-75 hover:opacity-100 transition-opacity duration-300 rounded-md"
+            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Cơ cấu tổ chức
           </Link>
           <Link
             href={routerNames.HISTORY}
-            className="block py-3 text-lg font-medium text-black opacity-75 hover:opacity-100 transition-opacity duration-300 rounded-md"
+            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Lịch sử hình thành
           </Link>
           <Link
             href={routerNames.CAREER}
-            className="block py-3 text-lg font-medium text-black opacity-75 hover:opacity-100 transition-opacity duration-300 rounded-md"
+            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Tuyển dụng
           </Link>
           <Link
             href={routerNames.CONTACT}
-            className="block py-3 text-lg font-medium text-black opacity-75 hover:opacity-100 transition-opacity duration-300 rounded-md"
+            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Liên hệ
           </Link>
