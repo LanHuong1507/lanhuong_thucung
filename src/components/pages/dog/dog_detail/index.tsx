@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Breadcrumb, Button, Table } from "antd";
+import { Breadcrumb, Button, Table} from "antd";
 import Head from "next/head";
-import { routerNames } from "@/components/constants/router.constant";
-import Image from "next/image";
 import Link from "next/link";
+import { routerNames } from "@/components/constants/router.constant";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
-import DefaultImage from "@/assets/images/default.jpg";
+
 interface Dog {
   id: number;
   name: string;
@@ -33,13 +33,60 @@ interface Dog {
     care_tips: string[];
   };
 }
+
 const DogDetail = () => {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
-  const [mainImage, setMainImage] = useState<string | null>(null);
   const router = useRouter();
   const { id } = router.query;
   const dogs = useSelector((state: { dogs: Dog[] }) => state.dogs);
-  const dog = dogs.find((dog) => dog.id === parseInt(id as string, 10));
+  const [dog, setDog] = useState<Dog | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const handleToggleSidebar = () => {
+    setIsSidebarVisible((prevState) => !prevState);
+  };
+  const handleSectionClick = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+  useEffect(() => {
+    if (id && dogs.length > 0) {
+      const foundDog = dogs.find((item) => item.id === Number(id));
+      setDog(foundDog || null);
+
+      if (foundDog) {
+        setSelectedImage(foundDog.image);
+      }
+    }
+  }, [id, dogs]);
+
+  useEffect(() => {
+    if (dog) {
+      const slideshowImages = [
+        dog.image,
+        ...(Array.isArray(dog.thumbnail) ? dog.thumbnail : []),
+      ];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
+  }, [dog]);
+
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
+  };
 
   if (!dog) {
     return (
@@ -52,20 +99,13 @@ const DogDetail = () => {
     );
   }
 
-  if (!mainImage) {
-    setMainImage(dog.image);
-  }
-
   const dataSource = [
-    { key: "1", attribute: "Xuất xứ", value: dog.origin },
-    { key: "2", attribute: "Kích thước", value: dog.size },
-    { key: "3", attribute: "Tuổi thọ", value: dog.life_span },
-    { key: "4", attribute: "Cân nặng", value: dog.weight_range },
-    { key: "5", attribute: "Loại lông", value: dog.coat },
-    { key: "6", attribute: "Màu lông", value: dog.color.join(", ") },
-    { key: "7", attribute: "Giống", value: dog.breedType },
-    { key: "8", attribute: "Giới tính", value: dog.gender },
-    { key: "9", attribute: "Giá bán", value: `${dog.price}` },
+    { key: "1", attribute: "Giống chó", value: dog.breedType },
+    { key: "2", attribute: "Xuất xứ", value: dog.origin },
+    { key: "3", attribute: "Kích thước", value: dog.size },
+    { key: "4", attribute: "Tuổi thọ", value: dog.life_span },
+    { key: "5", attribute: "Lớp lông", value: dog.coat },
+    { key: "6", attribute: "Giá bán", value: dog.price },
   ];
 
   const columns = [
@@ -86,26 +126,6 @@ const DogDetail = () => {
       ),
     },
   ];
-  const handleToggleSidebar = () => {
-    setIsSidebarVisible((prevState) => !prevState);
-  };
-
-  const handleSectionClick = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
-  const handleThumbnailClick = (thumbnail: string) => {
-    setMainImage(thumbnail);
-  };
-
-  const isMainImageVideo =
-    mainImage && (mainImage.endsWith(".mp4") || mainImage.endsWith(".webm"));
 
   return (
     <>
@@ -113,7 +133,7 @@ const DogDetail = () => {
         <title>{dog.name}</title>
       </Head>
       <main className="container mx-auto py-8 px-6">
-        <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full text-lg">
+        <Breadcrumb className="mb-6 text-lg text-center">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>
           </Breadcrumb.Item>
@@ -121,82 +141,83 @@ const DogDetail = () => {
             <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Link href={routerNames.CATEGORY}>Thú Cưng</Link>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>
             <Link href={routerNames.DOG}>Chó</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item className="font-bold">{dog.name}</Breadcrumb.Item>
         </Breadcrumb>
-        <h1 className="text-2xl font-bold mb-6 text-center w-full">
-          {dog.name}
-        </h1>
-        <section className="flex flex-col md:flex-row justify-between items-start">
-          <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
-            {isMainImageVideo ? (
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:col-span-3">
+            {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
               <video
-                src={mainImage}
-                className="w-full md:w-[95%] h-96 object-cover rounded-md"
-                width={400}
-                height={400}
+                src={selectedImage}
                 controls
                 autoPlay
+                muted
+                loop
+                className="w-full h-auto rounded-lg"
+                width={400}
+                height={400}
               >
-                Your browser does not support the video tag.
+                Trình duyệt không hỗ trợ video.
               </video>
             ) : (
               <Image
-                src={mainImage || DefaultImage}
+                src={selectedImage}
                 alt={dog.name}
-                className="w-full md:w-[95%] h-96 object-cover rounded-md"
+                className="w-full"
                 width={400}
                 height={400}
               />
             )}
-
-            <div className="flex flex-col lg:flex-row mt-4 md:space-x-4 space-y-4 md:space-y-0 items-center w-full justify-center">
-              <div className="flex space-x-2 mb-4 lg:mb-0">
-                {dog.thumbnail.map((thumb, index) => {
-                  const isVideo =
-                    thumb.endsWith(".mp4") || thumb.endsWith(".webm");
-                  return (
-                    <div key={index} className="relative">
-                      {isVideo ? (
-                        <video
-                          className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
-                          width={400}
-                          height={400}
-                          onClick={() => handleThumbnailClick(thumb)}
-                          controls
-                          autoPlay
-                        >
-                          <source src={thumb} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
-                      ) : (
-                        <Image
-                          src={thumb}
-                          alt={`${dog.name} thumbnail ${index + 1}`}
-                          className="w-24 h-20 md:w-36 lg:w-52 md:h-40 object-cover rounded-md cursor-pointer"
-                          width={400}
-                          height={400}
-                          onClick={() => handleThumbnailClick(thumb)}
-                        />
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+              {[
+                dog.image,
+                ...(Array.isArray(dog.thumbnail) ? dog.thumbnail : []),
+              ].map((thumb, index) => {
+                const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
+                return isVideo ? (
+                  <video
+                    key={index}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    muted
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  >
+                    <source src={thumb} type="video/mp4" />
+                    Trình duyệt không hỗ trợ video.
+                  </video>
+                ) : (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${dog.name} thumbnail ${index + 1}`}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  />
+                );
+              })}
             </div>
           </article>
 
-          <article className="w-full md:w-1/3">
+          <article className="md:col-span-2">
+            <h1 className="text-2xl font-bold mb-6 text-center">{dog.name}</h1>
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full text-sm md:text-base lg:text-lg"
-            />
+              className="rounded-lg"
+            />{" "}
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"

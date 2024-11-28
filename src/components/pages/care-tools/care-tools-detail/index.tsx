@@ -38,6 +38,7 @@ const CareToolDetail = () => {
   const [careTool, setCareTool] = useState<CareTool | null>(null);
   const [isSidebarVisible, setSidebarVisible] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
 
   useEffect(() => {
     if (id && careTools.length > 0) {
@@ -49,6 +50,26 @@ const CareToolDetail = () => {
     }
   }, [id, careTools]);
 
+  useEffect(() => {
+    if (careTool) {
+      const slideshowImages = [careTool.image, ...careTool.thumbnails];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
+  }, [careTool]);
+
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
+  };
+
   const handleToggleSidebar = () => {
     setSidebarVisible(!isSidebarVisible);
   };
@@ -58,10 +79,6 @@ const CareToolDetail = () => {
     if (element) {
       window.scrollTo({ top: element.offsetTop - 100, behavior: "smooth" });
     }
-  };
-
-  const handleThumbnailClick = (thumb: string) => {
-    setSelectedImage(thumb);
   };
 
   if (!careTool) {
@@ -152,20 +169,23 @@ const CareToolDetail = () => {
               height={500}
             />
             <div className="flex space-x-4 mt-4 flex-wrap justify-center">
-              {careTool.thumbnails.map((thumb, index) => (
+              {[careTool.image, ...careTool.thumbnails].map((thumb, index) => (
                 <Image
                   key={index}
                   src={thumb}
                   alt={`${careTool.name} thumbnail ${(index as number) + 1}`}
-                  className="w-24 lg:w-44 h-24 object-cover rounded-md cursor-pointer"
+                  className={`w-24 lg:w-44 h-24 object-cover rounded-md cursor-pointer ${
+                    currentThumbnailIndex === index
+                      ? "border-4 border-blue-500"
+                      : ""
+                  }`}
                   width={100}
                   height={100}
-                  onClick={() => handleThumbnailClick(thumb)}
+                  onClick={() => handleThumbnailClick(thumb, index)}
                 />
               ))}
             </div>
           </article>
-
           <article className="col-span-2">
             <Table
               dataSource={dataSource}

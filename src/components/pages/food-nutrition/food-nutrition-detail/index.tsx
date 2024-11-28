@@ -36,6 +36,7 @@ const FoodNutritionDetail = () => {
   );
   const [isSidebarVisible, setSidebarVisible] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
 
   useEffect(() => {
     if (id && foodNutritionData.length > 0) {
@@ -50,6 +51,29 @@ const FoodNutritionDetail = () => {
     }
   }, [id, foodNutritionData]);
 
+  useEffect(() => {
+    if (foodNutrition) {
+      const slideshowImages = [
+        foodNutrition.image,
+        ...foodNutrition.thumbnails,
+      ];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
+  }, [foodNutrition]);
+
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
+  };
+
   const handleToggleSidebar = () => {
     setSidebarVisible(!isSidebarVisible);
   };
@@ -59,10 +83,6 @@ const FoodNutritionDetail = () => {
     if (element) {
       window.scrollTo({ top: element.offsetTop - 100, behavior: "smooth" });
     }
-  };
-
-  const handleThumbnailClick = (thumb: string) => {
-    setSelectedImage(thumb);
   };
 
   if (!foodNutrition) {
@@ -80,6 +100,7 @@ const FoodNutritionDetail = () => {
       </section>
     );
   }
+
   const dataSource = [
     { key: "1", attribute: "Danh mục", value: foodNutrition.category },
     { key: "2", attribute: "Kích thước", value: foodNutrition.size },
@@ -138,20 +159,25 @@ const FoodNutritionDetail = () => {
               height={400}
             />
             <div className="flex space-x-4 mt-4 flex-wrap justify-center">
-              {foodNutrition.thumbnails.map((thumb, index) => (
-                <Image
-                  key={index}
-                  src={thumb}
-                  alt={`${foodNutrition.name} thumbnail ${index + 1}`}
-                  className="w-24 md:w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer"
-                  width={100}
-                  height={100}
-                  onClick={() => handleThumbnailClick(thumb)}
-                />
-              ))}
+              {[foodNutrition.image, ...foodNutrition.thumbnails].map(
+                (thumb, index) => (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${foodNutrition.name} thumbnail ${index + 1}`}
+                    className={`w-24 md:w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  />
+                ),
+              )}
             </div>
           </article>
-
           <article className="md:col-span-2">
             <h1 className="text-2xl font-bold mb-6 text-center">
               {foodNutrition.name}
@@ -177,7 +203,6 @@ const FoodNutritionDetail = () => {
             </section>
           </article>
         </section>
-
         <section className="mt-6">
           <div className="w-[90%]  lg:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
