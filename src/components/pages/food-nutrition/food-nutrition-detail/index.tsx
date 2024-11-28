@@ -87,8 +87,22 @@ const FoodNutritionDetail = () => {
   ];
 
   const columns = [
-    { title: "Thuộc tính", dataIndex: "attribute", key: "attribute" },
-    { title: "Thông tin", dataIndex: "value", key: "value" },
+    {
+      title: "Thuộc tính",
+      dataIndex: "attribute",
+      key: "attribute",
+      render: (text: string) => (
+        <span className="text-base font-medium text-gray-800">{text}</span>
+      ),
+    },
+    {
+      title: "Thông tin",
+      dataIndex: "value",
+      key: "value",
+      render: (text: string) => (
+        <span className="text-base font-normal text-gray-700">{text}</span>
+      ),
+    },
   ];
 
   return (
@@ -103,6 +117,9 @@ const FoodNutritionDetail = () => {
           </Breadcrumb.Item>
           <Breadcrumb.Item>
             <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <Link href={routerNames.CATEGORY}>Dụng Cụ</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
             <Link href={routerNames.FOOD_NUTRITION}>Thức Ăn & Dinh Dưỡng</Link>
@@ -126,7 +143,7 @@ const FoodNutritionDetail = () => {
                   key={index}
                   src={thumb}
                   alt={`${foodNutrition.name} thumbnail ${index + 1}`}
-                  className="w-24 md:w-36 h-28 object-cover rounded-md cursor-pointer"
+                  className="w-24 md:w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
                   onClick={() => handleThumbnailClick(thumb)}
@@ -161,8 +178,8 @@ const FoodNutritionDetail = () => {
           </article>
         </section>
 
-        <section className="mt-4">
-          <div className="w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
+        <section className="mt-6">
+          <div className="w-[90%]  lg:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
               className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
               onClick={handleToggleSidebar}
@@ -174,34 +191,40 @@ const FoodNutritionDetail = () => {
             </h2>
 
             {isSidebarVisible && (
-              <div className="p-4">
-                <ol className="list-decimal pl-6 space-y-4">
+              <div
+                className={`p-4 transition-all duration-500 ease-in-out transform motion-safe:${
+                  isSidebarVisible
+                    ? "scale-y-100 opacity-100"
+                    : "scale-y-0 opacity-0"
+                }`}
+              >
+                <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("nutrition")}
                   >
                     Thông tin dinh dưỡng
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("ingredients")}
                   >
                     Thành phần
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("usage")}
                   >
                     Cách sử dụng
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("storage_instructions")}
                   >
                     Bảo quản
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("additional_notes")}
                   >
                     Ghi chú thêm

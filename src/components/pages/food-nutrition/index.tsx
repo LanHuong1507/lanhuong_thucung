@@ -25,7 +25,7 @@ const FoodNutrition: React.FC = () => {
 
   return (
     <Space direction="vertical" style={{ width: "100%" }} className="p-6">
-      <Breadcrumb className="my-6 flex items-center justify-center space-x-4 w-full text-lg">
+      <Breadcrumb className="my-6 flex items-center justify-center space-x-4 w-full text-base md:text-lg">
         <Breadcrumb.Item>
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
@@ -39,9 +39,11 @@ const FoodNutrition: React.FC = () => {
           <span className="font-bold">Thức Ăn & Dinh Dưỡng</span>
         </Breadcrumb.Item>
       </Breadcrumb>
+
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center text-blue-800 border-b-4 border-blue-600 pb-2">
         Thức Ăn & Dinh Dưỡng
       </h1>
+
       <Row gutter={[16, 16]} justify="center">
         {paginatedProducts.map((product) => (
           <Col key={product.id} xs={24} sm={12} md={12} lg={8}>
@@ -59,10 +61,12 @@ const FoodNutrition: React.FC = () => {
                 />
               </div>
               <div className="mt-4 text-center">
-                <h2 className="text-lg font-semibold text-gray-800">
+                <h2 className="text-base md:text-lg lg:text-xl font-semibold text-gray-800">
                   {product.name}
                 </h2>
-                <p className="text-green-600 font-semibold">{product.price}</p>
+                <p className="text-base md:text-lg text-green-600 font-semibold">
+                  {product.price}
+                </p>
               </div>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center p-4">
                 <Link
@@ -74,7 +78,7 @@ const FoodNutrition: React.FC = () => {
                   <Button
                     type="primary"
                     block
-                    className="mb-4 py-3 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                    className="mb-4 py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                   >
                     Xem Chi Tiết
                   </Button>
@@ -83,7 +87,7 @@ const FoodNutrition: React.FC = () => {
                   <Button
                     type="default"
                     block
-                    className="py-3 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                    className="py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                   >
                     Liên Hệ Ngay
                   </Button>
@@ -93,6 +97,7 @@ const FoodNutrition: React.FC = () => {
           </Col>
         ))}
       </Row>
+
       <Pagination
         current={currentPage}
         pageSize={pageSize}

@@ -69,10 +69,23 @@ const DogDetail = () => {
   ];
 
   const columns = [
-    { title: "Thuộc tính", dataIndex: "attribute", key: "attribute" },
-    { title: "Thông tin", dataIndex: "value", key: "value" },
+    {
+      title: "Thuộc tính",
+      dataIndex: "attribute",
+      key: "attribute",
+      render: (text: string) => (
+        <span className="text-base font-medium text-gray-800">{text}</span>
+      ),
+    },
+    {
+      title: "Thông tin",
+      dataIndex: "value",
+      key: "value",
+      render: (text: string) => (
+        <span className="text-base font-normal text-gray-700">{text}</span>
+      ),
+    },
   ];
-
   const handleToggleSidebar = () => {
     setIsSidebarVisible((prevState) => !prevState);
   };
@@ -182,13 +195,13 @@ const DogDetail = () => {
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full"
+              className="w-full text-sm md:text-base lg:text-lg"
             />
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300 text-base md:text-lg lg:text-xl"
               >
                 Liên hệ
               </Button>
@@ -198,7 +211,7 @@ const DogDetail = () => {
         <section className="mt-12">
           <div className="w-full md:w-[70%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
-              className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
+              className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gradient-to-r hover:from-gray-100 hover:to-gray-300 hover:shadow-lg transition-all duration-300"
               onClick={handleToggleSidebar}
             >
               <span>MỤC LỤC NỘI DUNG</span>
@@ -208,46 +221,52 @@ const DogDetail = () => {
             </h2>
 
             {isSidebarVisible && (
-              <div className="p-4">
+              <div
+                className={`p-4 transition-all duration-500 ease-in-out transform motion-safe:${
+                  isSidebarVisible
+                    ? "scale-y-100 opacity-100"
+                    : "scale-y-0 opacity-0"
+                }`}
+              >
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("temperament")}
                   >
                     Tính cách
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("health")}
                   >
                     Sức khỏe
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("exercise")}
                   >
                     Nhu cầu vận động
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("diet")}
                   >
                     Chế độ ăn
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("training")}
                   >
                     Huấn luyện
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("suitable_for")}
                   >
                     Phù hợp với
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("care_tips")}
                   >
                     Lời khuyên chăm sóc
@@ -261,48 +280,71 @@ const DogDetail = () => {
         <section className="pt-24 md:flex md:gap-6">
           <ol className="space-y-6 mt-6">
             <li id="temperament">
-              <h3 className="text-3xl font-bold text-blue-700">1. Tính cách</h3>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                1. Tính cách
+              </h3>
               {dog.temperament.map((item, index) => (
-                <p key={index}>- {item}</p>
+                <p
+                  key={index}
+                  className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2"
+                >
+                  - {item}
+                </p>
               ))}
             </li>
 
             <li id="health">
-              <h3 className="text-3xl font-bold text-blue-700">2. Sức khỏe</h3>
-              <p>{dog.additional_info.health_issues}</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                2. Sức khỏe
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.health_issues}
+              </p>
             </li>
 
             <li id="exercise">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 3. Nhu cầu vận động
               </h3>
-              <p>{dog.additional_info.exercise_needs}</p>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.exercise_needs}
+              </p>
             </li>
 
             <li id="diet">
-              <h3 className="text-3xl font-bold text-blue-700">4. Chế độ ăn</h3>
-              <p>{dog.additional_info.diet}</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                4. Chế độ ăn
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.diet}
+              </p>
             </li>
 
             <li id="training">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 5. Huấn luyện
               </h3>
-              <p>{dog.additional_info.training_difficulty}</p>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.training_difficulty}
+              </p>
             </li>
 
             <li id="suitable_for">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 6. Phù hợp với
               </h3>
-              <p>{dog.additional_info.suitable_for}</p>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.suitable_for}
+              </p>
             </li>
 
             <li id="care_tips">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 7. Lời khuyên chăm sóc
               </h3>
-              <p>{dog.additional_info.care_tips}</p>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed mt-2">
+                {dog.additional_info.care_tips}
+              </p>
             </li>
           </ol>
         </section>

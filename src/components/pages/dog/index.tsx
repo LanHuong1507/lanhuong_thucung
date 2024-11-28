@@ -193,10 +193,12 @@ const DogList = ({ dogsPerPage = 4 }) => {
               onChange={(e) =>
                 handleFilterChange("searchQuery", e.target.value)
               }
-              className="mb-4"
+              className="mb-4 text-lg"
             />
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Kích thước</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Kích thước
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn kích thước"
@@ -210,7 +212,9 @@ const DogList = ({ dogsPerPage = 4 }) => {
               </Select>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Cân nặng</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Cân nặng
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn cân nặng"
@@ -230,7 +234,9 @@ const DogList = ({ dogsPerPage = 4 }) => {
               </Select>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Màu lông</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Màu lông
+              </h4>
               <Checkbox.Group
                 options={[
                   { label: "Trắng", value: "Trắng" },
@@ -243,9 +249,10 @@ const DogList = ({ dogsPerPage = 4 }) => {
                 value={filters.color}
               />
             </div>
-
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Tuổi thọ</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Tuổi thọ
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn tuổi thọ"
@@ -258,9 +265,10 @@ const DogList = ({ dogsPerPage = 4 }) => {
                 <Select.Option value="Trên 12 năm">Trên 12 năm</Select.Option>
               </Select>
             </div>
-
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Khoảng giá</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Khoảng giá
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn khoảng giá"
@@ -274,7 +282,9 @@ const DogList = ({ dogsPerPage = 4 }) => {
               </Select>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Giống</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Giống
+              </h4>
               <Radio.Group
                 onChange={(e) =>
                   handleFilterChange("breedType", e.target.value)
@@ -287,7 +297,9 @@ const DogList = ({ dogsPerPage = 4 }) => {
               </Radio.Group>
             </div>
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Giới tính</h4>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Giới tính
+              </h4>
               <Radio.Group
                 onChange={(e) => handleFilterChange("gender", e.target.value)}
                 value={filters.gender}

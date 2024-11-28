@@ -58,17 +58,17 @@ const Home = () => {
       </section>
 
       <section className="py-8 px-6 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-r from-blue-100 to-blue-200">
-        <div className="flex-1 text-center md:text-left space-y-4 animate-fade-in">
-          <h1 className="text-4xl font-bold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600">
+        <div className="flex-1 text-center md:text-left space-y-6 animate-fade-in">
+          <h1 className="text-3xl md:text-4xl font-semibold text-gray-800 leading-tight transition-all duration-500 ease-in-out hover:text-blue-600 lg:whitespace-nowrap">
             Chào mừng đến với{" "}
             <span className="text-blue-600">Lan Hương Pet Shop!</span>
           </h1>
-          <p className="text-lg text-gray-700 transition-all duration-500 ease-in-out hover:text-gray-800">
+          <p className="text-base md:text-lg text-gray-700 transition-all duration-500 ease-in-out hover:text-gray-800">
             <strong>Lan Hương Pet Shop</strong> được thành lập năm 2024, với sứ
             mệnh cung cấp sản phẩm và dịch vụ chăm sóc thú cưng chất lượng cao
             tại Việt Nam.
           </p>
-          <p className="text-md text-gray-800 transition-all duration-500 ease-in-out hover:text-gray-700">
+          <p className="text-base md:text-lg text-gray-800 transition-all duration-500 ease-in-out hover:text-gray-700">
             Chúng tôi chuyên cung cấp giống loài thú cưng, sản phẩm chăm sóc và
             dinh dưỡng, cùng dụng cụ hỗ trợ chăm sóc toàn diện cho thú cưng.
           </p>
@@ -90,7 +90,7 @@ const Home = () => {
               và chăm sóc thú cưng.
             </li>
           </ul>
-          <p className="text-lg font-semibold text-blue-700 mt-4 transition-all duration-500 ease-in-out hover:text-blue-800">
+          <p className="text-base md:text-lg font-semibold text-blue-700 mt-4 transition-all duration-500 ease-in-out hover:text-blue-800">
             Cam kết cung cấp sản phẩm và dịch vụ chăm sóc chất lượng cao, trở
             thành người bạn đồng hành đáng tin cậy cho thú cưng của bạn.
           </p>
@@ -106,9 +106,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 py-12">
         <div className="container mx-auto px-6">
-          <Title level={3} className="text-3xl text-center mb-12 text-gray-800">
+          <Title
+            level={3}
+            className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-800"
+          >
             Danh Mục Sản Phẩm
           </Title>
           <Row gutter={[16, 16]}>
@@ -126,15 +129,15 @@ const Home = () => {
                     alt={category.name}
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h4 className="text-2xl text-white mb-4">
+                  <div className="p-2 md:p-1 lg:p-2 absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h4 className="text-xl lg:text-2xl font-semibold text-white mb-4">
                       {category.name}
                     </h4>
-                    <p className="text-white text-center">
+                    <p className="text-sm lg:text-base text-white text-center mb-4">
                       {category.description}
                     </p>
                     <Link href={routerNames.CATEGORY} passHref>
-                      <Button className="mt-4 bg-yellow-500 text-white hover:bg-yellow-400">
+                      <Button className="md:mt-0 mt-4 bg-yellow-500 text-white hover:bg-yellow-400 text-sm lg:text-base py-4 px-6 rounded-lg transition-all">
                         Xem Thêm
                       </Button>
                     </Link>
@@ -145,7 +148,8 @@ const Home = () => {
           </Row>
         </div>
       </section>
-      <section className="py-8">
+
+      <section className="py-4">
         <div className="container mx-auto px-6">
           <Tabs defaultActiveKey="1" centered>
             <TabPane
@@ -193,35 +197,40 @@ const Home = () => {
             </TabPane>
             <TabPane
               tab={
-                <span className="text-lg font-bold">Cam kết của chúng tôi</span>
+                <span className="text-lg font-semibold">
+                  Cam kết của chúng tôi
+                </span>
               }
               key="2"
             >
-              <div>
-                <ul className="list-disc list-inside text-lg text-gray-700 space-y-3">
-                  <li>
+              <div className="px-6 py-4">
+                <ul className="list-disc list-inside text-lg text-gray-800 space-y-4">
+                  <li className="leading-relaxed">
                     Sản phẩm chính hãng, đảm bảo an toàn và đáng tin cậy cho thú
                     cưng.
                   </li>
-                  <li>
+                  <li className="leading-relaxed">
                     Mang lại trải nghiệm mua sắm dễ dàng và dịch vụ chăm sóc
                     khách hàng chu đáo.
                   </li>
-                  <li>
+                  <li className="leading-relaxed">
                     Không ngừng cải tiến để mang đến giải pháp tốt nhất cho sức
                     khỏe và hạnh phúc của thú cưng.
                   </li>
                 </ul>
               </div>
             </TabPane>
+
             <TabPane
               tab={
-                <span className="text-lg font-bold">Đội ngũ của chúng tôi</span>
+                <span className="text-lg font-semibold">
+                  Đội ngũ của chúng tôi
+                </span>
               }
               key="3"
             >
-              <div>
-                <Paragraph className="text-lg text-gray-700 leading-relaxed">
+              <div className="px-6 py-4">
+                <Paragraph className="text-lg text-gray-800 leading-relaxed mb-6">
                   Lan Hương Pet Shop quy tụ đội ngũ nhân viên nhiệt huyết, giàu
                   kinh nghiệm cùng các đối tác chiến lược quan trọng. Chúng tôi
                   tự hào hợp tác với <strong>Bệnh Viện Thú Y ThiThi Pet</strong>
@@ -235,31 +244,31 @@ const Home = () => {
                     href="https://thuythithi.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 underline font-medium"
+                    className="text-blue-600 underline font-medium hover:text-blue-800 transition-colors duration-300"
                   >
                     Tìm hiểu thêm về ThiThi Pet tại đây.
                   </a>
                 </Paragraph>
-                <div className="mt-6">
-                  <p className="font-semibold text-lg text-gray-800">
+                <div className="mt-8">
+                  <p className="font-semibold text-xl text-gray-800 mb-4">
                     Chúng tôi tự hào về đội ngũ của mình, bao gồm:
                   </p>
-                  <ul className="list-disc list-inside mt-4 space-y-2 text-lg text-gray-700">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3 text-lg text-gray-700">
+                    <li className="leading-relaxed">
                       Đội ngũ bác sĩ thú y từ{" "}
                       <strong>Bệnh Viện Thú Y ThiThi Pet</strong>, chuyên cung
                       cấp dịch vụ chăm sóc sức khỏe và khám chữa bệnh cho thú
                       cưng.
                     </li>
-                    <li>
+                    <li className="leading-relaxed">
                       Nhân viên tư vấn, hỗ trợ khách hàng nhiệt tình, giúp bạn
                       chọn lựa các sản phẩm và dịch vụ phù hợp.
                     </li>
-                    <li>
+                    <li className="leading-relaxed">
                       Nhân viên bán hàng và giao nhận sản phẩm chuyên nghiệp,
                       đảm bảo sự thuận tiện cho khách hàng.
                     </li>
-                    <li>
+                    <li className="leading-relaxed">
                       Đội ngũ chăm sóc thú cưng tận tâm, luôn đảm bảo sự thoải
                       mái và an toàn cho thú cưng của bạn.
                     </li>
@@ -276,9 +285,12 @@ const Home = () => {
                 <div className="container mx-auto px-6">
                   <Row gutter={[16, 16]}>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <StarOutlined className="text-4xl text-yellow-500" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <StarOutlined className="text-4xl text-yellow-500 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-yellow-500"
+                        >
                           Chất Lượng Hàng Đầu
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -288,9 +300,12 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <HeartOutlined className="text-4xl text-red-600" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <HeartOutlined className="text-4xl text-red-600 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-red-600"
+                        >
                           Quan Tâm
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -300,9 +315,12 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <HarmonyOSOutlined className="text-4xl text-green-600" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <HarmonyOSOutlined className="text-4xl text-green-600 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-green-600"
+                        >
                           Cộng Đồng
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -313,9 +331,12 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <EnvironmentOutlined className="text-4xl text-green-800" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <EnvironmentOutlined className="text-4xl text-green-800 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-green-800"
+                        >
                           100% Tự Nhiên
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -326,9 +347,12 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <SmileOutlined className="text-4xl text-blue-900" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <SmileOutlined className="text-4xl text-blue-900 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-blue-900"
+                        >
                           Dễ Dàng Chuẩn Bị
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -338,9 +362,12 @@ const Home = () => {
                       </div>
                     </Col>
                     <Col xs={24} md={8}>
-                      <div className="text-center">
-                        <ThunderboltOutlined className="text-4xl text-orange-700" />
-                        <Title level={4} className="mt-4">
+                      <div className="text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <ThunderboltOutlined className="text-4xl text-orange-700 transition-all duration-300 transform hover:scale-110" />
+                        <Title
+                          level={4}
+                          className="mt-4 text-gray-800 transition-all duration-300 hover:text-orange-700"
+                        >
                           Giàu Năng Lượng
                         </Title>
                         <Paragraph className="text-gray-700">
@@ -365,8 +392,8 @@ const Home = () => {
         <div className="absolute inset-0 bg-cover opacity-20 z-0"></div>
         <div className="container mx-auto px-6 relative z-10">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="relative z-10"
           >
@@ -377,11 +404,12 @@ const Home = () => {
               Sứ Mệnh & Tầm Nhìn
             </Title>
           </motion.div>
+
           <Row gutter={[16, 16]}>
             <Col xs={24} md={12}>
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.9, duration: 1.2 }}
                 className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10"
               >
@@ -398,8 +426,8 @@ const Home = () => {
             </Col>
             <Col xs={24} md={12}>
               <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2, duration: 1.5 }}
                 className="p-6 border-4 border-blue-300 rounded-lg shadow-lg bg-white relative z-10"
               >
@@ -416,24 +444,25 @@ const Home = () => {
           </Row>
         </div>
       </section>
+
       <section>
         <ProductList />
       </section>
       <section>
         <PartnerCarousel />
       </section>
-      <footer className="bg-white py-4">
-        <div className="container mx-auto px-6 py-16">
+      <footer className="bg-white py-8">
+        <div className="container mx-auto px-6">
           <Row gutter={[16, 16]}>
             <Col xs={24} md={12}>
               <div className="text-left">
                 <Title
                   level={3}
-                  className="text-5xl font-extrabold text-gray-800 mb-6 transform transition-all duration-300 ease-out hover:text-blue-600"
+                  className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6 transform transition-all duration-300 ease-out hover:text-blue-600"
                 >
                   Cộng Đồng
                 </Title>
-                <Paragraph className="text-2xl text-gray-700 mb-8 leading-relaxed transform transition-all duration-300 ease-out hover:text-gray-800">
+                <Paragraph className="text-lg md:text-2xl text-gray-700 mb-8 leading-relaxed transform transition-all duration-300 ease-out hover:text-gray-800">
                   Chúng tôi xây dựng một cộng đồng yêu thương thú cưng thông qua
                   các chương trình giáo dục và sự kiện kết nối.
                   <br />
@@ -453,7 +482,7 @@ const Home = () => {
                     alt="Pet Community Center"
                     width={1899}
                     height={733}
-                    className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30 group-hover:opacity-40 transition-all duration-500 ease-in-out"></div>
                 </div>
@@ -466,7 +495,7 @@ const Home = () => {
                   alt="Pet Community Center"
                   width={1899}
                   height={733}
-                  className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+                  className="w-full h-auto object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:opacity-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30 group-hover:opacity-40 transition-all duration-500 ease-in-out"></div>
               </div>

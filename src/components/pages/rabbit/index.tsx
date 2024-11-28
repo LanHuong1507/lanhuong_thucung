@@ -141,23 +141,26 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
 
       <Row gutter={20} justify="center">
         <Col xs={24} sm={24} md={24} lg={6}>
-          <Card className="p-4 rounded-md shadow-lg w-full" title="Bộ Lọc">
+          <Card
+            className="p-4 rounded-md shadow-lg w-full"
+            title={<span className="text-lg font-bold">Bộ Lọc</span>}
+          >
             <Input
               placeholder="Tìm kiếm giống thỏ"
               value={filters.searchQuery}
               onChange={(e) =>
                 handleFilterChange("searchQuery", e.target.value)
               }
-              className="mb-4"
+              className="mb-4 text-base px-3 py-2"
             />
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Kích thước</h4>
+              <h4 className="font-semibold mb-2 text-md">Kích thước</h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn kích thước"
                 onChange={(value) => handleFilterChange("size", value)}
                 value={filters.size}
-                className="w-full"
+                className="w-full text-sm"
               >
                 <Select.Option value="Nhỏ">Nhỏ</Select.Option>
                 <Select.Option value="Vừa">Trung bình</Select.Option>
@@ -166,13 +169,13 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
             </div>
 
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Tuổi thọ</h4>
+              <h4 className="font-semibold mb-2 text-md">Tuổi thọ</h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn tuổi thọ"
                 onChange={(value) => handleFilterChange("lifeSpan", value)}
                 value={filters.lifeSpan}
-                className="w-full"
+                className="w-full text-sm"
               >
                 <Select.Option value="Dưới 8 năm">Dưới 8 năm</Select.Option>
                 <Select.Option value="8-10 năm">8-10 năm</Select.Option>
@@ -181,13 +184,13 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
             </div>
 
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Khoảng giá</h4>
+              <h4 className="font-semibold mb-2 text-md">Khoảng giá</h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn khoảng giá"
                 onChange={(value) => handleFilterChange("priceRange", value)}
                 value={filters.priceRange}
-                className="w-full"
+                className="w-full text-sm"
               >
                 <Select.Option value="Low">Dưới 1 triệu</Select.Option>
                 <Select.Option value="Medium">1 triệu - 5 triệu</Select.Option>
@@ -200,9 +203,9 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
         <Col xs={24} lg={18}>
           <header className="my-4 lg:mb-2 flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
             <div className="flex items-center space-x-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-white text-center">
                 Các Giống Thỏ
-              </h2>{" "}
+              </h2>
               <Image
                 src={Rabbit1}
                 alt="Rabbit"
@@ -229,35 +232,35 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                 }
               >
                 <div className="p-2 md:p-4 text-center transition-opacity duration-300 group-hover:opacity-0">
-                  <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     {rabbit.name}
                   </h3>
-                  <p className="text-lg font-semibold text-gray-800">
+                  <p className="text-base font-semibold text-gray-800">
                     Giá: {rabbit.price} VNĐ
                   </p>
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-white bg-opacity-90 p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="font-bold text-xl mb-4 text-center">
                     {rabbit.name}
                   </h3>
 
-                  <p className="mb-4">
+                  <p className="md:mb-4 text-base mb-2">
                     <strong>Lông:</strong> {rabbit.coat}
                   </p>
 
-                  <p className="mb-4">
+                  <p className="md:mb-4 text-base mb-2">
                     <strong>Tuổi thọ:</strong> {rabbit.life_span}
                   </p>
 
-                  <p className="mb-4">
+                  <p className="md:mb-4 text-base mb-2">
                     <strong>Cân nặng:</strong> {rabbit.weight_range}
                   </p>
 
-                  <p className="mb-4">
+                  <p className="md:mb-4 text-base mb-2">
                     <strong>Tính cách:</strong> {rabbit.temperament.join(", ")}
                   </p>
 
-                  <p className="mb-4">
+                  <p className="md:mb-4 text-base mb-2">
                     <strong>Giá:</strong> {rabbit.price} VNĐ
                   </p>
 
@@ -270,7 +273,7 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     <Button
                       type="primary"
                       block
-                      className="mb-4 py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                      className="my-2 lg:my-4 p-3 md:p-5 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                     >
                       Xem chi tiết
                     </Button>
@@ -280,7 +283,7 @@ const RabbitList = ({ rabbitsPerPage = 4 }) => {
                     <Button
                       type="default"
                       block
-                      className="py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+                      className="md:my-2 lg:my-4 p-3 md:p-5 rounded-lg text-lg font-semibold bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
                     >
                       Liên hệ
                     </Button>

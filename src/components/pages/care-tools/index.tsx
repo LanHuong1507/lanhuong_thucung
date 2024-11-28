@@ -27,7 +27,7 @@ const CareTool = () => {
 
   return (
     <Space direction="vertical" style={{ width: "100%" }} className="p-6">
-      <Breadcrumb className="my-6 flex items-center justify-center space-x-4 lg:space-x-8 w-full text-lg">
+      <Breadcrumb className="my-6 flex items-center justify-center space-x-4 lg:space-x-8 w-full text-base">
         <Breadcrumb.Item>
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
@@ -42,8 +42,11 @@ const CareTool = () => {
             Dụng Cụ
           </Link>
         </Breadcrumb.Item>
+        <Breadcrumb.Item>
+          <span className="font-bold">Dụng Cụ Chăm Sóc</span>
+        </Breadcrumb.Item>
       </Breadcrumb>
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center text-blue-800 border-b-4 border-blue-600 pb-2">
+      <h1 className="text-3xl font-bold mb-8 text-center text-blue-800 border-b-4 border-blue-600 pb-2">
         Dụng Cụ Chăm Sóc
       </h1>
       <Row gutter={[16, 16]} justify="center">
@@ -63,10 +66,12 @@ const CareTool = () => {
                 />
               </div>
               <div className="mt-4 text-center">
-                <h2 className="text-lg font-semibold text-gray-800">
+                <h2 className="text-xl font-semibold text-gray-800">
                   {product.name}
                 </h2>
-                <p className="text-green-600 font-semibold">{product.price}</p>
+                <p className="text-lg text-green-600 font-semibold">
+                  {product.price}
+                </p>
               </div>
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center p-4">
                 <p className="text-sm text-gray-600 mb-4 text-center">
@@ -81,7 +86,7 @@ const CareTool = () => {
                   <Button
                     type="primary"
                     block
-                    className="w-full text-center py-6 px-8 text-lg rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
+                    className="w-full text-center py-4 px-6 text-lg rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
                   >
                     Xem chi tiết
                   </Button>
@@ -91,7 +96,7 @@ const CareTool = () => {
                   <Button
                     type="default"
                     block
-                    className="w-full text-center py-6 px-8 text-lg rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                    className="w-full text-center py-4 px-6 text-lg rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
                   >
                     Liên hệ ngay
                   </Button>

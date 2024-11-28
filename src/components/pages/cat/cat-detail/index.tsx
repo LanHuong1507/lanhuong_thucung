@@ -73,11 +73,17 @@ const CatDetail = () => {
       title: "Thuộc tính",
       dataIndex: "attribute",
       key: "attribute",
+      render: (text: string) => (
+        <span className="text-base font-medium text-gray-800">{text}</span>
+      ),
     },
     {
       title: "Thông tin",
       dataIndex: "value",
       key: "value",
+      render: (text: string) => (
+        <span className="text-base font-normal text-gray-700">{text}</span>
+      ),
     },
   ];
 
@@ -122,16 +128,16 @@ const CatDetail = () => {
         <h1 className="text-2xl font-bold mb-6 text-center w-full">
           {cat.name}
         </h1>
-        <section className="flex flex-col md:flex-row justify-between items-start">
-          <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
+        <section className="flex flex-col lg:flex-row justify-between items-start">
+          <article className="w-full lg:w-2/3 flex flex-col items-center mb-6 lg:mb-0">
             <Image
               src={mainImage}
               alt={cat.name}
-              className="w-full md:w-[95%] h-96 object-cover rounded-md"
+              className="w-full lg:w-[95%] h-96 object-cover rounded-md"
               width={400}
               height={400}
             />
-            <div className="flex flex-col lg:flex-row mt-4 md:space-x-4 space-y-4 md:space-y-0 items-center w-full justify-center">
+            <div className="flex flex-col lg:flex-row mt-4 lg:space-x-4 space-y-4 lg:space-y-0 items-center w-full justify-center">
               <div className="flex space-x-2 mb-4 lg:mb-0">
                 {cat.thumbnail.map(
                   (
@@ -142,15 +148,15 @@ const CatDetail = () => {
                       key={index}
                       src={thumb}
                       alt={`${cat.name} thumbnail ${(index as number) + 1}`}
-                      className="w-24 h-20 md:w-36 lg:w-44 md:h-40 object-cover rounded-md cursor-pointer"
+                      className="w-24 h-20 md:w-48 md:h-40 object-cover rounded-md cursor-pointer"
                       width={400}
                       height={400}
-                      onClick={() => handleThumbnailClick(thumb as string)} // Set main image on thumbnail click
+                      onClick={() => handleThumbnailClick(thumb as string)}
                     />
                   ),
                 )}
               </div>
-              <div className="w-full md:w-72 h-auto">
+              <div className="w-full lg:w-72 h-auto">
                 <video
                   src={cat.video}
                   autoPlay
@@ -163,24 +169,25 @@ const CatDetail = () => {
             </div>
           </article>
 
-          <article className="w-full md:w-1/3">
+          <article className="w-full lg:w-1/3">
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full"
+              className="w-full text-base md:text-lg"
             />
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 hover:text-white rounded-lg transition-all duration-300"
               >
                 Liên hệ
               </Button>
             </section>
           </article>
         </section>
+
         <section className="mt-12">
           <div className="w-full md:w-[70%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
@@ -196,97 +203,91 @@ const CatDetail = () => {
             {isSidebarVisible && (
               <div className="p-4">
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("temperament")}
-                  >
-                    Tính cách
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("health")}
-                  >
-                    Sức khỏe
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("exercise")}
-                  >
-                    Nhu cầu vận động
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("diet")}
-                  >
-                    Chế độ ăn
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("training")}
-                  >
-                    Huấn luyện
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("suitable_for")}
-                  >
-                    Phù hợp với
-                  </li>
-                  <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
-                    onClick={() => handleSectionClick("care_tips")}
-                  >
-                    Lời khuyên chăm sóc
-                  </li>
+                  {[
+                    { label: "Tính cách", section: "temperament" },
+                    { label: "Sức khỏe", section: "health" },
+                    { label: "Nhu cầu vận động", section: "exercise" },
+                    { label: "Chế độ ăn", section: "diet" },
+                    { label: "Huấn luyện", section: "training" },
+                    { label: "Phù hợp với", section: "suitable_for" },
+                    { label: "Lời khuyên chăm sóc", section: "care_tips" },
+                  ].map((item, index) => (
+                    <li
+                      key={index}
+                      className="text-lg md:text-xl cursor-pointer text-black p-2 rounded-md transition-transform duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-500 hover:translate-x-4 hover:font-medium"
+                      onClick={() => handleSectionClick(item.section)}
+                    >
+                      {item.label}
+                    </li>
+                  ))}
                 </ol>
               </div>
             )}
           </div>
         </section>
-
         <section className="pt-24 md:flex md:gap-6">
           <ol className="space-y-6 mt-6">
             <li id="temperament">
-              <h3 className="text-3xl font-bold text-blue-700">1. Tính cách</h3>
-              <p>{cat.temperament.join(", ")}</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                1. Tính cách
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.temperament.join(", ")}
+              </p>
             </li>
 
             <li id="health">
-              <h3 className="text-3xl font-bold text-blue-700">2. Sức khỏe</h3>
-              <p>{cat.additional_info.health_issues}</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                2. Sức khỏe
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.health_issues}
+              </p>
             </li>
 
             <li id="exercise">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 3. Nhu cầu vận động
               </h3>
-              <p>{cat.additional_info.exercise_needs}</p>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.exercise_needs}
+              </p>
             </li>
 
             <li id="diet">
-              <h3 className="text-3xl font-bold text-blue-700">4. Chế độ ăn</h3>
-              <p>{cat.additional_info.diet}</p>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
+                4. Chế độ ăn
+              </h3>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.diet}
+              </p>
             </li>
 
             <li id="training">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 5. Huấn luyện
               </h3>
-              <p>{cat.additional_info.training_difficulty}</p>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.training_difficulty}
+              </p>
             </li>
 
             <li id="suitable_for">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 6. Phù hợp với
               </h3>
-              <p>{cat.additional_info.suitable_for}</p>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.suitable_for}
+              </p>
             </li>
 
             <li id="care_tips">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-700">
                 7. Lời khuyên chăm sóc
               </h3>
-              <p>{cat.additional_info.care_tips}</p>
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                {cat.additional_info.care_tips}
+              </p>
             </li>
           </ol>
         </section>

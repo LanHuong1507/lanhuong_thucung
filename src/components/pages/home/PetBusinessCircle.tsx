@@ -81,7 +81,7 @@ const PetBusinessCircle = () => {
     <div className="flex flex-col lg:flex-row items-center lg:items-start py-6 lg:px-14">
       <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-between items-center mb-8 lg:mb-0">
         <div className="w-[200px] h-[200px] md:w-[500px] md:h-[500px] rounded-full flex justify-center items-center relative">
-          <div className="absolute text-center font-bold text-xs md:text-lg text-gray-800 px-2 z-10">
+          <div className="absolute text-center font-bold text-sm md:text-xl text-gray-800 px-2 z-10 leading-5">
             Mô Hình Kinh Doanh
             <br />
             Của Chúng Tôi
@@ -108,10 +108,8 @@ const PetBusinessCircle = () => {
                     transform: `translate(${x}px, ${y}px)`,
                     pointerEvents: "none",
                   }}
-                  whileHover={{
-                    scale: 1.2,
-                    y: -20,
-                  }}
+                  whileHover={isMobile ? {} : { scale: 1.2, y: -20 }}
+                  whileTap={isMobile ? { scale: 1.1 } : {}}
                   transition={{
                     duration: 0.3,
                     type: "spring",
@@ -146,8 +144,10 @@ const PetBusinessCircle = () => {
               >
                 <Panel
                   header={
-                    <div className="flex justify-between items-center w-full">
-                      <span className="text-lg font-semibold">{item.name}</span>
+                    <div className="flex justify-between items-center w-full text-gray-800">
+                      <span className="text-base md:text-lg font-semibold">
+                        {item.name}
+                      </span>
                       {openIndex === index ? (
                         <CaretUpOutlined />
                       ) : (
@@ -157,8 +157,11 @@ const PetBusinessCircle = () => {
                   }
                   key={index}
                   showArrow={false}
+                  className="rounded-lg border-2 border-gray-200 shadow-md"
                 >
-                  <div>{item.description}</div>
+                  <div className="text-sm md:text-base leading-relaxed text-gray-600">
+                    {item.description}
+                  </div>
                 </Panel>
               </Collapse>
             </div>

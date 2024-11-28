@@ -46,83 +46,86 @@ const ProductList = ({ limit = 10 }) => {
   };
 
   return (
-    <div className="py-6 w-full">
-      <div className="flex flex-row justify-between items-center mb-6 px-4 lg:px-8">
-        <div className="flex flex-col items-start w-full mt-4">
-          <h2 className="text-2xl md:text-4xl font-semibold text-start text-gray-800">
+    <section className="py-6 w-full">
+      <header className="flex flex-row justify-between items-center mb-6 px-4 lg:px-8">
+        <section className="flex flex-col items-start w-full mt-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-start text-gray-800">
             Sản phẩm nổi bật
           </h2>
           <p className="text-base md:text-lg text-gray-600 mt-2">
             Những sản phẩm đặc biệt được yêu thích nhất.
           </p>
-        </div>
-
-        <div className="flex space-x-4">
+        </section>
+        <section className="flex space-x-4">
           <Button
             onClick={prevPage}
             disabled={currentPage === 0}
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-all transform hover:scale-110"
           >
             <ArrowLeftOutlined />
           </Button>
           <Button
             onClick={nextPage}
             disabled={currentPage === chunkedProducts.length - 1}
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-colors"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full shadow-lg transition-all transform hover:scale-110"
           >
             <ArrowRightOutlined />
           </Button>
-        </div>
-      </div>
-
-      <div className="p-4 lg:p-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        </section>
+      </header>
+      <main className="p-4 lg:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {chunkedProducts[currentPage]?.map((product) => (
-          <Card
+          <article
             key={product.id}
-            hoverable
-            className="w-full flex-shrink-0 relative group shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 bg-white"
-            cover={
-              <Image
-                alt={product.name}
-                src={product.image}
-                width={500}
-                height={500}
-                className="object-cover h-64 w-full"
-              />
-            }
+            className="w-full flex-shrink-0 relative group shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl bg-white"
           >
-            <div className="p-4 flex flex-col h-full space-y-4">
-              <Card.Meta
-                title={
-                  <h3 className="text-lg font-semibold text-gray-800">
-                    {product.name}
-                  </h3>
-                }
-                description={
-                  <p className="text-sm text-gray-600">{product.description}</p>
-                }
-                className="text-gray-700 mb-4"
-              />
-              <p className="text-lg font-semibold text-orange-500 mb-2">
-                {new Intl.NumberFormat("vi-VN", {
-                  minimumFractionDigits: 3,
-                  maximumFractionDigits: 3,
-                }).format(product.price)}{" "}
-                VNĐ
-              </p>
-              <div className="flex items-center">
-                <Rate
-                  disabled
-                  defaultValue={product.rating}
-                  className="mr-2 text-yellow-400"
+            <Card
+              hoverable
+              cover={
+                <Image
+                  alt={product.name}
+                  src={product.image}
+                  width={500}
+                  height={500}
+                  className="object-cover h-64 w-full"
                 />
-                <span className="text-gray-500">({product.rating}/5)</span>
-              </div>
-            </div>
-          </Card>
+              }
+            >
+              <section className="p-4 flex flex-col h-full space-y-4">
+                <Card.Meta
+                  title={
+                    <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                      {product.name}
+                    </h3>
+                  }
+                  description={
+                    <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors">
+                      {product.description}
+                    </p>
+                  }
+                  className="mb-4"
+                />
+                <p className="text-lg font-semibold text-orange-500 group-hover:text-orange-600 transition-colors">
+                  {new Intl.NumberFormat("vi-VN", {
+                    minimumFractionDigits: 3,
+                    maximumFractionDigits: 3,
+                  }).format(product.price)}{" "}
+                  VNĐ
+                </p>
+                <section className="flex items-center">
+                  <Rate
+                    disabled
+                    defaultValue={product.rating}
+                    className="mr-2 text-yellow-400"
+                  />
+                  <span className="text-gray-500">({product.rating}/5)</span>
+                </section>
+              </section>
+            </Card>
+          </article>
         ))}
-      </div>
-    </div>
+      </main>
+    </section>
   );
 };
 

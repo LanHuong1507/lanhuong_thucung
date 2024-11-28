@@ -155,10 +155,10 @@ const FishList = ({ fishPerPage = 4 }) => {
               onChange={(e) =>
                 handleFilterChange("searchQuery", e.target.value)
               }
-              className="mb-4"
+              className="mb-4 text-base"
             />
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Kích thước</h4>
+              <h4 className="font-semibold text-lg mb-2">Kích thước</h4>{" "}
               <Select
                 mode="multiple"
                 placeholder="Chọn kích thước"
@@ -173,7 +173,7 @@ const FishList = ({ fishPerPage = 4 }) => {
             </div>
 
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Tuổi thọ</h4>
+              <h4 className="font-semibold text-lg mb-2">Tuổi thọ</h4>{" "}
               <Select
                 mode="multiple"
                 placeholder="Chọn tuổi thọ"
@@ -188,7 +188,7 @@ const FishList = ({ fishPerPage = 4 }) => {
             </div>
 
             <div className="mb-4">
-              <h4 className="font-semibold mb-2">Khoảng giá</h4>
+              <h4 className="font-semibold text-lg mb-2">Khoảng giá</h4>{" "}
               <Select
                 mode="multiple"
                 placeholder="Chọn khoảng giá"
@@ -268,8 +268,9 @@ const FishList = ({ fishPerPage = 4 }) => {
                   <p className="mb-4 text-sm md:text-base lg:text-lg">
                     <strong>Xuất xứ:</strong> <span>{fish.origin}</span>
                   </p>
-
-                  <div className="mt-0 md:mt-4 flex flex-col w-full">
+                  <div className="mt-0 md:mt-4 flex flex-col w-full space-y-4">
+                    {" "}
+                    {/* Added space between buttons */}
                     <Link
                       href={`${routerNames.FISH_DETAIL.replace(
                         "[id]",
@@ -279,17 +280,16 @@ const FishList = ({ fishPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
                       >
                         Xem chi tiết
                       </Button>
                     </Link>
-
                     <Link href={routerNames.CONTACT}>
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105"
                       >
                         Liên hệ ngay
                       </Button>

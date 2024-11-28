@@ -26,7 +26,6 @@ interface CareTool {
   brand: string;
   pet_size_compatibility: string[];
   compatible_breeds: string[];
-
   reviews: { rating: number; reviewer: string; comment: string }[];
 }
 
@@ -68,12 +67,13 @@ const CareToolDetail = () => {
   if (!careTool) {
     return (
       <section className="flex flex-col items-center py-10">
-        <h1 className="text-xl font-bold text-gray-800">
+        <h1 className="text-2xl font-bold text-gray-800">
           Dụng cụ chăm sóc không tồn tại
         </h1>
         <Button
           type="primary"
           onClick={() => router.push(routerNames.CARE_TOOLS)}
+          className="mt-4 text-lg"
         >
           Trở về trang chính
         </Button>
@@ -99,8 +99,22 @@ const CareToolDetail = () => {
   ];
 
   const columns = [
-    { title: "Thuộc tính", dataIndex: "attribute", key: "attribute" },
-    { title: "Thông tin", dataIndex: "value", key: "value" },
+    {
+      title: "Thuộc tính",
+      dataIndex: "attribute",
+      key: "attribute",
+      render: (text: string) => (
+        <span className="text-base font-medium text-gray-800">{text}</span>
+      ),
+    },
+    {
+      title: "Thông tin",
+      dataIndex: "value",
+      key: "value",
+      render: (text: string) => (
+        <span className="text-base font-normal text-gray-700">{text}</span>
+      ),
+    },
   ];
 
   return (
@@ -119,12 +133,12 @@ const CareToolDetail = () => {
           <Breadcrumb.Item>
             <Link href={routerNames.CARE_TOOLS}>Dụng Cụ Chăm Sóc</Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item className="font-bold">
+          <Breadcrumb.Item className="font-bold text-lg">
             {careTool.name}
           </Breadcrumb.Item>
         </Breadcrumb>
 
-        <h1 className="text-2xl font-bold mb-6 text-center w-full">
+        <h1 className="text-3xl font-bold mb-6 text-center w-full">
           {careTool.name}
         </h1>
 
@@ -143,7 +157,7 @@ const CareToolDetail = () => {
                   key={index}
                   src={thumb}
                   alt={`${careTool.name} thumbnail ${(index as number) + 1}`}
-                  className="w-24 lg:w-32 h-24 object-cover rounded-md cursor-pointer"
+                  className="w-24 lg:w-44 h-24 object-cover rounded-md cursor-pointer"
                   width={100}
                   height={100}
                   onClick={() => handleThumbnailClick(thumb)}
@@ -163,22 +177,22 @@ const CareToolDetail = () => {
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-full md:w-[90%] py-4 px-6 hover:bg-blue-700 transition duration-300"
+                className="w-full md:w-[90%] py-4 px-6 hover:bg-blue-700 text-lg transition duration-300"
               >
                 Liên hệ
               </Button>
             </section>
             <section className="mt-6 hidden lg:block">
-              <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
+              <h2 className="text-2xl font-semibold">Mô tả sản phẩm</h2>
               <p className="mt-4 text-gray-700">{careTool.description}</p>
             </section>
           </article>
         </section>
         <section className="mt-6 md:block lg:hidden">
-          <h2 className="text-xl font-semibold">Mô tả sản phẩm</h2>
+          <h2 className="text-2xl font-semibold">Mô tả sản phẩm</h2>
           <p className="mt-4 text-gray-700">{careTool.description}</p>
         </section>
-        <section className="mt-6">
+        <section className="mt-8">
           <div className="w-full md:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
               className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
@@ -191,22 +205,28 @@ const CareToolDetail = () => {
             </h2>
 
             {isSidebarVisible && (
-              <div className="p-4">
+              <div
+                className={`p-4 transition-all duration-500 ease-in-out transform motion-safe:${
+                  isSidebarVisible
+                    ? "scale-y-100 opacity-100"
+                    : "scale-y-0 opacity-0"
+                }`}
+              >
                 <ol className="list-decimal pl-6 space-y-4">
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black font-semibold transition-all duration-300 hover:text-blue-800 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("usage")}
                   >
                     Cách sử dụng
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black font-semibold transition-all duration-300 hover:text-blue-800 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("storage_instructions")}
                   >
                     Bảo quản
                   </li>
                   <li
-                    className="text-blue-600 cursor-pointer font-semibold text-lg hover:text-blue-800 transition-all duration-300"
+                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black font-semibold transition-all duration-300 hover:text-blue-800 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("additional_notes")}
                   >
                     Ghi chú thêm
@@ -223,19 +243,25 @@ const CareToolDetail = () => {
               <h3 className="text-2xl font-semibold text-blue-700">
                 1. Cách sử dụng
               </h3>
-              <p>{careTool.usage}</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                {careTool.usage}
+              </p>
             </li>
             <li id="storage_instructions">
               <h3 className="text-2xl font-semibold text-blue-700">
                 2. Bảo quản
               </h3>
-              <p>{careTool.storage_instructions}</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                {careTool.storage_instructions}
+              </p>
             </li>
             <li id="additional_notes">
               <h3 className="text-2xl font-semibold text-blue-700">
                 3. Ghi chú thêm
               </h3>
-              <p>{careTool.additional_notes}</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+                {careTool.additional_notes}
+              </p>
             </li>
           </ol>
         </section>
@@ -256,7 +282,7 @@ const CareToolDetail = () => {
                       className="text-yellow-500"
                     />
                   </div>
-                  <p className="mt-2">{review.comment}</p>
+                  <p className="mt-2 text-lg">{review.comment}</p>
                 </div>
               ))}
             </div>

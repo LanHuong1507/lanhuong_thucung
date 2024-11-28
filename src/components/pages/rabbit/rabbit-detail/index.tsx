@@ -57,10 +57,23 @@ const RabbitDetail = () => {
     { key: "6", attribute: "Màu lông", value: selectedRabbit.coat },
     { key: "7", attribute: "Giá", value: selectedRabbit.price },
   ];
-
   const columns = [
-    { title: "Thuộc tính", dataIndex: "attribute", key: "attribute" },
-    { title: "Thông tin", dataIndex: "value", key: "value" },
+    {
+      title: "Thuộc tính",
+      dataIndex: "attribute",
+      key: "attribute",
+      render: (text: string) => (
+        <span className="text-base font-medium text-gray-800">{text}</span>
+      ),
+    },
+    {
+      title: "Thông tin",
+      dataIndex: "value",
+      key: "value",
+      render: (text: string) => (
+        <span className="text-base font-normal text-gray-700">{text}</span>
+      ),
+    },
   ];
 
   const handleToggleSidebar = () => {
@@ -127,7 +140,7 @@ const RabbitDetail = () => {
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-1/2 p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
               >
                 Liên hệ
               </Button>
@@ -194,41 +207,53 @@ const RabbitDetail = () => {
         <section className="pt-24 md:flex md:gap-6">
           <ol className="space-y-6 mt-6">
             <li id="care_tips">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl font-bold text-blue-700">
                 1. Lời khuyên chăm sóc
               </h3>
-              <p>{selectedRabbit.additional_info.care_tips}</p>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.care_tips}
+              </p>
             </li>
 
             <li id="health">
-              <h3 className="text-3xl font-bold text-blue-700">2. Sức khỏe</h3>
-              <p>{selectedRabbit.additional_info.health_issues}</p>
+              <h3 className="text-2xl font-bold text-blue-700">2. Sức khỏe</h3>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.health_issues}
+              </p>
             </li>
 
             <li id="exercise">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl font-bold text-blue-700">
                 3. Nhu cầu vận động
               </h3>
-              <p>{selectedRabbit.additional_info.exercise_needs}</p>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.exercise_needs}
+              </p>
             </li>
 
             <li id="diet">
-              <h3 className="text-3xl font-bold text-blue-700">4. Chế độ ăn</h3>
-              <p>{selectedRabbit.additional_info.diet}</p>
+              <h3 className="text-2xl font-bold text-blue-700">4. Chế độ ăn</h3>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.diet}
+              </p>
             </li>
 
             <li id="training_difficulty">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl font-bold text-blue-700">
                 5. Khó khăn khi huấn luyện
               </h3>
-              <p>{selectedRabbit.additional_info.training_difficulty}</p>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.training_difficulty}
+              </p>
             </li>
 
             <li id="suitable_for">
-              <h3 className="text-3xl font-bold text-blue-700">
+              <h3 className="text-2xl font-bold text-blue-700">
                 6. Thích hợp với
               </h3>
-              <p>{selectedRabbit.additional_info.suitable_for}</p>
+              <p className="text-base md:text-lg text-gray-700">
+                {selectedRabbit.additional_info.suitable_for}
+              </p>
             </li>
           </ol>
         </section>

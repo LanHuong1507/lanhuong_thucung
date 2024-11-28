@@ -162,7 +162,7 @@ const CatList = ({ catsPerPage = 4 }) => {
 
   return (
     <main className="p-6 w-full mx-auto">
-      <Breadcrumb className="mb-6 flex items-center justify-center space-x-4 lg:space-x-8 w-full text-lg">
+      <Breadcrumb className="mb-6 flex items-center justify-center space-x-4 lg:space-x-8 w-full text-base sm:text-lg md:text-xl lg:text-2xl">
         <Breadcrumb.Item>
           <Link href={routerNames.HOME}>Trang Chủ</Link>
         </Breadcrumb.Item>
@@ -178,39 +178,51 @@ const CatList = ({ catsPerPage = 4 }) => {
           </Link>
         </Breadcrumb.Item>
       </Breadcrumb>
+
       <Row gutter={20} justify="center">
         <Col xs={24} sm={24} md={24} lg={6}>
-          <Card className="p-4 rounded-md shadow-lg w-full" title="Bộ Lọc">
-            <Input
-              placeholder="Tìm kiếm giống mèo"
-              value={filters.searchQuery}
-              onChange={(e) =>
-                handleFilterChange("searchQuery", e.target.value)
-              }
-              className="mb-4"
-            />
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Kích thước</h4>
+          <Card
+            className="p-6 rounded-lg shadow-lg w-full bg-white"
+            title={<h3 className="text-xl font-bold text-gray-800">Bộ Lọc</h3>}
+          >
+            <div className="mb-6">
+              <Input
+                placeholder="Tìm kiếm giống mèo..."
+                value={filters.searchQuery}
+                onChange={(e) =>
+                  handleFilterChange("searchQuery", e.target.value)
+                }
+                className="rounded-lg px-4 py-2 text-base sm:text-lg shadow-sm border border-gray-300"
+              />
+            </div>
+
+            <div className="mb-6">
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Kích thước
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn kích thước"
                 onChange={(value) => handleFilterChange("size", value)}
                 value={filters.size}
-                className="w-full"
+                className="w-full text-base sm:text-lg"
               >
                 <Select.Option value="Nhỏ">Nhỏ</Select.Option>
                 <Select.Option value="Vừa">Trung bình</Select.Option>
                 <Select.Option value="Lớn">Lớn</Select.Option>
               </Select>
             </div>
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Cân nặng</h4>
+
+            <div className="mb-6">
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Cân nặng
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn cân nặng"
                 onChange={(value) => handleFilterChange("weightRange", value)}
                 value={filters.weightRange}
-                className="w-full"
+                className="w-full text-base sm:text-lg"
               >
                 <Select.Option value="Nhỏ (dưới 10kg)">
                   Nhỏ (dưới 10kg)
@@ -224,14 +236,16 @@ const CatList = ({ catsPerPage = 4 }) => {
               </Select>
             </div>
 
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Tuổi thọ</h4>
+            <div className="mb-6">
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Tuổi thọ
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn tuổi thọ"
                 onChange={(value) => handleFilterChange("lifeSpan", value)}
                 value={filters.lifeSpan}
-                className="w-full"
+                className="w-full text-base sm:text-lg"
               >
                 <Select.Option value="Dưới 10 năm">Dưới 10 năm</Select.Option>
                 <Select.Option value="10-15 năm">10-15 năm</Select.Option>
@@ -239,38 +253,46 @@ const CatList = ({ catsPerPage = 4 }) => {
               </Select>
             </div>
 
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Khoảng giá</h4>
+            <div className="mb-6">
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Khoảng giá
+              </h4>
               <Select
                 mode="multiple"
                 placeholder="Chọn khoảng giá"
                 onChange={(value) => handleFilterChange("priceRange", value)}
                 value={filters.priceRange}
-                className="w-full"
+                className="w-full text-base sm:text-lg"
               >
                 <Select.Option value="Low">Dưới 5 triệu</Select.Option>
                 <Select.Option value="Medium">5 triệu - 15 triệu</Select.Option>
                 <Select.Option value="High">Trên 15 triệu</Select.Option>
               </Select>
             </div>
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Giống</h4>
+            <div className="mb-6">
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Giống
+              </h4>
               <Radio.Group
                 onChange={(e) =>
                   handleFilterChange("breedType", e.target.value)
                 }
                 value={filters.breedType}
+                className="flex flex-row lg:flex-col gap-2"
               >
                 <Radio value="">Tất cả</Radio>
                 <Radio value="Thuần chủng">Thuần chủng</Radio>
                 <Radio value="Lai">Lai</Radio>
               </Radio.Group>
             </div>
-            <div className="mb-4">
-              <h4 className="font-semibold mb-2">Giới tính</h4>
+            <div>
+              <h4 className="font-semibold text-lg mb-2 text-gray-700">
+                Giới tính
+              </h4>
               <Radio.Group
                 onChange={(e) => handleFilterChange("gender", e.target.value)}
                 value={filters.gender}
+                className="flex flex-row lg:flex-col gap-2"
               >
                 <Radio value="">Tất cả</Radio>
                 <Radio value="Đực">Đực</Radio>
@@ -283,9 +305,9 @@ const CatList = ({ catsPerPage = 4 }) => {
         <Col xs={24} lg={18}>
           <header className="my-4 lg:mb-2 flex justify-center items-center py-4 px-6 bg-gradient-to-r from-blue-200 to-indigo-500 rounded-lg shadow-lg">
             <div className="flex items-center space-x-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white text-center">
                 Các Giống Mèo
-              </h2>{" "}
+              </h2>
               <Image
                 src={Cat1}
                 alt="Cat"
@@ -295,8 +317,7 @@ const CatList = ({ catsPerPage = 4 }) => {
               />
             </div>
           </header>
-
-          <section className="p-4 grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          <section className="p-4 md:p-2 lg:p-6 grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
             {chunkedCats[currentPage - 1]?.map((cat) => (
               <Card
                 hoverable
@@ -316,49 +337,54 @@ const CatList = ({ catsPerPage = 4 }) => {
                   <h3 className="text-lg font-bold text-gray-800 mb-2">
                     {cat.name}
                   </h3>
-                  <p className="text-lg font-semibold text-gray-800">
+                  <p className="text-sm md:text-base lg:text-lg font-medium text-gray-600">
                     Giá: {cat.price} VNĐ
                   </p>
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-6 flex flex-col justify-start items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 lg:p-6 flex flex-col justify-start items-start opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div>
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Xuất xứ:{" "}
-                      <span className="font-semibold">{cat.origin}</span>
+                      <span className="font-medium text-gray-800">
+                        Xuất xứ:
+                      </span>{" "}
+                      {cat.origin}
                     </p>
-
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Kích thước:{" "}
-                      <span className="font-semibold">{cat.size}</span>
+                      <span className="font-medium text-gray-800">
+                        Kích thước:
+                      </span>{" "}
+                      {cat.size}
                     </p>
-
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Tuổi thọ:{" "}
-                      <span className="font-semibold">{cat.life_span}</span>
+                      <span className="font-medium text-gray-800">
+                        Tuổi thọ:
+                      </span>{" "}
+                      {cat.life_span}
                     </p>
-
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Cân nặng:{" "}
-                      <span className="font-semibold">{cat.weight_range}</span>
+                      <span className="font-medium text-gray-800">
+                        Cân nặng:
+                      </span>{" "}
+                      {cat.weight_range}
                     </p>
-
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Loại lông:{" "}
-                      <span className="font-semibold">{cat.coat}</span>
+                      <span className="font-medium text-gray-800">
+                        Loại lông:
+                      </span>{" "}
+                      {cat.coat}
                     </p>
-
                     <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
-                      Giống:{" "}
-                      <span className="font-semibold">{cat.breedType}</span>
+                      <span className="font-medium text-gray-800">Giống:</span>{" "}
+                      {cat.breedType}
                     </p>
-
-                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-4">
-                      Giới tính:{" "}
-                      <span className="font-semibold">{cat.gender}</span>
+                    <p className="text-sm md:text-base lg:text-lg text-gray-700 mb-2">
+                      <span className="font-medium text-gray-800">
+                        Giới tính:
+                      </span>{" "}
+                      {cat.gender}
                     </p>
                   </div>
-
-                  <div className="mt-0 md:mt-2 flex flex-col w-full">
+                  <div className="lg:mt-2 flex flex-col w-full">
                     <Link
                       href={`${routerNames.CAT_DETAIL.replace(
                         "[id]",
@@ -368,17 +394,16 @@ const CatList = ({ catsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 lg:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-4"
+                        className="w-full py-3 lg:py-5 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-3"
                       >
                         Xem chi tiết
                       </Button>
                     </Link>
-
                     <Link href={routerNames.CONTACT}>
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 lg:py-6 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                        className="w-full py-3 lg:py-5 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
                       >
                         Liên hệ ngay
                       </Button>
@@ -389,6 +414,7 @@ const CatList = ({ catsPerPage = 4 }) => {
             ))}
           </section>
 
+          {/* Pagination */}
           <div className="flex justify-center mt-6">
             <Pagination
               total={filteredCats.length}
@@ -397,7 +423,7 @@ const CatList = ({ catsPerPage = 4 }) => {
               current={currentPage}
               showSizeChanger={false}
               defaultCurrent={1}
-              className="text-center"
+              className="text-base font-medium text-gray-700"
             />
           </div>
         </Col>

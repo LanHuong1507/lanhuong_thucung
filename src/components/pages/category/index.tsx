@@ -56,7 +56,7 @@ const Category = () => {
       {
         name: "Dụng Cụ Chăm Sóc Thú Cưng",
         description:
-          "Các dụng cụ chăm sóc giúp bạn duy trì sức khỏe và sự sạch sẽ cho thú cưng của mình.Dụng cụ chăm sóc là phần không thể thiếu trong việc duy trì vẻ ngoài và sức khỏe của thú cưng và làm cho thú cưng của bạn luôn cảm thấy thoải mái.",
+          "Các dụng cụ chăm sóc giúp bạn duy trì sức khỏe và sự sạch sẽ cho thú cưng của mình. Dụng cụ chăm sóc là phần không thể thiếu trong việc duy trì vẻ ngoài và sức khỏe của thú cưng và làm cho thú cưng của bạn luôn cảm thấy thoải mái.",
         image: "https://i.imgur.com/CmrT6uT.jpeg",
         link: routerNames.CARE_TOOLS,
       },
@@ -107,7 +107,7 @@ const Category = () => {
         <Breadcrumb.Item>
           <Link href={routerNames.CATEGORY}>Danh Mục Sản Phẩm</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item className="font-bold">
+        <Breadcrumb.Item className="font-bold text-lg md:text-xl">
           {activeTab === "thuCung"
             ? "Thú Cưng"
             : activeTab === "vatNuoi"
@@ -118,7 +118,7 @@ const Category = () => {
 
       <div className="relative p-6 rounded-lg mb-4">
         <div className="relative z-10">
-          <h1 className="text-2xl md:text-4xl font-bold text-black mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
             Danh Mục Sản Phẩm
           </h1>
 
@@ -128,7 +128,11 @@ const Category = () => {
             onChange={(e) => onSearch(e.target.value)}
             value={searchTerm}
             className="w-full md:w-[90%] rounded-md p-3"
-            style={{ backgroundColor: "#ffffff", border: "1px solid #ccc" }}
+            style={{
+              backgroundColor: "#ffffff",
+              border: "1px solid #ccc",
+              fontSize: "1rem", // Adjust font size for better readability
+            }}
           />
         </div>
       </div>
@@ -142,7 +146,7 @@ const Category = () => {
       >
         <Tabs.TabPane
           tab={
-            <span className="text-2xl font-semibold text-gray-700">
+            <span className="text-xl md:text-2xl font-semibold text-gray-700">
               Thú Cưng
             </span>
           }
@@ -150,7 +154,7 @@ const Category = () => {
         />
         <Tabs.TabPane
           tab={
-            <span className="text-2xl font-semibold text-gray-700">
+            <span className="text-xl md:text-2xl font-semibold text-gray-700">
               Vật Nuôi
             </span>
           }
@@ -158,7 +162,7 @@ const Category = () => {
         />
         <Tabs.TabPane
           tab={
-            <span className="text-2xl font-semibold text-gray-700">
+            <span className="text-xl md:text-2xl font-semibold text-gray-700">
               Dụng Cụ Chăm Sóc
             </span>
           }
