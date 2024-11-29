@@ -153,7 +153,7 @@ const FoodNutritionDetail = () => {
             {foodNutrition.name}
           </Breadcrumb.Item>
         </Breadcrumb>
-        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        <section className="mt-4 grid grid-cols-1 lg:grid-cols-5 gap-4">
           <article className="flex flex-col items-center mb-6 md:col-span-3">
             <Image
               src={selectedImage}
@@ -182,7 +182,7 @@ const FoodNutritionDetail = () => {
               )}
             </div>
           </article>
-          <article className="md:col-span-2">
+          <article className="mt-4 md:col-span-2">
             <h1 className="text-2xl font-bold mb-6 text-center">
               {foodNutrition.name}
             </h1>

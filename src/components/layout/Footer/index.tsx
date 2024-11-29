@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <div className="text-left">
                 <p className="text-lg font-semibold">Hotline đặt hàng</p>
-                <p className="text-xl font-bold">070 393 5114</p>
+                <p className="text-lg font-bold">070 393 5114</p>
               </div>
             </article>
             <article className="flex items-start space-x-2">
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="text-left">
                 <p className="text-lg font-semibold">Nhắn tin cho chúng tôi</p>
-                <p className="text-xl font-bold">phuonghuong150702@gmail.com</p>
+                <p className="text-lg font-bold">phuonghuong150702@gmail.com</p>
               </div>
             </article>
             <article className="flex items-start space-x-2">

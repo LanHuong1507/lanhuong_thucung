@@ -142,9 +142,7 @@ const FishDetail = () => {
           </Breadcrumb.Item>
           <Breadcrumb.Item className="font-bold">{fish1.name}</Breadcrumb.Item>
         </Breadcrumb>
-
-        <h1 className="text-2xl font-bold mb-6 text-center">{fish1.name}</h1>
-        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+        <section className="mt-4 grid grid-cols-1 lg:grid-cols-5 gap-4">
           <article className="flex flex-col items-center mb-6 md:col-span-3">
             {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
               <video
@@ -209,7 +207,7 @@ const FishDetail = () => {
             </div>
           </article>
 
-          <article className="md:col-span-2">
+          <article className="mt-4 md:col-span-2">
             <h1 className="text-2xl font-bold mb-6 text-center">
               {fish1.name}
             </h1>
