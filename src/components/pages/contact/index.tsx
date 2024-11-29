@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input, Button, Form, Typography, Row, Col } from "antd";
+import { Input, Button, Form, Typography, Row, Col, Select } from "antd";
 import Cat from "@/assets/images/cat1.png";
 import Dog from "@/assets/images/dog1.png";
 import Rabbit from "@/assets/images/rabbit1.png";
@@ -51,8 +51,8 @@ const Contact = () => {
           alt="Pet Image"
           className="absolute bottom-0 right-0 w-24 h-24 object-cover rounded-full border-4 border-white transform transition-transform hover:scale-105"
         />
-        <section className="lg:w-1/2 p-6 rounded-xl">
-          <header className="text-center mb-8 text-white">
+        <section className="lg:w-1/2 p-4 rounded-xl">
+          <header className="text-center text-white">
             <Typography.Title level={2} className="text-4xl font-extrabold">
               Liên Hệ Với Chúng Tôi - Lan Hương Pet Shop
             </Typography.Title>
@@ -62,7 +62,7 @@ const Contact = () => {
             </p>
           </header>
           {message && (
-            <section className="bg-green-100 text-green-800 p-4 rounded-lg mb-6 transition-opacity duration-500">
+            <section className="bg-green-100 text-green-800 p-4 rounded-lg transition-opacity duration-500">
               {message}
             </section>
           )}
@@ -98,6 +98,36 @@ const Contact = () => {
                 </Form.Item>
               </Col>
             </Row>
+            <Form.Item
+              label="Chủ đề"
+              name="subject"
+              rules={[{ required: true, message: "Vui lòng chọn chủ đề!" }]}
+            >
+              <Select
+                placeholder="Chọn chủ đề"
+                className="border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-105"
+              >
+                <Select.Option value="pet">Thú cưng</Select.Option>
+                <Select.Option value="supplies">Dụng cụ chăm sóc</Select.Option>
+                <Select.Option value="accessories">Phụ kiện</Select.Option>
+              </Select>
+            </Form.Item>
+            <Form.Item
+              label="Số điện thoại"
+              name="phone"
+              rules={[
+                { required: true, message: "Vui lòng nhập số điện thoại!" },
+                {
+                  pattern: /^[0-9]{10,11}$/,
+                  message: "Số điện thoại không hợp lệ!",
+                },
+              ]}
+            >
+              <Input
+                placeholder="Nhập số điện thoại"
+                className="border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-105"
+              />
+            </Form.Item>
 
             <Form.Item
               label="Nội dung"
@@ -114,7 +144,7 @@ const Contact = () => {
               <Button
                 type="primary"
                 htmlType="submit"
-                className="w-full bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
+                className="w-full p-4 bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"
               >
                 Gửi Thông Tin
               </Button>

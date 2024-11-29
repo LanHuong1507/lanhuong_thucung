@@ -23,7 +23,6 @@ interface Cat {
   price: string;
   image: string;
   thumbnail: string[];
-  video: string;
   additional_info: {
     health_issues: string[];
     exercise_needs: string;
@@ -50,18 +49,53 @@ const CatDetail = () => {
   }, [cat]);
 
   useEffect(() => {
-    if (cat && Array.isArray(cat.thumbnail) && cat.thumbnail.length > 0) {
-      const slideshowImages = [cat.image, ...cat.thumbnail];
-      const interval = setInterval(() => {
+    if (cat) {
+      const slideshowImages = [
+        cat.image,
+        ...(Array.isArray(cat.thumbnail) ? cat.thumbnail : []),
+      ];
+
+      let timer: NodeJS.Timeout | null = null;
+
+      const handleVideoEnded = () => {
         setCurrentThumbnailIndex((prevIndex) => {
           const nextIndex = (prevIndex + 1) % slideshowImages.length;
           setSelectedImage(slideshowImages[nextIndex]);
           return nextIndex;
         });
-      }, 4000);
-      return () => clearInterval(interval);
+      };
+
+      const startSlideshow = () => {
+        const currentImage = slideshowImages[currentThumbnailIndex];
+        const isVideo = /\.(mp4|webm|ogg)$/i.test(currentImage);
+
+        if (isVideo) {
+          const videoElement = document.createElement("video");
+          videoElement.src = currentImage;
+
+          videoElement.addEventListener("loadedmetadata", () => {
+            timer = setTimeout(() => {
+              handleVideoEnded();
+            }, videoElement.duration * 1000);
+          });
+
+          videoElement.addEventListener("error", () => {
+            handleVideoEnded();
+          });
+        } else {
+          timer = setTimeout(() => {
+            handleVideoEnded();
+          }, 4000);
+        }
+      };
+
+      startSlideshow();
+
+      return () => {
+        if (timer) clearTimeout(timer);
+      };
     }
-  }, [cat]);
+  }, [cat, currentThumbnailIndex]);
 
   const dataSource = [
     { key: "1", attribute: "Xuất xứ", value: cat?.origin },

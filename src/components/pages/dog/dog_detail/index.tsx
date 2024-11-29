@@ -23,7 +23,6 @@ interface Dog {
   price: string;
   image: string;
   thumbnail: string[];
-  video: string;
   additional_info: {
     health_issues: string[];
     exercise_needs: string;
@@ -64,24 +63,54 @@ const DogDetail = () => {
       }
     }
   }, [id, dogs]);
-
   useEffect(() => {
     if (dog) {
       const slideshowImages = [
         dog.image,
         ...(Array.isArray(dog.thumbnail) ? dog.thumbnail : []),
       ];
-      const interval = setInterval(() => {
+
+      let timer: NodeJS.Timeout | null = null;
+
+      const handleVideoEnded = () => {
         setCurrentThumbnailIndex((prevIndex) => {
           const nextIndex = (prevIndex + 1) % slideshowImages.length;
           setSelectedImage(slideshowImages[nextIndex]);
           return nextIndex;
         });
-      }, 4000);
+      };
 
-      return () => clearInterval(interval);
+      const startSlideshow = () => {
+        const currentImage = slideshowImages[currentThumbnailIndex];
+        const isVideo = /\.(mp4|webm|ogg)$/i.test(currentImage);
+
+        if (isVideo) {
+          const videoElement = document.createElement("video");
+          videoElement.src = currentImage;
+
+          videoElement.addEventListener("loadedmetadata", () => {
+            timer = setTimeout(() => {
+              handleVideoEnded();
+            }, videoElement.duration * 1000);
+          });
+
+          videoElement.addEventListener("error", () => {
+            handleVideoEnded();
+          });
+        } else {
+          timer = setTimeout(() => {
+            handleVideoEnded();
+          }, 4000);
+        }
+      };
+
+      startSlideshow();
+
+      return () => {
+        if (timer) clearTimeout(timer);
+      };
     }
-  }, [dog]);
+  }, [dog, currentThumbnailIndex]);
 
   const handleThumbnailClick = (thumb: string, index: number) => {
     setSelectedImage(thumb);
