@@ -40,10 +40,9 @@ const CatDetail = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const router = useRouter();
   const { id } = router.query;
-  const cats = useSelector((state: { cats: Cat[] }) => state.cats); // Fetch cat data
+  const cats = useSelector((state: { cats: Cat[] }) => state.cats);
   const cat = cats.find((cat: Cat) => cat.id === Number(id));
 
-  // Ensure useEffect is always called even if cat is not available yet
   useEffect(() => {
     if (cat) {
       setSelectedImage(cat.image);
@@ -59,20 +58,20 @@ const CatDetail = () => {
           setSelectedImage(slideshowImages[nextIndex]);
           return nextIndex;
         });
-      }, 3000);
+      }, 4000);
       return () => clearInterval(interval);
     }
   }, [cat]);
 
   const dataSource = [
-    { key: "2", attribute: "Xuất xứ", value: cat?.origin },
-    { key: "3", attribute: "Kích thước", value: cat?.size },
-    { key: "4", attribute: "Tuổi thọ", value: cat?.life_span },
-    { key: "5", attribute: "Cân nặng", value: cat?.weight_range },
-    { key: "6", attribute: "Loại lông", value: cat?.coat },
-    { key: "9", attribute: "Giống", value: cat?.breedType },
-    { key: "10", attribute: "Giới tính", value: cat?.gender },
-    { key: "11", attribute: "Giá bán", value: `${cat?.price} VNĐ` },
+    { key: "1", attribute: "Xuất xứ", value: cat?.origin },
+    { key: "2", attribute: "Kích thước", value: cat?.size },
+    { key: "3", attribute: "Tuổi thọ", value: cat?.life_span },
+    { key: "4", attribute: "Cân nặng", value: cat?.weight_range },
+    { key: "5", attribute: "Loại lông", value: cat?.coat },
+    { key: "6", attribute: "Giống", value: cat?.breedType },
+    { key: "7", attribute: "Giới tính", value: cat?.gender },
+    { key: "8", attribute: "Giá bán", value: `${cat?.price} VNĐ` },
   ];
 
   const columns = [

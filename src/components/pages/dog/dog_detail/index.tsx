@@ -77,7 +77,7 @@ const DogDetail = () => {
           setSelectedImage(slideshowImages[nextIndex]);
           return nextIndex;
         });
-      }, 3000);
+      }, 4000);
 
       return () => clearInterval(interval);
     }
@@ -254,13 +254,13 @@ const DogDetail = () => {
               >
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:translate-x-2"
                     onClick={() => handleSectionClick("temperament")}
                   >
                     Tính cách
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:translate-x-2"
                     onClick={() => handleSectionClick("health")}
                   >
                     Sức khỏe

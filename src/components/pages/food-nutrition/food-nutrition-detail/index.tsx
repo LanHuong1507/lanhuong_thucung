@@ -63,7 +63,7 @@ const FoodNutritionDetail = () => {
           setSelectedImage(slideshowImages[nextIndex]);
           return nextIndex;
         });
-      }, 3000);
+      }, 4000);
 
       return () => clearInterval(interval);
     }
