@@ -280,7 +280,7 @@ const FishList = ({ fishPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white text-lg font-semibold bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-300 ease-in-out transform hover:scale-105"
                       >
                         Xem chi tiết
                       </Button>
@@ -289,7 +289,7 @@ const FishList = ({ fishPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105"
+                        className="w-full text-center py-4 md:py-6 rounded-lg text-white text-lg font-semibold bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105"
                       >
                         Liên hệ ngay
                       </Button>

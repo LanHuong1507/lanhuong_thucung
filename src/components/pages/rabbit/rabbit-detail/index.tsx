@@ -163,37 +163,37 @@ const RabbitDetail = () => {
               <div className="p-4">
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-full">
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("care_tips")}
                   >
                     Lời khuyên chăm sóc
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("health")}
                   >
                     Sức khỏe
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("exercise")}
                   >
                     Nhu cầu vận động
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("diet")}
                   >
                     Chế độ ăn
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("training_difficulty")}
                   >
                     Khó khăn khi huấn luyện
                   </li>
                   <li
-                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-blue-100 hover:text-blue-600 hover:translate-x-2"
+                    className="text-xl md:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("suitable_for")}
                   >
                     Thích hợp với

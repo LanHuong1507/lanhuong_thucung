@@ -201,7 +201,7 @@ const Category = () => {
                 </p>
               </div>
               <Link href={category.link}>
-                <button className="mt-2 lg:mt-6 bg-blue-600 text-white px-8 py-2 md:py-3 rounded-md hover:bg-blue-700 hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <button className="mt-2 lg:mt-6 bg-blue-600 text-white text-lg font-semibold px-8 py-2 md:py-3 rounded-md hover:bg-blue-700 hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300">
                   Xem Chi Tiết
                 </button>
               </Link>

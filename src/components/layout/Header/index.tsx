@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { routerNames } from "@/components/constants/router.constant";
-import Logo from "../../../assets/images/logo.jpg";
+import Logo from "../../../assets/images/logo.png";
 
 const MenuOutlined = dynamic(() => import("@ant-design/icons/MenuOutlined"), {
   ssr: false,
@@ -27,38 +27,40 @@ const Header = () => {
               height={40}
               className="h-12 w-12"
             />
-            <span className="text-xl font-semibold">Lan Hương</span>
+            <span className="text-2xl font-semibold lg:text-3xl">
+              Lan Hương
+            </span>
           </div>
         </Link>
         {!menuOpen && (
           <nav className="hidden lg:flex space-x-8 text-lg font-semibold">
             <Link
               href={routerNames.CATEGORY}
-              className="hover:text-yellow-400 transition duration-300"
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
               Danh mục sản phẩm
             </Link>
             <Link
               href={routerNames.ORGANIZATION}
-              className="hover:text-yellow-400 transition duration-300"
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
               Cơ cấu tổ chức
             </Link>
             <Link
               href={routerNames.HISTORY}
-              className="hover:text-yellow-400 transition duration-300"
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
               Lịch sử hình thành
             </Link>
             <Link
               href={routerNames.CAREER}
-              className="hover:text-yellow-400 transition duration-300"
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
               Tuyển dụng
             </Link>
             <Link
               href={routerNames.CONTACT}
-              className="hover:text-yellow-400 transition duration-300"
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
               Liên hệ
             </Link>
@@ -95,7 +97,9 @@ const Header = () => {
               height={35}
               className="h-10 w-10 rounded-full"
             />
-            <span className="text-xl font-semibold">Lan Hương</span>
+            <span className="text-2xl font-semibold lg:text-3xl">
+              Lan Hương
+            </span>
           </div>
           <button
             onClick={() => setMenuOpen(false)}
@@ -108,31 +112,31 @@ const Header = () => {
         <div className="p-6 space-y-4">
           <Link
             href={routerNames.CATEGORY}
-            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Danh mục sản phẩm
           </Link>
           <Link
             href={routerNames.ORGANIZATION}
-            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Cơ cấu tổ chức
           </Link>
           <Link
             href={routerNames.HISTORY}
-            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Lịch sử hình thành
           </Link>
           <Link
             href={routerNames.CAREER}
-            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Tuyển dụng
           </Link>
           <Link
             href={routerNames.CONTACT}
-            className="block py-3 text-xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
           >
             Liên hệ
           </Link>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Logo from "../../../assets/images/logo.jpg";
+import Logo from "../../../assets/images/logo.png";
 import shop from "../../../assets/images/shop1.png";
 import { Button, Typography, Row, Col, Tabs } from "antd";
 import ThuCung from "../../../assets/images/thucung.jpg";
@@ -110,7 +110,7 @@ const Home = () => {
         <div className="container mx-auto px-6">
           <Title
             level={3}
-            className="text-3xl md:text-4xl font-semibold text-center mb-12 text-gray-800"
+            className="text-3xl md:text-5xl font-semibold text-center mb-12 text-gray-800"
           >
             Danh Mục Sản Phẩm
           </Title>
@@ -129,11 +129,11 @@ const Home = () => {
                     alt={category.name}
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="p-2 md:p-1 lg:p-2 absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h4 className="text-xl lg:text-2xl font-semibold text-white mb-4">
+                  <div className="p-2 lg:p-2 absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h4 className="text-xl lg:text-2xl font-semibold text-white mb-4 md:mb-2">
                       {category.name}
                     </h4>
-                    <p className="text-sm lg:text-base text-white text-center mb-4">
+                    <p className="text-sm lg:text-base text-white text-center mb-4 md:mb-2">
                       {category.description}
                     </p>
                     <Link href={routerNames.CATEGORY} passHref>
@@ -153,7 +153,7 @@ const Home = () => {
         <div className="container mx-auto px-6">
           <Tabs defaultActiveKey="1" centered>
             <TabPane
-              tab={<span className="text-lg font-bold">Mô tả sản phẩm</span>}
+              tab={<span className="text-xl font-bold">Mô tả sản phẩm</span>}
               key="1"
             >
               <div className="flex flex-col md:flex-row items-center gap-8">
@@ -197,9 +197,7 @@ const Home = () => {
             </TabPane>
             <TabPane
               tab={
-                <span className="text-lg font-semibold">
-                  Cam kết của chúng tôi
-                </span>
+                <span className="text-xl font-bold">Cam kết của chúng tôi</span>
               }
               key="2"
             >
@@ -223,9 +221,7 @@ const Home = () => {
 
             <TabPane
               tab={
-                <span className="text-lg font-semibold">
-                  Đội ngũ của chúng tôi
-                </span>
+                <span className="text-xl font-bold">Đội ngũ của chúng tôi</span>
               }
               key="3"
             >

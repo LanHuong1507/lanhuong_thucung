@@ -1,4 +1,4 @@
-import { Key, useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { Breadcrumb, Button, Table } from "antd";
 import Head from "next/head";
@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { DownOutlined, UpOutlined } from "@ant-design/icons";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface Cat {
   id: number;
@@ -36,36 +35,44 @@ interface Cat {
 }
 
 const CatDetail = () => {
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
-  const [mainImage, setMainImage] = useState<string>("");
   const router = useRouter();
   const { id } = router.query;
-  const cats = useSelector((state: { cats: Cat[] }) => state.cats);
+  const cats = useSelector((state: { cats: Cat[] }) => state.cats); // Fetch cat data
   const cat = cats.find((cat: Cat) => cat.id === Number(id));
 
-  if (!cat) {
-    return (
-      <section className="flex flex-col items-center py-10">
-        <h1 className="text-xl font-bold text-gray-800">Mèo không tồn tại</h1>
-        <Button type="primary" onClick={() => router.push(routerNames.CAT)}>
-          Trở về trang chính
-        </Button>
-      </section>
-    );
-  }
-  if (!mainImage) {
-    setMainImage(cat.image);
-  }
+  // Ensure useEffect is always called even if cat is not available yet
+  useEffect(() => {
+    if (cat) {
+      setSelectedImage(cat.image);
+    }
+  }, [cat]);
+
+  useEffect(() => {
+    if (cat && Array.isArray(cat.thumbnail) && cat.thumbnail.length > 0) {
+      const slideshowImages = [cat.image, ...cat.thumbnail];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [cat]);
 
   const dataSource = [
-    { key: "2", attribute: "Xuất xứ", value: cat.origin },
-    { key: "3", attribute: "Kích thước", value: cat.size },
-    { key: "4", attribute: "Tuổi thọ", value: cat.life_span },
-    { key: "5", attribute: "Cân nặng", value: cat.weight_range },
-    { key: "6", attribute: "Loại lông", value: cat.coat },
-    { key: "9", attribute: "Giống", value: cat.breedType },
-    { key: "10", attribute: "Giới tính", value: cat.gender },
-    { key: "11", attribute: "Giá bán", value: `${cat.price} VNĐ` },
+    { key: "2", attribute: "Xuất xứ", value: cat?.origin },
+    { key: "3", attribute: "Kích thước", value: cat?.size },
+    { key: "4", attribute: "Tuổi thọ", value: cat?.life_span },
+    { key: "5", attribute: "Cân nặng", value: cat?.weight_range },
+    { key: "6", attribute: "Loại lông", value: cat?.coat },
+    { key: "9", attribute: "Giống", value: cat?.breedType },
+    { key: "10", attribute: "Giới tính", value: cat?.gender },
+    { key: "11", attribute: "Giá bán", value: `${cat?.price} VNĐ` },
   ];
 
   const columns = [
@@ -100,9 +107,22 @@ const CatDetail = () => {
       });
     }
   };
-  const handleThumbnailClick = (thumbnail: string) => {
-    setMainImage(thumbnail);
+
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
   };
+
+  if (!cat) {
+    return (
+      <section className="flex flex-col items-center py-10">
+        <h1 className="text-xl font-bold text-gray-800">Mèo không tồn tại</h1>
+        <Button type="primary" onClick={() => router.push(routerNames.CAT)}>
+          Trở về trang chính
+        </Button>
+      </section>
+    );
+  }
 
   return (
     <>
@@ -130,41 +150,64 @@ const CatDetail = () => {
         </h1>
         <section className="flex flex-col lg:flex-row justify-between items-start">
           <article className="w-full lg:w-2/3 flex flex-col items-center mb-6 lg:mb-0">
-            <Image
-              src={mainImage}
-              alt={cat.name}
-              className="w-full lg:w-[95%] h-96 object-cover rounded-md"
-              width={400}
-              height={400}
-            />
+            {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
+              <video
+                src={selectedImage}
+                controls
+                autoPlay
+                muted
+                loop
+                className="w-full lg:w-[95%] h-96 object-cover rounded-md"
+                width={400}
+                height={400}
+              >
+                Trình duyệt không hỗ trợ video.
+              </video>
+            ) : (
+              <Image
+                src={selectedImage}
+                alt={cat.name}
+                className="w-full lg:w-[95%] h-96 object-cover rounded-md"
+                width={400}
+                height={400}
+              />
+            )}
             <div className="flex flex-col lg:flex-row mt-4 lg:space-x-4 space-y-4 lg:space-y-0 items-center w-full justify-center">
               <div className="flex space-x-2 mb-4 lg:mb-0">
-                {cat.thumbnail.map(
-                  (
-                    thumb: string | StaticImport,
-                    index: Key | null | undefined,
-                  ) => (
+                {[cat.image, ...cat.thumbnail].map((thumb, index) => {
+                  const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
+                  return isVideo ? (
+                    <video
+                      key={index}
+                      className={`w-24 md:w-32 lg:w-44 h-28 object-cover rounded-md cursor-pointer ${
+                        currentThumbnailIndex === index
+                          ? "border-4 border-blue-500"
+                          : ""
+                      }`}
+                      width={100}
+                      height={100}
+                      muted
+                      onClick={() => handleThumbnailClick(thumb, index)}
+                    >
+                      <source src={thumb} type="video/mp4" />
+                      Trình duyệt không hỗ trợ video.
+                    </video>
+                  ) : (
                     <Image
                       key={index}
                       src={thumb}
-                      alt={`${cat.name} thumbnail ${(index as number) + 1}`}
-                      className="w-24 h-20 md:w-48 md:h-40 object-cover rounded-md cursor-pointer"
-                      width={400}
-                      height={400}
-                      onClick={() => handleThumbnailClick(thumb as string)}
+                      alt={`${cat.name} thumbnail ${index + 1}`}
+                      className={`w-24 md:w-32 lg:w-44 h-28 object-cover rounded-md cursor-pointer ${
+                        currentThumbnailIndex === index
+                          ? "border-4 border-blue-500"
+                          : ""
+                      }`}
+                      width={100}
+                      height={100}
+                      onClick={() => handleThumbnailClick(thumb, index)}
                     />
-                  ),
-                )}
-              </div>
-              <div className="w-full lg:w-72 h-auto">
-                <video
-                  src={cat.video}
-                  autoPlay
-                  loop
-                  muted
-                  controls
-                  className="w-full rounded-lg shadow-lg"
-                ></video>
+                  );
+                })}
               </div>
             </div>
           </article>
@@ -214,7 +257,7 @@ const CatDetail = () => {
                   ].map((item, index) => (
                     <li
                       key={index}
-                      className="text-lg md:text-xl cursor-pointer text-black p-2 rounded-md transition-transform duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-500 hover:translate-x-4 hover:font-medium"
+                      className="text-lg md:text-xl lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-transform duration-300 ease-in-out hover:text-blue-600 hover:translate-x-4 hover:font-medium"
                       onClick={() => handleSectionClick(item.section)}
                     >
                       {item.label}

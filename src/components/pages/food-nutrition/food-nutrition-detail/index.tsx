@@ -125,7 +125,11 @@ const FoodNutritionDetail = () => {
       ),
     },
   ];
-
+  const relatedProducts = foodNutritionData.filter(
+    (product) =>
+      product.category === foodNutrition.category &&
+      product.id !== foodNutrition.id,
+  );
   return (
     <>
       <Head>
@@ -225,31 +229,31 @@ const FoodNutritionDetail = () => {
               >
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("nutrition")}
                   >
                     Thông tin dinh dưỡng
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("ingredients")}
                   >
                     Thành phần
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("usage")}
                   >
                     Cách sử dụng
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("storage_instructions")}
                   >
                     Bảo quản
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-800 hover:translate-x-2"
                     onClick={() => handleSectionClick("additional_notes")}
                   >
                     Ghi chú thêm
@@ -323,6 +327,45 @@ const FoodNutritionDetail = () => {
             <p className="mt-4 text-gray-700">Chưa có đánh giá nào.</p>
           )}
         </section>
+        {relatedProducts.length > 0 && (
+          <section className="my-10">
+            <h2 className="text-xl font-semibold mb-4">Sản phẩm liên quan</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
+              {relatedProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="group relative overflow-hidden rounded-lg border border-gray-200 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                >
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-96 group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-center text-white text-lg">
+                    <h3 className=" font-semibold truncate">{product.name}</h3>
+                    <p className="mt-2">{product.price}</p>
+                  </div>
+                  <Link
+                    href={`${routerNames.FOOD_NUTRITION_DETAIL.replace(
+                      "[id]",
+                      product.id.toString(),
+                    )}`}
+                  >
+                    <Button
+                      type="primary"
+                      block
+                      className="absolute bottom-4 left-1/2 -translate-x-1/2 mb-20 py-4 px-6 rounded-lg text-lg font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transform hover:scale-105 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out"
+                    >
+                      Xem Chi Tiết
+                    </Button>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
       </main>
     </>
   );

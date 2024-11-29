@@ -394,7 +394,7 @@ const CatList = ({ catsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full py-3 lg:py-5 rounded-lg text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-3"
+                        className="w-full py-3 lg:py-5 rounded-lg text-white text-lg font-semibold bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-300 mb-3"
                       >
                         Xem chi tiết
                       </Button>
@@ -403,7 +403,7 @@ const CatList = ({ catsPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full py-3 lg:py-5 rounded-lg text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
+                        className="w-full py-3 lg:py-5 rounded-lg text-white text-lg font-semibold bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 transition duration-300"
                       >
                         Liên hệ ngay
                       </Button>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Breadcrumb, Button, Table} from "antd";
+import { Breadcrumb, Button, Table } from "antd";
 import Head from "next/head";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
@@ -141,6 +141,9 @@ const DogDetail = () => {
             <Link href={routerNames.CATEGORY}>Danh Mục sản Phẩm</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
+            <Link href={routerNames.CATEGORY}>Thú Cưng</Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
             <Link href={routerNames.DOG}>Chó</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item className="font-bold">{dog.name}</Breadcrumb.Item>
@@ -251,43 +254,43 @@ const DogDetail = () => {
               >
                 <ol className="mt-4 list-decimal pl-8 space-y-4 w-[80%]">
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("temperament")}
                   >
                     Tính cách
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:shadow-md hover:translate-x-2"
                     onClick={() => handleSectionClick("health")}
                   >
                     Sức khỏe
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:translate-x-2"
                     onClick={() => handleSectionClick("exercise")}
                   >
                     Nhu cầu vận động
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300  hover:text-blue-600 hover:translate-x-2"
                     onClick={() => handleSectionClick("diet")}
                   >
                     Chế độ ăn
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600  hover:translate-x-2"
                     onClick={() => handleSectionClick("training")}
                   >
                     Huấn luyện
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600 hover:translate-x-2"
                     onClick={() => handleSectionClick("suitable_for")}
                   >
                     Phù hợp với
                   </li>
                   <li
-                    className="text-base md:text-lg lg:text-xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-300 hover:text-blue-800 hover:shadow-md hover:translate-x-2"
+                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-3  hover:text-blue-600  hover:translate-x-2"
                     onClick={() => handleSectionClick("care_tips")}
                   >
                     Lời khuyên chăm sóc
