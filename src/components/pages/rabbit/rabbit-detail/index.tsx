@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Breadcrumb, Button, Table } from "antd";
 import Head from "next/head";
@@ -19,6 +19,7 @@ interface Rabbit {
   coat: string;
   price: string;
   image: string;
+  thumnail: string[];
   additional_info: {
     health_issues: string;
     exercise_needs: string;
@@ -35,20 +36,49 @@ const RabbitDetail = () => {
   const { id } = router.query;
 
   const rabbits = useSelector((state: { rabbits: Rabbit[] }) => state.rabbits);
+  const [selectedRabbit, setRabbit] = useState<Rabbit | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
+  useEffect(() => {
+    if (id && rabbits.length > 0) {
+      const foundRabbit = rabbits.find((rabbit) => rabbit.id === Number(id));
+      setRabbit(foundRabbit || null);
 
-  const selectedRabbit = rabbits.find((r) => r.id === parseInt(id as string));
+      if (foundRabbit) {
+        setSelectedImage(foundRabbit.image);
+      }
+    }
+  }, [id, rabbits]);
 
+  useEffect(() => {
+    if (selectedRabbit) {
+      const slideshowImages = [
+        selectedRabbit.image,
+        ...(Array.isArray(selectedRabbit.thumnail)
+          ? selectedRabbit.thumnail
+          : []),
+      ];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 4000);
+
+      return () => clearInterval(interval);
+    }
+  }, [selectedRabbit]);
   if (!selectedRabbit) {
     return (
       <section className="flex flex-col items-center py-10">
-        <h1 className="text-xl font-bold text-gray-800">Thỏ không tồn tại</h1>
-        <Button type="primary" onClick={() => router.push(routerNames.RABBIT)}>
-          Trở về danh sách thỏ
+        <h1 className="text-xl font-bold text-gray-800">Cá không tồn tại</h1>
+        <Button type="primary" onClick={() => router.push(routerNames.FISH)}>
+          Trở về danh sách cá
         </Button>
       </section>
     );
   }
-
   const dataSource = [
     { key: "2", attribute: "Xuất xứ", value: selectedRabbit.origin },
     { key: "3", attribute: "Kích thước", value: selectedRabbit.size },
@@ -89,6 +119,10 @@ const RabbitDetail = () => {
       });
     }
   };
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
+  };
 
   return (
     <>
@@ -118,29 +152,88 @@ const RabbitDetail = () => {
           {selectedRabbit.name}
         </h1>
 
-        <section className="flex flex-col md:flex-row justify-between items-start">
-          <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
-            <Image
-              src={selectedRabbit.image}
-              alt={selectedRabbit.name}
-              className="w-full md:w-[95%] h-full object-cover rounded-md"
-              width={400}
-              height={400}
-            />
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:col-span-3">
+            {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
+              <video
+                src={selectedImage}
+                controls
+                autoPlay
+                muted
+                loop
+                className="w-full h-auto rounded-lg"
+                width={400}
+                height={400}
+              >
+                Trình duyệt không hỗ trợ video.
+              </video>
+            ) : (
+              <Image
+                src={selectedImage}
+                alt={selectedRabbit.name}
+                className="w-full"
+                width={400}
+                height={400}
+              />
+            )}
+            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+              {[
+                selectedRabbit.image,
+                ...(Array.isArray(selectedRabbit.thumnail)
+                  ? selectedRabbit.thumnail
+                  : []),
+              ].map((thumb, index) => {
+                const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
+                return isVideo ? (
+                  <video
+                    key={index}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    muted
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  >
+                    <source src={thumb} type="video/mp4" />
+                    Trình duyệt không hỗ trợ video.
+                  </video>
+                ) : (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${selectedRabbit.name} thumbnail ${index + 1}`}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  />
+                );
+              })}
+            </div>
           </article>
 
-          <article className="w-full md:w-1/3">
+          <article className="md:col-span-2">
+            <h1 className="text-2xl font-bold mb-6 text-center">
+              {selectedRabbit.name}
+            </h1>
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full"
-            />
+              className="rounded-lg"
+            />{" "}
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300 text-base md:text-lg lg:text-xl"
               >
                 Liên hệ
               </Button>

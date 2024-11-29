@@ -131,7 +131,7 @@ const Category = () => {
             style={{
               backgroundColor: "#ffffff",
               border: "1px solid #ccc",
-              fontSize: "1rem", // Adjust font size for better readability
+              fontSize: "1rem",
             }}
           />
         </div>

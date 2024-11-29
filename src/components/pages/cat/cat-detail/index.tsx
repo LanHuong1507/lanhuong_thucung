@@ -147,8 +147,8 @@ const CatDetail = () => {
         <h1 className="text-2xl font-bold mb-6 text-center w-full">
           {cat.name}
         </h1>
-        <section className="flex flex-col lg:flex-row justify-between items-start">
-          <article className="w-full lg:w-2/3 flex flex-col items-center mb-6 lg:mb-0">
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:col-span-3">
             {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
               <video
                 src={selectedImage}
@@ -156,7 +156,7 @@ const CatDetail = () => {
                 autoPlay
                 muted
                 loop
-                className="w-full lg:w-[95%] h-96 object-cover rounded-md"
+                className="w-full h-auto rounded-lg"
                 width={400}
                 height={400}
               >
@@ -166,63 +166,65 @@ const CatDetail = () => {
               <Image
                 src={selectedImage}
                 alt={cat.name}
-                className="w-full lg:w-[95%] h-96 object-cover rounded-md"
+                className="w-full"
                 width={400}
                 height={400}
               />
             )}
-            <div className="flex flex-col lg:flex-row mt-4 lg:space-x-4 space-y-4 lg:space-y-0 items-center w-full justify-center">
-              <div className="flex space-x-2 mb-4 lg:mb-0">
-                {[cat.image, ...cat.thumbnail].map((thumb, index) => {
-                  const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
-                  return isVideo ? (
-                    <video
-                      key={index}
-                      className={`w-24 md:w-32 lg:w-44 h-28 object-cover rounded-md cursor-pointer ${
-                        currentThumbnailIndex === index
-                          ? "border-4 border-blue-500"
-                          : ""
-                      }`}
-                      width={100}
-                      height={100}
-                      muted
-                      onClick={() => handleThumbnailClick(thumb, index)}
-                    >
-                      <source src={thumb} type="video/mp4" />
-                      Trình duyệt không hỗ trợ video.
-                    </video>
-                  ) : (
-                    <Image
-                      key={index}
-                      src={thumb}
-                      alt={`${cat.name} thumbnail ${index + 1}`}
-                      className={`w-24 md:w-32 lg:w-44 h-28 object-cover rounded-md cursor-pointer ${
-                        currentThumbnailIndex === index
-                          ? "border-4 border-blue-500"
-                          : ""
-                      }`}
-                      width={100}
-                      height={100}
-                      onClick={() => handleThumbnailClick(thumb, index)}
-                    />
-                  );
-                })}
-              </div>
+            <div className="flex space-x-6 mt-4 flex-wrap justify-center">
+              {[
+                cat.image,
+                ...(Array.isArray(cat.thumbnail) ? cat.thumbnail : []),
+              ].map((thumb, index) => {
+                const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
+                return isVideo ? (
+                  <video
+                    key={index}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    muted
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  >
+                    <source src={thumb} type="video/mp4" />
+                    Trình duyệt không hỗ trợ video.
+                  </video>
+                ) : (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${cat.name} thumbnail ${index + 1}`}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  />
+                );
+              })}
             </div>
           </article>
 
-          <article className="w-full lg:w-1/3">
+          <article className="md:col-span-2">
+            <h1 className="text-2xl font-bold mb-6 text-center">{cat.name}</h1>
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full text-base md:text-lg"
-            />
+              className="rounded-lg"
+            />{" "}
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-[90%] p-6 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 hover:text-white rounded-lg transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300 text-base md:text-lg lg:text-xl"
               >
                 Liên hệ
               </Button>

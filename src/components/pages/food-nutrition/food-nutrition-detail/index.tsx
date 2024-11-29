@@ -169,7 +169,7 @@ const FoodNutritionDetail = () => {
                     key={index}
                     src={thumb}
                     alt={`${foodNutrition.name} thumbnail ${index + 1}`}
-                    className={`w-24 md:w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
                         : ""

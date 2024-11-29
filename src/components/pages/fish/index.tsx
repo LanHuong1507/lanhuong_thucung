@@ -246,7 +246,7 @@ const FishList = ({ fishPerPage = 4 }) => {
                     Giá: {fish.price} VNĐ
                   </p>
                 </div>
-                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-white bg-opacity-90 p-3 md:p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="font-bold text-xl mb-4 text-center">
                     {fish.name}
                   </h3>
@@ -268,9 +268,8 @@ const FishList = ({ fishPerPage = 4 }) => {
                   <p className="mb-4 text-sm md:text-base lg:text-lg">
                     <strong>Xuất xứ:</strong> <span>{fish.origin}</span>
                   </p>
-                  <div className="mt-0 md:mt-4 flex flex-col w-full space-y-4">
+                  <div className="mt-0 md:mt-2 lg:mt-4 flex flex-col w-full space-y-2">
                     {" "}
-                    {/* Added space between buttons */}
                     <Link
                       href={`${routerNames.FISH_DETAIL.replace(
                         "[id]",
@@ -289,7 +288,7 @@ const FishList = ({ fishPerPage = 4 }) => {
                       <Button
                         type="primary"
                         block
-                        className="w-full text-center py-4 md:py-6 rounded-lg text-white text-lg font-semibold bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105"
+                        className="mt-4 md:mt-0 lg:mt-4 w-full text-center py-4 md:py-6 rounded-lg text-white text-lg font-semibold bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105"
                       >
                         Liên hệ ngay
                       </Button>

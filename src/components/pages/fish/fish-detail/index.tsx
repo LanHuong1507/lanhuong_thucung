@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Breadcrumb, Button, Table } from "antd";
 import Head from "next/head";
@@ -19,6 +19,7 @@ interface Fish {
   color: string[];
   price: string;
   image: string;
+  thumail: string[];
   additional_info: {
     health_issues: string;
     exercise_needs: string;
@@ -33,11 +34,39 @@ const FishDetail = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const router = useRouter();
   const { id } = router.query;
+  const [fish1, setFish] = useState<Fish | null>(null);
   const fish = useSelector((state: { fish: Fish[] }) => state.fish);
+  const [selectedImage, setSelectedImage] = useState<string>("");
+  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
+  useEffect(() => {
+    if (id && fish.length > 0) {
+      const foundFish = fish.find((item) => item.id === Number(id));
+      setFish(foundFish || null);
 
-  const selectedFish = fish.find((f) => f.id === parseInt(id as string));
+      if (foundFish) {
+        setSelectedImage(foundFish.image);
+      }
+    }
+  }, [id, fish]);
 
-  if (!selectedFish) {
+  useEffect(() => {
+    if (fish1) {
+      const slideshowImages = [
+        fish1.image,
+        ...(Array.isArray(fish1.thumail) ? fish1.thumail : []),
+      ];
+      const interval = setInterval(() => {
+        setCurrentThumbnailIndex((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % slideshowImages.length;
+          setSelectedImage(slideshowImages[nextIndex]);
+          return nextIndex;
+        });
+      }, 4000);
+
+      return () => clearInterval(interval);
+    }
+  }, [fish1]);
+  if (!fish1) {
     return (
       <section className="flex flex-col items-center py-10">
         <h1 className="text-xl font-bold text-gray-800">Cá không tồn tại</h1>
@@ -49,11 +78,11 @@ const FishDetail = () => {
   }
 
   const dataSource = [
-    { key: "2", attribute: "Xuất xứ", value: selectedFish.origin },
-    { key: "3", attribute: "Kích thước", value: selectedFish.size_range },
-    { key: "4", attribute: "Tuổi thọ", value: selectedFish.life_span },
-    { key: "5", attribute: "Màu sắc", value: selectedFish.color.join(", ") },
-    { key: "6", attribute: "Giá", value: selectedFish.price },
+    { key: "1", attribute: "Xuất xứ", value: fish1.origin },
+    { key: "2", attribute: "Kích thước", value: fish1.size },
+    { key: "3", attribute: "Tuổi thọ", value: fish1.life_span },
+    { key: "4", attribute: "Màu sắc", value: fish1.color.join(", ") },
+    { key: "5", attribute: "Giá", value: fish1.price },
   ];
 
   const columns = [
@@ -87,11 +116,15 @@ const FishDetail = () => {
       });
     }
   };
+  const handleThumbnailClick = (thumb: string, index: number) => {
+    setSelectedImage(thumb);
+    setCurrentThumbnailIndex(index);
+  };
 
   return (
     <>
       <Head>
-        <title>{selectedFish.name}</title>
+        <title>{fish1.name}</title>
       </Head>
       <main className="container mx-auto py-8 px-6">
         <Breadcrumb className="mb-6 flex justify-center items-center space-x-4 md:space-x-8 w-full text-lg">
@@ -107,45 +140,96 @@ const FishDetail = () => {
           <Breadcrumb.Item>
             <Link href={routerNames.FISH}>Cá</Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item className="font-bold">
-            {selectedFish.name}
-          </Breadcrumb.Item>
+          <Breadcrumb.Item className="font-bold">{fish1.name}</Breadcrumb.Item>
         </Breadcrumb>
 
-        <h1 className="text-2xl font-bold mb-6 text-center">
-          {selectedFish.name}
-        </h1>
-
-        <section className="flex flex-col md:flex-row justify-between items-start">
-          <article className="w-full md:w-2/3 flex flex-col items-center mb-6 md:mb-0">
-            <Image
-              src={selectedFish.image}
-              alt={selectedFish.name}
-              className="w-full md:w-[95%] h-96 object-cover rounded-md"
-              width={400}
-              height={400}
-            />
+        <h1 className="text-2xl font-bold mb-6 text-center">{fish1.name}</h1>
+        <section className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+          <article className="flex flex-col items-center mb-6 md:col-span-3">
+            {/\.mp4|webm|ogg$/i.test(selectedImage) ? (
+              <video
+                src={selectedImage}
+                controls
+                autoPlay
+                muted
+                loop
+                className="w-full h-auto rounded-lg"
+                width={400}
+                height={400}
+              >
+                Trình duyệt không hỗ trợ video.
+              </video>
+            ) : (
+              <Image
+                src={selectedImage}
+                alt={fish1.name}
+                className="w-full"
+                width={400}
+                height={400}
+              />
+            )}
+            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+              {[
+                fish1.image,
+                ...(Array.isArray(fish1.thumail) ? fish1.thumail : []),
+              ].map((thumb, index) => {
+                const isVideo = /\.(mp4|webm|ogg)$/i.test(thumb);
+                return isVideo ? (
+                  <video
+                    key={index}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    muted
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  >
+                    <source src={thumb} type="video/mp4" />
+                    Trình duyệt không hỗ trợ video.
+                  </video>
+                ) : (
+                  <Image
+                    key={index}
+                    src={thumb}
+                    alt={`${fish1.name} thumbnail ${index + 1}`}
+                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                      currentThumbnailIndex === index
+                        ? "border-4 border-blue-500"
+                        : ""
+                    }`}
+                    width={100}
+                    height={100}
+                    onClick={() => handleThumbnailClick(thumb, index)}
+                  />
+                );
+              })}
+            </div>
           </article>
 
-          <article className="w-full md:w-1/3">
+          <article className="md:col-span-2">
+            <h1 className="text-2xl font-bold mb-6 text-center">
+              {fish1.name}
+            </h1>
             <Table
               dataSource={dataSource}
               columns={columns}
               pagination={false}
-              className="w-full"
-            />
+              className="rounded-lg"
+            />{" "}
             <section className="flex justify-center mt-6 space-x-4 w-full">
               <Button
                 type="primary"
                 onClick={() => router.push(routerNames.CONTACT)}
-                className="w-1/2 p-6 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                className="w-[90%] p-6 hover:bg-blue-700 hover:text-white transition-all duration-300 text-base md:text-lg lg:text-xl"
               >
                 Liên hệ
               </Button>
             </section>
           </article>
         </section>
-
         <section className="mt-12">
           <div className="w-full md:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
             <h2
@@ -197,7 +281,7 @@ const FishDetail = () => {
                 1. Lời khuyên chăm sóc
               </h3>
               <p className="text-base md:text-lg">
-                {selectedFish.additional_info.care_tips}
+                {fish1.additional_info.care_tips}
               </p>
             </li>
 
@@ -206,7 +290,7 @@ const FishDetail = () => {
                 2. Sức khỏe
               </h3>
               <p className="text-base md:text-lg">
-                {selectedFish.additional_info.health_issues}
+                {fish1.additional_info.health_issues}
               </p>
             </li>
 
@@ -215,7 +299,7 @@ const FishDetail = () => {
                 3. Nhu cầu vận động
               </h3>
               <p className="text-base md:text-lg">
-                {selectedFish.additional_info.exercise_needs}
+                {fish1.additional_info.exercise_needs}
               </p>
             </li>
 
@@ -224,7 +308,7 @@ const FishDetail = () => {
                 4. Chế độ ăn
               </h3>
               <p className="text-base md:text-lg">
-                {selectedFish.additional_info.diet}
+                {fish1.additional_info.diet}
               </p>
             </li>
           </ol>

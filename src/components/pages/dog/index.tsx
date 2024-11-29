@@ -246,6 +246,7 @@ const DogList = ({ dogsPerPage = 4 }) => {
                 ]}
                 onChange={(value) => handleFilterChange("color", value)}
                 value={filters.color}
+                className="flex flex-col md:flex-row gap-2"
               />
             </div>
             <div className="mb-4">
@@ -289,6 +290,7 @@ const DogList = ({ dogsPerPage = 4 }) => {
                   handleFilterChange("breedType", e.target.value)
                 }
                 value={filters.breedType}
+                className="flex flex-col md:flex-row lg:flex-col gap-2"
               >
                 <Radio value="">Tất cả</Radio>
                 <Radio value="Thuần chủng">Thuần chủng</Radio>
@@ -302,6 +304,7 @@ const DogList = ({ dogsPerPage = 4 }) => {
               <Radio.Group
                 onChange={(e) => handleFilterChange("gender", e.target.value)}
                 value={filters.gender}
+                className="flex flex-col md:flex-row lg:flex-col gap-2"
               >
                 <Radio value="">Tất cả</Radio>
                 <Radio value="Đực">Đực</Radio>

@@ -278,7 +278,7 @@ const CatList = ({ catsPerPage = 4 }) => {
                   handleFilterChange("breedType", e.target.value)
                 }
                 value={filters.breedType}
-                className="flex flex-row lg:flex-col gap-2"
+                className="flex flex-col md:flex-row lg:flex-col gap-2"
               >
                 <Radio value="">Tất cả</Radio>
                 <Radio value="Thuần chủng">Thuần chủng</Radio>
@@ -413,8 +413,6 @@ const CatList = ({ catsPerPage = 4 }) => {
               </Card>
             ))}
           </section>
-
-          {/* Pagination */}
           <div className="flex justify-center mt-6">
             <Pagination
               total={filteredCats.length}

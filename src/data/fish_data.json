@@ -10,6 +10,11 @@
     "color": ["Đỏ", "Xanh", "Tím", "Trắng"],
     "price": "80.000-120.000",
     "image": "https://i.imgur.com/r6yUmA8.png",
+    "thumail": [
+      "https://i.imgur.com/gfMevX9.jpeg",
+      "https://i.imgur.com/hslBDe5.jpeg",
+      "https://i.imgur.com/JzK5M4o.jpeg"
+    ],
     "additional_info": {
       "health_issues": "Cá Betta có thể bị nhiễm trùng nấm và các bệnh về vây nếu môi trường không sạch sẽ. Điều này có thể gây ảnh hưởng đến sức khỏe của cá và giảm tuổi thọ nếu không được chăm sóc đúng cách. Để tránh các vấn đề này, cần thường xuyên thay nước và giữ cho bể cá luôn sạch sẽ. Cá Betta cũng dễ bị stress khi sống trong điều kiện không ổn định.",
       "exercise_needs": "Cá Betta không cần không gian quá rộng, nhưng cần môi trường nước sạch và thoải mái để phát triển tốt. Chúng thích bơi lội và có thể di chuyển tự do trong bể cá. Tuy nhiên, không nên nuôi chung với các loài cá khác để tránh tình trạng cá đánh nhau.",
@@ -30,6 +35,11 @@
     "color": ["Đỏ", "Xanh"],
     "price": "7.000-100.000",
     "image": "https://i.imgur.com/19hhSQb.jpeg",
+    "thumail": [
+      "https://i.imgur.com/QeioU5X.jpeg",
+      "https://i.imgur.com/oTRPt4Z.jpeg",
+      "https://i.imgur.com/348iJ69.jpeg"
+    ],
     "additional_info": {
       "health_issues": "Cá Neon có thể dễ dàng mắc các bệnh về đường tiêu hóa hoặc viêm đường hô hấp nếu môi trường không được chăm sóc đúng cách. Việc không thay nước định kỳ và chất lượng nước kém có thể làm suy yếu hệ miễn dịch của chúng. Để giữ cá Neon khỏe mạnh, cần đảm bảo bể cá sạch sẽ và không có các yếu tố gây căng thẳng.",
       "exercise_needs": "Cá Neon là loài cá hoạt bát và cần sống trong bầy đàn để cảm thấy an toàn. Chúng thường xuyên bơi lội và thích khám phá môi trường sống xung quanh. Nếu sống một mình, cá Neon sẽ cảm thấy cô đơn và có thể bị stress. Do đó, nuôi chúng trong nhóm ít nhất 5-6 con sẽ giúp cá phát triển tốt hơn.",
@@ -50,6 +60,11 @@
     "color": ["Vàng", "Trắng", "Cam"],
     "price": "20.000-80.000",
     "image": "https://i.imgur.com/wCY8xvO.jpeg",
+    "thumail": [
+      "https://i.imgur.com/Bj1Ls6I.jpeg",
+      "https://i.imgur.com/JGvMIZd.jpeg",
+      "https://i.imgur.com/d7TXJZB.jpeg"
+    ],
     "additional_info": {
       "health_issues": "Cá Vàng dễ mắc bệnh về da và mắt nếu sống trong môi trường nước bẩn hoặc bị thiếu oxy. Các bệnh phổ biến bao gồm nhiễm trùng da, viêm mắt, và các bệnh do vi khuẩn. Cần chú ý vệ sinh bể cá và thay nước thường xuyên để tránh những vấn đề này. Cá Vàng cũng dễ bị stress nếu môi trường sống không được giữ sạch sẽ.",
       "exercise_needs": "Cá Vàng cần không gian bơi lội rộng rãi, đặc biệt là khi chúng trưởng thành. Một bể cá quá chật hẹp có thể làm cá cảm thấy căng thẳng và phát triển không tốt. Do đó, việc lựa chọn bể cá có kích thước phù hợp rất quan trọng để cá có thể bơi lội tự do.",
@@ -70,6 +85,11 @@
     "color": ["Đỏ", "Xanh", "Vàng", "Trắng"],
     "price": "140.000-300.000",
     "image": "https://i.imgur.com/4NA0h8A.jpeg",
+    "thumail": [
+      "https://i.imgur.com/A2XlI5T.jpeg",
+      "https://i.imgur.com/OWyzPp1.jpeg",
+      "https://i.imgur.com/XsuczY7.jpeg"
+    ],
     "additional_info": {
       "health_issues": "Cá Dĩa rất nhạy cảm với chất lượng nước. Chúng dễ bị mắc các bệnh về da, vi khuẩn, và nấm nếu môi trường sống không đạt tiêu chuẩn. Để tránh các vấn đề này, cần duy trì pH và nhiệt độ nước ổn định, cùng với việc thay nước định kỳ. Việc kiểm tra chất lượng nước thường xuyên rất quan trọng.",
       "exercise_needs": "Cá Dĩa cần một bể cá lớn với nhiều không gian bơi lội. Chúng thích sống trong môi trường có ít dòng chảy và không gian thoáng mát. Vì vậy, bể cá cần được trang bị đầy đủ lọc và hệ thống duy trì nhiệt độ ổn định.",
@@ -90,6 +110,11 @@
     "color": ["Đỏ", "Xanh", "Vàng", "Trắng"],
     "price": "15.000-50.000",
     "image": "https://i.imgur.com/OwQWXZO.jpeg",
+    "thumail": [
+      "https://i.imgur.com/ITAuWG3.jpeg",
+      "https://i.imgur.com/43Dk7Hs.jpeg",
+      "https://i.imgur.com/GeEAupY.jpeg"
+    ],
     "additional_info": {
       "health_issues": "Cá Phượng Hoàng có thể bị bệnh nếu sống trong nước không sạch hoặc không có đủ oxy. Các bệnh phổ biến là viêm đường hô hấp và các vấn đề về da. Để tránh điều này, cần đảm bảo bể cá luôn sạch sẽ và nước trong bể có đủ oxy cho cá.",
       "exercise_needs": " Cá Phượng Hoàng thích sống bầy đàn và cần không gian bơi lội thoải mái. Chúng sẽ cảm thấy thoải mái hơn khi sống cùng với các loài cá khác trong môi trường yên tĩnh và an toàn.",
@@ -110,6 +135,11 @@
     "color": ["Đỏ", "Vàng", "Trắng", "Đen"],
     "price": "600.000-6.500.000",
     "image": "https://i.imgur.com/Lp2IntV.png",
+    "thumail": [
+      "https://i.imgur.com/CQsI4f2.jpeg",
+      "https://i.imgur.com/lSz9ilb.jpeg",
+      "https://i.imgur.com/PeUE3QI.jpeg"
+    ],
     "additional_info": {
       "health_issues": " Cá Koi dễ bị nhiễm bệnh nếu môi trường không đạt tiêu chuẩn, đặc biệt là bệnh nấm và vi khuẩn. Cần duy trì nước sạch và đảm bảo hệ thống lọc tốt để ngăn ngừa bệnh tật. Cá Koi cũng có thể gặp vấn đề về da nếu sống trong môi trường thiếu oxy.",
       "exercise_needs": "Cá Koi có chế độ ăn rất phong phú, bao gồm thức ăn viên, rau củ, và các loại thức ăn tươi khác. Để chúng khỏe mạnh và phát triển tốt, cần cho cá ăn đầy đủ chất dinh dưỡng.",
