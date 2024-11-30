@@ -21,7 +21,6 @@ import {
 } from "@ant-design/icons";
 import { routerNames } from "@/components/constants/router.constant";
 import PartnerCarousel from "./PartnerCarousel";
-import ProductList from "./ProductList";
 
 const { TabPane } = Tabs;
 const { Paragraph, Title } = Typography;
@@ -439,10 +438,6 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-      </section>
-
-      <section>
-        <ProductList />
       </section>
       <section>
         <PartnerCarousel />
