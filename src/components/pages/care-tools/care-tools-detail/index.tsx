@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { Breadcrumb, Button, Table, Rate } from "antd";
+import { Breadcrumb, Button, Rate, Tabs, Collapse, Row, Col } from "antd";
 import Head from "next/head";
 import Link from "next/link";
 import { routerNames } from "@/components/constants/router.constant";
 import { useSelector } from "react-redux";
 import Image from "next/image";
-import { UpOutlined, DownOutlined } from "@ant-design/icons";
+
+const { TabPane } = Tabs;
+const { Panel } = Collapse;
 
 interface CareTool {
   id: number;
@@ -36,9 +38,7 @@ const CareToolDetail = () => {
     (state: { careTools: CareTool[] }) => state.careTools,
   );
   const [careTool, setCareTool] = useState<CareTool | null>(null);
-  const [isSidebarVisible, setSidebarVisible] = useState<boolean>(false);
   const [selectedImage, setSelectedImage] = useState<string>("");
-  const [currentThumbnailIndex, setCurrentThumbnailIndex] = useState<number>(0);
 
   useEffect(() => {
     if (id && careTools.length > 0) {
@@ -50,47 +50,21 @@ const CareToolDetail = () => {
     }
   }, [id, careTools]);
 
-  useEffect(() => {
-    if (careTool) {
-      const slideshowImages = [careTool.image, ...careTool.thumbnails];
-      const interval = setInterval(() => {
-        setCurrentThumbnailIndex((prevIndex) => {
-          const nextIndex = (prevIndex + 1) % slideshowImages.length;
-          setSelectedImage(slideshowImages[nextIndex]);
-          return nextIndex;
-        });
-      }, 4000);
-
-      return () => clearInterval(interval);
-    }
-  }, [careTool]);
-
-  const handleThumbnailClick = (thumb: string, index: number) => {
-    setSelectedImage(thumb);
-    setCurrentThumbnailIndex(index);
-  };
-
-  const handleToggleSidebar = () => {
-    setSidebarVisible(!isSidebarVisible);
-  };
-
-  const handleSectionClick = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({ top: element.offsetTop - 100, behavior: "smooth" });
-    }
-  };
+  const relatedProducts = careTools.filter(
+    (product) =>
+      product.category === careTool?.category && product.id !== careTool?.id,
+  );
 
   if (!careTool) {
     return (
       <section className="flex flex-col items-center py-10">
-        <h1 className="text-2xl font-bold text-gray-800">
+        <h1 className="text-5xl font-bold text-gray-800">
           Dụng cụ chăm sóc không tồn tại
         </h1>
         <Button
           type="primary"
           onClick={() => router.push(routerNames.CARE_TOOLS)}
-          className="mt-4 text-lg"
+          className="mt-6 text-xl"
         >
           Trở về trang chính
         </Button>
@@ -98,54 +72,13 @@ const CareToolDetail = () => {
     );
   }
 
-  const dataSource = [
-    { key: "1", attribute: "Danh mục", value: careTool.category },
-    { key: "2", attribute: "Chất liệu", value: careTool.material },
-    { key: "3", attribute: "Thương hiệu", value: careTool.brand },
-    {
-      key: "4",
-      attribute: "Kích thước thú cưng tương thích",
-      value: careTool.pet_size_compatibility.join(", "),
-    },
-    {
-      key: "5",
-      attribute: "Giống chó tương thích",
-      value: careTool.compatible_breeds.join(", "),
-    },
-    { key: "6", attribute: "Giá bán", value: careTool.price },
-  ];
-
-  const columns = [
-    {
-      title: "Thuộc tính",
-      dataIndex: "attribute",
-      key: "attribute",
-      render: (text: string) => (
-        <span className="text-base font-medium text-gray-800">{text}</span>
-      ),
-    },
-    {
-      title: "Thông tin",
-      dataIndex: "value",
-      key: "value",
-      render: (text: string) => (
-        <span className="text-base font-normal text-gray-700">{text}</span>
-      ),
-    },
-  ];
-
-  const relatedProducts = careTools.filter(
-    (product) =>
-      product.category === careTool.category && product.id !== careTool.id,
-  );
-
   return (
     <>
       <Head>
         <title>{careTool.name}</title>
       </Head>
-      <main className="container mx-auto py-8 px-4">
-        <Breadcrumb className="mb-6 text-lg">
+      <main className="container mx-auto py-10 px-6">
+        <Breadcrumb className="mb-10 text-xl">
           <Breadcrumb.Item>
             <Link href={routerNames.HOME}>Trang Chủ</Link>
           </Breadcrumb.Item>
@@ -155,170 +88,191 @@ const CareToolDetail = () => {
           <Breadcrumb.Item>
             <Link href={routerNames.CARE_TOOLS}>Dụng Cụ Chăm Sóc</Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item className="font-bold text-lg">
+          <Breadcrumb.Item className="font-bold text-2xl">
             {careTool.name}
           </Breadcrumb.Item>
         </Breadcrumb>
 
-        <h1 className="text-3xl font-bold mb-6 text-center w-full">
+        <h1 className="text-5xl font-bold mb-10 text-center">
           {careTool.name}
         </h1>
 
-        <section className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          <article className="flex flex-col items-center mb-6 md:mb-0 col-span-3">
-            <Image
-              src={selectedImage}
-              alt={careTool.name}
-              className="w-full"
-              width={500}
-              height={500}
-            />
-            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4">
-              {[careTool.image, ...careTool.thumbnails].map((thumb, index) => (
-                <Image
-                  key={index}
-                  src={thumb}
-                  alt={`${careTool.name} thumbnail ${index + 1}`}
-                  className={`w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
-                    currentThumbnailIndex === index
-                      ? "border-4 border-blue-500"
-                      : ""
-                  }`}
-                  width={100}
-                  height={100}
-                  onClick={() => handleThumbnailClick(thumb, index)}
-                />
-              ))}
-            </div>
-          </article>
-          <article className="col-span-2">
-            <Table
-              dataSource={dataSource}
-              columns={columns}
-              pagination={false}
-              className="shadow-md rounded-lg"
-            />
-            <section className="flex justify-center mt-6">
-              <Button
-                type="primary"
-                onClick={() => router.push(routerNames.CONTACT)}
-                className="w-full md:w-[90%] p-6 hover:bg-blue-700 text-lg transition duration-300"
-              >
-                Liên hệ
-              </Button>
-            </section>
-            <section className="mt-6 hidden lg:block">
-              <h2 className="text-2xl font-semibold">Mô tả sản phẩm</h2>
-              <p className="mt-4 text-gray-700">{careTool.description}</p>
-            </section>
-          </article>
-        </section>
-        <section className="mt-6 md:block lg:hidden">
-          <h2 className="text-2xl font-semibold">Mô tả sản phẩm</h2>
-          <p className="mt-4 text-gray-700">{careTool.description}</p>
-        </section>
-        <section className="mt-8">
-          <div className="w-full md:w-[80%] border-2 border-gray-300 rounded-lg shadow-lg">
-            <h2
-              className="text-xl font-semibold cursor-pointer flex justify-between items-center p-4 border-b-2 border-gray-300 bg-gray-50 rounded-t-lg hover:bg-gray-100 transition-all duration-300"
-              onClick={handleToggleSidebar}
+        <section className="mb-12">
+          <Row gutter={24}>
+            <Col
+              xs={24}
+              md={24}
+              lg={16}
+              className="flex flex-col items-center mb-6 md:mb-0"
             >
-              <span>MỤC LỤC NỘI DUNG</span>
-              <span>
-                {isSidebarVisible ? <UpOutlined /> : <DownOutlined />}
-              </span>
-            </h2>
-
-            {isSidebarVisible && (
-              <div
-                className={`p-4 transition-all duration-500 ease-in-out transform motion-safe:${
-                  isSidebarVisible
-                    ? "scale-y-100 opacity-100"
-                    : "scale-y-0 opacity-0"
-                }`}
-              >
-                <ol className="list-decimal pl-6 space-y-4">
-                  <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
-                    onClick={() => handleSectionClick("usage")}
-                  >
-                    Cách sử dụng
-                  </li>
-                  <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
-                    onClick={() => handleSectionClick("storage_instructions")}
-                  >
-                    Bảo quản
-                  </li>
-                  <li
-                    className="text-base md:text-lg lg:text-2xl cursor-pointer text-black p-2 rounded-md transition-all duration-300 hover:text-blue-800 hover:translate-x-2"
-                    onClick={() => handleSectionClick("additional_notes")}
-                  >
-                    Ghi chú thêm
-                  </li>
-                </ol>
+              <Image
+                src={selectedImage}
+                alt={careTool.name}
+                className="w-full object-cover h-[500px] md:h-[600px] transition-transform duration-300 ease-in-out transform hover:scale-105"
+                width={1000}
+                height={600}
+              />
+              <div className="flex justify-center gap-4 mt-6">
+                {[careTool.image, ...careTool.thumbnails].map(
+                  (thumb, index) => (
+                    <Image
+                      key={index}
+                      src={thumb}
+                      alt={`${careTool.name} thumbnail ${index + 1}`}
+                      className="w-20 h-20 md:w-36 md:h-36 lg:w-40 lg:h-40 object-cover rounded-md cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-110"
+                      width={100}
+                      height={100}
+                      onClick={() => setSelectedImage(thumb)}
+                    />
+                  ),
+                )}
               </div>
-            )}
-          </div>
+            </Col>
+            <Col
+              xs={24}
+              md={24}
+              lg={8}
+              className="p-8 rounded-lg transition-shadow duration-300"
+            >
+              <h3 className="text-3xl font-semibold text-gray-800 mb-8">
+                Mô Tả Ngắn
+              </h3>
+              <div className="mt-6">
+                <div className="text-xl text-gray-700 space-y-3">
+                  <p>
+                    <strong>Danh mục:</strong> {careTool.category}
+                  </p>
+                  <p>
+                    <strong>Chất liệu:</strong> {careTool.material}
+                  </p>
+                  <p>
+                    <strong>Thương hiệu:</strong> {careTool.brand}
+                  </p>
+                  <p>
+                    <strong>Kích thước thú cưng tương thích:</strong>{" "}
+                    {careTool.pet_size_compatibility.join(", ")}
+                  </p>
+                  <p>
+                    <strong>Giống chó tương thích:</strong>{" "}
+                    {careTool.compatible_breeds.join(", ")}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button
+                  type="primary"
+                  size="large"
+                  onClick={() => router.push("/contact")}
+                  className="text-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
+                >
+                  Liên hệ ngay
+                </Button>
+              </div>
+            </Col>
+          </Row>
         </section>
 
-        <section className="pt-12">
-          <ol className="space-y-6">
-            <li id="usage">
-              <h3 className="text-2xl font-semibold text-blue-700">
-                1. Cách sử dụng
-              </h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
-                {careTool.usage}
+        <Tabs defaultActiveKey="1" className="my-12">
+          <TabPane
+            tab={
+              <span className="text-3xl font-semibold text-gray-800">
+                Mô Tả Sản Phẩm
+              </span>
+            }
+            key="1"
+            className="text-xl"
+          >
+            <p className="text-2xl text-gray-700">{careTool.description}</p>
+          </TabPane>
+          <TabPane
+            tab={
+              <span className="text-3xl font-semibold text-gray-800">
+                Đánh giá của khách hàng
+              </span>
+            }
+            key="2"
+          >
+            {careTool.reviews && careTool.reviews.length > 0 ? (
+              <div className="mt-6 space-y-6">
+                {careTool.reviews.map((review, index) => (
+                  <div
+                    key={index}
+                    className="border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <div className="flex items-center space-x-4">
+                      <span className="text-2xl font-semibold text-gray-800">
+                        {review.reviewer}
+                      </span>
+                      <Rate
+                        disabled
+                        value={review.rating}
+                        className="text-yellow-500"
+                      />
+                    </div>
+                    <p className="mt-4 text-xl text-gray-700">
+                      {review.comment}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="mt-6 text-lg text-gray-700">
+                Chưa có đánh giá nào.
               </p>
-            </li>
-            <li id="storage_instructions">
-              <h3 className="text-2xl font-semibold text-blue-700">
-                2. Bảo quản
-              </h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+            )}
+          </TabPane>
+        </Tabs>
+
+        <section className="pt-16">
+          <Collapse
+            defaultActiveKey={["1", "2", "3"]}
+            className="shadow-lg rounded-lg bg-white"
+          >
+            <Panel
+              header={
+                <span className="text-3xl font-semibold text-gray-800">
+                  Cách Sử Dụng
+                </span>
+              }
+              key="1"
+              className="text-xl border-b-2 border-gray-200"
+            >
+              <p className="text-2xl text-gray-700">{careTool.usage}</p>
+            </Panel>
+            <Panel
+              header={
+                <span className="text-3xl font-semibold text-gray-800">
+                  Bảo Quản
+                </span>
+              }
+              key="2"
+              className="text-xl border-b-2 border-gray-200"
+            >
+              <p className="text-2xl text-gray-700">
                 {careTool.storage_instructions}
               </p>
-            </li>
-            <li id="additional_notes">
-              <h3 className="text-2xl font-semibold text-blue-700">
-                3. Ghi chú thêm
-              </h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed">
+            </Panel>
+            <Panel
+              header={
+                <span className="text-3xl font-semibold text-gray-800">
+                  Ghi Chú Thêm
+                </span>
+              }
+              key="3"
+              className="text-xl border-b-2 border-gray-200"
+            >
+              <p className="text-2xl text-gray-700">
                 {careTool.additional_notes}
               </p>
-            </li>
-          </ol>
+            </Panel>
+          </Collapse>
         </section>
 
-        <section className="my-10">
-          <h2 className="text-xl font-semibold">
-            Đánh giá của khách hàng về sản phẩm này
-          </h2>
-          {careTool.reviews && careTool.reviews.length > 0 ? (
-            <div className="mt-4 space-y-4">
-              {careTool.reviews.map((review, index) => (
-                <div key={index} className="border p-4 rounded-lg shadow-md">
-                  <div className="flex items-center space-x-2">
-                    <span className="font-semibold">{review.reviewer}</span>
-                    <Rate
-                      disabled
-                      value={review.rating}
-                      className="text-yellow-500"
-                    />
-                  </div>
-                  <p className="mt-2 text-lg">{review.comment}</p>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-4 text-gray-700">Chưa có đánh giá nào.</p>
-          )}
-        </section>
         {relatedProducts.length > 0 && (
           <section className="my-10">
             <h2 className="text-xl font-semibold mb-4">Sản phẩm liên quan</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
               {relatedProducts.map((product) => (
                 <div
                   key={product.id}
@@ -332,8 +286,7 @@ const CareToolDetail = () => {
                     className="object-cover w-full h-96 group-hover:scale-110 transition-transform duration-300 ease-in-out"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-center text-white text-lg">
-                    <h3 className=" font-semibold truncate">{product.name}</h3>
-                    <p className="mt-2">{product.price}</p>
+                    <h3 className="font-semibold truncate">{product.name}</h3>
                   </div>
                   <Link
                     href={`${routerNames.CARE_TOOLS_DETAIL.replace(
