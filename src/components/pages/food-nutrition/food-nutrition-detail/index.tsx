@@ -162,14 +162,14 @@ const FoodNutritionDetail = () => {
               width={400}
               height={400}
             />
-            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4">
               {[foodNutrition.image, ...foodNutrition.thumbnails].map(
                 (thumb, index) => (
                   <Image
                     key={index}
                     src={thumb}
                     alt={`${foodNutrition.name} thumbnail ${index + 1}`}
-                    className={`w-32 lg:w-48 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
                         : ""

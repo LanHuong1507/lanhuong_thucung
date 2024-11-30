@@ -172,7 +172,7 @@ const RabbitDetail = () => {
                 height={400}
               />
             )}
-            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4">
               {[
                 selectedRabbit.image,
                 ...(Array.isArray(selectedRabbit.thumnail)
@@ -183,13 +183,11 @@ const RabbitDetail = () => {
                 return isVideo ? (
                   <video
                     key={index}
-                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
-                        : ""
+                        : "border-2 border-gray-300"
                     }`}
-                    width={100}
-                    height={100}
                     muted
                     onClick={() => handleThumbnailClick(thumb, index)}
                   >
@@ -201,7 +199,7 @@ const RabbitDetail = () => {
                     key={index}
                     src={thumb}
                     alt={`${selectedRabbit.name} thumbnail ${index + 1}`}
-                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
                         : ""

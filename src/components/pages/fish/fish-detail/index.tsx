@@ -166,7 +166,7 @@ const FishDetail = () => {
                 height={400}
               />
             )}
-            <div className="flex space-x-4 mt-4 flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center gap-2 mt-4">
               {[
                 fish1.image,
                 ...(Array.isArray(fish1.thumail) ? fish1.thumail : []),
@@ -175,13 +175,11 @@ const FishDetail = () => {
                 return isVideo ? (
                   <video
                     key={index}
-                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
-                        : ""
+                        : "border-2 border-gray-300"
                     }`}
-                    width={100}
-                    height={100}
                     muted
                     onClick={() => handleThumbnailClick(thumb, index)}
                   >
@@ -193,13 +191,13 @@ const FishDetail = () => {
                     key={index}
                     src={thumb}
                     alt={`${fish1.name} thumbnail ${index + 1}`}
-                    className={`w-24 md:w-32 lg:w-36 h-28 object-cover rounded-md cursor-pointer ${
+                    className={`w-20 h-20 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover rounded-md cursor-pointer ${
                       currentThumbnailIndex === index
                         ? "border-4 border-blue-500"
                         : ""
                     }`}
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     onClick={() => handleThumbnailClick(thumb, index)}
                   />
                 );
