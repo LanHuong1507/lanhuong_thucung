@@ -35,6 +35,12 @@ const Header = () => {
         {!menuOpen && (
           <nav className="hidden lg:flex space-x-8 text-lg font-semibold">
             <Link
+              href={routerNames.HOME}
+              className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
+            >
+              Trang chủ
+            </Link>
+            <Link
               href={routerNames.CATEGORY}
               className="hover:text-yellow-400 transition duration-300 text-xl lg:text-2xl"
             >
@@ -110,6 +116,12 @@ const Header = () => {
           </button>
         </div>
         <div className="p-6 space-y-4">
+          <Link
+            href={routerNames.HOME}
+            className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
+          >
+            Trang chủ
+          </Link>
           <Link
             href={routerNames.CATEGORY}
             className="block py-3 text-xl lg:text-2xl font-semibold text-black hover:text-yellow-400 transition duration-300 rounded-md"
